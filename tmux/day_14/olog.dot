@@ -1,0 +1,26 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.6;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  cli   [label="the attaching client\n(a fresh ssh login)", fillcolor="#f4efe6"];
+  ge    [label="the global\nenvironment", fillcolor="#e7f0ec", color="#2f7a63"];
+  se    [label="the session\nenvironment", fillcolor="#e7f0ec", color="#2f7a63"];
+  ue    [label="update-environment\n(a list of names)", fillcolor="#f8efdf", color="#d8b784"];
+  np    [label="a NEW pane", fillcolor="#e7f0ec", color="#2f7a63"];
+  op    [label="an already-running\nprocess", fillcolor="#f4efe6"];
+
+  cli -> ue [label="  supplies values for"];
+  ue  -> se [label="  writes into", penwidth=2.0];
+  ge  -> np [label="  merged into"];
+  se  -> np [label="  merged into\l  (and wins)\l"];
+  se  -> op [label="  cannot reach", style=dashed, color="#c08a8a", fontcolor="#a2444a"];
+
+}

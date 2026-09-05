@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  win    [label="a window", fillcolor="#e7f0ec", color="#2f7a63"];
+  layout [label="a layout\n(a nested arrangement\nof rectangles)", fillcolor="#e7f0ec", color="#2f7a63"];
+  preset [label="a preset layout\n(tiled, main-vertical …)", fillcolor="#f4efe6"];
+  pane   [label="a pane", fillcolor="#e7f0ec", color="#2f7a63"];
+  idx    [label="a pane index"];
+  size   [label="a size and position"];
+  cwd    [label="a working directory"];
+  pty    [label="a pseudo-terminal"];
+  zoom   [label="the zoomed state", fillcolor="#f8efdf", color="#d8b784"];
+
+  win    -> layout [label="  has as"];
+  layout -> pane   [label="  arranges"];
+  preset -> layout [label="  becomes\l  (C-b Space, M-1..M-7)\l"];
+  win    -> pane   [label="has as active  ", style=dashed, constraint=false];
+  pane   -> idx    [label="  has as index"];
+  pane   -> size   [label="  occupies"];
+  pane   -> cwd    [label="  runs in"];
+  pane   -> pty    [label="  is"];
+  zoom   -> layout [label="  temporarily hides  ", style=dashed, constraint=false];
+  { rank=same; preset; win; }
+  { rank=same; zoom; layout; }
+
+}

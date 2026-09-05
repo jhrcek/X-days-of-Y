@@ -1,0 +1,34 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  sess  [label="a session", fillcolor="#e7f0ec", color="#2f7a63"];
+  win   [label="a window", fillcolor="#e7f0ec", color="#2f7a63"];
+  idx   [label="a window index\n(0, 1, 2 …)"];
+  name  [label="a window name"];
+  flags [label="a flag\n(* - # ! ~ M Z)"];
+  given [label="a name you typed\n(C-b ,)", fillcolor="#f4efe6"];
+  cmd   [label="the active pane's\ncommand", fillcolor="#f4efe6"];
+  bar   [label="the window list\nin the status line", fillcolor="#f4efe6"];
+
+  sess -> win   [label="  contains"];
+  sess -> win   [label="has as current  ", style=dashed, constraint=false];
+  sess -> win   [label="  has as last", style=dashed, constraint=false];
+  win  -> idx   [label="  has as index"];
+  win  -> name  [label="  has as name"];
+  win  -> flags [label="  shows"];
+  given -> name [label="  becomes"];
+  cmd   -> name [label="  becomes, if\l  automatic-rename\l"];
+  idx  -> bar   [style=dotted, arrowhead=empty];
+  name -> bar   [style=dotted, arrowhead=empty];
+  flags -> bar  [style=dotted, arrowhead=empty, label="  is drawn in"];
+
+}

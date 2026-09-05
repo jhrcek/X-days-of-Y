@@ -1,0 +1,36 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.3;
+  ranksep=0.42;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  pane  [label="a pane", fillcolor="#e7f0ec", color="#2f7a63"];
+  hist  [label="its history\n(history-limit lines)"];
+  mode  [label="copy mode", fillcolor="#e7f0ec", color="#2f7a63"];
+  cur   [label="a cursor"];
+  sel   [label="a selection\n(char, line, rectangle)"];
+  buf   [label="a paste buffer", fillcolor="#f8efdf", color="#d8b784"];
+  cap   [label="capture-pane", fillcolor="#f4efe6"];
+  file  [label="a file", fillcolor="#f4efe6"];
+  cmd   [label="a shell command", fillcolor="#f4efe6"];
+  clip  [label="the terminal\nclipboard", fillcolor="#f4efe6"];
+
+  pane -> hist [label="  keeps"];
+  hist -> mode [label="  is browsed in"];
+  mode -> cur  [label="  has"];
+  cur  -> sel  [label="  extends"];
+  sel  -> buf  [label="  copy-selection\l  makes\l"];
+  cap  -> buf  [label="  fills"];
+  file -> buf  [label="  load-buffer"];
+  buf  -> pane [label="  paste-buffer\l  inserts into\l"];
+  buf  -> file [label="  save-buffer"];
+  buf  -> cmd  [label="  copy-pipe\l  feeds\l"];
+  buf  -> clip [label="  set-clipboard\l  (OSC 52)\l"];
+
+}

@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.22;
+  ranksep=0.65;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  sf   [label="status-format[0]\n(the whole line)", fillcolor="#e7f0ec", color="#2f7a63"];
+  sl   [label="status-left"];
+  wl   [label="the window list"];
+  sr   [label="status-right"];
+  wsf  [label="window-status-format"];
+  wscf [label="window-status-current-format"];
+  sty  [label="status-style", fillcolor="#f4efe6"];
+  wsty [label="window-status-*-style\n(current, activity,\nbell, last)", fillcolor="#f4efe6"];
+  inl  [label="#[fg=… bg=… bold]\ninline directives", fillcolor="#f4efe6"];
+  rng  [label="#[range=window|3]\nclickable regions", fillcolor="#f8efdf", color="#d8b784"];
+
+  sf -> sl [label="  interpolates"];
+  sf -> wl;
+  sf -> sr;
+  wsf  -> wl [label="  draws each window"];
+  wscf -> wl [label="  draws the current one"];
+  sty  -> sf [label="  styles", style=dashed];
+  wsty -> wl [label="  styles", style=dashed];
+  inl  -> sl [label="  restyles mid-string", style=dashed];
+  rng  -> wl [label="  makes clickable", style=dashed];
+  { rank=same; sl; wl; sr; }
+
+}

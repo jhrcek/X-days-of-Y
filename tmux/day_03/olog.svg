@@ -1,0 +1,127 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="666pt" height="295pt"
+ viewBox="0.00 0.00 666.00 295.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 291.34)">
+<title>olog</title>
+<!-- win -->
+<g id="node1" class="node">
+<title>win</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M223.16,-280.59C223.16,-280.59 167.57,-280.59 167.57,-280.59 163.16,-280.59 158.75,-276.18 158.75,-271.77 158.75,-271.77 158.75,-262.95 158.75,-262.95 158.75,-258.54 163.16,-254.13 167.57,-254.13 167.57,-254.13 223.16,-254.13 223.16,-254.13 227.57,-254.13 231.98,-258.54 231.98,-262.95 231.98,-262.95 231.98,-271.77 231.98,-271.77 231.98,-276.18 227.57,-280.59 223.16,-280.59"/>
+<text xml:space="preserve" text-anchor="middle" x="195.37" y="-263.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a window</text>
+</g>
+<!-- layout -->
+<g id="node2" class="node">
+<title>layout</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M311.61,-192.88C311.61,-192.88 191.12,-192.88 191.12,-192.88 185.12,-192.88 179.12,-186.88 179.12,-180.88 179.12,-180.88 179.12,-151.42 179.12,-151.42 179.12,-145.42 185.12,-139.42 191.12,-139.42 191.12,-139.42 311.61,-139.42 311.61,-139.42 317.61,-139.42 323.61,-145.42 323.61,-151.42 323.61,-151.42 323.61,-180.88 323.61,-180.88 323.61,-186.88 317.61,-192.88 311.61,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="251.37" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a layout</text>
+<text xml:space="preserve" text-anchor="middle" x="251.37" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a nested arrangement</text>
+<text xml:space="preserve" text-anchor="middle" x="251.37" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">of rectangles)</text>
+</g>
+<!-- win&#45;&gt;layout -->
+<g id="edge1" class="edge">
+<title>win&#45;&gt;layout</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M200.33,-253.68C205.18,-241.8 213.05,-223.7 221.62,-208.88 223.32,-205.93 225.18,-202.94 227.1,-199.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="228.88,-201.84 230.81,-194.45 224.7,-199.03 228.88,-201.84"/>
+<text xml:space="preserve" text-anchor="middle" x="238.49" y="-216.73" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as</text>
+</g>
+<!-- pane -->
+<g id="node4" class="node">
+<title>pane</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M273.16,-96.17C273.16,-96.17 229.57,-96.17 229.57,-96.17 225.16,-96.17 220.75,-91.76 220.75,-87.35 220.75,-87.35 220.75,-78.53 220.75,-78.53 220.75,-74.12 225.16,-69.71 229.57,-69.71 229.57,-69.71 273.16,-69.71 273.16,-69.71 277.57,-69.71 281.98,-74.12 281.98,-78.53 281.98,-78.53 281.98,-87.35 281.98,-87.35 281.98,-91.76 277.57,-96.17 273.16,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="251.37" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pane</text>
+</g>
+<!-- win&#45;&gt;pane -->
+<g id="edge4" class="edge">
+<title>win&#45;&gt;pane</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M218.85,-253.62C230.54,-247.15 244.82,-239.06 257.37,-231.38 272.82,-221.92 275.15,-216.97 291.37,-208.88 310.36,-199.4 324.13,-210.22 336.37,-192.88 350.07,-173.47 346.94,-160.7 336.37,-139.42 326.96,-120.5 307.72,-107.14 289.93,-98.27"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="291.45,-96.2 283.86,-95.42 289.31,-100.76 291.45,-96.2"/>
+<text xml:space="preserve" text-anchor="middle" x="376.26" y="-162.75" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">has as active &#160;</text>
+</g>
+<!-- layout&#45;&gt;pane -->
+<g id="edge2" class="edge">
+<title>layout&#45;&gt;pane</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M251.37,-139.01C251.37,-128.07 251.37,-115.53 251.37,-105.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="253.89,-105.19 251.37,-97.99 248.85,-105.19 253.89,-105.19"/>
+<text xml:space="preserve" text-anchor="middle" x="272.74" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;arranges</text>
+</g>
+<!-- preset -->
+<g id="node3" class="node">
+<title>preset</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M383.98,-287.34C383.98,-287.34 268.75,-287.34 268.75,-287.34 262.75,-287.34 256.75,-281.34 256.75,-275.34 256.75,-275.34 256.75,-259.38 256.75,-259.38 256.75,-253.38 262.75,-247.38 268.75,-247.38 268.75,-247.38 383.98,-247.38 383.98,-247.38 389.98,-247.38 395.98,-253.38 395.98,-259.38 395.98,-259.38 395.98,-275.34 395.98,-275.34 395.98,-281.34 389.98,-287.34 383.98,-287.34"/>
+<text xml:space="preserve" text-anchor="middle" x="326.37" y="-269.94" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a preset layout</text>
+<text xml:space="preserve" text-anchor="middle" x="326.37" y="-256.44" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(tiled, main&#45;vertical …)</text>
+</g>
+<!-- preset&#45;&gt;layout -->
+<g id="edge3" class="edge">
+<title>preset&#45;&gt;layout</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M311.9,-247.23C301.86,-233.95 288.23,-215.91 276.44,-200.31"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="278.48,-198.84 272.13,-194.61 274.46,-201.88 278.48,-198.84"/>
+<text xml:space="preserve" text-anchor="start" x="297.79" y="-222.36" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;becomes</text>
+<text xml:space="preserve" text-anchor="start" x="297.79" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(C&#45;b Space, M&#45;1..M&#45;7)</text>
+</g>
+<!-- idx -->
+<g id="node5" class="node">
+<title>idx</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M83.91,-26.46C83.91,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 83.91,0 83.91,0 88.32,0 92.73,-4.41 92.73,-8.82 92.73,-8.82 92.73,-17.64 92.73,-17.64 92.73,-22.05 88.32,-26.46 83.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="46.37" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pane index</text>
+</g>
+<!-- pane&#45;&gt;idx -->
+<g id="edge5" class="edge">
+<title>pane&#45;&gt;idx</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M220.39,-74.76C199.04,-69.55 170.12,-62 145.12,-53.71 124.26,-46.8 101.45,-37.78 83.02,-30.11"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="84.48,-27.99 76.87,-27.53 82.53,-32.64 84.48,-27.99"/>
+<text xml:space="preserve" text-anchor="middle" x="174.74" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as index</text>
+</g>
+<!-- size -->
+<g id="node6" class="node">
+<title>size</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M230.54,-26.46C230.54,-26.46 126.2,-26.46 126.2,-26.46 121.78,-26.46 117.38,-22.05 117.38,-17.64 117.38,-17.64 117.38,-8.82 117.38,-8.82 117.38,-4.41 121.78,0 126.19,0 126.19,0 230.54,0 230.54,0 234.95,0 239.36,-4.41 239.36,-8.82 239.36,-8.82 239.36,-17.64 239.36,-17.64 239.36,-22.05 234.95,-26.46 230.54,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="178.37" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a size and position</text>
+</g>
+<!-- pane&#45;&gt;size -->
+<g id="edge6" class="edge">
+<title>pane&#45;&gt;size</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M237.63,-69.2C226.52,-58.9 210.72,-44.24 198.22,-32.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="200.19,-31.04 193.2,-27.99 196.76,-34.73 200.19,-31.04"/>
+<text xml:space="preserve" text-anchor="middle" x="240.61" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;occupies</text>
+</g>
+<!-- cwd -->
+<g id="node7" class="node">
+<title>cwd</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M377.91,-26.46C377.91,-26.46 272.82,-26.46 272.82,-26.46 268.41,-26.46 264,-22.05 264,-17.64 264,-17.64 264,-8.82 264,-8.82 264,-4.41 268.41,0 272.82,0 272.82,0 377.91,0 377.91,0 382.32,0 386.73,-4.41 386.73,-8.82 386.73,-8.82 386.73,-17.64 386.73,-17.64 386.73,-22.05 382.32,-26.46 377.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="325.37" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a working directory</text>
+</g>
+<!-- pane&#45;&gt;cwd -->
+<g id="edge7" class="edge">
+<title>pane&#45;&gt;cwd</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M265.28,-69.2C276.55,-58.9 292.57,-44.24 305.23,-32.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="306.73,-34.7 310.34,-27.98 303.32,-30.98 306.73,-34.7"/>
+<text xml:space="preserve" text-anchor="middle" x="310.05" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;runs in</text>
+</g>
+<!-- pty -->
+<g id="node8" class="node">
+<title>pty</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M522.03,-26.46C522.03,-26.46 420.69,-26.46 420.69,-26.46 416.29,-26.46 411.88,-22.05 411.88,-17.64 411.88,-17.64 411.88,-8.82 411.88,-8.82 411.88,-4.41 416.29,0 420.69,0 420.69,0 522.04,0 522.04,0 526.45,0 530.86,-4.41 530.86,-8.82 530.86,-8.82 530.86,-17.64 530.86,-17.64 530.86,-22.05 526.45,-26.46 522.03,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="471.37" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pseudo&#45;terminal</text>
+</g>
+<!-- pane&#45;&gt;pty -->
+<g id="edge8" class="edge">
+<title>pane&#45;&gt;pty</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M282.42,-72.38C318.62,-61.24 378.93,-42.68 421.66,-29.53"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="422.3,-31.97 428.44,-27.44 420.82,-27.15 422.3,-31.97"/>
+<text xml:space="preserve" text-anchor="middle" x="380.91" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- zoom -->
+<g id="node9" class="node">
+<title>zoom</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M649.16,-179.38C649.16,-179.38 551.57,-179.38 551.57,-179.38 547.16,-179.38 542.75,-174.97 542.75,-170.56 542.75,-170.56 542.75,-161.74 542.75,-161.74 542.75,-157.33 547.16,-152.92 551.57,-152.92 551.57,-152.92 649.16,-152.92 649.16,-152.92 653.57,-152.92 657.98,-157.33 657.98,-161.74 657.98,-161.74 657.98,-170.56 657.98,-170.56 657.98,-174.97 653.57,-179.38 649.16,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="600.37" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the zoomed state</text>
+</g>
+<!-- zoom&#45;&gt;layout -->
+<g id="edge9" class="edge">
+<title>zoom&#45;&gt;layout</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M584.26,-179.79C568.48,-192.18 543.16,-209.59 517.74,-216.76 451.59,-235.41 374.25,-216.32 320,-196.48"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="320.95,-194.14 313.32,-193.98 319.18,-198.86 320.95,-194.14"/>
+<text xml:space="preserve" text-anchor="middle" x="475.37" y="-216.73" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;temporarily hides &#160;</text>
+</g>
+</g>
+</svg>

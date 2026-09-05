@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.45;
+  ranksep=0.4;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  conf  [label="~/.tmux.conf\n(a list of tmux commands)", fillcolor="#f4efe6"];
+  setc  [label="a set-option command", fillcolor="#f4efe6"];
+
+  po    [label="pane options\n(set -p)", fillcolor="#e7f0ec", color="#2f7a63"];
+  wo    [label="window options\n(set -w)", fillcolor="#e7f0ec", color="#2f7a63"];
+  gwo   [label="global window options\n(set -wg)"];
+  so    [label="session options\n(set)", fillcolor="#e7f0ec", color="#2f7a63"];
+  gso   [label="global session options\n(set -g)"];
+  svo   [label="server options\n(set -s)"];
+
+  conf -> setc [label="  contains"];
+  setc -> po   [style=dotted, arrowhead=empty];
+  setc -> so   [style=dotted, arrowhead=empty];
+  setc -> svo  [style=dotted, arrowhead=empty, label="  writes to"];
+  po  -> wo    [label="  falls back to"];
+  wo  -> gwo   [label="  falls back to"];
+  so  -> gso   [label="  falls back to"];
+  { rank=same; po; so; svo; }
+
+}

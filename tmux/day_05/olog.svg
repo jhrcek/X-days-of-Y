@@ -1,0 +1,108 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="413pt" height="359pt"
+ viewBox="0.00 0.00 413.00 359.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 355.3)">
+<title>olog</title>
+<!-- conf -->
+<g id="node1" class="node">
+<title>conf</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M288.61,-351.3C288.61,-351.3 154.62,-351.3 154.62,-351.3 148.62,-351.3 142.62,-345.3 142.62,-339.3 142.62,-339.3 142.62,-323.34 142.62,-323.34 142.62,-317.34 148.62,-311.34 154.62,-311.34 154.62,-311.34 288.61,-311.34 288.61,-311.34 294.61,-311.34 300.61,-317.34 300.61,-323.34 300.61,-323.34 300.61,-339.3 300.61,-339.3 300.61,-345.3 294.61,-351.3 288.61,-351.3"/>
+<text xml:space="preserve" text-anchor="middle" x="221.62" y="-333.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">~/.tmux.conf</text>
+<text xml:space="preserve" text-anchor="middle" x="221.62" y="-320.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a list of tmux commands)</text>
+</g>
+<!-- setc -->
+<g id="node2" class="node">
+<title>setc</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M283.54,-270.09C283.54,-270.09 159.69,-270.09 159.69,-270.09 155.28,-270.09 150.88,-265.68 150.88,-261.27 150.88,-261.27 150.88,-252.45 150.88,-252.45 150.88,-248.04 155.28,-243.63 159.69,-243.63 159.69,-243.63 283.54,-243.63 283.54,-243.63 287.95,-243.63 292.36,-248.04 292.36,-252.45 292.36,-252.45 292.36,-261.27 292.36,-261.27 292.36,-265.68 287.94,-270.09 283.54,-270.09"/>
+<text xml:space="preserve" text-anchor="middle" x="221.62" y="-252.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a set&#45;option command</text>
+</g>
+<!-- conf&#45;&gt;setc -->
+<g id="edge1" class="edge">
+<title>conf&#45;&gt;setc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M221.62,-310.9C221.62,-301.02 221.62,-288.99 221.62,-278.88"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="224.14,-279.05 221.62,-271.85 219.1,-279.05 224.14,-279.05"/>
+<text xml:space="preserve" text-anchor="middle" x="242.24" y="-287.32" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- po -->
+<g id="node3" class="node">
+<title>po</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M118.98,-202.38C118.98,-202.38 50.25,-202.38 50.25,-202.38 44.25,-202.38 38.25,-196.38 38.25,-190.38 38.25,-190.38 38.25,-174.42 38.25,-174.42 38.25,-168.42 44.25,-162.42 50.25,-162.42 50.25,-162.42 118.98,-162.42 118.98,-162.42 124.98,-162.42 130.98,-168.42 130.98,-174.42 130.98,-174.42 130.98,-190.38 130.98,-190.38 130.98,-196.38 124.98,-202.38 118.98,-202.38"/>
+<text xml:space="preserve" text-anchor="middle" x="84.62" y="-184.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">pane options</text>
+<text xml:space="preserve" text-anchor="middle" x="84.62" y="-171.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(set &#45;p)</text>
+</g>
+<!-- setc&#45;&gt;po -->
+<g id="edge2" class="edge">
+<title>setc&#45;&gt;po</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="1,5" d="M197.75,-243.24C178.81,-233.22 151.8,-218.94 128.93,-206.84"/>
+<polygon fill="none" stroke="#a09587" stroke-width="1.05" points="130.29,-204.71 122.75,-203.57 127.94,-209.16 130.29,-204.71"/>
+</g>
+<!-- so -->
+<g id="node6" class="node">
+<title>so</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M262.73,-202.38C262.73,-202.38 180.5,-202.38 180.5,-202.38 174.5,-202.38 168.5,-196.38 168.5,-190.38 168.5,-190.38 168.5,-174.42 168.5,-174.42 168.5,-168.42 174.5,-162.42 180.5,-162.42 180.5,-162.42 262.73,-162.42 262.73,-162.42 268.73,-162.42 274.73,-168.42 274.73,-174.42 274.73,-174.42 274.73,-190.38 274.73,-190.38 274.73,-196.38 268.73,-202.38 262.73,-202.38"/>
+<text xml:space="preserve" text-anchor="middle" x="221.62" y="-184.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">session options</text>
+<text xml:space="preserve" text-anchor="middle" x="221.62" y="-171.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(set)</text>
+</g>
+<!-- setc&#45;&gt;so -->
+<g id="edge3" class="edge">
+<title>setc&#45;&gt;so</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="1,5" d="M221.62,-243.24C221.62,-234.41 221.62,-222.26 221.62,-211.22"/>
+<polygon fill="none" stroke="#a09587" stroke-width="1.05" points="224.14,-211.48 221.62,-204.28 219.1,-211.48 224.14,-211.48"/>
+</g>
+<!-- svo -->
+<g id="node8" class="node">
+<title>svo</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M392.98,-202.38C392.98,-202.38 318.25,-202.38 318.25,-202.38 312.25,-202.38 306.25,-196.38 306.25,-190.38 306.25,-190.38 306.25,-174.42 306.25,-174.42 306.25,-168.42 312.25,-162.42 318.25,-162.42 318.25,-162.42 392.98,-162.42 392.98,-162.42 398.98,-162.42 404.98,-168.42 404.98,-174.42 404.98,-174.42 404.98,-190.38 404.98,-190.38 404.98,-196.38 398.98,-202.38 392.98,-202.38"/>
+<text xml:space="preserve" text-anchor="middle" x="355.62" y="-184.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">server options</text>
+<text xml:space="preserve" text-anchor="middle" x="355.62" y="-171.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(set &#45;s)</text>
+</g>
+<!-- setc&#45;&gt;svo -->
+<g id="edge4" class="edge">
+<title>setc&#45;&gt;svo</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="1,5" d="M244.96,-243.24C263.4,-233.26 289.67,-219.06 311.98,-207"/>
+<polygon fill="none" stroke="#a09587" stroke-width="1.05" points="313.16,-209.22 318.29,-203.58 310.76,-204.79 313.16,-209.22"/>
+<text xml:space="preserve" text-anchor="middle" x="313.63" y="-219.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;writes to</text>
+</g>
+<!-- wo -->
+<g id="node4" class="node">
+<title>wo</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M109.98,-121.17C109.98,-121.17 29.25,-121.17 29.25,-121.17 23.25,-121.17 17.25,-115.17 17.25,-109.17 17.25,-109.17 17.25,-93.21 17.25,-93.21 17.25,-87.21 23.25,-81.21 29.25,-81.21 29.25,-81.21 109.98,-81.21 109.98,-81.21 115.98,-81.21 121.98,-87.21 121.98,-93.21 121.98,-93.21 121.98,-109.17 121.98,-109.17 121.98,-115.17 115.98,-121.17 109.98,-121.17"/>
+<text xml:space="preserve" text-anchor="middle" x="69.62" y="-103.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">window options</text>
+<text xml:space="preserve" text-anchor="middle" x="69.62" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(set &#45;w)</text>
+</g>
+<!-- po&#45;&gt;wo -->
+<g id="edge5" class="edge">
+<title>po&#45;&gt;wo</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M80.98,-162.23C79.15,-152.57 76.9,-140.68 74.89,-130.03"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="77.38,-129.63 73.56,-123.02 72.42,-130.57 77.38,-129.63"/>
+<text xml:space="preserve" text-anchor="middle" x="106.51" y="-138.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;falls back to</text>
+</g>
+<!-- gwo -->
+<g id="node5" class="node">
+<title>gwo</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M127.23,-39.96C127.23,-39.96 12,-39.96 12,-39.96 6,-39.96 0,-33.96 0,-27.96 0,-27.96 0,-12 0,-12 0,-6 6,0 12,0 12,0 127.23,0 127.23,0 133.23,0 139.23,-6 139.23,-12 139.23,-12 139.23,-27.96 139.23,-27.96 139.23,-33.96 133.23,-39.96 127.23,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="69.62" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">global window options</text>
+<text xml:space="preserve" text-anchor="middle" x="69.62" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(set &#45;wg)</text>
+</g>
+<!-- wo&#45;&gt;gwo -->
+<g id="edge6" class="edge">
+<title>wo&#45;&gt;gwo</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M69.62,-81.02C69.62,-71.36 69.62,-59.47 69.62,-48.82"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="72.14,-49.04 69.62,-41.84 67.1,-49.04 72.14,-49.04"/>
+<text xml:space="preserve" text-anchor="middle" x="98.12" y="-57.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;falls back to</text>
+</g>
+<!-- gso -->
+<g id="node7" class="node">
+<title>gso</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M282.98,-121.17C282.98,-121.17 166.25,-121.17 166.25,-121.17 160.25,-121.17 154.25,-115.17 154.25,-109.17 154.25,-109.17 154.25,-93.21 154.25,-93.21 154.25,-87.21 160.25,-81.21 166.25,-81.21 166.25,-81.21 282.98,-81.21 282.98,-81.21 288.98,-81.21 294.98,-87.21 294.98,-93.21 294.98,-93.21 294.98,-109.17 294.98,-109.17 294.98,-115.17 288.98,-121.17 282.98,-121.17"/>
+<text xml:space="preserve" text-anchor="middle" x="224.62" y="-103.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">global session options</text>
+<text xml:space="preserve" text-anchor="middle" x="224.62" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(set &#45;g)</text>
+</g>
+<!-- so&#45;&gt;gso -->
+<g id="edge7" class="edge">
+<title>so&#45;&gt;gso</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M222.34,-162.23C222.71,-152.57 223.16,-140.68 223.56,-130.03"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="226.07,-130.34 223.82,-123.05 221.03,-130.15 226.07,-130.34"/>
+<text xml:space="preserve" text-anchor="middle" x="251.79" y="-138.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;falls back to</text>
+</g>
+</g>
+</svg>

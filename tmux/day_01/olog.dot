@@ -1,0 +1,34 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.42;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  emu   [label="a terminal emulator", fillcolor="#f4efe6"];
+  cli   [label="a tmux client", fillcolor="#f4efe6"];
+  srv   [label="the tmux server", fillcolor="#e7f0ec", color="#2f7a63"];
+  sess  [label="a session", fillcolor="#e7f0ec", color="#2f7a63"];
+  win   [label="a window"];
+  pane  [label="a pane"];
+  pty   [label="a pseudo-terminal"];
+  proc  [label="a process\n(your shell)"];
+
+  emu  -> cli  [label="  hosts"];
+  cli  -> sess [label="  is attached to"];
+  srv  -> sess [label="  owns"];
+  sess -> win  [label="  contains"];
+  sess -> win  [label="  has as current  ", style=dashed, constraint=false];
+  win  -> pane [label="  is divided into"];
+  win  -> pane [label="  has as active  ", style=dashed, constraint=false];
+  pane -> pty  [label="  is"];
+  pty  -> proc [label="  runs"];
+
+  { rank=same; emu; srv; }
+
+}

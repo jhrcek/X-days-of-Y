@@ -1,0 +1,34 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.6;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  press [label="a key press", fillcolor="#f4efe6"];
+  tbl   [label="the client's\ncurrent key table", fillcolor="#e7f0ec", color="#2f7a63"];
+  root  [label="root\n(no prefix)"];
+  pfx   [label="prefix\n(after C-b)"];
+  copy  [label="copy-mode-vi\ncopy-mode"];
+  mine  [label="a table of\nyour own", fillcolor="#f8efdf", color="#d8b784"];
+  bind  [label="a binding", fillcolor="#e7f0ec", color="#2f7a63"];
+  cmd   [label="a tmux command", fillcolor="#e7f0ec", color="#2f7a63"];
+  pane  [label="the program\nin the pane", fillcolor="#f4efe6"];
+
+  press -> tbl  [label="  is looked up in"];
+  tbl -> root; tbl -> pfx; tbl -> copy; tbl -> mine;
+  root -> bind  [label="  may contain"];
+  pfx  -> bind;
+  copy -> bind;
+  mine -> bind;
+  bind -> cmd   [label="  runs"];
+  cmd  -> tbl   [label="  switch-client -T\l  changes\l", style=dashed];
+  press -> pane [label="  otherwise reaches", style=dashed];
+  { rank=same; root; pfx; copy; mine; }
+
+}

@@ -1,0 +1,50 @@
+cabal-version:      3.0
+name:               tmux-course
+version:            1.0.0
+synopsis:           Generates the "14 Days of tmux" course as static HTML
+description:
+  Content for the course lives in the @Course.Day.D01@ .. @Course.Day.D14@
+  modules as Lucid markup. @cabal run tmux-course@ renders every lesson to
+  @day_NN/index.html@, renders each day's olog to SVG with graphviz, and
+  assembles @index.html@, @reference.html@ and @tmux.conf@.
+
+author:             built with Claude
+build-type:         Simple
+
+executable tmux-course
+    main-is:          Main.hs
+    hs-source-dirs:   app, src
+    other-modules:
+        Course.Types
+        Course.Markup
+        Course.Render
+        Course.Days
+        Course.Day.D01
+        Course.Day.D02
+        Course.Day.D03
+        Course.Day.D04
+        Course.Day.D05
+        Course.Day.D06
+        Course.Day.D07
+        Course.Day.D08
+        Course.Day.D09
+        Course.Day.D10
+        Course.Day.D11
+        Course.Day.D12
+        Course.Day.D13
+        Course.Day.D14
+
+    build-depends:
+        base       >=4.17 && <5,
+        text       >=2.0,
+        lucid      >=2.11,
+        directory  >=1.3,
+        filepath   >=1.4,
+        process    >=1.6
+
+    default-language: GHC2021
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+
+    ghc-options: -Wall -Wno-missing-signatures

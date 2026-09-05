@@ -1,0 +1,77 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="754pt" height="87pt"
+ viewBox="0.00 0.00 754.00 87.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 83.46)">
+<title>olog</title>
+<!-- pane -->
+<g id="node1" class="node">
+<title>pane</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M314.39,-52.46C314.39,-52.46 270.8,-52.46 270.8,-52.46 266.39,-52.46 261.98,-48.05 261.98,-43.64 261.98,-43.64 261.98,-34.82 261.98,-34.82 261.98,-30.41 266.39,-26 270.8,-26 270.8,-26 314.39,-26 314.39,-26 318.8,-26 323.21,-30.41 323.21,-34.82 323.21,-34.82 323.21,-43.64 323.21,-43.64 323.21,-48.05 318.8,-52.46 314.39,-52.46"/>
+<text xml:space="preserve" text-anchor="middle" x="292.6" y="-35.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pane</text>
+</g>
+<!-- win -->
+<g id="node2" class="node">
+<title>win</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M502.87,-52.46C502.87,-52.46 447.28,-52.46 447.28,-52.46 442.87,-52.46 438.46,-48.05 438.46,-43.64 438.46,-43.64 438.46,-34.82 438.46,-34.82 438.46,-30.41 442.87,-26 447.28,-26 447.28,-26 502.87,-26 502.87,-26 507.28,-26 511.69,-30.41 511.69,-34.82 511.69,-34.82 511.69,-43.64 511.69,-43.64 511.69,-48.05 507.28,-52.46 502.87,-52.46"/>
+<text xml:space="preserve" text-anchor="middle" x="475.08" y="-35.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a window</text>
+</g>
+<!-- pane&#45;&gt;win -->
+<g id="edge1" class="edge">
+<title>pane&#45;&gt;win</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M323.4,-39.23C352.26,-39.23 396.38,-39.23 429.43,-39.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="429.22,-41.75 436.42,-39.23 429.22,-36.71 429.22,-41.75"/>
+<text xml:space="preserve" text-anchor="start" x="354.59" y="-52.71" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;join&#45;pane</text>
+<text xml:space="preserve" text-anchor="start" x="354.59" y="-41.46" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;moves into</text>
+</g>
+<!-- win&#45;&gt;pane -->
+<g id="edge2" class="edge">
+<title>win&#45;&gt;pane</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M448.61,-25.46C436.51,-19.68 421.63,-13.63 407.46,-10.73 384.28,-5.98 377.31,-5.57 354.21,-10.73 344.12,-12.98 333.72,-17.11 324.45,-21.54"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="323.35,-19.27 318.05,-24.76 325.61,-23.78 323.35,-19.27"/>
+<text xml:space="preserve" text-anchor="start" x="354.21" y="-24.21" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;break&#45;pane</text>
+<text xml:space="preserve" text-anchor="start" x="354.21" y="-12.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;extracts</text>
+</g>
+<!-- sess -->
+<g id="node3" class="node">
+<title>sess</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M720.23,-79.46C720.23,-79.46 663.14,-79.46 663.14,-79.46 658.73,-79.46 654.32,-75.05 654.32,-70.64 654.32,-70.64 654.32,-61.82 654.32,-61.82 654.32,-57.41 658.73,-53 663.14,-53 663.14,-53 720.23,-53 720.23,-53 724.64,-53 729.05,-57.41 729.05,-61.82 729.05,-61.82 729.05,-70.64 729.05,-70.64 729.05,-75.05 724.64,-79.46 720.23,-79.46"/>
+<text xml:space="preserve" text-anchor="middle" x="691.68" y="-62.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a session</text>
+</g>
+<!-- win&#45;&gt;sess -->
+<g id="edge3" class="edge">
+<title>win&#45;&gt;sess</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M512,-43.75C548.6,-48.35 605.5,-55.51 645.22,-60.51"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="644.89,-63.01 652.35,-61.41 645.52,-58.01 644.89,-63.01"/>
+<text xml:space="preserve" text-anchor="start" x="542.69" y="-68.62" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;move&#45;window</text>
+<text xml:space="preserve" text-anchor="start" x="542.69" y="-57.37" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;moves into</text>
+</g>
+<!-- s2 -->
+<g id="node4" class="node">
+<title>s2</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M737.1,-26.46C737.1,-26.46 646.26,-26.46 646.26,-26.46 641.85,-26.46 637.44,-22.05 637.44,-17.64 637.44,-17.64 637.44,-8.82 637.44,-8.82 637.44,-4.41 641.85,0 646.26,0 646.26,0 737.1,0 737.1,0 741.51,0 745.92,-4.41 745.92,-8.82 745.92,-8.82 745.92,-17.64 745.92,-17.64 745.92,-22.05 741.51,-26.46 737.1,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="691.68" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">another session</text>
+</g>
+<!-- win&#45;&gt;s2 -->
+<g id="edge4" class="edge">
+<title>win&#45;&gt;s2</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M503.56,-25.58C515.31,-20.47 529.37,-15.28 542.69,-12.73 570.58,-7.39 601.98,-6.75 628.65,-7.75"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="628.24,-10.26 635.55,-8.06 628.47,-5.22 628.24,-10.26"/>
+<text xml:space="preserve" text-anchor="start" x="543.07" y="-26.21" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;link&#45;window</text>
+<text xml:space="preserve" text-anchor="start" x="543.07" y="-14.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;also shows in</text>
+</g>
+<!-- mark -->
+<g id="node5" class="node">
+<title>mark</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M101.73,-59.21C101.73,-59.21 12,-59.21 12,-59.21 6,-59.21 0,-53.21 0,-47.21 0,-47.21 0,-31.25 0,-31.25 0,-25.25 6,-19.25 12,-19.25 12,-19.25 101.73,-19.25 101.73,-19.25 107.73,-19.25 113.73,-25.25 113.73,-31.25 113.73,-31.25 113.73,-47.21 113.73,-47.21 113.73,-53.21 107.73,-59.21 101.73,-59.21"/>
+<text xml:space="preserve" text-anchor="middle" x="56.87" y="-41.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the marked pane</text>
+<text xml:space="preserve" text-anchor="middle" x="56.87" y="-28.31" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(C&#45;b m, target ~)</text>
+</g>
+<!-- mark&#45;&gt;pane -->
+<g id="edge5" class="edge">
+<title>mark&#45;&gt;pane</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M114.15,-39.23C157.04,-39.23 214.98,-39.23 252.81,-39.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="252.71,-41.75 259.91,-39.23 252.71,-36.71 252.71,-41.75"/>
+<text xml:space="preserve" text-anchor="start" x="144.73" y="-52.71" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is the default &#45;s for</text>
+<text xml:space="preserve" text-anchor="start" x="144.73" y="-41.46" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;join / swap</text>
+</g>
+</g>
+</svg>

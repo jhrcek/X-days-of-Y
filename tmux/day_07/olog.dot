@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.22;
+  ranksep=0.75;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  tgt   [label="a target string\n'api:build.2'", fillcolor="#e7f0ec", color="#2f7a63"];
+  sp    [label="the session part\n'api'"];
+  wp    [label="the window part\n'build'"];
+  pp    [label="the pane part\n'2'"];
+  nm    [label="a name\n(exact, then prefix,\nthen glob)", fillcolor="#f4efe6"];
+  ix    [label="an index\n(0, 1, 2 …)", fillcolor="#f4efe6"];
+  tok   [label="a special token\n^ $ ! + - @\n{end} {last} {up-of} …", fillcolor="#f4efe6"];
+  id    [label="an id\n$1  @4  %7", fillcolor="#f8efdf", color="#d8b784"];
+  obj   [label="a session,\nwindow or pane", fillcolor="#e7f0ec", color="#2f7a63"];
+
+  tgt -> sp [label="  before ':'"];
+  tgt -> wp [label="  between ':' and '.'"];
+  tgt -> pp [label="  after '.'"];
+  sp -> nm; sp -> ix; sp -> id;
+  wp -> nm; wp -> ix; wp -> tok; wp -> id;
+  pp -> ix; pp -> tok; pp -> id;
+  nm  -> obj [label="  resolves to"];
+  ix  -> obj;
+  tok -> obj;
+  id  -> obj [label="  always resolves to\l  the same one\l"];
+  { rank=same; nm; ix; tok; id; }
+
+}

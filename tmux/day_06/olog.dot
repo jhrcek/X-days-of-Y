@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.7;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  t1   [label="a terminal\n(ssh from home)", fillcolor="#f4efe6"];
+  t2   [label="a terminal\n(the office desk)", fillcolor="#f4efe6"];
+  c1   [label="a client"];
+  c2   [label="a client"];
+  srv  [label="the tmux server", fillcolor="#e7f0ec", color="#2f7a63"];
+  s1   [label="session 'api'\n(attached ×2)", fillcolor="#e7f0ec", color="#2f7a63"];
+  s2   [label="session 'infra'\n(detached)", fillcolor="#f8efdf", color="#d8b784"];
+  s3   [label="session 'notes'\n(detached)", fillcolor="#f8efdf", color="#d8b784"];
+
+  t1 -> c1 [label="  hosts"];
+  t2 -> c2 [label="  hosts"];
+  c1 -> s1 [label="  is attached to"];
+  c2 -> s1 [label="  is attached to"];
+  srv -> s1 [label="  owns"];
+  srv -> s2 [label="  owns"];
+  srv -> s3 [label="  owns"];
+  c1 -> s2 [label="  switch-client\l  moves to\l", style=dashed, constraint=false];
+  { rank=same; s1; s2; s3; }
+
+}

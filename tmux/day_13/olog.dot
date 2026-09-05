@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.6;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  ev   [label="an event\n(a pane exits, a client\nattaches, a bell rings)", fillcolor="#f4efe6"];
+  hook [label="a hook\n(an array of commands)", fillcolor="#f8efdf", color="#d8b784"];
+  key  [label="a key press", fillcolor="#f4efe6"];
+  pop  [label="a popup\n(display-popup)", fillcolor="#e7f0ec", color="#2f7a63"];
+  menu [label="a menu\n(display-menu)", fillcolor="#e7f0ec", color="#2f7a63"];
+  pr   [label="a prompt\n(command-prompt)", fillcolor="#e7f0ec", color="#2f7a63"];
+  q    [label="the command queue", fillcolor="#e7f0ec", color="#2f7a63"];
+  eff  [label="a change to\nthe server's state", fillcolor="#f4efe6"];
+
+  ev   -> hook [label="  fires"];
+  hook -> q    [label="  appends to"];
+  key  -> pop; key -> menu; key -> pr;
+  key  -> q    [label="  appends to"];
+  pop  -> q    [label="  its command\l  runs through\l"];
+  menu -> q;
+  pr   -> q    [label="  %% substituted,\l  then\l"];
+  q    -> eff  [label="  produces"];
+  eff  -> ev   [label="  which is itself\l  an event\l", style=dashed, constraint=false];
+  { rank=same; pop; menu; pr; hook; }
+
+}

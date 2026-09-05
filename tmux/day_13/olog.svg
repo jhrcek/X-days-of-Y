@@ -1,0 +1,137 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="815pt" height="336pt"
+ viewBox="0.00 0.00 815.00 336.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 332.31)">
+<title>olog</title>
+<!-- ev -->
+<g id="node1" class="node">
+<title>ev</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M123.48,-328.31C123.48,-328.31 12,-328.31 12,-328.31 6,-328.31 0,-322.31 0,-316.31 0,-316.31 0,-286.85 0,-286.85 0,-280.85 6,-274.85 12,-274.85 12,-274.85 123.48,-274.85 123.48,-274.85 129.48,-274.85 135.48,-280.85 135.48,-286.85 135.48,-286.85 135.48,-316.31 135.48,-316.31 135.48,-322.31 129.48,-328.31 123.48,-328.31"/>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-310.91" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an event</text>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-297.41" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a pane exits, a client</text>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-283.91" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">attaches, a bell rings)</text>
+</g>
+<!-- hook -->
+<g id="node2" class="node">
+<title>hook</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M341.21,-321.56C341.21,-321.56 215.48,-321.56 215.48,-321.56 209.48,-321.56 203.48,-315.56 203.48,-309.56 203.48,-309.56 203.48,-293.6 203.48,-293.6 203.48,-287.6 209.48,-281.6 215.48,-281.6 215.48,-281.6 341.21,-281.6 341.21,-281.6 347.21,-281.6 353.21,-287.6 353.21,-293.6 353.21,-293.6 353.21,-309.56 353.21,-309.56 353.21,-315.56 347.21,-321.56 341.21,-321.56"/>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-304.16" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a hook</text>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-290.66" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(an array of commands)</text>
+</g>
+<!-- ev&#45;&gt;hook -->
+<g id="edge1" class="edge">
+<title>ev&#45;&gt;hook</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M135.89,-301.58C154.57,-301.58 175.07,-301.58 194.53,-301.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="194.3,-304.1 201.5,-301.58 194.3,-299.06 194.3,-304.1"/>
+<text xml:space="preserve" text-anchor="middle" x="169.48" y="-303.81" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;fires</text>
+</g>
+<!-- q -->
+<g id="node7" class="node">
+<title>q</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M596.62,-133.81C596.62,-133.81 481.03,-133.81 481.03,-133.81 476.62,-133.81 472.21,-129.4 472.21,-124.99 472.21,-124.99 472.21,-116.17 472.21,-116.17 472.21,-111.76 476.62,-107.35 481.03,-107.35 481.03,-107.35 596.62,-107.35 596.62,-107.35 601.03,-107.35 605.44,-111.76 605.44,-116.17 605.44,-116.17 605.44,-124.99 605.44,-124.99 605.44,-129.4 601.03,-133.81 596.62,-133.81"/>
+<text xml:space="preserve" text-anchor="middle" x="538.83" y="-116.41" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the command queue</text>
+</g>
+<!-- hook&#45;&gt;q -->
+<g id="edge2" class="edge">
+<title>hook&#45;&gt;q</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M353.57,-298.47C385.71,-294.02 422.27,-284.48 450.21,-264.58 493.35,-233.86 519.29,-174.61 530.78,-142.52"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="533.15,-143.36 533.12,-135.74 528.39,-141.72 533.15,-143.36"/>
+<text xml:space="preserve" text-anchor="middle" x="412.71" y="-296.75" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;appends to</text>
+</g>
+<!-- key -->
+<g id="node3" class="node">
+<title>key</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M101.54,-92.81C101.54,-92.81 33.94,-92.81 33.94,-92.81 29.53,-92.81 25.13,-88.4 25.13,-83.99 25.13,-83.99 25.13,-75.17 25.13,-75.17 25.13,-70.76 29.54,-66.35 33.95,-66.35 33.95,-66.35 101.54,-66.35 101.54,-66.35 105.95,-66.35 110.36,-70.76 110.36,-75.17 110.36,-75.17 110.36,-83.99 110.36,-83.99 110.36,-88.4 105.95,-92.81 101.54,-92.81"/>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-75.41" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a key press</text>
+</g>
+<!-- pop -->
+<g id="node4" class="node">
+<title>pop</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M319.46,-205.56C319.46,-205.56 237.23,-205.56 237.23,-205.56 231.23,-205.56 225.23,-199.56 225.23,-193.56 225.23,-193.56 225.23,-177.6 225.23,-177.6 225.23,-171.6 231.23,-165.6 237.23,-165.6 237.23,-165.6 319.46,-165.6 319.46,-165.6 325.46,-165.6 331.46,-171.6 331.46,-177.6 331.46,-177.6 331.46,-193.56 331.46,-193.56 331.46,-199.56 325.46,-205.56 319.46,-205.56"/>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-188.16" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a popup</text>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-174.66" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(display&#45;popup)</text>
+</g>
+<!-- key&#45;&gt;pop -->
+<g id="edge3" class="edge">
+<title>key&#45;&gt;pop</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M92.79,-93.33C119.52,-108.45 164.11,-133.16 203.48,-152.58 209.64,-155.62 216.13,-158.7 222.62,-161.7"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="221.16,-163.8 228.76,-164.51 223.26,-159.22 221.16,-163.8"/>
+</g>
+<!-- menu -->
+<g id="node5" class="node">
+<title>menu</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M317.59,-140.56C317.59,-140.56 239.11,-140.56 239.11,-140.56 233.11,-140.56 227.11,-134.56 227.11,-128.56 227.11,-128.56 227.11,-112.6 227.11,-112.6 227.11,-106.6 233.11,-100.6 239.11,-100.6 239.11,-100.6 317.59,-100.6 317.59,-100.6 323.59,-100.6 329.59,-106.6 329.59,-112.6 329.59,-112.6 329.59,-128.56 329.59,-128.56 329.59,-134.56 323.59,-140.56 317.59,-140.56"/>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-123.16" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a menu</text>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-109.66" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(display&#45;menu)</text>
+</g>
+<!-- key&#45;&gt;menu -->
+<g id="edge4" class="edge">
+<title>key&#45;&gt;menu</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M110.45,-87.78C141.36,-93.86 183.91,-102.22 218.31,-108.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="217.76,-111.44 225.31,-110.36 218.73,-106.49 217.76,-111.44"/>
+</g>
+<!-- pr -->
+<g id="node6" class="node">
+<title>pr</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M328.84,-75.56C328.84,-75.56 227.86,-75.56 227.86,-75.56 221.86,-75.56 215.86,-69.56 215.86,-63.56 215.86,-63.56 215.86,-47.6 215.86,-47.6 215.86,-41.6 221.86,-35.6 227.86,-35.6 227.86,-35.6 328.84,-35.6 328.84,-35.6 334.84,-35.6 340.84,-41.6 340.84,-47.6 340.84,-47.6 340.84,-63.56 340.84,-63.56 340.84,-69.56 334.84,-75.56 328.84,-75.56"/>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-58.16" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a prompt</text>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-44.66" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(command&#45;prompt)</text>
+</g>
+<!-- key&#45;&gt;pr -->
+<g id="edge5" class="edge">
+<title>key&#45;&gt;pr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M110.45,-74.78C138.07,-71.61 174.97,-67.36 207.05,-63.67"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="207.08,-66.2 213.95,-62.88 206.51,-61.2 207.08,-66.2"/>
+</g>
+<!-- key&#45;&gt;q -->
+<g id="edge6" class="edge">
+<title>key&#45;&gt;q</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M88.6,-65.94C113.93,-49.46 159.71,-22.65 203.48,-12.33 268.25,2.93 288.95,4.95 353.21,-12.33 417.52,-29.63 482.29,-75.78 515.34,-101.89"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="513.46,-103.62 520.65,-106.15 516.61,-99.68 513.46,-103.62"/>
+<text xml:space="preserve" text-anchor="middle" x="278.35" y="-14.56" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;appends to</text>
+</g>
+<!-- pop&#45;&gt;q -->
+<g id="edge7" class="edge">
+<title>pop&#45;&gt;q</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M331.96,-172.35C373.29,-161.96 430.97,-147.45 474.76,-136.44"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="475.14,-138.94 481.51,-134.74 473.91,-134.06 475.14,-138.94"/>
+<text xml:space="preserve" text-anchor="start" x="382.34" y="-174.29" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;its command</text>
+<text xml:space="preserve" text-anchor="start" x="382.34" y="-163.04" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;runs through</text>
+</g>
+<!-- menu&#45;&gt;q -->
+<g id="edge8" class="edge">
+<title>menu&#45;&gt;q</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M330.1,-120.58C368.07,-120.58 420.57,-120.58 463.29,-120.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="463.19,-123.1 470.39,-120.58 463.19,-118.06 463.19,-123.1"/>
+</g>
+<!-- pr&#45;&gt;q -->
+<g id="edge9" class="edge">
+<title>pr&#45;&gt;q</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M341,-67.14C373.66,-73.67 414.32,-82.44 450.21,-92.08 463.39,-95.62 477.51,-99.97 490.49,-104.19"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="489.7,-106.58 497.32,-106.44 491.27,-101.79 489.7,-106.58"/>
+<text xml:space="preserve" text-anchor="start" x="375.21" y="-105.56" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;%% substituted,</text>
+<text xml:space="preserve" text-anchor="start" x="375.21" y="-94.31" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;then</text>
+</g>
+<!-- eff -->
+<g id="node8" class="node">
+<title>eff</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M795.42,-140.56C795.42,-140.56 705.69,-140.56 705.69,-140.56 699.69,-140.56 693.69,-134.56 693.69,-128.56 693.69,-128.56 693.69,-112.6 693.69,-112.6 693.69,-106.6 699.69,-100.6 705.69,-100.6 705.69,-100.6 795.42,-100.6 795.42,-100.6 801.42,-100.6 807.42,-106.6 807.42,-112.6 807.42,-112.6 807.42,-128.56 807.42,-128.56 807.42,-134.56 801.42,-140.56 795.42,-140.56"/>
+<text xml:space="preserve" text-anchor="middle" x="750.56" y="-123.16" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a change to</text>
+<text xml:space="preserve" text-anchor="middle" x="750.56" y="-109.66" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the server&#39;s state</text>
+</g>
+<!-- q&#45;&gt;eff -->
+<g id="edge10" class="edge">
+<title>q&#45;&gt;eff</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M605.9,-120.58C631.03,-120.58 659.62,-120.58 684.65,-120.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="684.55,-123.1 691.75,-120.58 684.55,-118.06 684.55,-123.1"/>
+<text xml:space="preserve" text-anchor="middle" x="649.57" y="-122.81" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;produces</text>
+</g>
+<!-- eff&#45;&gt;ev -->
+<g id="edge11" class="edge">
+<title>eff&#45;&gt;ev</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M707.27,-100.11C647.96,-74.7 539.79,-40.87 472.21,-94.58 438.28,-121.55 479.95,-158.06 450.21,-189.58 428.91,-212.16 249.2,-258.3 144.22,-283.75"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="143.81,-281.26 137.4,-285.4 144.99,-286.16 143.81,-281.26"/>
+<text xml:space="preserve" text-anchor="start" x="381.21" y="-234.67" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;which is itself</text>
+<text xml:space="preserve" text-anchor="start" x="381.21" y="-223.42" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;an event</text>
+</g>
+</g>
+</svg>

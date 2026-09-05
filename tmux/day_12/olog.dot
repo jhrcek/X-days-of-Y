@@ -1,0 +1,26 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.85;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  pane [label="a pane", fillcolor="#e7f0ec", color="#2f7a63"];
+  win  [label="a window", fillcolor="#e7f0ec", color="#2f7a63"];
+  sess [label="a session", fillcolor="#e7f0ec", color="#2f7a63"];
+  s2   [label="another session", fillcolor="#f4efe6"];
+  mark [label="the marked pane\n(C-b m, target ~)", fillcolor="#f8efdf", color="#d8b784"];
+
+  pane -> win  [label="  join-pane\l  moves into\l"];
+  win  -> pane [label="  break-pane\l  extracts\l"];
+  win  -> sess [label="  move-window\l  moves into\l"];
+  win  -> s2   [label="  link-window\l  also shows in\l", style=dashed];
+  mark -> pane [label="  is the default -s for\l  join / swap\l", style=dashed];
+  { rank=same; sess; s2; }
+
+}

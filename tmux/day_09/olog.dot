@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  fmt  [label="a format string\n'#{?a,b,c}'", fillcolor="#e7f0ec", color="#2f7a63"];
+  tgt  [label="a target\n(pane, window,\nsession, client)", fillcolor="#f4efe6"];
+  vars [label="format variables\n#{pane_current_command}\n#{session_name}  #S"];
+  mods [label="modifiers\n?  ==  m  e|  =N  p  t  b  d  s///  E  W:"];
+  out  [label="a string", fillcolor="#e7f0ec", color="#2f7a63"];
+  st   [label="a status line", fillcolor="#f4efe6"];
+  filt [label="a filter\n(-f: keep if non-zero)", fillcolor="#f4efe6"];
+  cond [label="a condition\n(if-shell -F, %if)", fillcolor="#f4efe6"];
+  pr   [label="printed output\n(display -p)", fillcolor="#f4efe6"];
+
+  tgt  -> vars [label="  supplies"];
+  vars -> fmt  [label="  appear in"];
+  mods -> fmt  [label="  transform"];
+  fmt  -> out  [label="  expands to"];
+  out -> st; out -> filt; out -> cond; out -> pr;
+  { rank=same; st; filt; cond; pr; }
+
+}

@@ -1,0 +1,83 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="800pt" height="142pt"
+ viewBox="0.00 0.00 800.00 142.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 137.96)">
+<title>olog</title>
+<!-- cli -->
+<g id="node1" class="node">
+<title>cli</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M109.98,-118.96C109.98,-118.96 12,-118.96 12,-118.96 6,-118.96 0,-112.96 0,-106.96 0,-106.96 0,-91 0,-91 0,-85 6,-79 12,-79 12,-79 109.98,-79 109.98,-79 115.98,-79 121.98,-85 121.98,-91 121.98,-91 121.98,-106.96 121.98,-106.96 121.98,-112.96 115.98,-118.96 109.98,-118.96"/>
+<text xml:space="preserve" text-anchor="middle" x="60.99" y="-101.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the attaching client</text>
+<text xml:space="preserve" text-anchor="middle" x="60.99" y="-88.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a fresh ssh login)</text>
+</g>
+<!-- ue -->
+<g id="node4" class="node">
+<title>ue</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M368.96,-118.96C368.96,-118.96 262.73,-118.96 262.73,-118.96 256.73,-118.96 250.73,-112.96 250.73,-106.96 250.73,-106.96 250.73,-91 250.73,-91 250.73,-85 256.73,-79 262.73,-79 262.73,-79 368.96,-79 368.96,-79 374.96,-79 380.96,-85 380.96,-91 380.96,-91 380.96,-106.96 380.96,-106.96 380.96,-112.96 374.96,-118.96 368.96,-118.96"/>
+<text xml:space="preserve" text-anchor="middle" x="315.85" y="-101.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">update&#45;environment</text>
+<text xml:space="preserve" text-anchor="middle" x="315.85" y="-88.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a list of names)</text>
+</g>
+<!-- cli&#45;&gt;ue -->
+<g id="edge1" class="edge">
+<title>cli&#45;&gt;ue</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M122.23,-98.98C158.09,-98.98 203.83,-98.98 241.74,-98.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="241.41,-101.5 248.61,-98.98 241.41,-96.46 241.41,-101.5"/>
+<text xml:space="preserve" text-anchor="middle" x="186.36" y="-101.2" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;supplies values for</text>
+</g>
+<!-- ge -->
+<g id="node2" class="node">
+<title>ge</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M552.19,-39.96C552.19,-39.96 486.46,-39.96 486.46,-39.96 480.46,-39.96 474.46,-33.96 474.46,-27.96 474.46,-27.96 474.46,-12 474.46,-12 474.46,-6 480.46,0 486.46,0 486.46,0 552.19,0 552.19,0 558.19,0 564.19,-6 564.19,-12 564.19,-12 564.19,-27.96 564.19,-27.96 564.19,-33.96 558.19,-39.96 552.19,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="519.33" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the global</text>
+<text xml:space="preserve" text-anchor="middle" x="519.33" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">environment</text>
+</g>
+<!-- np -->
+<g id="node5" class="node">
+<title>np</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M767.1,-51.21C767.1,-51.21 694.26,-51.21 694.26,-51.21 689.85,-51.21 685.44,-46.8 685.44,-42.39 685.44,-42.39 685.44,-33.57 685.44,-33.57 685.44,-29.16 689.85,-24.75 694.26,-24.75 694.26,-24.75 767.1,-24.75 767.1,-24.75 771.51,-24.75 775.92,-29.16 775.92,-33.57 775.92,-33.57 775.92,-42.39 775.92,-42.39 775.92,-46.8 771.51,-51.21 767.1,-51.21"/>
+<text xml:space="preserve" text-anchor="middle" x="730.68" y="-33.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a NEW pane</text>
+</g>
+<!-- ge&#45;&gt;np -->
+<g id="edge3" class="edge">
+<title>ge&#45;&gt;np</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M564.61,-19.02C571.82,-18.9 579.21,-18.8 586.19,-18.73 613.19,-18.47 620.12,-15.65 646.94,-18.73 656.57,-19.84 666.71,-21.64 676.47,-23.72"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="675.79,-26.15 683.37,-25.26 676.89,-21.23 675.79,-26.15"/>
+<text xml:space="preserve" text-anchor="middle" x="616.57" y="-20.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;merged into</text>
+</g>
+<!-- se -->
+<g id="node3" class="node">
+<title>se</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M552.19,-118.96C552.19,-118.96 486.46,-118.96 486.46,-118.96 480.46,-118.96 474.46,-112.96 474.46,-106.96 474.46,-106.96 474.46,-91 474.46,-91 474.46,-85 480.46,-79 486.46,-79 486.46,-79 552.19,-79 552.19,-79 558.19,-79 564.19,-85 564.19,-91 564.19,-91 564.19,-106.96 564.19,-106.96 564.19,-112.96 558.19,-118.96 552.19,-118.96"/>
+<text xml:space="preserve" text-anchor="middle" x="519.33" y="-101.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the session</text>
+<text xml:space="preserve" text-anchor="middle" x="519.33" y="-88.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">environment</text>
+</g>
+<!-- se&#45;&gt;np -->
+<g id="edge4" class="edge">
+<title>se&#45;&gt;np</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M564.43,-82.65C571.67,-80.14 579.11,-77.66 586.19,-75.48 615.96,-66.3 649.64,-57.42 676.88,-50.61"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="677.2,-53.13 683.58,-48.95 675.98,-48.24 677.2,-53.13"/>
+<text xml:space="preserve" text-anchor="start" x="588.07" y="-88.95" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;merged into</text>
+<text xml:space="preserve" text-anchor="start" x="588.07" y="-77.7" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(and wins)</text>
+</g>
+<!-- op -->
+<g id="node6" class="node">
+<title>op</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M780.42,-133.96C780.42,-133.96 680.94,-133.96 680.94,-133.96 674.94,-133.96 668.94,-127.96 668.94,-121.96 668.94,-121.96 668.94,-106 668.94,-106 668.94,-100 674.94,-94 680.94,-94 680.94,-94 780.42,-94 780.42,-94 786.42,-94 792.42,-100 792.42,-106 792.42,-106 792.42,-121.96 792.42,-121.96 792.42,-127.96 786.42,-133.96 780.42,-133.96"/>
+<text xml:space="preserve" text-anchor="middle" x="730.68" y="-116.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an already&#45;running</text>
+<text xml:space="preserve" text-anchor="middle" x="730.68" y="-103.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">process</text>
+</g>
+<!-- se&#45;&gt;op -->
+<g id="edge5" class="edge">
+<title>se&#45;&gt;op</title>
+<path fill="none" stroke="#c08a8a" stroke-width="1.05" stroke-dasharray="5,2" d="M564.72,-102.16C592.37,-104.14 628.53,-106.73 659.94,-108.98"/>
+<polygon fill="#c08a8a" stroke="#c08a8a" stroke-width="1.05" points="659.72,-111.49 667.08,-109.5 660.08,-106.47 659.72,-111.49"/>
+<text xml:space="preserve" text-anchor="middle" x="616.57" y="-110.05" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#a2444a"> &#160;cannot reach</text>
+</g>
+<!-- ue&#45;&gt;se -->
+<g id="edge2" class="edge">
+<title>ue&#45;&gt;se</title>
+<path fill="none" stroke="#a09587" stroke-width="2" d="M381.43,-98.98C408.03,-98.98 438.52,-98.98 463.96,-98.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="2" points="463.93,-101.5 471.13,-98.98 463.93,-96.46 463.93,-101.5"/>
+<text xml:space="preserve" text-anchor="middle" x="427.71" y="-101.2" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;writes into</text>
+</g>
+</g>
+</svg>

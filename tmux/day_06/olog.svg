@@ -1,0 +1,116 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="517pt" height="280pt"
+ viewBox="0.00 0.00 517.00 280.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 275.96)">
+<title>olog</title>
+<!-- t1 -->
+<g id="node1" class="node">
+<title>t1</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M97.98,-271.96C97.98,-271.96 12,-271.96 12,-271.96 6,-271.96 0,-265.96 0,-259.96 0,-259.96 0,-244 0,-244 0,-238 6,-232 12,-232 12,-232 97.98,-232 97.98,-232 103.98,-232 109.98,-238 109.98,-244 109.98,-244 109.98,-259.96 109.98,-259.96 109.98,-265.96 103.98,-271.96 97.98,-271.96"/>
+<text xml:space="preserve" text-anchor="middle" x="54.99" y="-254.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a terminal</text>
+<text xml:space="preserve" text-anchor="middle" x="54.99" y="-241.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(ssh from home)</text>
+</g>
+<!-- c1 -->
+<g id="node3" class="node">
+<title>c1</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M263.02,-265.21C263.02,-265.21 219.43,-265.21 219.43,-265.21 215.02,-265.21 210.61,-260.8 210.61,-256.39 210.61,-256.39 210.61,-247.57 210.61,-247.57 210.61,-243.16 215.02,-238.75 219.43,-238.75 219.43,-238.75 263.02,-238.75 263.02,-238.75 267.43,-238.75 271.84,-243.16 271.84,-247.57 271.84,-247.57 271.84,-256.39 271.84,-256.39 271.84,-260.8 267.43,-265.21 263.02,-265.21"/>
+<text xml:space="preserve" text-anchor="middle" x="241.22" y="-247.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a client</text>
+</g>
+<!-- t1&#45;&gt;c1 -->
+<g id="edge1" class="edge">
+<title>t1&#45;&gt;c1</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M110.27,-251.98C139.54,-251.98 174.99,-251.98 201.46,-251.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="201.29,-254.5 208.49,-251.98 201.29,-249.46 201.29,-254.5"/>
+<text xml:space="preserve" text-anchor="middle" x="149.23" y="-254.21" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;hosts</text>
+</g>
+<!-- t2 -->
+<g id="node2" class="node">
+<title>t2</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M96.86,-177.96C96.86,-177.96 13.12,-177.96 13.12,-177.96 7.12,-177.96 1.13,-171.96 1.13,-165.96 1.13,-165.96 1.13,-150 1.13,-150 1.13,-144 7.13,-138 13.13,-138 13.13,-138 96.86,-138 96.86,-138 102.86,-138 108.86,-144 108.86,-150 108.86,-150 108.86,-165.96 108.86,-165.96 108.86,-171.96 102.86,-177.96 96.86,-177.96"/>
+<text xml:space="preserve" text-anchor="middle" x="54.99" y="-160.55" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a terminal</text>
+<text xml:space="preserve" text-anchor="middle" x="54.99" y="-147.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(the office desk)</text>
+</g>
+<!-- c2 -->
+<g id="node4" class="node">
+<title>c2</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M263.02,-171.21C263.02,-171.21 219.43,-171.21 219.43,-171.21 215.02,-171.21 210.61,-166.8 210.61,-162.39 210.61,-162.39 210.61,-153.57 210.61,-153.57 210.61,-149.16 215.02,-144.75 219.43,-144.75 219.43,-144.75 263.02,-144.75 263.02,-144.75 267.43,-144.75 271.84,-149.16 271.84,-153.57 271.84,-153.57 271.84,-162.39 271.84,-162.39 271.84,-166.8 267.43,-171.21 263.02,-171.21"/>
+<text xml:space="preserve" text-anchor="middle" x="241.22" y="-153.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a client</text>
+</g>
+<!-- t2&#45;&gt;c2 -->
+<g id="edge2" class="edge">
+<title>t2&#45;&gt;c2</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M109.28,-157.98C138.78,-157.98 174.79,-157.98 201.57,-157.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="201.49,-160.5 208.69,-157.98 201.49,-155.46 201.49,-160.5"/>
+<text xml:space="preserve" text-anchor="middle" x="149.23" y="-160.2" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;hosts</text>
+</g>
+<!-- s1 -->
+<g id="node6" class="node">
+<title>s1</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M493.69,-177.96C493.69,-177.96 423.46,-177.96 423.46,-177.96 417.46,-177.96 411.46,-171.96 411.46,-165.96 411.46,-165.96 411.46,-150 411.46,-150 411.46,-144 417.46,-138 423.46,-138 423.46,-138 493.69,-138 493.69,-138 499.69,-138 505.69,-144 505.69,-150 505.69,-150 505.69,-165.96 505.69,-165.96 505.69,-171.96 499.69,-177.96 493.69,-177.96"/>
+<text xml:space="preserve" text-anchor="middle" x="458.58" y="-160.55" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">session &#39;api&#39;</text>
+<text xml:space="preserve" text-anchor="middle" x="458.58" y="-147.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(attached ×2)</text>
+</g>
+<!-- c1&#45;&gt;s1 -->
+<g id="edge3" class="edge">
+<title>c1&#45;&gt;s1</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M272.16,-250.21C301.62,-247.47 347.21,-240.53 382.71,-222.98 401.84,-213.52 420.01,-197.97 433.65,-184.45"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="435.22,-186.45 438.47,-179.55 431.63,-182.92 435.22,-186.45"/>
+<text xml:space="preserve" text-anchor="middle" x="350.84" y="-245.54" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is attached to</text>
+</g>
+<!-- s2 -->
+<g id="node7" class="node">
+<title>s2</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M494.07,-104.96C494.07,-104.96 423.09,-104.96 423.09,-104.96 417.09,-104.96 411.09,-98.96 411.09,-92.96 411.09,-92.96 411.09,-77 411.09,-77 411.09,-71 417.09,-65 423.09,-65 423.09,-65 494.07,-65 494.07,-65 500.07,-65 506.07,-71 506.07,-77 506.07,-77 506.07,-92.96 506.07,-92.96 506.07,-98.96 500.07,-104.96 494.07,-104.96"/>
+<text xml:space="preserve" text-anchor="middle" x="458.58" y="-87.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">session &#39;infra&#39;</text>
+<text xml:space="preserve" text-anchor="middle" x="458.58" y="-74.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(detached)</text>
+</g>
+<!-- c1&#45;&gt;s2 -->
+<g id="edge8" class="edge">
+<title>c1&#45;&gt;s2</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M257.8,-238.26C272.71,-225.65 296.23,-207.04 318.96,-194.48 345.53,-179.8 359.7,-189.78 382.71,-169.98 399.76,-155.31 393.23,-143.19 407.71,-125.98 412.07,-120.8 417.16,-115.77 422.38,-111.12"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="423.97,-113.08 427.81,-106.48 420.7,-109.24 423.97,-113.08"/>
+<text xml:space="preserve" text-anchor="start" x="321.96" y="-207.95" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;switch&#45;client</text>
+<text xml:space="preserve" text-anchor="start" x="321.96" y="-196.7" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;moves to</text>
+</g>
+<!-- c2&#45;&gt;s1 -->
+<g id="edge4" class="edge">
+<title>c2&#45;&gt;s1</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M272.1,-157.38C286.3,-157.12 303.5,-156.86 318.96,-156.73 347.29,-156.5 354.38,-156.49 382.71,-156.73 389.2,-156.78 396,-156.86 402.76,-156.96"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="402.42,-159.47 409.66,-157.06 402.5,-154.44 402.42,-159.47"/>
+<text xml:space="preserve" text-anchor="middle" x="350.84" y="-158.95" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is attached to</text>
+</g>
+<!-- srv -->
+<g id="node5" class="node">
+<title>srv</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M285.14,-89.21C285.14,-89.21 197.3,-89.21 197.3,-89.21 192.89,-89.21 188.48,-84.8 188.48,-80.39 188.48,-80.39 188.48,-71.57 188.48,-71.57 188.48,-67.16 192.89,-62.75 197.3,-62.75 197.3,-62.75 285.14,-62.75 285.14,-62.75 289.55,-62.75 293.96,-67.16 293.96,-71.57 293.96,-71.57 293.96,-80.39 293.96,-80.39 293.96,-84.8 289.55,-89.21 285.14,-89.21"/>
+<text xml:space="preserve" text-anchor="middle" x="241.22" y="-71.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the tmux server</text>
+</g>
+<!-- srv&#45;&gt;s1 -->
+<g id="edge5" class="edge">
+<title>srv&#45;&gt;s1</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M278.27,-89.7C312.36,-102.69 363.99,-122.35 403.11,-137.24"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="402.14,-139.57 409.77,-139.78 403.94,-134.86 402.14,-139.57"/>
+<text xml:space="preserve" text-anchor="middle" x="350.84" y="-131.34" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;owns</text>
+</g>
+<!-- srv&#45;&gt;s2 -->
+<g id="edge6" class="edge">
+<title>srv&#45;&gt;s2</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M294.32,-73.61C320.81,-72.89 353.51,-72.74 382.71,-74.73 388.92,-75.15 395.4,-75.77 401.83,-76.5"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="401.52,-79 408.97,-77.36 402.13,-73.99 401.52,-79"/>
+<text xml:space="preserve" text-anchor="middle" x="350.84" y="-76.95" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;owns</text>
+</g>
+<!-- s3 -->
+<g id="node8" class="node">
+<title>s3</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M497.44,-39.96C497.44,-39.96 419.71,-39.96 419.71,-39.96 413.71,-39.96 407.71,-33.96 407.71,-27.96 407.71,-27.96 407.71,-12 407.71,-12 407.71,-6 413.71,0 419.71,0 419.71,0 497.44,0 497.44,0 503.44,0 509.44,-6 509.44,-12 509.44,-12 509.44,-27.96 509.44,-27.96 509.44,-33.96 503.44,-39.96 497.44,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="458.58" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">session &#39;notes&#39;</text>
+<text xml:space="preserve" text-anchor="middle" x="458.58" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(detached)</text>
+</g>
+<!-- srv&#45;&gt;s3 -->
+<g id="edge7" class="edge">
+<title>srv&#45;&gt;s3</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M294.22,-62.22C302.5,-60.04 310.96,-57.82 318.96,-55.73 345.21,-48.88 374.28,-41.37 398.99,-35.01"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="399.3,-37.53 405.65,-33.3 398.05,-32.65 399.3,-37.53"/>
+<text xml:space="preserve" text-anchor="middle" x="350.84" y="-57.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;owns</text>
+</g>
+</g>
+</svg>
