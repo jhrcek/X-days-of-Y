@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X Days of Y</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>▚</text></svg>">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #faf7f2; --card: #fff; --ink: #23201c; --ink-2: #423d36;
+    --muted: #7c7365; --rule: #e6dfd2; --rule-2: #d8cfbe; --accent: #2f7a63;
+    --serif: "Iowan Old Style", Charter, Georgia, "Times New Roman", serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--serif); font-size: 17px; line-height: 1.62;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 5rem 1.5rem 4rem; }
+  .eyebrow {
+    font-family: var(--sans); font-size: .73rem; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 1.2rem;
+  }
+  h1 {
+    font-family: var(--sans); font-weight: 700; letter-spacing: -.035em;
+    font-size: clamp(2.6rem, 9vw, 4.4rem); line-height: .95; margin: 0 0 1.3rem;
+  }
+  h1 em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--muted); }
+  .sub { font-size: 1.12rem; color: var(--ink-2); max-width: 34rem; margin: 0 0 3rem; }
+  h2 {
+    font-family: var(--sans); font-size: .74rem; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); font-weight: 650;
+    margin: 0 0 1.1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--rule);
+  }
+  .card {
+    display: block; text-decoration: none; color: inherit;
+    border: 1px solid var(--rule-2); border-radius: 11px; background: var(--card);
+    padding: 1.2rem 1.35rem; transition: border-color .12s ease, transform .12s ease;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .card h3 {
+    font-family: var(--sans); font-size: 1.25rem; font-weight: 650;
+    letter-spacing: -.015em; margin: 0 0 .35rem;
+  }
+  .card p { margin: 0 0 .8rem; font-size: .95rem; color: var(--ink-2); }
+  code {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: .855em; background: var(--paper); border: 1px solid var(--rule);
+    border-radius: 4px; padding: .08em .34em; white-space: nowrap;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: .3rem; }
+  .tag {
+    font-family: var(--sans); font-size: .64rem; letter-spacing: .04em; color: var(--muted);
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 999px;
+    padding: .16em .55em;
+  }
+  footer {
+    margin-top: 4rem; padding-top: 1.3rem; border-top: 1px solid var(--rule);
+    font-family: var(--sans); font-size: .78rem; color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">learn one thing properly, a day at a time</p>
+  <h1>X Days <em>of</em> Y</h1>
+  <p class="sub">Short courses distilled from primary sources — one manual page, one sitting a
+  day, drills you do in real work rather than exercises you read.</p>
+
+  <h2>Courses</h2>
+  <a class="card" href="tmux/index.html">
+    <h3>14 Days of tmux</h3>
+    <p>From “I know it keeps shells alive over ssh” to key tables, formats, hooks and session
+    scripts — plus a <code>~/.tmux.conf</code> you build line by line and can defend.</p>
+    <div class="tags">
+      <span class="tag">14 lessons</span>
+      <span class="tag">~30 min each</span>
+      <span class="tag">tmux 3.7</span>
+    </div>
+  </a>
+
+  <footer>
+    <p>Source: <a href="https://github.com/jhrcek/X-days-of-Y">github.com/jhrcek/X-days-of-Y</a></p>
+  </footer>
+</main>
+</body>
+</html>

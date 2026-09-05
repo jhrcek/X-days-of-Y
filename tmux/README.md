@@ -17,6 +17,16 @@ day_01/ … day_14/ one lesson each: index.html + olog.dot + olog.svg
 
 Drill checkboxes are remembered in `localStorage`, and the syllabus shows how far you got.
 
+## Hosting
+
+The generated site is committed, fully self-contained and uses only relative links, so it
+needs no build step to publish. On GitHub Pages, set **Settings → Pages → Source** to
+*Deploy from a branch*, branch `master`, folder `/ (root)`; the course is then at
+`https://<user>.github.io/X-days-of-Y/tmux/`, and the repo-root `index.html` links to it.
+
+The empty `.nojekyll` at the repo root turns off Jekyll processing — nothing here needs it,
+and it keeps a future lesson that mentions `{{` from being mangled.
+
 ## Rebuilding
 
 The HTML is generated; the content lives in Haskell.
