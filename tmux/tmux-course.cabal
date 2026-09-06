@@ -1,24 +1,25 @@
 cabal-version:      3.0
 name:               tmux-course
 version:            1.0.0
-synopsis:           Generates the "14 Days of tmux" course as static HTML
+synopsis:           "14 Days of tmux" - the course content
 description:
-  Content for the course lives in the @Course.Day.D01@ .. @Course.Day.D14@
-  modules as Lucid markup. @cabal run tmux-course@ renders every lesson to
-  @day_NN/index.html@, renders each day's olog to SVG with graphviz, and
-  assembles @index.html@, @reference.html@ and @tmux.conf@.
-
-author:             built with Claude
+  Fourteen lessons distilled from tmux(1), written as Lucid markup against the
+  course-builder library. @cabal run tmux-course@ regenerates just this course;
+  @cabal run build-site@ at the repository root regenerates everything.
 build-type:         Simple
 
-executable tmux-course
-    main-is:          Main.hs
-    hs-source-dirs:   app, src
+common shared
+    default-language: GHC2021
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+    ghc-options: -Wall -Wno-missing-signatures
+
+library
+    import:           shared
+    hs-source-dirs:   src
+    exposed-modules:  Courses.Tmux
     other-modules:
-        Course.Types
-        Course.Markup
-        Course.Render
-        Course.Days
         Course.Day.D01
         Course.Day.D02
         Course.Day.D03
@@ -33,18 +34,18 @@ executable tmux-course
         Course.Day.D12
         Course.Day.D13
         Course.Day.D14
-
     build-depends:
-        base       >=4.17 && <5,
-        text       >=2.0,
-        lucid      >=2.11,
-        directory  >=1.3,
-        filepath   >=1.4,
-        process    >=1.6
+        base   >=4.17 && <5,
+        text   >=2.0,
+        lucid  >=2.11,
+        course-builder
 
-    default-language: GHC2021
-    default-extensions:
-        OverloadedStrings
-        LambdaCase
-
-    ghc-options: -Wall -Wno-missing-signatures
+executable tmux-course
+    import:           shared
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:
+        base,
+        filepath,
+        course-builder,
+        tmux-course

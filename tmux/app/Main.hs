@@ -1,14 +1,14 @@
--- | @cabal run tmux-course@ regenerates the whole course in place.
+{- | @cabal run tmux-course@ regenerates this course in place, from anywhere
+inside the repository.
+-}
 module Main (main) where
 
-import Course.Days (allDays)
-import Course.Render (buildSite)
-import System.Environment (getArgs)
+import Course.Build (buildCourse, findRepoRoot)
+import System.FilePath ((</>))
+
+import Courses.Tmux (course)
 
 main :: IO ()
 main = do
-  args <- getArgs
-  let root = case args of
-        (p : _) -> p
-        [] -> "."
-  buildSite root allDays
+    root <- findRepoRoot
+    buildCourse (root </> "tmux") course

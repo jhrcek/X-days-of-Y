@@ -1,0 +1,77 @@
+-- Save as <SLUG>/src/Courses/<TOOLMOD>.hs.
+-- Substitute: TOOL, TOOLMOD, SLUG, MANREF (e.g. rg(1)), VERSION (e.g. ripgrep 14.1.1).
+--
+-- The day count, the "~N minutes each" figure on the cover and the "Days A-B"
+-- span on the config card are all computed from courseDays - never hardcode them.
+module Courses.TOOLMOD (course) where
+
+import Course.Types
+import Lucid
+
+import Course.Day.D01 qualified as D01
+import Course.Day.D02 qualified as D02
+-- ... one import per day
+
+course :: Course
+course =
+  Course
+    { courseSlug = "SLUG"
+    , courseTool = "TOOL"
+    , courseManRef = "MANREF"
+    , courseVersion = "VERSION"
+
+    -- The paragraph under the big cover title: where the reader starts, where
+    -- they end up, and the promise about daily effort.
+    , courseTagline = do
+        "From "
+        em_ "“<the shallow thing everyone already does>”"
+        " to <the advanced capabilities the last third reaches>. One sitting a day, \
+        \each small enough to actually use at work the same afternoon."
+
+    -- Three cards. Roughly: how to pace it, the habit to adopt on Day 1, and
+    -- what the running config/recipes thread is for.
+    , courseHowTo =
+        [ ( "One sitting a day"
+          , "…"
+          )
+        , ( "Live in it from Day 1"
+          , "…"
+          )
+        , ( "Build your own config"
+          , do
+              "…The finished file is "
+              a_ [href_ "CONFIGFILE"] "here"
+              "."
+          )
+        ]
+
+    , courseLeftOut =
+        "<the sections of the man page this course deliberately skips, and why \
+        \the reader will be able to read them unaided by the end>"
+
+    -- One paragraph for the card on the repository's root landing page.
+    , courseCardBlurb = "…"
+    , courseCardTags = ["NDAYS lessons", "~30 min each", "TOOL X.Y"]
+
+    -- Nothing when the tool has no config file; then use the freed daily slot
+    -- for a growing "recipes" file instead.
+    , courseConfig =
+        Just
+          ConfigFile
+            { cfFileName = "CONFIGFILE"
+            , cfUserPath = "~/.CONFIGFILE"
+            , cfReloadHint = do
+                "Reload with "
+                code_ "<how the tool re-reads it>"
+                "."
+            , cfHeader =
+                [ "# ~/.CONFIGFILE"
+                , "#"
+                , "# Assembled over Days A-B of the 'NDAYS Days of TOOL' course. Every line"
+                , "# was introduced with a reason, and the comments are that reason."
+                , "#"
+                ]
+            }
+
+    , courseDays = [D01.day, D02.day]
+    }

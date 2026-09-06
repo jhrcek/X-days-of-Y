@@ -1,0 +1,37 @@
+# NDAYS Days of TOOL
+
+A course distilled from the `MANREF` manual page, for someone comfortable on Linux who has
+never used TOOL properly. Each day introduces a handful of concepts, a concept diagram,
+drills to do in a real terminal, a self-check and a cheat sheet.
+
+**Start here: [`index.html`](index.html).** Everything is static and works over `file://`.
+
+```
+index.html        the syllabus
+reference.html    every command and option, with the day it appears
+CONFIGFILE        the finished config, assembled from Days A-B
+day_01/ … day_NN/ one lesson each: index.html + olog.dot + olog.svg
+```
+
+Drill checkboxes are remembered in `localStorage`, and the syllabus shows how far you got.
+
+## Rebuilding
+
+The HTML is generated; the content lives in Haskell.
+
+```sh
+cabal run SLUG-course     # this course
+cabal run build-site      # every course, plus the repository landing page
+```
+
+Needs GHC with cabal, and `graphviz` on `PATH` for the diagrams.
+
+Content lives in `src/Course/Day/D01.hs` … `DNN.hs`; course metadata in
+`src/Courses/TOOLMOD.hs`. The page templates, markup vocabulary and stylesheet are shared,
+in `../course-builder/`.
+
+## Accuracy
+
+Checked against **VERSION**, not just read off the manual page: <what was exercised
+against the live binary>. <Any place the manual page and the binary disagree, and which
+one this course follows.>

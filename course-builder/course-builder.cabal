@@ -1,0 +1,33 @@
+cabal-version:      3.0
+name:               course-builder
+version:            1.0.0
+synopsis:           Renders an "N Days of <tool>" course to static HTML
+description:
+  The course-independent half of the X-days-of-Y repository: the lesson data
+  types, the Lucid markup vocabulary lessons are written in, the page renderer,
+  graphviz olog rendering, config-file assembly, and the repo-root landing page.
+  A course is a separate package that exports one 'Course' and depends on this.
+build-type:         Simple
+extra-source-files: assets/style.css
+
+library
+    hs-source-dirs:   src
+    exposed-modules:
+        Course.Types
+        Course.Markup
+        Course.Render
+        Course.Build
+        Course.Site
+    build-depends:
+        base       >=4.17 && <5,
+        text       >=2.0,
+        lucid      >=2.11,
+        directory  >=1.3,
+        filepath   >=1.4,
+        process    >=1.6,
+        file-embed >=0.0.15
+    default-language: GHC2021
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+    ghc-options: -Wall

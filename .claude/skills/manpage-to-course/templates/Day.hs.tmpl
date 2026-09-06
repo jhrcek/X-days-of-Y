@@ -1,0 +1,104 @@
+-- Save as <SLUG>/src/Course/Day/DNN.hs.  Every field is required.
+-- See reference/writing-style.md for what belongs in each of them.
+module Course.Day.DNN (day) where
+
+import Course.Markup
+import Course.Types
+import Data.Text qualified as T
+import Lucid
+
+day :: Day
+day =
+  Day
+    { dayNum = NN
+    , dayTitle = "<two or three words>"
+    , daySubtitle = "<one line; also the syllabus card text>"
+    , dayMinutes = 30                    -- honest estimate, 25-40
+    , dayLevel = "essential"             -- essential | intermediate | advanced
+    , dayManRef = "<MAN PAGE SECTIONS>"
+    , dayTags = ["…", "…"]
+    , dayGoals =                          -- three, each completing "you can ..."
+        [ "…"
+        , "…"
+        , "…"
+        ]
+    , dayDiagram = Just dNNdiagram        -- or Nothing
+    , dayBody = body
+
+    -- One line each, starting with a verb. Put an entry in exactly the day it
+    -- is first taught; these feed reference.html and the cumulative tables.
+    , dayKeys = []
+    , dayCmds = []
+    , dayOpts = []
+
+    -- cbTitle is the JUSTIFICATION and becomes a # comment in the generated file.
+    , dayConfig = []
+
+    -- 6-8, each doable in under two minutes inside real work. One must break
+    -- something on purpose; one must touch the reader's own work.
+    , dayDrills =
+        [ "…"
+        ]
+
+    -- Four. Each question should contain a failure mode, not ask "what does X do".
+    , dayQuiz =
+        [ ( "…"
+          , p_ "…"
+          )
+        ]
+    , dayCheat = cheat
+    }
+
+-- ---------------------------------------------------------------------------
+
+dNNdiagram :: Diagram
+dNNdiagram =
+  (diagram
+     "<alt text: one sentence describing the whole diagram>"
+     body')
+    { dgCaption = do
+        "<what to TAKE AWAY from the picture, not what is drawn>"
+    , dgRankdir = "TB"                    -- LR only for short chains; watch the width
+    , dgRanksep = "0.45"
+    }
+  where
+    -- Boxes are types ("a session"); arrows are aspects, labelled so that
+    -- box -> label -> box reads as a true sentence. Read each one aloud.
+    body' =
+      T.unlines
+        [ "  a [label=\"a thing\", fillcolor=\"#e7f0ec\", color=\"#2f7a63\"];"
+        , "  b [label=\"another thing\"];"
+        , "  ctx [label=\"something outside\\nthe tool\", fillcolor=\"#f4efe6\"];"
+        , "  odd [label=\"the surprising one\", fillcolor=\"#f8efdf\", color=\"#d8b784\"];"
+        , ""
+        , "  a -> b [label=\"  contains\"];"
+        , "  a -> b [label=\"has as current  \", style=dashed, constraint=false];"
+        ]
+
+-- ---------------------------------------------------------------------------
+
+body :: Html () -> Html ()
+body fig = do
+  block "<a title that is a claim, not a label>" $ do
+    p_ [class_ "lede"] "<one paragraph stating the day's whole idea>"
+    p_ "…"
+    why $ p_ "<the design rationale a man page cannot give you>"
+    fig
+
+  block "<the operational section>" $ do
+    defs
+      [ (k "C-b x", "…")
+      ]
+    sh
+      [ "$ …"
+      ]
+    gotcha $ p_ "<the thing that will cost twenty minutes at 2am>"
+
+  block "Today's habit" $
+    p_ "<what to change about tomorrow morning>"
+
+cheat :: Html ()
+cheat =
+  cfg
+    [ "…      # 6-12 aligned lines; this block gets screenshotted"
+    ]

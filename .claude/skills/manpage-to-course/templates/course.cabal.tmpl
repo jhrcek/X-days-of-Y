@@ -1,0 +1,43 @@
+-- Substitute: SLUG (directory / package prefix), TOOL (display name),
+--             TOOLMOD (module-case tool name, e.g. Ripgrep), NDAYS.
+-- Save as <SLUG>/<SLUG>-course.cabal
+cabal-version:      3.0
+name:               SLUG-course
+version:            1.0.0
+synopsis:           "NDAYS Days of TOOL" - the course content
+description:
+  Lessons distilled from the TOOL manual page, written as Lucid markup against
+  the course-builder library. @cabal run SLUG-course@ regenerates just this
+  course; @cabal run build-site@ at the repository root regenerates everything.
+build-type:         Simple
+
+common shared
+    default-language: GHC2021
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+    ghc-options: -Wall -Wno-missing-signatures
+
+library
+    import:           shared
+    hs-source-dirs:   src
+    exposed-modules:  Courses.TOOLMOD
+    other-modules:
+        Course.Day.D01
+        Course.Day.D02
+        -- ... one line per day, through DNDAYS
+    build-depends:
+        base   >=4.17 && <5,
+        text   >=2.0,
+        lucid  >=2.11,
+        course-builder
+
+executable SLUG-course
+    import:           shared
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:
+        base,
+        filepath,
+        course-builder,
+        SLUG-course
