@@ -3,12 +3,9 @@
 Short courses distilled from primary sources — one manual page, one sitting a day, drills
 you do in real work rather than exercises you read.
 
-**[Read them here](index.html)**, or online once GitHub Pages is enabled (Settings → Pages
-→ *Deploy from a branch*, branch `master`, folder `/ (root)`).
-
 | Course | Source |
 | --- | --- |
-| [14 Days of tmux](tmux/) | `tmux(1)`, checked against tmux 3.7c |
+| [14 Days of tmux](https://janhrcek.cz/X-days-of-Y/tmux) | `tmux(1)`, checked against tmux 3.7c |
 
 ## Building
 
