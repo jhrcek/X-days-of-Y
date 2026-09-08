@@ -184,8 +184,7 @@ d5diagram =
         body'
     )
         { dgCaption = do
-            "Read the arrows as “falls back to”. This is the whole of the options system, and it \
-            \explains the flags: "
+            "This is the whole of the options system, and it explains the flags: "
             c "-p"
             " and "
             c "-w"

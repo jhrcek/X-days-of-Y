@@ -127,6 +127,12 @@ smoke alarm, not a verdict.
 Every diagram needs a `dgCaption` that says **what to take away**, not what is drawn. The
 caption is prose that argues; the boxes are just its illustration.
 
+**Never teach the notation.** The conventions above are for you, the author; the reader is
+assumed to know how to read an olog. No caption explains that a box is a type or an arrow
+an aspect, and none tells the reader how to read the arrows — a labelled arrow already
+reads as a sentence, so saying so again is dead weight. Olog vocabulary ("the dashed
+aspects", "this aspect") is fine to *use*; just never gloss it.
+
 ## Config blocks
 
 `ConfBlock` is a `cbTitle` (plain text, becomes a `#` comment in the generated file) and

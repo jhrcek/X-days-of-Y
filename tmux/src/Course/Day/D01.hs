@@ -157,15 +157,13 @@ d1diagram =
         body'
     )
         { dgCaption = do
-            "How to read one of these: each box is a "
-            b_ "type"
-            " of thing, phrased so it fits in the sentence “this is …”. Each arrow is an "
-            b_ "aspect"
-            " — a function from one type to another, phrased so “a window "
-            i_ "is a member of"
-            " a session” reads as a true sentence. Dashed arrows are aspects that pick out "
-            i_ "one distinguished"
-            " thing rather than any of them."
+            "The chain of ownership under "
+            b_ "the tmux server"
+            " is the part that persists: session, window, pane, pseudo-terminal, process. None \
+            \of it depends on the terminal emulator hosting the client, which is why closing \
+            \the terminal costs you nothing. The dashed aspects are what “current” and “active” \
+            \mean throughout the manual page — a session always distinguishes one of its \
+            \windows, and a window one of its panes."
         , dgRankdir = "TB"
         , dgRanksep = "0.42"
         }
