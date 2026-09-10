@@ -78,6 +78,7 @@ course =
                 ConfigFile
                     { cfFileName = "tmux.conf"
                     , cfUserPath = "~/.tmux.conf"
+                    , cfComment = "#"
                     , cfReloadHint = do
                         "Reload with "
                         code_ "tmux source-file ~/.tmux.conf"

@@ -1,0 +1,27 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  psql  [label="your psql", fillcolor="#e7f0ec", color="#2f7a63"];
+  dcmd  [label="a \\d command", fillcolor="#e7f0ec", color="#2f7a63"];
+  qry   [label="a catalogue query", fillcolor="#e7f0ec", color="#2f7a63"];
+  cat   [label="the system catalogues"];
+  srv   [label="the server it connects to", fillcolor="#f4efe6"];
+  newer [label="a server newer\nthan your psql", fillcolor="#f8efdf", color="#d8b784"];
+
+  psql  -> dcmd  [label="  offers"];
+  dcmd  -> qry   [label="  is compiled, inside psql, into"];
+  qry   -> cat   [label="  reads"];
+  cat   -> srv   [label="  belong to"];
+  psql  -> srv   [label="connects to  "];
+  newer -> dcmd  [label="  can break", style=dashed];
+
+}

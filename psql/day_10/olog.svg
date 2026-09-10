@@ -1,0 +1,77 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="442pt" height="174pt"
+ viewBox="0.00 0.00 442.00 174.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 169.88)">
+<title>olog</title>
+<!-- q -->
+<g id="node1" class="node">
+<title>q</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M306.29,-165.88C306.29,-165.88 259.69,-165.88 259.69,-165.88 255.28,-165.88 250.88,-161.47 250.88,-157.06 250.88,-157.06 250.88,-148.24 250.88,-148.24 250.88,-143.83 255.28,-139.42 259.69,-139.42 259.69,-139.42 306.29,-139.42 306.29,-139.42 310.7,-139.42 315.11,-143.83 315.11,-148.24 315.11,-148.24 315.11,-157.06 315.11,-157.06 315.11,-161.47 310.7,-165.88 306.29,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="282.99" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a query</text>
+</g>
+<!-- qout -->
+<g id="node2" class="node">
+<title>qout</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M272.04,-96.17C272.04,-96.17 133.94,-96.17 133.94,-96.17 129.53,-96.17 125.13,-91.76 125.13,-87.35 125.13,-87.35 125.13,-78.53 125.13,-78.53 125.13,-74.12 129.54,-69.71 133.95,-69.71 133.95,-69.71 272.04,-69.71 272.04,-69.71 276.45,-69.71 280.86,-74.12 280.86,-78.53 280.86,-78.53 280.86,-87.35 280.86,-87.35 280.86,-91.76 276.44,-96.17 272.04,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="202.99" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the query&#45;output channel</text>
+</g>
+<!-- q&#45;&gt;qout -->
+<g id="edge1" class="edge">
+<title>q&#45;&gt;qout</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M261.72,-139.1C254.56,-134.51 246.69,-129.05 239.99,-123.42 232.66,-117.25 225.29,-109.73 219.09,-102.92"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="221.03,-101.31 214.37,-97.6 217.26,-104.66 221.03,-101.31"/>
+<text xml:space="preserve" text-anchor="middle" x="280.49" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;writes its result to</text>
+</g>
+<!-- msg -->
+<g id="node5" class="node">
+<title>msg</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M414.91,-96.17C414.91,-96.17 315.07,-96.17 315.07,-96.17 310.66,-96.17 306.25,-91.76 306.25,-87.35 306.25,-87.35 306.25,-78.53 306.25,-78.53 306.25,-74.12 310.66,-69.71 315.07,-69.71 315.07,-69.71 414.91,-69.71 414.91,-69.71 419.32,-69.71 423.73,-74.12 423.73,-78.53 423.73,-78.53 423.73,-87.35 423.73,-87.35 423.73,-91.76 419.32,-96.17 414.91,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="364.99" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an error message</text>
+</g>
+<!-- q&#45;&gt;msg -->
+<g id="edge4" class="edge">
+<title>q&#45;&gt;msg</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M302.11,-138.96C308.86,-134.28 316.41,-128.79 322.99,-123.42 330.94,-116.93 339.27,-109.3 346.39,-102.49"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="347.99,-104.44 351.4,-97.62 344.48,-100.83 347.99,-104.44"/>
+<text xml:space="preserve" text-anchor="middle" x="363.85" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">can produce &#160;</text>
+</g>
+<!-- out -->
+<g id="node3" class="node">
+<title>out</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M131.16,-26.46C131.16,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 131.16,0 131.16,0 135.57,0 139.98,-4.41 139.98,-8.82 139.98,-8.82 139.98,-17.64 139.98,-17.64 139.98,-22.05 135.57,-26.46 131.16,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="69.99" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">psql&#39;s standard output</text>
+</g>
+<!-- qout&#45;&gt;out -->
+<g id="edge2" class="edge">
+<title>qout&#45;&gt;out</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M172.03,-69.29C161.21,-64.65 149.08,-59.18 138.24,-53.71 124.68,-46.86 110.05,-38.53 97.83,-31.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="99.4,-29.29 91.93,-27.76 96.81,-33.62 99.4,-29.29"/>
+<text xml:space="preserve" text-anchor="middle" x="170.12" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is, by default,</text>
+</g>
+<!-- dest -->
+<g id="node4" class="node">
+<title>dest</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M253.79,-26.46C253.79,-26.46 174.19,-26.46 174.19,-26.46 169.79,-26.46 165.38,-22.05 165.38,-17.64 165.38,-17.64 165.38,-8.82 165.38,-8.82 165.38,-4.41 169.78,0 174.19,0 174.19,0 253.79,0 253.79,0 258.19,0 262.61,-4.41 262.61,-8.82 262.61,-8.82 262.61,-17.64 262.61,-17.64 262.61,-22.05 258.19,-26.46 253.79,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="213.99" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a file or a pipe</text>
+</g>
+<!-- qout&#45;&gt;dest -->
+<g id="edge3" class="edge">
+<title>qout&#45;&gt;dest</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M205.06,-69.2C206.6,-59.75 208.73,-46.63 210.52,-35.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="213.01,-35.99 211.68,-28.48 208.03,-35.18 213.01,-35.99"/>
+<text xml:space="preserve" text-anchor="middle" x="264.65" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is pointed at, by \o or \g, &#160;</text>
+</g>
+<!-- errch -->
+<g id="node6" class="node">
+<title>errch</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M422.04,-26.46C422.04,-26.46 307.94,-26.46 307.94,-26.46 303.53,-26.46 299.12,-22.05 299.12,-17.64 299.12,-17.64 299.12,-8.82 299.12,-8.82 299.12,-4.41 303.54,0 307.94,0 307.94,0 422.04,0 422.04,0 426.45,0 430.86,-4.41 430.86,-8.82 430.86,-8.82 430.86,-17.64 430.86,-17.64 430.86,-22.05 426.44,-26.46 422.04,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="364.99" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">psql&#39;s standard error</text>
+</g>
+<!-- msg&#45;&gt;errch -->
+<g id="edge5" class="edge">
+<title>msg&#45;&gt;errch</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M364.99,-69.2C364.99,-59.75 364.99,-46.63 364.99,-35.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="367.51,-35.7 364.99,-28.5 362.47,-35.7 367.51,-35.7"/>
+<text xml:space="preserve" text-anchor="middle" x="399.49" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;always goes to</text>
+</g>
+</g>
+</svg>

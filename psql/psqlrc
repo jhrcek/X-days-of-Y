@@ -1,0 +1,125 @@
+-- ~/.psqlrc
+--
+-- Assembled over the '17 Days of psql' course. Every line was introduced with
+-- a reason, and the comments are that reason. psql reads this file once, after
+-- connecting, so it may use \set, \pset and SET freely. Re-read it with:
+--
+--     \i ~/.psqlrc
+--
+-- Start psql with -X to skip it entirely, which is what scripts should do.
+--
+
+-- ==========================================================================
+-- Day 06 - Your own psqlrc
+-- ==========================================================================
+
+-- Load quietly. Without this, every \set and \pset below announces itself
+-- every time you start psql, and you learn to ignore psql's messages — which
+-- is exactly the habit you do not want. The matching \unset QUIET is the last
+-- line of this file, so anything you type yourself still reports back.
+\set QUIET on
+
+-- Never confuse a NULL with an empty string again. psql prints nothing for
+-- NULL by default, which in a padded column is indistinguishable from ''.
+\pset null '(null)'
+
+-- Go vertical only when a row is genuinely too wide, rather than never or
+-- always. Narrow results stay as tables; twelve-column rows stop wrapping
+-- into soup.
+\pset expanded auto
+
+-- Box-drawing borders. Pure cosmetics, and worth it the first time somebody
+-- asks you to share your screen. Drop these two lines if you work over a
+-- terminal that mangles Unicode.
+\pset linestyle unicode
+\pset border 2
+
+-- ==========================================================================
+-- Day 07 - Editing and history
+-- ==========================================================================
+
+-- One history per database. Without this, up-arrow in the reporting database
+-- offers you the migration you ran against production, which is a bad way to
+-- find out how tired you are. The :DBNAME interpolation only works here, in a
+-- startup file — setting HISTFILE at the prompt is silently ignored.
+\set HISTFILE ~/.psql_history-:DBNAME
+
+-- 500 lines of history is about a fortnight. Keep more, and stop storing the
+-- same SELECT forty times over.
+\set HISTSIZE 5000
+\set HISTCONTROL ignoredups
+
+-- ==========================================================================
+-- Day 08 - Errors and transactions
+-- ==========================================================================
+
+-- Interactively, one typo in the middle of a long transaction should cost you
+-- that statement, not the twenty minutes of work before it. In scripts you want
+-- the opposite — an error really should abort everything — so "interactive" is
+-- the value that gets both behaviours from one line.
+\set ON_ERROR_ROLLBACK interactive
+
+-- You will want to know that the query took four seconds, and you will never
+-- remember to turn timing on beforehand.
+\timing on
+
+-- Harmless at the prompt — it only means "return to the prompt", which is
+-- what happens anyway — but it makes \i stop at the first error instead of
+-- ploughing on through a half-applied script.
+\set ON_ERROR_STOP on
+
+-- ==========================================================================
+-- Day 10 - Sending output elsewhere
+-- ==========================================================================
+
+-- psql's default pager wraps long lines, which turns a wide result into an
+-- unreadable ribbon. -S chops them instead, so a wide table scrolls sideways
+-- with the arrow keys; -X leaves the screen contents alone on exit, and -F skips
+-- the pager altogether when the output already fits on one screen.
+\setenv PSQL_PAGER 'less -SXF'
+
+-- ==========================================================================
+-- Day 12 - Interpolation
+-- ==========================================================================
+
+-- Two queries you will otherwise retype for the rest of your career, stored
+-- as variables: type :act to see what is running and :waits to see what is
+-- blocked. The doubled '' inside the value is how you get a single quote into a
+-- \set argument. Add your own — this is psql's nearest thing to an alias.
+\set act 'SELECT pid, age(clock_timestamp(), query_start) AS running, state, left(query, 40) AS query FROM pg_stat_activity WHERE state <> ''idle'' AND pid <> pg_backend_pid() ORDER BY query_start;'
+\set waits 'SELECT pid, wait_event_type, wait_event, left(query, 40) AS query FROM pg_stat_activity WHERE wait_event IS NOT NULL ORDER BY pid;'
+
+-- ==========================================================================
+-- Day 13 - Making psql write SQL
+-- ==========================================================================
+
+-- Two seconds is aggressive for a query against a busy server's catalogues,
+-- and five is long enough to read the result before it is replaced. An explicit
+-- interval on the command still wins, so this only changes the default.
+\set WATCH_INTERVAL 5
+
+-- ==========================================================================
+-- Day 15 - Prompts worth reading
+-- ==========================================================================
+
+-- Who and where, then what. The dim user@host:port is there so that no DELETE
+-- ever goes to the wrong server unnoticed; the bold database name is what you
+-- glance at; and %R%x%# keeps everything the default prompt was telling you —
+-- whether psql wants more input, whether a transaction is open or broken, and
+-- whether you are a superuser. Every escape sequence is wrapped in %[ ... %] so
+-- readline can still measure the line. PROMPT2 is %w: invisible, exactly as wide
+-- as PROMPT1, so multi-line statements line up under themselves.
+\set PROMPT1 '%[%033[2m%]%n@%m:%>%[%033[0m%] %[%033[1m%]%/%[%033[0m%]%R%x%# '
+\set PROMPT2 '%w'
+
+-- ==========================================================================
+-- Day 17 - Sharp edges
+-- ==========================================================================
+
+-- The last two lines of the file, and they must be last. \unset QUIET turns
+-- reporting back on, so that everything you type from now on confirms itself;
+-- and one line of your own beats the four psql would have printed. Seeing the
+-- database and the host before your first statement has stopped more accidents
+-- than any other line here.
+\unset QUIET
+\echo Connected to :DBNAME as :USER on :HOST port :PORT

@@ -26,6 +26,9 @@ module Course.Markup
     , gotcha
     , why
 
+      -- * Predicates
+    , isConfComment
+
       -- * Lists
     , steps
     , defs
@@ -84,8 +87,14 @@ cfg ls = pre_ [class_ "conf"] $ code_ $ foldMap confLine ls
 
 confLine :: Text -> Html ()
 confLine l
-    | "#" `T.isPrefixOf` T.stripStart l = span_ [class_ "comment"] (toHtml l) <> "\n"
+    | isConfComment l = span_ [class_ "comment"] (toHtml l) <> "\n"
     | otherwise = toHtml l <> "\n"
+
+{- | A comment line in a config-file excerpt. Both markers are recognised, so
+the same helper works for hash-commented and SQL-commented formats.
+-}
+isConfComment :: Text -> Bool
+isConfComment l = any (`T.isPrefixOf` T.stripStart l) ["#", "--"]
 
 -- | Monospaced art: pane layouts, trees, tables of boxes.
 ascii :: [Text] -> Html ()

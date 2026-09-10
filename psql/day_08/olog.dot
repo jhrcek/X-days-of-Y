@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  stmt  [label="a statement", fillcolor="#e7f0ec", color="#2f7a63"];
+  tx    [label="a transaction block", fillcolor="#e7f0ec", color="#2f7a63"];
+  err   [label="an error", fillcolor="#e7f0ec", color="#2f7a63"];
+  abort [label="an aborted\ntransaction block"];
+  sp    [label="an implicit SAVEPOINT\n(ON_ERROR_ROLLBACK)", fillcolor="#f8efdf", color="#d8b784"];
+  ind   [label="the %x prompt\nindicator"];
+
+  stmt  -> tx    [label="  runs inside"];
+  stmt  -> err   [label="can raise  ", style=dashed];
+  err   -> tx    [label="  aborts"];
+  tx    -> abort [label="  then is"];
+  abort -> ind   [label="  is reported by"];
+  sp    -> stmt  [label="is taken before  "];
+  sp    -> abort [label="prevents  ", style=dashed];
+
+}

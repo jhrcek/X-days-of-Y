@@ -1,0 +1,29 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  blk    [label="a conditional block", fillcolor="#e7f0ec", color="#2f7a63"];
+  cond   [label="a Boolean expression", fillcolor="#e7f0ec", color="#2f7a63"];
+  branch [label="a branch", fillcolor="#e7f0ec", color="#2f7a63"];
+  skip   [label="a skipped line"];
+  bad    [label="a non-Boolean\nexpression", fillcolor="#f8efdf", color="#d8b784"];
+  file   [label="one source file", fillcolor="#f4efe6"];
+  ind    [label="the @ prompt\nindicator"];
+
+  blk    -> cond   [label="  is opened by"];
+  cond   -> branch [label="  selects"];
+  blk    -> branch [label="contains  "];
+  blk    -> file   [label="  must live entirely in"];
+  blk    -> ind    [label="shows, while inactive,  "];
+  branch -> skip   [label="  when untaken, is made of"];
+  bad    -> branch [label="  silently selects the false", style=dashed];
+
+}

@@ -2,3 +2,4 @@ packages:
   course-builder
   site
   tmux
+  psql

@@ -1,0 +1,85 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="324pt" height="327pt"
+ viewBox="0.00 0.00 324.00 327.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 322.8)">
+<title>olog</title>
+<!-- psql -->
+<g id="node1" class="node">
+<title>psql</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M93.91,-312.05C93.91,-312.05 39.07,-312.05 39.07,-312.05 34.66,-312.05 30.25,-307.64 30.25,-303.23 30.25,-303.23 30.25,-294.41 30.25,-294.41 30.25,-290 34.66,-285.59 39.07,-285.59 39.07,-285.59 93.91,-285.59 93.91,-285.59 98.32,-285.59 102.73,-290 102.73,-294.41 102.73,-294.41 102.73,-303.23 102.73,-303.23 102.73,-307.64 98.32,-312.05 93.91,-312.05"/>
+<text xml:space="preserve" text-anchor="middle" x="66.49" y="-294.65" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">your psql</text>
+</g>
+<!-- dcmd -->
+<g id="node2" class="node">
+<title>dcmd</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M226.41,-235.59C226.41,-235.59 144.57,-235.59 144.57,-235.59 140.16,-235.59 135.75,-231.18 135.75,-226.77 135.75,-226.77 135.75,-217.95 135.75,-217.95 135.75,-213.54 140.16,-209.13 144.57,-209.13 144.57,-209.13 226.41,-209.13 226.41,-209.13 230.82,-209.13 235.23,-213.54 235.23,-217.95 235.23,-217.95 235.23,-226.77 235.23,-226.77 235.23,-231.18 230.82,-235.59 226.41,-235.59"/>
+<text xml:space="preserve" text-anchor="middle" x="185.49" y="-218.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a \d command</text>
+</g>
+<!-- psql&#45;&gt;dcmd -->
+<g id="edge1" class="edge">
+<title>psql&#45;&gt;dcmd</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M86.68,-285.19C106.25,-272.94 136.1,-254.26 157.87,-240.64"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="159.09,-242.85 163.86,-236.9 156.42,-238.58 159.09,-242.85"/>
+<text xml:space="preserve" text-anchor="middle" x="154.77" y="-253.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;offers</text>
+</g>
+<!-- srv -->
+<g id="node5" class="node">
+<title>srv</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M140.16,-26.46C140.16,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 140.16,0 140.16,0 144.57,0 148.98,-4.41 148.98,-8.82 148.98,-8.82 148.98,-17.64 148.98,-17.64 148.98,-22.05 144.57,-26.46 140.16,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="74.49" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the server it connects to</text>
+</g>
+<!-- psql&#45;&gt;srv -->
+<g id="edge5" class="edge">
+<title>psql&#45;&gt;srv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M62.94,-285.29C59.09,-270.58 53.49,-245.41 53.49,-223.36 53.49,-223.36 53.49,-223.36 53.49,-81.94 53.49,-65.58 59.15,-47.96 64.59,-34.8"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="66.86,-35.91 67.44,-28.3 62.24,-33.89 66.86,-35.91"/>
+<text xml:space="preserve" text-anchor="middle" x="80.86" y="-149.25" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">connects to &#160;</text>
+</g>
+<!-- qry -->
+<g id="node3" class="node">
+<title>qry</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M243.16,-165.88C243.16,-165.88 141.82,-165.88 141.82,-165.88 137.41,-165.88 133,-161.47 133,-157.06 133,-157.06 133,-148.24 133,-148.24 133,-143.83 137.41,-139.42 141.82,-139.42 141.82,-139.42 243.16,-139.42 243.16,-139.42 247.57,-139.42 251.98,-143.83 251.98,-148.24 251.98,-148.24 251.98,-157.06 251.98,-157.06 251.98,-161.47 247.57,-165.88 243.16,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="192.49" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a catalogue query</text>
+</g>
+<!-- dcmd&#45;&gt;qry -->
+<g id="edge2" class="edge">
+<title>dcmd&#45;&gt;qry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M186.81,-208.62C187.78,-199.17 189.14,-186.05 190.28,-175"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="192.78,-175.33 191.02,-167.91 187.77,-174.81 192.78,-175.33"/>
+<text xml:space="preserve" text-anchor="middle" x="252.78" y="-184.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is compiled, inside psql, into</text>
+</g>
+<!-- cat -->
+<g id="node4" class="node">
+<title>cat</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M239.79,-96.17C239.79,-96.17 115.19,-96.17 115.19,-96.17 110.78,-96.17 106.38,-91.76 106.38,-87.35 106.38,-87.35 106.38,-78.53 106.38,-78.53 106.38,-74.12 110.79,-69.71 115.2,-69.71 115.2,-69.71 239.79,-69.71 239.79,-69.71 244.2,-69.71 248.61,-74.12 248.61,-78.53 248.61,-78.53 248.61,-87.35 248.61,-87.35 248.61,-91.76 244.2,-96.17 239.79,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="177.49" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the system catalogues</text>
+</g>
+<!-- qry&#45;&gt;cat -->
+<g id="edge3" class="edge">
+<title>qry&#45;&gt;cat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M189.67,-138.91C187.55,-129.36 184.61,-116.08 182.15,-104.96"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="184.66,-104.65 180.64,-98.17 179.74,-105.74 184.66,-104.65"/>
+<text xml:space="preserve" text-anchor="middle" x="200.51" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;reads</text>
+</g>
+<!-- cat&#45;&gt;srv -->
+<g id="edge4" class="edge">
+<title>cat&#45;&gt;srv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M158.12,-69.2C142,-58.61 118.9,-43.43 101.06,-31.7"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="102.51,-29.63 95.1,-27.78 99.74,-33.84 102.51,-29.63"/>
+<text xml:space="preserve" text-anchor="middle" x="155.03" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;belong to</text>
+</g>
+<!-- newer -->
+<g id="node6" class="node">
+<title>newer</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M224.73,-318.8C224.73,-318.8 146.25,-318.8 146.25,-318.8 140.25,-318.8 134.25,-312.8 134.25,-306.8 134.25,-306.8 134.25,-290.84 134.25,-290.84 134.25,-284.84 140.25,-278.84 146.25,-278.84 146.25,-278.84 224.73,-278.84 224.73,-278.84 230.73,-278.84 236.73,-284.84 236.73,-290.84 236.73,-290.84 236.73,-306.8 236.73,-306.8 236.73,-312.8 230.73,-318.8 224.73,-318.8"/>
+<text xml:space="preserve" text-anchor="middle" x="185.49" y="-301.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a server newer</text>
+<text xml:space="preserve" text-anchor="middle" x="185.49" y="-287.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">than your psql</text>
+</g>
+<!-- newer&#45;&gt;dcmd -->
+<g id="edge6" class="edge">
+<title>newer&#45;&gt;dcmd</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M185.49,-278.64C185.49,-268.25 185.49,-255.37 185.49,-244.66"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="188.01,-244.71 185.49,-237.51 182.97,-244.71 188.01,-244.71"/>
+<text xml:space="preserve" text-anchor="middle" x="209.12" y="-253.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;can break</text>
+</g>
+</g>
+</svg>

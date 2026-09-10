@@ -21,6 +21,7 @@ import Lucid
 import Lucid.Base (makeAttribute)
 import Text.Printf (printf)
 
+import Course.Markup (isConfComment)
 import Course.Types
 
 -- ---------------------------------------------------------------------------
@@ -321,7 +322,7 @@ configBox c d = case courseConfig c of
     _ -> mempty
   where
     line l
-        | "#" `T.isPrefixOf` T.stripStart l = span_ [class_ "comment"] (toHtml l) <> "\n"
+        | isConfComment l = span_ [class_ "comment"] (toHtml l) <> "\n"
         | otherwise = toHtml l <> "\n"
 
 drillJs :: Course -> Int -> Text
@@ -462,14 +463,16 @@ configFileText c = do
         cfHeader cf
             <> concatMap section' (filter (not . null . dayConfig) (courseDays c))
   where
+    cm = maybe "#" cfComment (courseConfig c)
+    rule = cm <> " " <> T.replicate 74 "="
     section' d =
         [ ""
-        , "# " <> T.replicate 74 "="
-        , "# Day " <> pad (dayNum d) <> " - " <> dayTitle d
-        , "# " <> T.replicate 74 "="
+        , rule
+        , cm <> " Day " <> pad (dayNum d) <> " - " <> dayTitle d
+        , rule
         ]
             <> concatMap blk (dayConfig d)
     blk b =
         ""
-            : map ("# " <>) (T.lines (cbTitle b))
+            : map ((cm <> " ") <>) (T.lines (cbTitle b))
                 <> T.lines (T.strip (cbCode b))

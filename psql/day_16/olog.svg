@@ -1,0 +1,106 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="639pt" height="271pt"
+ viewBox="0.00 0.00 639.00 271.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 266.59)">
+<title>olog</title>
+<!-- simple -->
+<g id="node1" class="node">
+<title>simple</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M87.48,-192.88C87.48,-192.88 12,-192.88 12,-192.88 6,-192.88 0,-186.88 0,-180.88 0,-180.88 0,-164.92 0,-164.92 0,-158.92 6,-152.92 12,-152.92 12,-152.92 87.48,-152.92 87.48,-152.92 93.48,-152.92 99.48,-158.92 99.48,-164.92 99.48,-164.92 99.48,-180.88 99.48,-180.88 99.48,-186.88 93.48,-192.88 87.48,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="49.74" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the simple</text>
+<text xml:space="preserve" text-anchor="middle" x="49.74" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">query protocol</text>
+</g>
+<!-- ext -->
+<g id="node2" class="node">
+<title>ext</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M274.48,-109.67C274.48,-109.67 199,-109.67 199,-109.67 193,-109.67 187,-103.67 187,-97.67 187,-97.67 187,-81.71 187,-81.71 187,-75.71 193,-69.71 199,-69.71 199,-69.71 274.48,-69.71 274.48,-69.71 280.48,-69.71 286.48,-75.71 286.48,-81.71 286.48,-81.71 286.48,-97.67 286.48,-97.67 286.48,-103.67 280.48,-109.67 274.48,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="236.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the extended</text>
+<text xml:space="preserve" text-anchor="middle" x="236.74" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">query protocol</text>
+</g>
+<!-- simple&#45;&gt;ext -->
+<g id="edge1" class="edge">
+<title>simple&#45;&gt;ext</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M43.9,-152.43C42.42,-143.35 42.69,-132.96 48.74,-125.67 65,-106.1 129.2,-97.42 178.1,-93.61"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="178.14,-96.14 185.14,-93.09 177.77,-91.11 178.14,-96.14"/>
+<text xml:space="preserve" text-anchor="middle" x="113.24" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is replaced, for one query, by</text>
+</g>
+<!-- bind -->
+<g id="node3" class="node">
+<title>bind</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M273.66,-262.59C273.66,-262.59 161.82,-262.59 161.82,-262.59 157.41,-262.59 153,-258.18 153,-253.77 153,-253.77 153,-244.95 153,-244.95 153,-240.54 157.41,-236.13 161.82,-236.13 161.82,-236.13 273.66,-236.13 273.66,-236.13 278.07,-236.13 282.48,-240.54 282.48,-244.95 282.48,-244.95 282.48,-253.77 282.48,-253.77 282.48,-258.18 278.07,-262.59 273.66,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="217.74" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a parameter binding</text>
+</g>
+<!-- bind&#45;&gt;ext -->
+<g id="edge2" class="edge">
+<title>bind&#45;&gt;ext</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M214.3,-235.87C209.77,-217.5 203.06,-182.22 209.24,-152.92 211.77,-140.95 216.75,-128.47 221.79,-117.87"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="223.97,-119.15 224.91,-111.58 219.45,-116.91 223.97,-119.15"/>
+<text xml:space="preserve" text-anchor="middle" x="245.99" y="-169.5" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">switches psql to &#160;</text>
+</g>
+<!-- stmt -->
+<g id="node4" class="node">
+<title>stmt</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M423.41,-186.13C423.41,-186.13 304.07,-186.13 304.07,-186.13 299.66,-186.13 295.25,-181.72 295.25,-177.31 295.25,-177.31 295.25,-168.49 295.25,-168.49 295.25,-164.08 299.66,-159.67 304.07,-159.67 304.07,-159.67 423.41,-159.67 423.41,-159.67 427.82,-159.67 432.23,-164.08 432.23,-168.49 432.23,-168.49 432.23,-177.31 432.23,-177.31 432.23,-181.72 427.82,-186.13 423.41,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="363.74" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a prepared statement</text>
+</g>
+<!-- bind&#45;&gt;stmt -->
+<g id="edge3" class="edge">
+<title>bind&#45;&gt;stmt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M242.51,-235.73C266.94,-223.27 304.43,-204.15 331.25,-190.47"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="332.17,-192.83 337.44,-187.32 329.88,-188.34 332.17,-192.83"/>
+<text xml:space="preserve" text-anchor="middle" x="331.87" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is made against</text>
+</g>
+<!-- stmt&#45;&gt;ext -->
+<g id="edge4" class="edge">
+<title>stmt&#45;&gt;ext</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M335.61,-159.17C322.88,-153.01 307.84,-145.17 294.99,-136.92 285.03,-130.53 274.74,-122.79 265.63,-115.48"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="267.32,-113.61 260.15,-111.02 264.14,-117.52 267.32,-113.61"/>
+<text xml:space="preserve" text-anchor="middle" x="314.87" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;requires</text>
+</g>
+<!-- pipe -->
+<g id="node5" class="node">
+<title>pipe</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M523.29,-186.13C523.29,-186.13 466.19,-186.13 466.19,-186.13 461.78,-186.13 457.38,-181.72 457.38,-177.31 457.38,-177.31 457.38,-168.49 457.38,-168.49 457.38,-164.08 461.78,-159.67 466.19,-159.67 466.19,-159.67 523.29,-159.67 523.29,-159.67 527.7,-159.67 532.11,-164.08 532.11,-168.49 532.11,-168.49 532.11,-177.31 532.11,-177.31 532.11,-181.72 527.7,-186.13 523.29,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="494.74" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pipeline</text>
+</g>
+<!-- pipe&#45;&gt;ext -->
+<g id="edge5" class="edge">
+<title>pipe&#45;&gt;ext</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M462.32,-159.2C456.49,-157.03 450.46,-154.86 444.74,-152.92 394.64,-135.94 336.97,-118.88 295.08,-106.92"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="295.79,-104.51 288.18,-104.96 294.41,-109.36 295.79,-104.51"/>
+<text xml:space="preserve" text-anchor="middle" x="433.89" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;uses, throughout,</text>
+</g>
+<!-- sync -->
+<g id="node6" class="node">
+<title>sync</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M519.66,-102.92C519.66,-102.92 449.82,-102.92 449.82,-102.92 445.41,-102.92 441,-98.51 441,-94.1 441,-94.1 441,-85.28 441,-85.28 441,-80.87 445.41,-76.46 449.82,-76.46 449.82,-76.46 519.66,-76.46 519.66,-76.46 524.07,-76.46 528.48,-80.87 528.48,-85.28 528.48,-85.28 528.48,-94.1 528.48,-94.1 528.48,-98.51 524.07,-102.92 519.66,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="484.74" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a sync point</text>
+</g>
+<!-- pipe&#45;&gt;sync -->
+<g id="edge6" class="edge">
+<title>pipe&#45;&gt;sync</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M489.82,-159.16C487.56,-152.62 485.12,-144.46 483.99,-136.92 482.77,-128.82 482.65,-119.83 482.93,-111.95"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="485.44,-112.24 483.33,-104.91 480.41,-111.96 485.44,-112.24"/>
+<text xml:space="preserve" text-anchor="middle" x="521.87" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is punctuated by &#160;</text>
+</g>
+<!-- ab -->
+<g id="node7" class="node">
+<title>ab</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M585.41,-26.46C585.41,-26.46 478.07,-26.46 478.07,-26.46 473.66,-26.46 469.25,-22.05 469.25,-17.64 469.25,-17.64 469.25,-8.82 469.25,-8.82 469.25,-4.41 473.66,0 478.07,0 478.07,0 585.41,0 585.41,0 589.82,0 594.23,-4.41 594.23,-8.82 594.23,-8.82 594.23,-17.64 594.23,-17.64 594.23,-22.05 589.82,-26.46 585.41,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="531.74" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an aborted pipeline</text>
+</g>
+<!-- sync&#45;&gt;ab -->
+<g id="edge8" class="edge">
+<title>sync&#45;&gt;ab</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M492.71,-76.06C499.98,-64.54 510.84,-47.35 519.26,-34.01"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="521.32,-35.45 523.04,-28.02 517.06,-32.76 521.32,-35.45"/>
+<text xml:space="preserve" text-anchor="middle" x="529.21" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;clears</text>
+</g>
+<!-- ab&#45;&gt;pipe -->
+<g id="edge7" class="edge">
+<title>ab&#45;&gt;pipe</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M541.98,-26.75C545.29,-31.42 548.65,-36.93 550.74,-42.46 608.77,-195.74 571.57,-120.7 561.74,-136.92 556.64,-145.34 548.77,-151.83 540.2,-156.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="539.17,-154.49 533.95,-160.04 541.5,-158.96 539.17,-154.49"/>
+<text xml:space="preserve" text-anchor="middle" x="603.24" y="-86.29" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a state of</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  txt   [label="the text you typed", fillcolor="#e7f0ec", color="#2f7a63"];
+  ref   [label="a variable reference\n:name  :'name'  :\"name\"", fillcolor="#e7f0ec", color="#2f7a63"];
+  var   [label="a psql variable", fillcolor="#e7f0ec", color="#2f7a63"];
+  bq    [label="a backquoted\nshell command"];
+  sent  [label="what reaches the server", fillcolor="#e7f0ec", color="#2f7a63"];
+  slice [label="a colon in SQL\nan array slice, a cast", fillcolor="#f8efdf", color="#d8b784"];
+
+  ref   -> txt  [label="  can appear in"];
+  bq    -> txt  [label="can appear in  "];
+  ref   -> var  [label="  names"];
+  txt   -> sent [label="  becomes, after substitution,"];
+  var   -> sent [label="  puts its value into"];
+  bq    -> sent [label="puts its output into  "];
+  slice -> ref  [label="  can be mistaken for", style=dashed];
+
+}

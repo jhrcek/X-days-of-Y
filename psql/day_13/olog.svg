@@ -1,0 +1,85 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="579pt" height="257pt"
+ viewBox="0.00 0.00 579.00 257.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 253.09)">
+<title>olog</title>
+<!-- buf -->
+<g id="node1" class="node">
+<title>buf</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M310.54,-249.09C310.54,-249.09 221.19,-249.09 221.19,-249.09 216.78,-249.09 212.38,-244.68 212.38,-240.27 212.38,-240.27 212.38,-231.45 212.38,-231.45 212.38,-227.04 216.78,-222.63 221.19,-222.63 221.19,-222.63 310.54,-222.63 310.54,-222.63 314.95,-222.63 319.36,-227.04 319.36,-231.45 319.36,-231.45 319.36,-240.27 319.36,-240.27 319.36,-244.68 314.95,-249.09 310.54,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="265.87" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the query buffer</text>
+</g>
+<!-- res -->
+<g id="node2" class="node">
+<title>res</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M179.79,-172.63C179.79,-172.63 115.94,-172.63 115.94,-172.63 111.53,-172.63 107.12,-168.22 107.12,-163.81 107.12,-163.81 107.12,-154.99 107.12,-154.99 107.12,-150.58 111.53,-146.17 115.94,-146.17 115.94,-146.17 179.79,-146.17 179.79,-146.17 184.2,-146.17 188.61,-150.58 188.61,-154.99 188.61,-154.99 188.61,-163.81 188.61,-163.81 188.61,-168.22 184.2,-172.63 179.79,-172.63"/>
+<text xml:space="preserve" text-anchor="middle" x="147.87" y="-155.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a result set</text>
+</g>
+<!-- buf&#45;&gt;res -->
+<g id="edge1" class="edge">
+<title>buf&#45;&gt;res</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M241.59,-222.15C232.96,-217.46 223.25,-211.98 214.62,-206.63 200.19,-197.69 184.57,-186.94 172.07,-178.05"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="173.72,-176.13 166.4,-173.99 170.78,-180.23 173.72,-176.13"/>
+<text xml:space="preserve" text-anchor="middle" x="236.74" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;produces</text>
+</g>
+<!-- shape -->
+<g id="node3" class="node">
+<title>shape</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M306.61,-179.38C306.61,-179.38 225.12,-179.38 225.12,-179.38 219.12,-179.38 213.12,-173.38 213.12,-167.38 213.12,-167.38 213.12,-151.42 213.12,-151.42 213.12,-145.42 219.12,-139.42 225.12,-139.42 225.12,-139.42 306.61,-139.42 306.61,-139.42 312.61,-139.42 318.61,-145.42 318.61,-151.42 318.61,-151.42 318.61,-167.38 318.61,-167.38 318.61,-173.38 312.61,-179.38 306.61,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="265.87" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a column name</text>
+<text xml:space="preserve" text-anchor="middle" x="265.87" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">and type</text>
+</g>
+<!-- buf&#45;&gt;shape -->
+<g id="edge2" class="edge">
+<title>buf&#45;&gt;shape</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M265.59,-222.21C265.5,-217.34 265.41,-211.73 265.37,-206.63 265.31,-200.7 265.33,-194.34 265.39,-188.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="267.9,-188.56 265.47,-181.33 262.86,-188.5 267.9,-188.56"/>
+<text xml:space="preserve" text-anchor="middle" x="324.62" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is described, by \gdesc, as &#160;</text>
+</g>
+<!-- srv -->
+<g id="node6" class="node">
+<title>srv</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M343.54,-26.46C343.54,-26.46 284.19,-26.46 284.19,-26.46 279.78,-26.46 275.38,-22.05 275.38,-17.64 275.38,-17.64 275.38,-8.82 275.38,-8.82 275.38,-4.41 279.79,0 284.19,0 284.19,0 343.54,0 343.54,0 347.95,0 352.36,-4.41 352.36,-8.82 352.36,-8.82 352.36,-17.64 352.36,-17.64 352.36,-22.05 347.94,-26.46 343.54,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="313.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the server</text>
+</g>
+<!-- buf&#45;&gt;srv -->
+<g id="edge6" class="edge">
+<title>buf&#45;&gt;srv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M319.81,-228.75C347.59,-224.37 377.39,-217.33 385.87,-206.63 398.9,-190.17 534.02,-283.7 367.87,-42.46 365.02,-38.33 361.38,-34.76 357.33,-31.69"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="358.92,-29.72 351.53,-27.85 356.14,-33.92 358.92,-29.72"/>
+<text xml:space="preserve" text-anchor="middle" x="494.66" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is re&#45;sent on a timer, by \watch, to &#160;</text>
+</g>
+<!-- grid -->
+<g id="node4" class="node">
+<title>grid</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M92.91,-96.17C92.91,-96.17 8.82,-96.17 8.82,-96.17 4.41,-96.17 0,-91.76 0,-87.35 0,-87.35 0,-78.53 0,-78.53 0,-74.12 4.41,-69.71 8.82,-69.71 8.82,-69.71 92.91,-69.71 92.91,-69.71 97.32,-69.71 101.73,-74.12 101.73,-78.53 101.73,-78.53 101.73,-87.35 101.73,-87.35 101.73,-91.76 97.32,-96.17 92.91,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="50.87" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a crosstab grid</text>
+</g>
+<!-- res&#45;&gt;grid -->
+<g id="edge3" class="edge">
+<title>res&#45;&gt;grid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M106.76,-154.72C86.01,-150.55 62.56,-141.77 49.62,-123.42 45.86,-118.1 45.07,-111.31 45.55,-104.85"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="47.99,-105.51 46.59,-98.01 43.01,-104.75 47.99,-105.51"/>
+<text xml:space="preserve" text-anchor="middle" x="121.24" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is pivoted, by \crosstabview, into</text>
+</g>
+<!-- cell -->
+<g id="node5" class="node">
+<title>cell</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M297.79,-96.17C297.79,-96.17 191.94,-96.17 191.94,-96.17 187.53,-96.17 183.12,-91.76 183.12,-87.35 183.12,-87.35 183.12,-78.53 183.12,-78.53 183.12,-74.12 187.53,-69.71 191.94,-69.71 191.94,-69.71 297.79,-69.71 297.79,-69.71 302.2,-69.71 306.61,-74.12 306.61,-78.53 306.61,-78.53 306.61,-87.35 306.61,-87.35 306.61,-91.76 302.19,-96.17 297.79,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="244.87" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a cell, read as SQL</text>
+</g>
+<!-- res&#45;&gt;cell -->
+<g id="edge4" class="edge">
+<title>res&#45;&gt;cell</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M164.92,-145.89C173.88,-139.27 185.02,-130.97 194.87,-123.42 203.92,-116.48 213.79,-108.72 222.35,-101.94"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="223.88,-103.94 227.95,-97.49 220.74,-100 223.88,-103.94"/>
+<text xml:space="preserve" text-anchor="middle" x="282.94" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is taken, by \gexec, cell by cell as</text>
+</g>
+<!-- cell&#45;&gt;srv -->
+<g id="edge5" class="edge">
+<title>cell&#45;&gt;srv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M257.84,-69.2C268.25,-58.99 283.01,-44.51 294.77,-32.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="296.44,-34.86 299.81,-28.02 292.91,-31.27 296.44,-34.86"/>
+<text xml:space="preserve" text-anchor="middle" x="322.5" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is sent literally to</text>
+</g>
+</g>
+</svg>

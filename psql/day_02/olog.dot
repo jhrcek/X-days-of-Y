@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.5;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  opts [label="the -h -p -U -d\noptions"];
+  kv   [label="a conninfo string\nor URI", fillcolor="#e7f0ec", color="#2f7a63"];
+  env  [label="PGHOST, PGPORT,\nPGUSER, PGDATABASE", fillcolor="#f4efe6"];
+  dflt [label="a libpq default", fillcolor="#f4efe6"];
+  svc  [label="a service entry in\n~/.pg_service.conf", fillcolor="#f8efdf", color="#d8b784"];
+  par  [label="the connection parameters\n(host, port, user, dbname)", fillcolor="#e7f0ec", color="#2f7a63"];
+  conn [label="a connection", fillcolor="#e7f0ec", color="#2f7a63"];
+  pass [label="~/.pgpass", fillcolor="#f8efdf", color="#d8b784"];
+
+  opts -> par  [label="  set"];
+  kv   -> par  [label="  overrides"];
+  env  -> par  [label="  default"];
+  dflt -> par  [label="  fills what is left of"];
+  svc  -> par  [label="  expands into"];
+  kv   -> svc  [label="can name  ", style=dashed, constraint=false];
+  par  -> conn [label="  determine"];
+  pass -> conn [label="  supplies the password for  ", style=dashed];
+
+  { rank=same; opts; kv; env; dflt; svc; }
+
+}

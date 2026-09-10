@@ -1,0 +1,27 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  role  [label="a role", fillcolor="#e7f0ec", color="#2f7a63"];
+  obj   [label="a database object", fillcolor="#e7f0ec", color="#2f7a63"];
+  grant [label="a privilege grant", fillcolor="#e7f0ec", color="#2f7a63"];
+  gtor  [label="the granting role"];
+  acl   [label="an ACL entry\nrole=letters/grantor", fillcolor="#f8efdf", color="#d8b784"];
+  def   [label="a default\nprivilege setting"];
+
+  grant -> role [label="  is made to"];
+  grant -> obj  [label="  is made on"];
+  grant -> gtor [label="is made by  "];
+  grant -> acl  [label="  is displayed as"];
+  role  -> role [label="  can be a member of", style=dashed];
+  def   -> grant [label="pre-creates  ", style=dashed];
+
+}

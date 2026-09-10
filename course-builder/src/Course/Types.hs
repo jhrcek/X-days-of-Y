@@ -52,6 +52,8 @@ data ConfigFile = ConfigFile
     -- ^ written to the course root and linked from the pages, e.g. @tmux.conf@
     , cfUserPath :: Text
     -- ^ where the reader keeps theirs, e.g. @~/.tmux.conf@
+    , cfComment :: Text
+    -- ^ the file format's comment marker, e.g. @#@ or @--@
     , cfReloadHint :: Html ()
     -- ^ shown under each day's config box: how to make the tool re-read it
     , cfHeader :: [Text]

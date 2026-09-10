@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  inv   [label="a psql invocation", fillcolor="#e7f0ec", color="#2f7a63"];
+  cflag [label="a -c command string", fillcolor="#e7f0ec", color="#2f7a63"];
+  fflag [label="a -f file", fillcolor="#e7f0ec", color="#2f7a63"];
+  sin   [label="standard input"];
+  buf   [label="the query buffer", fillcolor="#e7f0ec", color="#2f7a63"];
+  tx    [label="one transaction (-1)"];
+  code  [label="an exit code\n0 1 2 3", fillcolor="#f8efdf", color="#d8b784"];
+
+  inv   -> cflag [label="  can carry", style=dashed];
+  inv   -> fflag [label="can carry  ", style=dashed];
+  inv   -> sin   [label="  otherwise reads", style=dashed];
+  fflag -> buf   [label="  is fed through"];
+  sin   -> buf   [label="is fed through  "];
+  cflag -> buf   [label="  bypasses", style=dashed];
+  tx    -> inv   [label="  can wrap the whole of"];
+  inv   -> code  [label="  ends with"];
+
+}

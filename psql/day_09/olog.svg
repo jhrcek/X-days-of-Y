@@ -1,0 +1,92 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="811pt" height="201pt"
+ viewBox="0.00 0.00 811.00 201.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 196.88)">
+<title>olog</title>
+<!-- cp -->
+<g id="node1" class="node">
+<title>cp</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M284.41,-186.13C284.41,-186.13 183.82,-186.13 183.82,-186.13 179.41,-186.13 175,-181.72 175,-177.31 175,-177.31 175,-168.49 175,-168.49 175,-164.08 179.41,-159.67 183.82,-159.67 183.82,-159.67 284.41,-159.67 284.41,-159.67 288.82,-159.67 293.23,-164.08 293.23,-168.49 293.23,-168.49 293.23,-177.31 293.23,-177.31 293.23,-181.72 288.82,-186.13 284.41,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="234.12" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a \copy command</text>
+</g>
+<!-- stdio -->
+<g id="node2" class="node">
+<title>stdio</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M130.23,-109.67C130.23,-109.67 12,-109.67 12,-109.67 6,-109.67 0,-103.67 0,-97.67 0,-97.67 0,-81.71 0,-81.71 0,-75.71 6,-69.71 12,-69.71 12,-69.71 130.23,-69.71 130.23,-69.71 136.23,-69.71 142.23,-75.71 142.23,-81.71 142.23,-81.71 142.23,-97.67 142.23,-97.67 142.23,-103.67 136.23,-109.67 130.23,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="71.12" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">COPY ... TO STDOUT</text>
+<text xml:space="preserve" text-anchor="middle" x="71.12" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">COPY ... FROM STDIN</text>
+</g>
+<!-- cp&#45;&gt;stdio -->
+<g id="edge2" class="edge">
+<title>cp&#45;&gt;stdio</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M190.83,-159.17C173.52,-153.37 153.69,-145.8 136.62,-136.92 124.88,-130.82 112.82,-122.87 102.31,-115.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="103.87,-113.31 96.58,-111.07 100.88,-117.37 103.87,-113.31"/>
+<text xml:space="preserve" text-anchor="middle" x="182.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is implemented with</text>
+</g>
+<!-- cfs -->
+<g id="node3" class="node">
+<title>cfs</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M292.29,-102.92C292.29,-102.92 175.94,-102.92 175.94,-102.92 171.53,-102.92 167.12,-98.51 167.12,-94.1 167.12,-94.1 167.12,-85.28 167.12,-85.28 167.12,-80.87 171.53,-76.46 175.94,-76.46 175.94,-76.46 292.29,-76.46 292.29,-76.46 296.7,-76.46 301.11,-80.87 301.11,-85.28 301.11,-85.28 301.11,-94.1 301.11,-94.1 301.11,-98.51 296.69,-102.92 292.29,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="234.12" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the client&#39;s filesystem</text>
+</g>
+<!-- cp&#45;&gt;cfs -->
+<g id="edge1" class="edge">
+<title>cp&#45;&gt;cfs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M234.12,-159.21C234.12,-146.58 234.12,-126.95 234.12,-111.94"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="236.64,-112.08 234.12,-104.88 231.6,-112.08 236.64,-112.08"/>
+<text xml:space="preserve" text-anchor="middle" x="271.99" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;reads and writes</text>
+</g>
+<!-- conn -->
+<g id="node4" class="node">
+<title>conn</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M253.16,-26.46C253.16,-26.46 169.07,-26.46 169.07,-26.46 164.66,-26.46 160.25,-22.05 160.25,-17.64 160.25,-17.64 160.25,-8.82 160.25,-8.82 160.25,-4.41 164.66,0 169.07,0 169.07,0 253.16,0 253.16,0 257.57,0 261.98,-4.41 261.98,-8.82 261.98,-8.82 261.98,-17.64 261.98,-17.64 261.98,-22.05 257.57,-26.46 253.16,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="211.12" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the connection</text>
+</g>
+<!-- cp&#45;&gt;conn -->
+<g id="edge4" class="edge">
+<title>cp&#45;&gt;conn</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M288.27,-159.29C299.25,-154.17 309.46,-146.99 316.12,-136.92 324.28,-124.57 349.5,-127.35 313.12,-69.71 301.68,-51.59 282.15,-38.95 263.22,-30.37"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="264.24,-28.06 256.63,-27.55 262.26,-32.7 264.24,-28.06"/>
+<text xml:space="preserve" text-anchor="middle" x="387.23" y="-86.29" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">routes every row through &#160;</text>
+</g>
+<!-- stdio&#45;&gt;conn -->
+<g id="edge3" class="edge">
+<title>stdio&#45;&gt;conn</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M107.53,-69.32C129.9,-57.42 158.27,-42.34 179.66,-30.96"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="180.62,-33.3 185.79,-27.7 178.25,-28.85 180.62,-33.3"/>
+<text xml:space="preserve" text-anchor="middle" x="188.15" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;streams over</text>
+</g>
+<!-- sql -->
+<g id="node5" class="node">
+<title>sql</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M692.73,-192.88C692.73,-192.88 589.5,-192.88 589.5,-192.88 583.5,-192.88 577.5,-186.88 577.5,-180.88 577.5,-180.88 577.5,-164.92 577.5,-164.92 577.5,-158.92 583.5,-152.92 589.5,-152.92 589.5,-152.92 692.73,-152.92 692.73,-152.92 698.73,-152.92 704.73,-158.92 704.73,-164.92 704.73,-164.92 704.73,-180.88 704.73,-180.88 704.73,-186.88 698.73,-192.88 692.73,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="641.12" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">COPY ... TO &#39;file&#39;</text>
+<text xml:space="preserve" text-anchor="middle" x="641.12" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">COPY ... FROM &#39;file&#39;</text>
+</g>
+<!-- sfs -->
+<g id="node6" class="node">
+<title>sfs</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M618.28,-102.92C618.28,-102.92 495.95,-102.92 495.95,-102.92 491.53,-102.92 487.12,-98.51 487.12,-94.1 487.12,-94.1 487.12,-85.28 487.12,-85.28 487.12,-80.87 491.54,-76.46 495.94,-76.46 495.94,-76.46 618.28,-76.46 618.28,-76.46 622.7,-76.46 627.11,-80.87 627.11,-85.28 627.11,-85.28 627.11,-94.1 627.11,-94.1 627.11,-98.51 622.7,-102.92 618.28,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="557.12" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the server&#39;s filesystem</text>
+</g>
+<!-- sql&#45;&gt;sfs -->
+<g id="edge5" class="edge">
+<title>sql&#45;&gt;sfs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M621.21,-152.65C607.62,-139.51 589.71,-122.2 576.28,-109.22"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="578.15,-107.52 571.23,-104.33 574.65,-111.15 578.15,-107.52"/>
+<text xml:space="preserve" text-anchor="middle" x="642.02" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;reads and writes</text>
+</g>
+<!-- role -->
+<g id="node7" class="node">
+<title>role</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M791.41,-102.92C791.41,-102.92 660.82,-102.92 660.82,-102.92 656.41,-102.92 652,-98.51 652,-94.1 652,-94.1 652,-85.28 652,-85.28 652,-80.87 656.41,-76.46 660.82,-76.46 660.82,-76.46 791.41,-76.46 791.41,-76.46 795.82,-76.46 800.23,-80.87 800.23,-85.28 800.23,-85.28 800.23,-94.1 800.23,-94.1 800.23,-98.51 795.82,-102.92 791.41,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="726.12" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pg_*_server_files role</text>
+</g>
+<!-- sql&#45;&gt;role -->
+<g id="edge6" class="edge">
+<title>sql&#45;&gt;role</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M668.01,-152.39C674.15,-147.56 680.52,-142.23 686.12,-136.92 694.78,-128.7 703.55,-118.78 710.66,-110.24"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="712.6,-111.85 715.21,-104.68 708.7,-108.66 712.6,-111.85"/>
+<text xml:space="preserve" text-anchor="middle" x="749.94" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;requires membership of</text>
+</g>
+</g>
+</svg>

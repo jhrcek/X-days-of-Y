@@ -1,0 +1,115 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="734pt" height="209pt"
+ viewBox="0.00 0.00 734.00 209.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 204.88)">
+<title>olog</title>
+<!-- opts -->
+<g id="node1" class="node">
+<title>opts</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M84.48,-200.88C84.48,-200.88 12,-200.88 12,-200.88 6,-200.88 0,-194.88 0,-188.88 0,-188.88 0,-172.92 0,-172.92 0,-166.92 6,-160.92 12,-160.92 12,-160.92 84.48,-160.92 84.48,-160.92 90.48,-160.92 96.48,-166.92 96.48,-172.92 96.48,-172.92 96.48,-188.88 96.48,-188.88 96.48,-194.88 90.48,-200.88 84.48,-200.88"/>
+<text xml:space="preserve" text-anchor="middle" x="48.24" y="-183.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the &#45;h &#45;p &#45;U &#45;d</text>
+<text xml:space="preserve" text-anchor="middle" x="48.24" y="-169.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">options</text>
+</g>
+<!-- par -->
+<g id="node6" class="node">
+<title>par</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M435.61,-113.67C435.61,-113.67 294.88,-113.67 294.88,-113.67 288.88,-113.67 282.88,-107.67 282.88,-101.67 282.88,-101.67 282.88,-85.71 282.88,-85.71 282.88,-79.71 288.88,-73.71 294.88,-73.71 294.88,-73.71 435.61,-73.71 435.61,-73.71 441.61,-73.71 447.61,-79.71 447.61,-85.71 447.61,-85.71 447.61,-101.67 447.61,-101.67 447.61,-107.67 441.61,-113.67 435.61,-113.67"/>
+<text xml:space="preserve" text-anchor="middle" x="365.24" y="-96.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the connection parameters</text>
+<text xml:space="preserve" text-anchor="middle" x="365.24" y="-82.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(host, port, user, dbname)</text>
+</g>
+<!-- opts&#45;&gt;par -->
+<g id="edge1" class="edge">
+<title>opts&#45;&gt;par</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M96.79,-164.56C100.99,-163.3 105.19,-162.07 109.24,-160.92 164.86,-145.08 227.72,-128.8 277.23,-116.34"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="277.78,-118.8 284.15,-114.6 276.55,-113.91 277.78,-118.8"/>
+<text xml:space="preserve" text-anchor="middle" x="223.76" y="-133.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;set</text>
+</g>
+<!-- kv -->
+<g id="node2" class="node">
+<title>kv</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M220.61,-200.88C220.61,-200.88 133.88,-200.88 133.88,-200.88 127.88,-200.88 121.88,-194.88 121.88,-188.88 121.88,-188.88 121.88,-172.92 121.88,-172.92 121.88,-166.92 127.88,-160.92 133.88,-160.92 133.88,-160.92 220.61,-160.92 220.61,-160.92 226.61,-160.92 232.61,-166.92 232.61,-172.92 232.61,-172.92 232.61,-188.88 232.61,-188.88 232.61,-194.88 226.61,-200.88 220.61,-200.88"/>
+<text xml:space="preserve" text-anchor="middle" x="177.24" y="-183.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a conninfo string</text>
+<text xml:space="preserve" text-anchor="middle" x="177.24" y="-169.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">or URI</text>
+</g>
+<!-- svc -->
+<g id="node5" class="node">
+<title>svc</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M413.48,-200.88C413.48,-200.88 317,-200.88 317,-200.88 311,-200.88 305,-194.88 305,-188.88 305,-188.88 305,-172.92 305,-172.92 305,-166.92 311,-160.92 317,-160.92 317,-160.92 413.48,-160.92 413.48,-160.92 419.48,-160.92 425.48,-166.92 425.48,-172.92 425.48,-172.92 425.48,-188.88 425.48,-188.88 425.48,-194.88 419.48,-200.88 413.48,-200.88"/>
+<text xml:space="preserve" text-anchor="middle" x="365.24" y="-183.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a service entry in</text>
+<text xml:space="preserve" text-anchor="middle" x="365.24" y="-169.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">~/.pg_service.conf</text>
+</g>
+<!-- kv&#45;&gt;svc -->
+<g id="edge6" class="edge">
+<title>kv&#45;&gt;svc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M233.14,-180.9C252.84,-180.9 275.22,-180.9 295.9,-180.9"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="295.85,-183.42 303.05,-180.9 295.85,-178.38 295.85,-183.42"/>
+<text xml:space="preserve" text-anchor="middle" x="268.8" y="-186.13" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">can name &#160;</text>
+</g>
+<!-- kv&#45;&gt;par -->
+<g id="edge2" class="edge">
+<title>kv&#45;&gt;par</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M219.9,-160.56C248.04,-147.81 285.05,-131.04 314.67,-117.61"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="315.46,-120.02 320.98,-114.75 313.38,-115.43 315.46,-120.02"/>
+<text xml:space="preserve" text-anchor="middle" x="304.62" y="-133.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;overrides</text>
+</g>
+<!-- env -->
+<g id="node3" class="node">
+<title>env</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M591.98,-200.88C591.98,-200.88 462.5,-200.88 462.5,-200.88 456.5,-200.88 450.5,-194.88 450.5,-188.88 450.5,-188.88 450.5,-172.92 450.5,-172.92 450.5,-166.92 456.5,-160.92 462.5,-160.92 462.5,-160.92 591.98,-160.92 591.98,-160.92 597.98,-160.92 603.98,-166.92 603.98,-172.92 603.98,-172.92 603.98,-188.88 603.98,-188.88 603.98,-194.88 597.98,-200.88 591.98,-200.88"/>
+<text xml:space="preserve" text-anchor="middle" x="527.24" y="-183.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">PGHOST, PGPORT,</text>
+<text xml:space="preserve" text-anchor="middle" x="527.24" y="-169.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">PGUSER, PGDATABASE</text>
+</g>
+<!-- env&#45;&gt;par -->
+<g id="edge3" class="edge">
+<title>env&#45;&gt;par</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M490.48,-160.56C466.54,-147.97 435.16,-131.47 409.8,-118.13"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="411.09,-115.96 403.54,-114.84 408.74,-120.42 411.09,-115.96"/>
+<text xml:space="preserve" text-anchor="middle" x="473.56" y="-133.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;default</text>
+</g>
+<!-- dflt -->
+<g id="node4" class="node">
+<title>dflt</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M717.04,-194.13C717.04,-194.13 637.44,-194.13 637.44,-194.13 633.03,-194.13 628.62,-189.72 628.62,-185.31 628.62,-185.31 628.62,-176.49 628.62,-176.49 628.62,-172.08 633.03,-167.67 637.44,-167.67 637.44,-167.67 717.04,-167.67 717.04,-167.67 721.45,-167.67 725.86,-172.08 725.86,-176.49 725.86,-176.49 725.86,-185.31 725.86,-185.31 725.86,-189.72 721.45,-194.13 717.04,-194.13"/>
+<text xml:space="preserve" text-anchor="middle" x="677.24" y="-176.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a libpq default</text>
+</g>
+<!-- dflt&#45;&gt;par -->
+<g id="edge4" class="edge">
+<title>dflt&#45;&gt;par</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M637.28,-167.19C630.29,-165.05 623.06,-162.88 616.24,-160.92 561.47,-145.18 499.58,-128.84 450.96,-116.32"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="451.79,-113.93 444.19,-114.58 450.54,-118.81 451.79,-113.93"/>
+<text xml:space="preserve" text-anchor="middle" x="588.06" y="-133.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;fills what is left of</text>
+</g>
+<!-- svc&#45;&gt;par -->
+<g id="edge5" class="edge">
+<title>svc&#45;&gt;par</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M365.24,-160.56C365.24,-149.34 365.24,-135.01 365.24,-122.59"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="367.76,-122.74 365.24,-115.54 362.72,-122.74 367.76,-122.74"/>
+<text xml:space="preserve" text-anchor="middle" x="395.24" y="-133.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;expands into</text>
+</g>
+<!-- conn -->
+<g id="node7" class="node">
+<title>conn</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M474.41,-26.46C474.41,-26.46 400.07,-26.46 400.07,-26.46 395.66,-26.46 391.25,-22.05 391.25,-17.64 391.25,-17.64 391.25,-8.82 391.25,-8.82 391.25,-4.41 395.66,0 400.07,0 400.07,0 474.41,0 474.41,0 478.82,0 483.23,-4.41 483.23,-8.82 483.23,-8.82 483.23,-17.64 483.23,-17.64 483.23,-22.05 478.82,-26.46 474.41,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="437.24" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a connection</text>
+</g>
+<!-- par&#45;&gt;conn -->
+<g id="edge7" class="edge">
+<title>par&#45;&gt;conn</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M383.04,-73.3C394.28,-61.04 408.74,-45.29 419.9,-33.13"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="421.63,-34.97 424.64,-27.96 417.91,-31.56 421.63,-34.97"/>
+<text xml:space="preserve" text-anchor="middle" x="432.06" y="-46.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;determine</text>
+</g>
+<!-- pass -->
+<g id="node8" class="node">
+<title>pass</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M539.53,-106.92C539.53,-106.92 480.94,-106.92 480.94,-106.92 476.53,-106.92 472.12,-102.51 472.12,-98.1 472.12,-98.1 472.12,-89.28 472.12,-89.28 472.12,-84.87 476.54,-80.46 480.94,-80.46 480.94,-80.46 539.53,-80.46 539.53,-80.46 543.95,-80.46 548.36,-84.87 548.36,-89.28 548.36,-89.28 548.36,-98.1 548.36,-98.1 548.36,-102.51 543.95,-106.92 539.53,-106.92"/>
+<text xml:space="preserve" text-anchor="middle" x="510.24" y="-89.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">~/.pgpass</text>
+</g>
+<!-- pass&#45;&gt;conn -->
+<g id="edge8" class="edge">
+<title>pass&#45;&gt;conn</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M498.51,-80.08C486.7,-67.39 468.33,-47.65 454.78,-33.09"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="456.77,-31.52 450.02,-27.97 453.08,-34.96 456.77,-31.52"/>
+<text xml:space="preserve" text-anchor="middle" x="533.74" y="-46.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;supplies the password for &#160;</text>
+</g>
+</g>
+</svg>

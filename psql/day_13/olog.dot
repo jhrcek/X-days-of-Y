@@ -1,0 +1,27 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  buf   [label="the query buffer", fillcolor="#e7f0ec", color="#2f7a63"];
+  res   [label="a result set", fillcolor="#e7f0ec", color="#2f7a63"];
+  shape [label="a column name\nand type"];
+  grid  [label="a crosstab grid"];
+  cell  [label="a cell, read as SQL", fillcolor="#f8efdf", color="#d8b784"];
+  srv   [label="the server", fillcolor="#f4efe6"];
+
+  buf   -> res   [label="  produces"];
+  buf   -> shape [label="is described, by \\gdesc, as  "];
+  res   -> grid  [label="  is pivoted, by \\crosstabview, into"];
+  res   -> cell  [label="  is taken, by \\gexec, cell by cell as"];
+  cell  -> srv   [label="  is sent literally to"];
+  buf   -> srv   [label="is re-sent on a timer, by \\watch, to  ", style=dashed];
+
+}

@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  inp  [label="a line you type", fillcolor="#f4efe6"];
+  buf  [label="the query buffer", fillcolor="#e7f0ec", color="#2f7a63"];
+  stmt [label="a complete\nSQL statement", fillcolor="#e7f0ec", color="#2f7a63"];
+  meta [label="a meta-command", fillcolor="#f8efdf", color="#d8b784"];
+  srv  [label="the PostgreSQL server", fillcolor="#f4efe6"];
+  res  [label="a result"];
+
+  inp  -> buf  [label="  is appended to"];
+  inp  -> meta [label="can instead be  ", style=dashed];
+  buf  -> stmt [label="  becomes, at a semicolon,"];
+  meta -> buf  [label="reads and rewrites  "];
+  stmt -> srv  [label="  is sent to"];
+  meta -> srv  [label="may itself query  ", style=dashed];
+  srv  -> res  [label="  answers with"];
+
+}

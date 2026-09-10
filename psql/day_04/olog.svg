@@ -1,0 +1,86 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="597pt" height="201pt"
+ viewBox="0.00 0.00 597.00 201.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 196.88)">
+<title>olog</title>
+<!-- role -->
+<g id="node1" class="node">
+<title>role</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M45.18,-33.21C45.18,-33.21 8.82,-33.21 8.82,-33.21 4.41,-33.21 0,-28.8 0,-24.39 0,-24.39 0,-15.57 0,-15.57 0,-11.16 4.41,-6.75 8.82,-6.75 8.82,-6.75 45.18,-6.75 45.18,-6.75 49.59,-6.75 54,-11.16 54,-15.57 54,-15.57 54,-24.39 54,-24.39 54,-28.8 49.59,-33.21 45.18,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="27" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a role</text>
+</g>
+<!-- role&#45;&gt;role -->
+<g id="edge5" class="edge">
+<title>role&#45;&gt;role</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M54.29,-27.59C67.41,-28.53 79,-25.99 79,-19.98 79,-15.33 72.07,-12.76 62.86,-12.27"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="63.05,-9.74 55.88,-12.35 63.11,-14.78 63.05,-9.74"/>
+<text xml:space="preserve" text-anchor="middle" x="125.12" y="-16.58" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;can be a member of</text>
+</g>
+<!-- obj -->
+<g id="node2" class="node">
+<title>obj</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M298.3,-33.21C298.3,-33.21 197.7,-33.21 197.7,-33.21 193.3,-33.21 188.88,-28.8 188.88,-24.39 188.88,-24.39 188.88,-15.57 188.88,-15.57 188.88,-11.16 193.29,-6.75 197.7,-6.75 197.7,-6.75 298.3,-6.75 298.3,-6.75 302.7,-6.75 307.12,-11.16 307.12,-15.57 307.12,-15.57 307.12,-24.39 307.12,-24.39 307.12,-28.8 302.7,-33.21 298.3,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="248" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a database object</text>
+</g>
+<!-- grant -->
+<g id="node3" class="node">
+<title>grant</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M362.05,-109.67C362.05,-109.67 271.95,-109.67 271.95,-109.67 267.55,-109.67 263.13,-105.26 263.13,-100.85 263.13,-100.85 263.13,-92.03 263.13,-92.03 263.13,-87.62 267.55,-83.21 271.95,-83.21 271.95,-83.21 362.05,-83.21 362.05,-83.21 366.45,-83.21 370.87,-87.62 370.87,-92.03 370.87,-92.03 370.87,-100.85 370.87,-100.85 370.87,-105.26 366.45,-109.67 362.05,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="317" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a privilege grant</text>
+</g>
+<!-- grant&#45;&gt;role -->
+<g id="edge1" class="edge">
+<title>grant&#45;&gt;role</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M267.48,-82.72C209.37,-67.8 114.42,-43.43 62.94,-30.21"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="63.59,-27.77 55.99,-28.42 62.34,-32.66 63.59,-27.77"/>
+<text xml:space="preserve" text-anchor="middle" x="232" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is made to</text>
+</g>
+<!-- grant&#45;&gt;obj -->
+<g id="edge2" class="edge">
+<title>grant&#45;&gt;obj</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M305.3,-82.81C294.33,-70.97 277.79,-53.13 265.3,-39.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="267.35,-38.16 260.61,-34.59 263.66,-41.58 267.35,-38.16"/>
+<text xml:space="preserve" text-anchor="middle" x="317.33" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is made on</text>
+</g>
+<!-- gtor -->
+<g id="node4" class="node">
+<title>gtor</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M432.8,-33.21C432.8,-33.21 341.2,-33.21 341.2,-33.21 336.8,-33.21 332.38,-28.8 332.38,-24.39 332.38,-24.39 332.38,-15.57 332.38,-15.57 332.38,-11.16 336.8,-6.75 341.2,-6.75 341.2,-6.75 432.8,-6.75 432.8,-6.75 437.2,-6.75 441.62,-11.16 441.62,-15.57 441.62,-15.57 441.62,-24.39 441.62,-24.39 441.62,-28.8 437.2,-33.21 432.8,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="387" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the granting role</text>
+</g>
+<!-- grant&#45;&gt;gtor -->
+<g id="edge3" class="edge">
+<title>grant&#45;&gt;gtor</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M332.99,-82.8C338.57,-78.12 344.76,-72.63 350,-67.21 358.04,-58.9 366.16,-48.97 372.74,-40.44"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="374.56,-42.2 376.9,-34.94 370.55,-39.16 374.56,-42.2"/>
+<text xml:space="preserve" text-anchor="middle" x="386.06" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is made by &#160;</text>
+</g>
+<!-- acl -->
+<g id="node5" class="node">
+<title>acl</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M577.37,-39.96C577.37,-39.96 478.63,-39.96 478.63,-39.96 472.63,-39.96 466.63,-33.96 466.63,-27.96 466.63,-27.96 466.63,-12 466.63,-12 466.63,-6 472.63,0 478.63,0 478.63,0 577.37,0 577.37,0 583.37,0 589.37,-6 589.37,-12 589.37,-12 589.37,-27.96 589.37,-27.96 589.37,-33.96 583.37,-39.96 577.37,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="528" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an ACL entry</text>
+<text xml:space="preserve" text-anchor="middle" x="528" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">role=letters/grantor</text>
+</g>
+<!-- grant&#45;&gt;acl -->
+<g id="edge4" class="edge">
+<title>grant&#45;&gt;acl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M367.47,-82.67C383.74,-78.2 401.75,-72.87 418,-67.21 437.68,-60.35 458.89,-51.74 477.38,-43.82"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="478.06,-46.27 483.66,-41.1 476.06,-41.65 478.06,-46.27"/>
+<text xml:space="preserve" text-anchor="middle" x="479.72" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is displayed as</text>
+</g>
+<!-- def -->
+<g id="node6" class="node">
+<title>def</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M357.74,-192.88C357.74,-192.88 276.26,-192.88 276.26,-192.88 270.26,-192.88 264.26,-186.88 264.26,-180.88 264.26,-180.88 264.26,-164.92 264.26,-164.92 264.26,-158.92 270.26,-152.92 276.26,-152.92 276.26,-152.92 357.74,-152.92 357.74,-152.92 363.74,-152.92 369.74,-158.92 369.74,-164.92 369.74,-164.92 369.74,-180.88 369.74,-180.88 369.74,-186.88 363.74,-192.88 357.74,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="317" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a default</text>
+<text xml:space="preserve" text-anchor="middle" x="317" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">privilege setting</text>
+</g>
+<!-- def&#45;&gt;grant -->
+<g id="edge6" class="edge">
+<title>def&#45;&gt;grant</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M317,-152.72C317,-142.33 317,-129.45 317,-118.74"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="319.52,-118.79 317,-111.59 314.48,-118.79 319.52,-118.79"/>
+<text xml:space="preserve" text-anchor="middle" x="343.62" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">pre&#45;creates &#160;</text>
+</g>
+</g>
+</svg>

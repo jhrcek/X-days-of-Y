@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  p1     [label="PROMPT1", fillcolor="#e7f0ec", color="#2f7a63"];
+  esc    [label="an escape sequence\n%R %x %# %/ %n %m", fillcolor="#e7f0ec", color="#2f7a63"];
+  state  [label="a piece of\nsession state", fillcolor="#e7f0ec", color="#2f7a63"];
+  prompt [label="the prompt you see", fillcolor="#e7f0ec", color="#2f7a63"];
+  np     [label="a non-printing sequence\n%[ ... %]", fillcolor="#f8efdf", color="#d8b784"];
+  rl     [label="readline", fillcolor="#f4efe6"];
+
+  p1     -> esc    [label="  is written with"];
+  esc    -> state  [label="  stands for"];
+  p1     -> prompt [label="is expanded into  "];
+  state  -> prompt [label="  shows through in"];
+  prompt -> rl     [label="  must be measured by"];
+  np     -> p1     [label="can appear in  "];
+  np     -> rl     [label="  is counted as zero-width by", style=dashed];
+
+}

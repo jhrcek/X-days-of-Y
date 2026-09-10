@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  cp    [label="a \\copy command", fillcolor="#e7f0ec", color="#2f7a63"];
+  stdio [label="COPY ... TO STDOUT\nCOPY ... FROM STDIN"];
+  cfs   [label="the client's filesystem", fillcolor="#e7f0ec", color="#2f7a63"];
+  conn  [label="the connection", fillcolor="#f8efdf", color="#d8b784"];
+  sql   [label="COPY ... TO 'file'\nCOPY ... FROM 'file'", fillcolor="#e7f0ec", color="#2f7a63"];
+  sfs   [label="the server's filesystem", fillcolor="#f4efe6"];
+  role  [label="a pg_*_server_files role", fillcolor="#f4efe6"];
+
+  cp    -> cfs   [label="  reads and writes"];
+  cp    -> stdio [label="  is implemented with"];
+  stdio -> conn  [label="  streams over"];
+  cp    -> conn  [label="routes every row through  ", style=dashed];
+  sql   -> sfs   [label="  reads and writes"];
+  sql   -> role  [label="  requires membership of"];
+
+}

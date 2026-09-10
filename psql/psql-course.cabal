@@ -1,0 +1,54 @@
+cabal-version:      3.0
+name:               psql-course
+version:            1.0.0
+synopsis:           "17 Days of psql" - the course content
+description:
+  Seventeen lessons distilled from psql(1), written as Lucid markup against the
+  course-builder library. @cabal run psql-course@ regenerates just this course;
+  @cabal run build-site@ at the repository root regenerates everything.
+build-type:         Simple
+
+common shared
+    default-language: GHC2021
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+    ghc-options: -Wall -Wno-missing-signatures
+
+library
+    import:           shared
+    hs-source-dirs:   src
+    exposed-modules:  Courses.Psql
+    other-modules:
+        Course.Day.D01
+        Course.Day.D02
+        Course.Day.D03
+        Course.Day.D04
+        Course.Day.D05
+        Course.Day.D06
+        Course.Day.D07
+        Course.Day.D08
+        Course.Day.D09
+        Course.Day.D10
+        Course.Day.D11
+        Course.Day.D12
+        Course.Day.D13
+        Course.Day.D14
+        Course.Day.D15
+        Course.Day.D16
+        Course.Day.D17
+    build-depends:
+        base   >=4.17 && <5,
+        text   >=2.0,
+        lucid  >=2.11,
+        course-builder
+
+executable psql-course
+    import:           shared
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:
+        base,
+        filepath,
+        course-builder,
+        psql-course
