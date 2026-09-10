@@ -6,17 +6,39 @@ A man page is organised for lookup. A course is organised for acquisition. The w
 is re-sorting one into the other, and the ordering principle is **what can you use
 tomorrow morning**, not what the page lists first.
 
-Three phases, roughly equal:
+Three phases, roughly equal thirds of however many days the tool turns out to support:
 
-| Phase | Days (of 14) | Content |
-| --- | --- | --- |
-| **Essentials** | 1–4 | The mental model, then the two or three nouns everything else hangs off. Someone who stops here is still better off than before. |
-| **Intermediate** | 5–8 | Configuration, the tool's own command/query grammar, the things a competent user reaches within a year. |
-| **Advanced** | 9–14 | Past where most users ever get: the expression language, the extension points, automation, the escape hatches. |
+| Phase | Content |
+| --- | --- |
+| **Essentials** | The mental model, then the two or three nouns everything else hangs off. Someone who stops here is still better off than before. |
+| **Intermediate** | Configuration, the tool's own command/query grammar, the things a competent user reaches within a year. |
+| **Advanced** | Past where most users ever get: the expression language, the extension points, automation, the escape hatches. |
+
+(In the 14-day tmux arc below that comes out as 1–4 / 5–8 / 9–14. A 7-day course
+splits 1–3 / 4–5 / 6–7. The proportions travel; the numbers do not.)
 
 Day 1 is always **the mental model** — the design decision the whole tool follows from
 (for tmux: server/client separation). Get that wrong and every later day is a list of
 keys. Day N is always **the sharp edges plus what to read next**.
+
+## How many days
+
+The day count falls out of the concept areas found in step 2 of the skill, not the other
+way round. One area with a mental model of its own and enough material to drill is one
+day; an area that needs two diagrams is two days; two thin areas that share a model are
+one day. Then sanity-check the total:
+
+- Every day must clear the bar below — one model, usable alone, real drills. A day you
+  have to pad with reference tables is a day that does not exist.
+- Every area that carries daily use must be in, whatever the total comes to.
+- Big reference tables inflate a page without adding days; a page that is mostly one
+  option list is a short course.
+
+Typical outcomes: a filter with one pattern language and a pile of flags lands around
+7–10 days; a tool with several layers and its own expression language lands around 14; a
+tool the size of git or systemd can support 21 or more but is usually better split by
+subsystem. Say the number you arrived at *and why* — the areas that justify it — rather
+than reaching for a familiar one.
 
 ## Rules per day
 
@@ -80,6 +102,15 @@ Not every tool has tmux's five layers. Map the phases onto whatever the tool doe
 - **A daemon or service** (systemd, ssh, nginx): Day 1 is the unit of configuration and
   its lifecycle, the middle is the config file, the advanced third is diagnosis,
   templating, and security surface.
+
+## The config thread
+
+Only tools with a config file get one, and where it starts depends on the tool, not on a
+fixed day number: the first `ConfBlock` belongs on the first day the reader has learned a
+setting worth keeping. For tmux that is Day 5, because options are the fifth concept; for
+a tool whose dotfile is the first thing you touch it could be Day 2. State the starting
+day when you propose the shape, and keep the `Days N–M` span in the config card in sync
+with it.
 
 If the tool has no config file, set `courseConfig = Nothing` and use the freed daily slot
 for a "recipes" thread instead — a growing file of invocations the reader has built.

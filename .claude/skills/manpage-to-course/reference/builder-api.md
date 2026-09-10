@@ -37,8 +37,8 @@ site/app/Main.hs             lists every course; builds all of them + the root p
 | `courseConfig` | `Maybe ConfigFile` | `Nothing` for tools with no config file |
 | `courseDays` | `[Day]` | in order |
 
-The day count, the "~N minutes each" figure and the "Days 5–14" span in the config card
-are all **computed**; do not hardcode them anywhere.
+The day count, the "~N minutes each" figure and the "Days N–M" span in the config card
+(derived from which days actually carry a `ConfBlock`) are all **computed**; do not hardcode them anywhere.
 
 `ConfigFile`: `cfFileName` (written to the course root, e.g. `tmux.conf`), `cfUserPath`
 (`~/.tmux.conf`, shown on each config box), `cfReloadHint` (`Html ()`, how to make the tool
