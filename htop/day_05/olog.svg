@@ -1,0 +1,98 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="510pt" height="174pt"
+ viewBox="0.00 0.00 510.00 174.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 169.88)">
+<title>olog</title>
+<!-- row -->
+<g id="node1" class="node">
+<title>row</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M351.42,-96.17C351.42,-96.17 315.06,-96.17 315.06,-96.17 310.65,-96.17 306.24,-91.76 306.24,-87.35 306.24,-87.35 306.24,-78.53 306.24,-78.53 306.24,-74.12 310.65,-69.71 315.06,-69.71 315.06,-69.71 351.42,-69.71 351.42,-69.71 355.83,-69.71 360.24,-74.12 360.24,-78.53 360.24,-78.53 360.24,-87.35 360.24,-87.35 360.24,-91.76 355.83,-96.17 351.42,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="333.24" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a row</text>
+</g>
+<!-- parent -->
+<g id="node5" class="node">
+<title>parent</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M223.91,-26.46C223.91,-26.46 128.57,-26.46 128.57,-26.46 124.16,-26.46 119.75,-22.05 119.75,-17.64 119.75,-17.64 119.75,-8.82 119.75,-8.82 119.75,-4.41 124.16,0 128.57,0 128.57,0 223.91,0 223.91,0 228.32,0 232.73,-4.41 232.73,-8.82 232.73,-8.82 232.73,-17.64 232.73,-17.64 232.73,-22.05 228.32,-26.46 223.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a parent process</text>
+</g>
+<!-- row&#45;&gt;parent -->
+<g id="edge5" class="edge">
+<title>row&#45;&gt;parent</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M305.89,-70.15C280.28,-59.1 241.79,-42.5 213.39,-30.25"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="214.74,-28.09 207.13,-27.55 212.75,-32.72 214.74,-28.09"/>
+<text xml:space="preserve" text-anchor="middle" x="296.01" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as parent</text>
+</g>
+<!-- flat -->
+<g id="node2" class="node">
+<title>flat</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M418.16,-165.88C418.16,-165.88 360.32,-165.88 360.32,-165.88 355.91,-165.88 351.5,-161.47 351.5,-157.06 351.5,-157.06 351.5,-148.24 351.5,-148.24 351.5,-143.83 355.91,-139.42 360.32,-139.42 360.32,-139.42 418.16,-139.42 418.16,-139.42 422.57,-139.42 426.98,-143.83 426.98,-148.24 426.98,-148.24 426.98,-157.06 426.98,-157.06 426.98,-161.47 422.57,-165.88 418.16,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="389.24" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the flat list</text>
+</g>
+<!-- flat&#45;&gt;row -->
+<g id="edge1" class="edge">
+<title>flat&#45;&gt;row</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M375.53,-138.89C370.74,-134.2 365.45,-128.73 360.99,-123.42 355.8,-117.24 350.58,-110.13 346.1,-103.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="348.23,-102.3 342.11,-97.75 344.06,-105.13 348.23,-102.3"/>
+<text xml:space="preserve" text-anchor="middle" x="381.62" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- col -->
+<g id="node4" class="node">
+<title>col</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M470.91,-96.17C470.91,-96.17 393.57,-96.17 393.57,-96.17 389.16,-96.17 384.75,-91.76 384.75,-87.35 384.75,-87.35 384.75,-78.53 384.75,-78.53 384.75,-74.12 389.16,-69.71 393.57,-69.71 393.57,-69.71 470.91,-69.71 470.91,-69.71 475.32,-69.71 479.73,-74.12 479.73,-78.53 479.73,-78.53 479.73,-87.35 479.73,-87.35 479.73,-91.76 475.32,-96.17 470.91,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="432.24" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a sort column</text>
+</g>
+<!-- flat&#45;&gt;col -->
+<g id="edge2" class="edge">
+<title>flat&#45;&gt;col</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M397.33,-138.91C403.57,-129.08 412.34,-115.28 419.52,-103.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="421.6,-105.39 423.34,-97.96 417.35,-102.69 421.6,-105.39"/>
+<text xml:space="preserve" text-anchor="middle" x="457.56" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;orders every row by</text>
+</g>
+<!-- tree -->
+<g id="node3" class="node">
+<title>tree</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M212.66,-165.88C212.66,-165.88 139.82,-165.88 139.82,-165.88 135.41,-165.88 131,-161.47 131,-157.06 131,-157.06 131,-148.24 131,-148.24 131,-143.83 135.41,-139.42 139.82,-139.42 139.82,-139.42 212.66,-139.42 212.66,-139.42 217.07,-139.42 221.48,-143.83 221.48,-148.24 221.48,-148.24 221.48,-157.06 221.48,-157.06 221.48,-161.47 217.07,-165.88 212.66,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the tree view</text>
+</g>
+<!-- tree&#45;&gt;row -->
+<g id="edge3" class="edge">
+<title>tree&#45;&gt;row</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M205.77,-138.91C231.96,-127.62 270.27,-111.1 298.05,-99.12"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="298.87,-101.51 304.48,-96.34 296.87,-96.88 298.87,-101.51"/>
+<text xml:space="preserve" text-anchor="middle" x="284.76" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- tree&#45;&gt;flat -->
+<g id="edge8" class="edge">
+<title>tree&#45;&gt;flat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M221.93,-152.65C257.58,-152.65 306.9,-152.65 342.75,-152.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="342.31,-155.17 349.51,-152.65 342.31,-150.13 342.31,-155.17"/>
+<text xml:space="preserve" text-anchor="middle" x="286.49" y="-157.88" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">replaces &#160;</text>
+</g>
+<!-- tree&#45;&gt;parent -->
+<g id="edge4" class="edge">
+<title>tree&#45;&gt;parent</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M176.24,-138.97C176.24,-115.35 176.24,-64.38 176.24,-35.44"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="178.76,-35.67 176.24,-28.47 173.72,-35.67 178.76,-35.67"/>
+<text xml:space="preserve" text-anchor="middle" x="228.74" y="-79.54" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;indents each row under</text>
+</g>
+<!-- sibs -->
+<g id="node6" class="node">
+<title>sibs</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M117.66,-96.17C117.66,-96.17 8.82,-96.17 8.82,-96.17 4.41,-96.17 0,-91.76 0,-87.35 0,-87.35 0,-78.53 0,-78.53 0,-74.12 4.41,-69.71 8.82,-69.71 8.82,-69.71 117.66,-69.71 117.66,-69.71 122.07,-69.71 126.48,-74.12 126.48,-78.53 126.48,-78.53 126.48,-87.35 126.48,-87.35 126.48,-91.76 122.07,-96.17 117.66,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="63.24" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a set of sibling rows</text>
+</g>
+<!-- tree&#45;&gt;sibs -->
+<g id="edge7" class="edge">
+<title>tree&#45;&gt;sibs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M130.88,-145.6C114.35,-141.54 96.44,-134.76 82.99,-123.42 77.09,-118.45 72.78,-111.29 69.72,-104.42"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="72.23,-103.92 67.26,-98.13 67.53,-105.76 72.23,-103.92"/>
+<text xml:space="preserve" text-anchor="middle" x="120.12" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;sorts only within</text>
+</g>
+<!-- sibs&#45;&gt;parent -->
+<g id="edge6" class="edge">
+<title>sibs&#45;&gt;parent</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M78.1,-69.28C88.18,-61.05 102.03,-50.4 115.24,-42.46 122.37,-38.18 130.25,-34.09 137.92,-30.42"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="138.57,-32.9 144.04,-27.57 136.45,-28.33 138.57,-32.9"/>
+<text xml:space="preserve" text-anchor="middle" x="136.24" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;all share</text>
+</g>
+</g>
+</svg>

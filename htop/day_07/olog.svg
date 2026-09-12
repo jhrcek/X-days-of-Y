@@ -1,0 +1,80 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="521pt" height="201pt"
+ viewBox="0.00 0.00 521.00 201.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 196.88)">
+<title>olog</title>
+<!-- sel -->
+<g id="node1" class="node">
+<title>sel</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M124.41,-26.46C124.41,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 124.41,0 124.41,0 128.82,0 133.23,-4.41 133.23,-8.82 133.23,-8.82 133.23,-17.64 133.23,-17.64 133.23,-22.05 128.82,-26.46 124.41,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="66.61" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the selected process</text>
+</g>
+<!-- aux -->
+<g id="node2" class="node">
+<title>aux</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M202.16,-186.13C202.16,-186.13 97.07,-186.13 97.07,-186.13 92.66,-186.13 88.25,-181.72 88.25,-177.31 88.25,-177.31 88.25,-168.49 88.25,-168.49 88.25,-164.08 92.66,-159.67 97.07,-159.67 97.07,-159.67 202.16,-159.67 202.16,-159.67 206.57,-159.67 210.98,-164.08 210.98,-168.49 210.98,-168.49 210.98,-177.31 210.98,-177.31 210.98,-181.72 206.57,-186.13 202.16,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="149.62" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an auxiliary screen</text>
+</g>
+<!-- aux&#45;&gt;sel -->
+<g id="edge1" class="edge">
+<title>aux&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M117.38,-159.29C96.56,-149.26 71.15,-132.99 58.86,-109.67 46.58,-86.35 52.48,-55.31 58.76,-35.06"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="61.11,-35.97 61.01,-28.34 56.33,-34.37 61.11,-35.97"/>
+<text xml:space="preserve" text-anchor="middle" x="78.74" y="-86.29" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is about</text>
+</g>
+<!-- procfs -->
+<g id="node3" class="node">
+<title>procfs</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M179.66,-102.92C179.66,-102.92 119.57,-102.92 119.57,-102.92 115.16,-102.92 110.75,-98.51 110.75,-94.1 110.75,-94.1 110.75,-85.28 110.75,-85.28 110.75,-80.87 115.16,-76.46 119.57,-76.46 119.57,-76.46 179.66,-76.46 179.66,-76.46 184.07,-76.46 188.48,-80.87 188.48,-85.28 188.48,-85.28 188.48,-94.1 188.48,-94.1 188.48,-98.51 184.07,-102.92 179.66,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="149.62" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a /proc file</text>
+</g>
+<!-- aux&#45;&gt;procfs -->
+<g id="edge2" class="edge">
+<title>aux&#45;&gt;procfs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M149.5,-159.27C149.45,-152.62 149.39,-144.33 149.37,-136.92 149.34,-128.73 149.37,-119.72 149.42,-111.85"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="151.94,-112.06 149.47,-104.84 146.9,-112.02 151.94,-112.06"/>
+<text xml:space="preserve" text-anchor="middle" x="190.99" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may be filled from</text>
+</g>
+<!-- ext -->
+<g id="node4" class="node">
+<title>ext</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M305.98,-109.67C305.98,-109.67 225.25,-109.67 225.25,-109.67 219.25,-109.67 213.25,-103.67 213.25,-97.67 213.25,-97.67 213.25,-81.71 213.25,-81.71 213.25,-75.71 219.25,-69.71 225.25,-69.71 225.25,-69.71 305.98,-69.71 305.98,-69.71 311.98,-69.71 317.98,-75.71 317.98,-81.71 317.98,-81.71 317.98,-97.67 317.98,-97.67 317.98,-103.67 311.98,-109.67 305.98,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="265.62" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an external tool</text>
+<text xml:space="preserve" text-anchor="middle" x="265.62" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(strace, lsof)</text>
+</g>
+<!-- aux&#45;&gt;ext -->
+<g id="edge3" class="edge">
+<title>aux&#45;&gt;ext</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M194.26,-159.18C208.15,-153.8 222.88,-146.51 234.62,-136.92 241.1,-131.62 246.74,-124.61 251.38,-117.66"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="253.5,-119.01 255.16,-111.57 249.22,-116.35 253.5,-119.01"/>
+<text xml:space="preserve" text-anchor="middle" x="299.19" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may be filled by running</text>
+</g>
+<!-- procfs&#45;&gt;sel -->
+<g id="edge4" class="edge">
+<title>procfs&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M135.54,-76.06C122.3,-64.19 102.33,-46.27 87.29,-32.77"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="88.99,-30.92 81.95,-27.98 85.62,-34.67 88.99,-30.92"/>
+<text xml:space="preserve" text-anchor="middle" x="135.73" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;belongs to</text>
+</g>
+<!-- priv -->
+<g id="node5" class="node">
+<title>priv</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M380.73,-192.88C380.73,-192.88 304.5,-192.88 304.5,-192.88 298.5,-192.88 292.5,-186.88 292.5,-180.88 292.5,-180.88 292.5,-164.92 292.5,-164.92 292.5,-158.92 298.5,-152.92 304.5,-152.92 304.5,-152.92 380.73,-152.92 380.73,-152.92 386.73,-152.92 392.73,-158.92 392.73,-164.92 392.73,-164.92 392.73,-180.88 392.73,-180.88 392.73,-186.88 386.73,-192.88 380.73,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="342.62" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a privilege you</text>
+<text xml:space="preserve" text-anchor="middle" x="342.62" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">may not have</text>
+</g>
+<!-- procfs&#45;&gt;priv -->
+<g id="edge5" class="edge">
+<title>procfs&#45;&gt;priv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M179.97,-103.43C186.67,-105.83 193.81,-108.09 200.62,-109.67 235.21,-117.71 335.79,-99.33 359.62,-125.67 364.48,-131.05 364.26,-137.94 361.78,-144.75"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="359.54,-143.59 358.7,-151.17 364.08,-145.77 359.54,-143.59"/>
+<text xml:space="preserve" text-anchor="middle" x="389.74" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is gated by &#160;</text>
+</g>
+<!-- ext&#45;&gt;priv -->
+<g id="edge6" class="edge">
+<title>ext&#45;&gt;priv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M318.49,-93.06C368.52,-96.54 438.45,-105.05 455.62,-125.67 474.84,-148.76 438.12,-160.46 401.51,-166.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="401.56,-163.74 394.81,-167.29 402.3,-168.73 401.56,-163.74"/>
+<text xml:space="preserve" text-anchor="middle" x="486.86" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is gated by</text>
+</g>
+</g>
+</svg>

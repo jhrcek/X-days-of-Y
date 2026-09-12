@@ -1,0 +1,127 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="528pt" height="414pt"
+ viewBox="0.00 0.00 528.00 414.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 409.51)">
+<title>olog</title>
+<!-- kern -->
+<g id="node1" class="node">
+<title>kern</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M67.41,-161.88C67.41,-161.88 8.82,-161.88 8.82,-161.88 4.41,-161.88 0,-157.47 0,-153.06 0,-153.06 0,-144.24 0,-144.24 0,-139.83 4.41,-135.42 8.82,-135.42 8.82,-135.42 67.41,-135.42 67.41,-135.42 71.82,-135.42 76.23,-139.83 76.23,-144.24 76.23,-144.24 76.23,-153.06 76.23,-153.06 76.23,-157.47 71.82,-161.88 67.41,-161.88"/>
+<text xml:space="preserve" text-anchor="middle" x="38.12" y="-144.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the kernel</text>
+</g>
+<!-- entry -->
+<g id="node3" class="node">
+<title>entry</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M173.16,-94.17C173.16,-94.17 101.07,-94.17 101.07,-94.17 96.66,-94.17 92.25,-89.76 92.25,-85.35 92.25,-85.35 92.25,-76.53 92.25,-76.53 92.25,-72.12 96.66,-67.71 101.07,-67.71 101.07,-67.71 173.16,-67.71 173.16,-67.71 177.57,-67.71 181.98,-72.12 181.98,-76.53 181.98,-76.53 181.98,-85.35 181.98,-85.35 181.98,-89.76 177.57,-94.17 173.16,-94.17"/>
+<text xml:space="preserve" text-anchor="middle" x="137.12" y="-76.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a /proc entry</text>
+</g>
+<!-- kern&#45;&gt;entry -->
+<g id="edge1" class="edge">
+<title>kern&#45;&gt;entry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M52.02,-135.09C61.15,-127.16 73.54,-116.99 85.37,-109.17 90.9,-105.51 96.99,-101.94 102.98,-98.66"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="103.9,-101.03 109.07,-95.42 101.53,-96.58 103.9,-101.03"/>
+<text xml:space="preserve" text-anchor="middle" x="108.24" y="-111.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;publishes</text>
+</g>
+<!-- proc -->
+<g id="node2" class="node">
+<title>proc</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M298.79,-26.46C298.79,-26.46 197.44,-26.46 197.44,-26.46 193.04,-26.46 188.62,-22.05 188.62,-17.64 188.62,-17.64 188.62,-8.82 188.62,-8.82 188.62,-4.41 193.03,0 197.44,0 197.44,0 298.79,0 298.79,0 303.19,0 307.61,-4.41 307.61,-8.82 307.61,-8.82 307.61,-17.64 307.61,-17.64 307.61,-22.05 303.19,-26.46 298.79,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="248.12" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a running process</text>
+</g>
+<!-- entry&#45;&gt;proc -->
+<g id="edge2" class="edge">
+<title>entry&#45;&gt;proc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M158.52,-67.27C175.79,-57.04 200.26,-42.56 219.27,-31.31"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="220.5,-33.51 225.41,-27.67 217.93,-29.17 220.5,-33.51"/>
+<text xml:space="preserve" text-anchor="middle" x="222.14" y="-43.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;describes</text>
+</g>
+<!-- samp -->
+<g id="node4" class="node">
+<title>samp</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M164.54,-161.88C164.54,-161.88 109.69,-161.88 109.69,-161.88 105.28,-161.88 100.88,-157.47 100.88,-153.06 100.88,-153.06 100.88,-144.24 100.88,-144.24 100.88,-139.83 105.28,-135.42 109.69,-135.42 109.69,-135.42 164.54,-135.42 164.54,-135.42 168.95,-135.42 173.36,-139.83 173.36,-144.24 173.36,-144.24 173.36,-153.06 173.36,-153.06 173.36,-157.47 168.95,-161.88 164.54,-161.88"/>
+<text xml:space="preserve" text-anchor="middle" x="137.12" y="-144.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a sample</text>
+</g>
+<!-- samp&#45;&gt;entry -->
+<g id="edge3" class="edge">
+<title>samp&#45;&gt;entry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M137.12,-134.98C137.12,-125.98 137.12,-113.68 137.12,-103.19"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="139.64,-103.36 137.12,-96.16 134.6,-103.36 139.64,-103.36"/>
+<text xml:space="preserve" text-anchor="middle" x="169.37" y="-111.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is one read of</text>
+</g>
+<!-- pair -->
+<g id="node5" class="node">
+<title>pair</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M309.48,-243.09C309.48,-243.09 198.75,-243.09 198.75,-243.09 192.75,-243.09 186.75,-237.09 186.75,-231.09 186.75,-231.09 186.75,-215.13 186.75,-215.13 186.75,-209.13 192.75,-203.13 198.75,-203.13 198.75,-203.13 309.48,-203.13 309.48,-203.13 315.48,-203.13 321.48,-209.13 321.48,-215.13 321.48,-215.13 321.48,-231.09 321.48,-231.09 321.48,-237.09 315.48,-243.09 309.48,-243.09"/>
+<text xml:space="preserve" text-anchor="middle" x="254.12" y="-225.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pair of</text>
+<text xml:space="preserve" text-anchor="middle" x="254.12" y="-212.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">consecutive samples</text>
+</g>
+<!-- pair&#45;&gt;samp -->
+<g id="edge4" class="edge">
+<title>pair&#45;&gt;samp</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M222.7,-202.71C214.98,-197.95 206.75,-192.86 199.12,-188.13 187.93,-181.21 175.63,-173.57 164.94,-166.94"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="166.29,-164.81 158.84,-163.15 163.63,-169.09 166.29,-164.81"/>
+<text xml:space="preserve" text-anchor="middle" x="224.62" y="-179.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is made of</text>
+</g>
+<!-- ivl -->
+<g id="node6" class="node">
+<title>ivl</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M310.91,-161.88C310.91,-161.88 207.32,-161.88 207.32,-161.88 202.91,-161.88 198.5,-157.47 198.5,-153.06 198.5,-153.06 198.5,-144.24 198.5,-144.24 198.5,-139.83 202.91,-135.42 207.32,-135.42 207.32,-135.42 310.91,-135.42 310.91,-135.42 315.32,-135.42 319.73,-139.83 319.73,-144.24 319.73,-144.24 319.73,-153.06 319.73,-153.06 319.73,-157.47 315.32,-161.88 310.91,-161.88"/>
+<text xml:space="preserve" text-anchor="middle" x="259.12" y="-144.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the refresh interval</text>
+</g>
+<!-- pair&#45;&gt;ivl -->
+<g id="edge5" class="edge">
+<title>pair&#45;&gt;ivl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M255.45,-202.69C256.14,-192.81 256.97,-180.78 257.66,-170.67"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="260.17,-170.99 258.15,-163.64 255.14,-170.65 260.17,-170.99"/>
+<text xml:space="preserve" text-anchor="middle" x="292.46" y="-179.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is separated by</text>
+</g>
+<!-- brief -->
+<g id="node9" class="node">
+<title>brief</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M507.86,-405.51C507.86,-405.51 396.38,-405.51 396.38,-405.51 390.38,-405.51 384.38,-399.51 384.38,-393.51 384.38,-393.51 384.38,-377.55 384.38,-377.55 384.38,-371.55 390.38,-365.55 396.38,-365.55 396.38,-365.55 507.86,-365.55 507.86,-365.55 513.86,-365.55 519.86,-371.55 519.86,-377.55 519.86,-377.55 519.86,-393.51 519.86,-393.51 519.86,-399.51 513.86,-405.51 507.86,-405.51"/>
+<text xml:space="preserve" text-anchor="middle" x="452.12" y="-388.11" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a process that lived</text>
+<text xml:space="preserve" text-anchor="middle" x="452.12" y="-374.61" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">less than one interval</text>
+</g>
+<!-- pair&#45;&gt;brief -->
+<g id="edge9" class="edge">
+<title>pair&#45;&gt;brief</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M319.6,-243.44C328.9,-247.55 338.04,-252.4 346.12,-258.09 384.6,-285.19 417.35,-329.59 435.87,-357.92"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="433.62,-359.07 439.63,-363.77 437.86,-356.35 433.62,-359.07"/>
+<text xml:space="preserve" text-anchor="middle" x="436.65" y="-300.92" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">never sees &#160;</text>
+</g>
+<!-- pct -->
+<g id="node7" class="node">
+<title>pct</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M303.23,-324.3C303.23,-324.3 233,-324.3 233,-324.3 227,-324.3 221,-318.3 221,-312.3 221,-312.3 221,-296.34 221,-296.34 221,-290.34 227,-284.34 233,-284.34 233,-284.34 303.23,-284.34 303.23,-284.34 309.23,-284.34 315.23,-290.34 315.23,-296.34 315.23,-296.34 315.23,-312.3 315.23,-312.3 315.23,-318.3 309.23,-324.3 303.23,-324.3"/>
+<text xml:space="preserve" text-anchor="middle" x="268.12" y="-306.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a percentage</text>
+<text xml:space="preserve" text-anchor="middle" x="268.12" y="-293.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">on screen</text>
+</g>
+<!-- pct&#45;&gt;pair -->
+<g id="edge6" class="edge">
+<title>pct&#45;&gt;pair</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M263.03,-283.99C261.88,-279.23 260.75,-274.12 259.87,-269.34 258.85,-263.82 257.95,-257.89 257.19,-252.2"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="259.7,-251.96 256.3,-245.13 254.7,-252.59 259.7,-251.96"/>
+<text xml:space="preserve" text-anchor="middle" x="299.99" y="-260.32" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is computed from</text>
+</g>
+<!-- row -->
+<g id="node8" class="node">
+<title>row</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M347.36,-405.51C347.36,-405.51 286.88,-405.51 286.88,-405.51 280.88,-405.51 274.88,-399.51 274.88,-393.51 274.88,-393.51 274.88,-377.55 274.88,-377.55 274.88,-371.55 280.88,-365.55 286.88,-365.55 286.88,-365.55 347.36,-365.55 347.36,-365.55 353.36,-365.55 359.36,-371.55 359.36,-377.55 359.36,-377.55 359.36,-393.51 359.36,-393.51 359.36,-399.51 353.36,-405.51 347.36,-405.51"/>
+<text xml:space="preserve" text-anchor="middle" x="317.12" y="-388.11" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a row in the</text>
+<text xml:space="preserve" text-anchor="middle" x="317.12" y="-374.61" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">process list</text>
+</g>
+<!-- row&#45;&gt;proc -->
+<g id="edge8" class="edge">
+<title>row&#45;&gt;proc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M334.2,-365.18C345.83,-349.99 359.12,-327.73 359.12,-305.32 359.12,-305.32 359.12,-305.32 359.12,-79.94 359.12,-55.39 338.77,-39.82 315.49,-30.04"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="316.62,-27.77 309,-27.51 314.79,-32.47 316.62,-27.77"/>
+<text xml:space="preserve" text-anchor="middle" x="383.12" y="-179.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;stands for</text>
+</g>
+<!-- row&#45;&gt;pct -->
+<g id="edge7" class="edge">
+<title>row&#45;&gt;pct</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M305.25,-365.36C299.04,-355.31 291.33,-342.85 284.55,-331.89"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="286.8,-330.74 280.87,-325.94 282.52,-333.39 286.8,-330.74"/>
+<text xml:space="preserve" text-anchor="middle" x="315.42" y="-341.53" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;displays</text>
+</g>
+</g>
+</svg>

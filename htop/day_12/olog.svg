@@ -1,0 +1,104 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="446pt" height="327pt"
+ viewBox="0.00 0.00 446.00 327.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 322.8)">
+<title>olog</title>
+<!-- call -->
+<g id="node1" class="node">
+<title>call</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M385.29,-235.59C385.29,-235.59 316.94,-235.59 316.94,-235.59 312.53,-235.59 308.12,-231.18 308.12,-226.77 308.12,-226.77 308.12,-217.95 308.12,-217.95 308.12,-213.54 312.53,-209.13 316.94,-209.13 316.94,-209.13 385.29,-209.13 385.29,-209.13 389.7,-209.13 394.11,-213.54 394.11,-217.95 394.11,-217.95 394.11,-226.77 394.11,-226.77 394.11,-231.18 389.7,-235.59 385.29,-235.59"/>
+<text xml:space="preserve" text-anchor="middle" x="351.12" y="-218.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a read() call</text>
+</g>
+<!-- cache -->
+<g id="node2" class="node">
+<title>cache</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M395.41,-165.88C395.41,-165.88 306.82,-165.88 306.82,-165.88 302.41,-165.88 298,-161.47 298,-157.06 298,-157.06 298,-148.24 298,-148.24 298,-143.83 302.41,-139.42 306.82,-139.42 306.82,-139.42 395.41,-139.42 395.41,-139.42 399.82,-139.42 404.23,-143.83 404.23,-148.24 404.23,-148.24 404.23,-157.06 404.23,-157.06 404.23,-161.47 399.82,-165.88 395.41,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="351.12" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the page cache</text>
+</g>
+<!-- call&#45;&gt;cache -->
+<g id="edge1" class="edge">
+<title>call&#45;&gt;cache</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M351.12,-208.62C351.12,-199.17 351.12,-186.05 351.12,-175"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="353.64,-175.12 351.12,-167.92 348.6,-175.12 353.64,-175.12"/>
+<text xml:space="preserve" text-anchor="middle" x="384.12" y="-184.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is served from</text>
+</g>
+<!-- blk -->
+<g id="node3" class="node">
+<title>blk</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M272.29,-96.17C272.29,-96.17 155.94,-96.17 155.94,-96.17 151.53,-96.17 147.12,-91.76 147.12,-87.35 147.12,-87.35 147.12,-78.53 147.12,-78.53 147.12,-74.12 151.53,-69.71 155.94,-69.71 155.94,-69.71 272.29,-69.71 272.29,-69.71 276.7,-69.71 281.11,-74.12 281.11,-78.53 281.11,-78.53 281.11,-87.35 281.11,-87.35 281.11,-91.76 276.69,-96.17 272.29,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="214.12" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a block&#45;layer request</text>
+</g>
+<!-- cache&#45;&gt;blk -->
+<g id="edge2" class="edge">
+<title>cache&#45;&gt;blk</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M326.24,-138.88C310.96,-131.08 290.95,-120.95 273.12,-112.17 265.24,-108.3 256.75,-104.19 248.73,-100.34"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="249.92,-98.12 242.34,-97.29 247.75,-102.67 249.92,-98.12"/>
+<text xml:space="preserve" text-anchor="middle" x="348.24" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;falls back, on a miss, to</text>
+</g>
+<!-- dev -->
+<g id="node4" class="node">
+<title>dev</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M265.91,-26.46C265.91,-26.46 162.32,-26.46 162.32,-26.46 157.91,-26.46 153.5,-22.05 153.5,-17.64 153.5,-17.64 153.5,-8.82 153.5,-8.82 153.5,-4.41 157.91,0 162.32,0 162.32,0 265.91,0 265.91,0 270.32,0 274.73,-4.41 274.73,-8.82 274.73,-8.82 274.73,-17.64 274.73,-17.64 274.73,-22.05 270.32,-26.46 265.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="214.12" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the storage device</text>
+</g>
+<!-- blk&#45;&gt;dev -->
+<g id="edge3" class="edge">
+<title>blk&#45;&gt;dev</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M214.12,-69.2C214.12,-59.75 214.12,-46.63 214.12,-35.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="216.64,-35.7 214.12,-28.5 211.6,-35.7 216.64,-35.7"/>
+<text xml:space="preserve" text-anchor="middle" x="248.62" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is answered by</text>
+</g>
+<!-- rchar -->
+<g id="node5" class="node">
+<title>rchar</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M405.16,-312.05C405.16,-312.05 297.07,-312.05 297.07,-312.05 292.66,-312.05 288.25,-307.64 288.25,-303.23 288.25,-303.23 288.25,-294.41 288.25,-294.41 288.25,-290 292.66,-285.59 297.07,-285.59 297.07,-285.59 405.16,-285.59 405.16,-285.59 409.57,-285.59 413.98,-290 413.98,-294.41 413.98,-294.41 413.98,-303.23 413.98,-303.23 413.98,-307.64 409.57,-312.05 405.16,-312.05"/>
+<text xml:space="preserve" text-anchor="middle" x="351.12" y="-294.65" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the RCHAR column</text>
+</g>
+<!-- rchar&#45;&gt;call -->
+<g id="edge4" class="edge">
+<title>rchar&#45;&gt;call</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M351.12,-285.19C351.12,-274 351.12,-257.44 351.12,-244.27"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="353.64,-244.59 351.12,-237.39 348.6,-244.59 353.64,-244.59"/>
+<text xml:space="preserve" text-anchor="middle" x="394.62" y="-253.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts the bytes of</text>
+</g>
+<!-- rbyte -->
+<g id="node6" class="node">
+<title>rbyte</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M121.41,-165.88C121.41,-165.88 8.82,-165.88 8.82,-165.88 4.41,-165.88 0,-161.47 0,-157.06 0,-157.06 0,-148.24 0,-148.24 0,-143.83 4.41,-139.42 8.82,-139.42 8.82,-139.42 121.41,-139.42 121.41,-139.42 125.82,-139.42 130.23,-143.83 130.23,-148.24 130.23,-148.24 130.23,-157.06 130.23,-157.06 130.23,-161.47 125.82,-165.88 121.41,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="65.12" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the RBYTES column</text>
+</g>
+<!-- rbyte&#45;&gt;blk -->
+<g id="edge5" class="edge">
+<title>rbyte&#45;&gt;blk</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M79.97,-139.18C90.81,-130.6 106.15,-119.48 121.12,-112.17 131.26,-107.21 142.46,-102.92 153.47,-99.28"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="154.22,-101.68 160.32,-97.1 152.69,-96.88 154.22,-101.68"/>
+<text xml:space="preserve" text-anchor="middle" x="164.62" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts the bytes of</text>
+</g>
+<!-- wait -->
+<g id="node7" class="node">
+<title>wait</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M264.04,-165.88C264.04,-165.88 164.19,-165.88 164.19,-165.88 159.78,-165.88 155.38,-161.47 155.38,-157.06 155.38,-157.06 155.38,-148.24 155.38,-148.24 155.38,-143.83 159.78,-139.42 164.19,-139.42 164.19,-139.42 264.04,-139.42 264.04,-139.42 268.45,-139.42 272.86,-143.83 272.86,-148.24 272.86,-148.24 272.86,-157.06 272.86,-157.06 272.86,-161.47 268.45,-165.88 264.04,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="214.12" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">time spent waiting</text>
+</g>
+<!-- wait&#45;&gt;blk -->
+<g id="edge6" class="edge">
+<title>wait&#45;&gt;blk</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M214.12,-138.91C214.12,-129.46 214.12,-116.34 214.12,-105.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="216.64,-105.41 214.12,-98.21 211.6,-105.41 216.64,-105.41"/>
+<text xml:space="preserve" text-anchor="middle" x="240.37" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is spent on</text>
+</g>
+<!-- dacct -->
+<g id="node8" class="node">
+<title>dacct</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M240.98,-318.8C240.98,-318.8 151.25,-318.8 151.25,-318.8 145.25,-318.8 139.25,-312.8 139.25,-306.8 139.25,-306.8 139.25,-290.84 139.25,-290.84 139.25,-284.84 145.25,-278.84 151.25,-278.84 151.25,-278.84 240.98,-278.84 240.98,-278.84 246.98,-278.84 252.98,-284.84 252.98,-290.84 252.98,-290.84 252.98,-306.8 252.98,-306.8 252.98,-312.8 246.98,-318.8 240.98,-318.8"/>
+<text xml:space="preserve" text-anchor="middle" x="196.12" y="-301.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">delay accounting</text>
+<text xml:space="preserve" text-anchor="middle" x="196.12" y="-287.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(often not built in)</text>
+</g>
+<!-- wait&#45;&gt;dacct -->
+<g id="edge7" class="edge">
+<title>wait&#45;&gt;dacct</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M209.65,-166.24C205.93,-177.36 200.89,-194.1 198.62,-209.13 195.57,-229.23 195,-252.18 195.16,-269.7"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="192.64,-269.57 195.28,-276.73 197.68,-269.49 192.64,-269.57"/>
+<text xml:space="preserve" text-anchor="middle" x="247.37" y="-218.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is only visible through &#160;</text>
+</g>
+</g>
+</svg>

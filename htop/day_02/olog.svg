@@ -1,0 +1,101 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="636pt" height="187pt"
+ viewBox="0.00 0.00 636.00 187.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 183.38)">
+<title>olog</title>
+<!-- task -->
+<g id="node1" class="node">
+<title>task</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M412.16,-109.67C412.16,-109.67 373.82,-109.67 373.82,-109.67 369.41,-109.67 365,-105.26 365,-100.85 365,-100.85 365,-92.03 365,-92.03 365,-87.62 369.41,-83.21 373.82,-83.21 373.82,-83.21 412.16,-83.21 412.16,-83.21 416.57,-83.21 420.98,-87.62 420.98,-92.03 420.98,-92.03 420.98,-100.85 420.98,-100.85 420.98,-105.26 416.57,-109.67 412.16,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="392.99" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a task</text>
+</g>
+<!-- cmdl -->
+<g id="node3" class="node">
+<title>cmdl</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M209.23,-39.96C209.23,-39.96 106.75,-39.96 106.75,-39.96 100.75,-39.96 94.75,-33.96 94.75,-27.96 94.75,-27.96 94.75,-12 94.75,-12 94.75,-6 100.75,0 106.75,0 106.75,0 209.23,0 209.23,0 215.23,0 221.23,-6 221.23,-12 221.23,-12 221.23,-27.96 221.23,-27.96 221.23,-33.96 215.23,-39.96 209.23,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="157.99" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an argument vector</text>
+<text xml:space="preserve" text-anchor="middle" x="157.99" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(/proc/[pid]/cmdline)</text>
+</g>
+<!-- task&#45;&gt;cmdl -->
+<g id="edge1" class="edge">
+<title>task&#45;&gt;cmdl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M364.64,-86.46C330.9,-75.77 273.36,-57.54 227.56,-43.02"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="228.58,-40.7 220.95,-40.93 227.06,-45.51 228.58,-40.7"/>
+<text xml:space="preserve" text-anchor="middle" x="340.95" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;was started with</text>
+</g>
+<!-- comm -->
+<g id="node4" class="node">
+<title>comm</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M427.11,-39.96C427.11,-39.96 332.88,-39.96 332.88,-39.96 326.88,-39.96 320.88,-33.96 320.88,-27.96 320.88,-27.96 320.88,-12 320.88,-12 320.88,-6 326.88,0 332.88,0 332.88,0 427.11,0 427.11,0 433.11,0 439.11,-6 439.11,-12 439.11,-12 439.11,-27.96 439.11,-27.96 439.11,-33.96 433.11,-39.96 427.11,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="379.99" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a comm string</text>
+<text xml:space="preserve" text-anchor="middle" x="379.99" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(/proc/[pid]/comm)</text>
+</g>
+<!-- task&#45;&gt;comm -->
+<g id="edge2" class="edge">
+<title>task&#45;&gt;comm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M390.78,-82.81C389.17,-73.55 386.91,-60.62 384.88,-48.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="387.38,-48.63 383.65,-41.97 382.41,-49.5 387.38,-48.63"/>
+<text xml:space="preserve" text-anchor="middle" x="416.91" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is named by</text>
+</g>
+<!-- exe -->
+<g id="node5" class="node">
+<title>exe</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M557.73,-39.96C557.73,-39.96 476.25,-39.96 476.25,-39.96 470.25,-39.96 464.25,-33.96 464.25,-27.96 464.25,-27.96 464.25,-12 464.25,-12 464.25,-6 470.25,0 476.25,0 476.25,0 557.73,0 557.73,0 563.73,0 569.73,-6 569.73,-12 569.73,-12 569.73,-27.96 569.73,-27.96 569.73,-33.96 563.73,-39.96 557.73,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="516.99" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an exe path</text>
+<text xml:space="preserve" text-anchor="middle" x="516.99" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(/proc/[pid]/exe)</text>
+</g>
+<!-- task&#45;&gt;exe -->
+<g id="edge3" class="edge">
+<title>task&#45;&gt;exe</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M421.41,-83.05C431.29,-78.43 442.3,-72.91 451.99,-67.21 463.04,-60.7 474.61,-52.85 484.86,-45.48"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="486.11,-47.69 490.45,-41.41 483.15,-43.61 486.11,-47.69"/>
+<text xml:space="preserve" text-anchor="middle" x="508.77" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;runs the binary at</text>
+</g>
+<!-- col -->
+<g id="node2" class="node">
+<title>col</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M131.16,-109.67C131.16,-109.67 8.82,-109.67 8.82,-109.67 4.41,-109.67 0,-105.26 0,-100.85 0,-100.85 0,-92.03 0,-92.03 0,-87.62 4.41,-83.21 8.82,-83.21 8.82,-83.21 131.16,-83.21 131.16,-83.21 135.57,-83.21 139.98,-87.62 139.98,-92.03 139.98,-92.03 139.98,-100.85 139.98,-100.85 139.98,-105.26 135.57,-109.67 131.16,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="69.99" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the Command column</text>
+</g>
+<!-- col&#45;&gt;cmdl -->
+<g id="edge4" class="edge">
+<title>col&#45;&gt;cmdl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M66.04,-82.99C64.19,-74.64 63.41,-63.78 68.74,-55.96 73.52,-48.95 79.94,-43.34 87.16,-38.86"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="88.13,-41.2 93.21,-35.51 85.69,-36.79 88.13,-41.2"/>
+<text xml:space="preserve" text-anchor="middle" x="84.87" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;shows</text>
+</g>
+<!-- col&#45;&gt;comm -->
+<g id="edge5" class="edge">
+<title>col&#45;&gt;comm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M85.03,-83.03C96.8,-74.01 113.97,-62.31 130.99,-55.96 139.46,-52.8 241.36,-39.07 312.14,-29.78"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="312.23,-32.31 319.04,-28.87 311.57,-27.31 312.23,-32.31"/>
+<text xml:space="preserve" text-anchor="middle" x="154.99" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">merges in &#160;</text>
+</g>
+<!-- col&#45;&gt;exe -->
+<g id="edge6" class="edge">
+<title>col&#45;&gt;exe</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M123.58,-82.73C141.88,-78.14 162.41,-72.73 180.99,-67.21 195.84,-62.8 198.8,-59.01 213.99,-55.96 317.94,-35.12 347.6,-58.48 451.99,-39.96 453.22,-39.74 454.46,-39.51 455.71,-39.26"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="455.95,-41.79 462.45,-37.8 454.88,-36.86 455.95,-41.79"/>
+<text xml:space="preserve" text-anchor="middle" x="237.99" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;merges in</text>
+</g>
+<!-- kth -->
+<g id="node6" class="node">
+<title>kth</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M435.79,-179.38C435.79,-179.38 350.19,-179.38 350.19,-179.38 345.78,-179.38 341.38,-174.97 341.38,-170.56 341.38,-170.56 341.38,-161.74 341.38,-161.74 341.38,-157.33 345.78,-152.92 350.19,-152.92 350.19,-152.92 435.79,-152.92 435.79,-152.92 440.2,-152.92 444.61,-157.33 444.61,-161.74 444.61,-161.74 444.61,-170.56 444.61,-170.56 444.61,-174.97 440.2,-179.38 435.79,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="392.99" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a kernel thread</text>
+</g>
+<!-- kth&#45;&gt;task -->
+<g id="edge7" class="edge">
+<title>kth&#45;&gt;task</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M392.99,-152.41C392.99,-142.96 392.99,-129.84 392.99,-118.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="395.51,-118.91 392.99,-111.71 390.47,-118.91 395.51,-118.91"/>
+<text xml:space="preserve" text-anchor="middle" x="399.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- kth&#45;&gt;cmdl -->
+<g id="edge8" class="edge">
+<title>kth&#45;&gt;cmdl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M443.05,-152.43C504.46,-134.59 595.7,-99.39 554.99,-55.96 536.18,-35.89 335.37,-42.58 307.99,-39.96 282.63,-37.54 254.94,-34.22 230.33,-31.04"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="230.8,-28.56 223.34,-30.13 230.15,-33.56 230.8,-28.56"/>
+<text xml:space="preserve" text-anchor="middle" x="596.08" y="-93.04" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">has an empty &#160;</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  scr   [label="a screen", fillcolor="#e7f0ec", color="#2f7a63"];
+  col   [label="a column", fillcolor="#e7f0ec", color="#2f7a63"];
+  fld   [label="a field of a task"];
+  task  [label="a task"];
+  plat  [label="a platform that does\nnot publish it", fillcolor="#f8efdf", color="#d8b784"];
+  build [label="a build option\nthat was left off", fillcolor="#f8efdf", color="#d8b784"];
+  perm  [label="a permission\nyou lack", fillcolor="#f8efdf", color="#d8b784"];
+
+  scr -> col   [label="  lists, in order"];
+  col -> fld   [label="  displays"];
+  fld -> task  [label="  belongs to"];
+  col -> plat  [label="shows - because of  ", style=dashed, constraint=false];
+  col -> build [label="  shows N/A because of", style=dashed, constraint=false];
+  col -> perm  [label="  shows 0 because of", style=dashed, constraint=false];
+
+}

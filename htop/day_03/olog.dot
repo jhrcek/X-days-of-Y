@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  proc   [label="a process", fillcolor="#e7f0ec", color="#2f7a63"];
+  addr   [label="a mapped page\nof address space"];
+  res    [label="a resident page", fillcolor="#e7f0ec", color="#2f7a63"];
+  shared [label="a resident page mapped\nby N processes at once", fillcolor="#f8efdf", color="#d8b784"];
+  virtC  [label="the VIRT column"];
+  resC   [label="the RES column"];
+  privC  [label="the PRIV column"];
+  pssC   [label="the PSS column"];
+
+  proc   -> addr   [label="  has mapped"];
+  res    -> addr   [label="  is"];
+  shared -> res    [label="  is"];
+  virtC  -> addr   [label="  counts every"];
+  resC   -> res    [label="  counts in full every"];
+  privC  -> res    [label="  counts every unshared"];
+  pssC   -> shared [label="  counts a 1/N share of"];
+
+}

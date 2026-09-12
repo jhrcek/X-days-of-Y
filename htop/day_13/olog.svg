@@ -1,0 +1,92 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="505pt" height="271pt"
+ viewBox="0.00 0.00 505.00 271.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 266.59)">
+<title>olog</title>
+<!-- proc -->
+<g id="node1" class="node">
+<title>proc</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M67.41,-255.84C67.41,-255.84 8.82,-255.84 8.82,-255.84 4.41,-255.84 0,-251.43 0,-247.02 0,-247.02 0,-238.2 0,-238.2 0,-233.79 4.41,-229.38 8.82,-229.38 8.82,-229.38 67.41,-229.38 67.41,-229.38 71.82,-229.38 76.23,-233.79 76.23,-238.2 76.23,-238.2 76.23,-247.02 76.23,-247.02 76.23,-251.43 71.82,-255.84 67.41,-255.84"/>
+<text xml:space="preserve" text-anchor="middle" x="38.12" y="-238.44" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a process</text>
+</g>
+<!-- cg -->
+<g id="node2" class="node">
+<title>cg</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M64.79,-179.38C64.79,-179.38 11.44,-179.38 11.44,-179.38 7.03,-179.38 2.63,-174.97 2.63,-170.56 2.63,-170.56 2.63,-161.74 2.63,-161.74 2.63,-157.33 7.04,-152.92 11.45,-152.92 11.45,-152.92 64.79,-152.92 64.79,-152.92 69.2,-152.92 73.61,-157.33 73.61,-161.74 73.61,-161.74 73.61,-170.56 73.61,-170.56 73.61,-174.97 69.2,-179.38 64.79,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="38.12" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a cgroup</text>
+</g>
+<!-- proc&#45;&gt;cg -->
+<g id="edge1" class="edge">
+<title>proc&#45;&gt;cg</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M38.12,-228.98C38.12,-217.79 38.12,-201.23 38.12,-188.06"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="40.64,-188.38 38.12,-181.18 35.6,-188.38 40.64,-188.38"/>
+<text xml:space="preserve" text-anchor="middle" x="63.24" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;belongs to</text>
+</g>
+<!-- path -->
+<g id="node3" class="node">
+<title>path</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M205.91,-109.67C205.91,-109.67 126.32,-109.67 126.32,-109.67 121.91,-109.67 117.5,-105.26 117.5,-100.85 117.5,-100.85 117.5,-92.03 117.5,-92.03 117.5,-87.62 121.91,-83.21 126.32,-83.21 126.32,-83.21 205.91,-83.21 205.91,-83.21 210.32,-83.21 214.73,-87.62 214.73,-92.03 214.73,-92.03 214.73,-100.85 214.73,-100.85 214.73,-105.26 210.32,-109.67 205.91,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="166.12" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a cgroup path</text>
+</g>
+<!-- cg&#45;&gt;path -->
+<g id="edge2" class="edge">
+<title>cg&#45;&gt;path</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M57.12,-152.54C69.71,-144.42 86.72,-133.89 102.37,-125.67 110.32,-121.49 119.03,-117.36 127.38,-113.6"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="128.22,-115.98 133.78,-110.76 126.18,-111.37 128.22,-115.98"/>
+<text xml:space="preserve" text-anchor="middle" x="131.24" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is named by</text>
+</g>
+<!-- unit -->
+<g id="node4" class="node">
+<title>unit</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M204.23,-39.96C204.23,-39.96 128,-39.96 128,-39.96 122,-39.96 116,-33.96 116,-27.96 116,-27.96 116,-12 116,-12 116,-6 122,0 128,0 128,0 204.23,0 204.23,0 210.23,0 216.23,-6 216.23,-12 216.23,-12 216.23,-27.96 216.23,-27.96 216.23,-33.96 210.23,-39.96 204.23,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="166.12" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a systemd unit</text>
+<text xml:space="preserve" text-anchor="middle" x="166.12" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">or a container</text>
+</g>
+<!-- path&#45;&gt;unit -->
+<g id="edge3" class="edge">
+<title>path&#45;&gt;unit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M166.12,-82.81C166.12,-73.55 166.12,-60.62 166.12,-48.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="168.64,-49.19 166.12,-41.99 163.6,-49.19 168.64,-49.19"/>
+<text xml:space="preserve" text-anchor="middle" x="188.24" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;identifies</text>
+</g>
+<!-- raw -->
+<g id="node5" class="node">
+<title>raw</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M225.04,-179.38C225.04,-179.38 107.19,-179.38 107.19,-179.38 102.78,-179.38 98.38,-174.97 98.38,-170.56 98.38,-170.56 98.38,-161.74 98.38,-161.74 98.38,-157.33 102.79,-152.92 107.2,-152.92 107.2,-152.92 225.04,-152.92 225.04,-152.92 229.45,-152.92 233.86,-157.33 233.86,-161.74 233.86,-161.74 233.86,-170.56 233.86,-170.56 233.86,-174.97 229.45,-179.38 225.04,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="166.12" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the CGROUP column</text>
+</g>
+<!-- raw&#45;&gt;path -->
+<g id="edge4" class="edge">
+<title>raw&#45;&gt;path</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M166.12,-152.41C166.12,-142.96 166.12,-129.84 166.12,-118.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="168.64,-118.91 166.12,-111.71 163.6,-118.91 168.64,-118.91"/>
+<text xml:space="preserve" text-anchor="middle" x="195.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;shows in full</text>
+</g>
+<!-- comp -->
+<g id="node6" class="node">
+<title>comp</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M394.16,-179.38C394.16,-179.38 268.07,-179.38 268.07,-179.38 263.66,-179.38 259.25,-174.97 259.25,-170.56 259.25,-170.56 259.25,-161.74 259.25,-161.74 259.25,-157.33 263.66,-152.92 268.07,-152.92 268.07,-152.92 394.16,-152.92 394.16,-152.92 398.57,-152.92 402.98,-157.33 402.98,-161.74 402.98,-161.74 402.98,-170.56 402.98,-170.56 402.98,-174.97 398.57,-179.38 394.16,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="331.12" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the CCGROUP column</text>
+</g>
+<!-- comp&#45;&gt;path -->
+<g id="edge5" class="edge">
+<title>comp&#45;&gt;path</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M300.08,-152.41C273.12,-141.35 233.94,-125.27 204.91,-113.36"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="206.1,-111.12 198.48,-110.72 204.19,-115.79 206.1,-111.12"/>
+<text xml:space="preserve" text-anchor="middle" x="301.62" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;shows compressed</text>
+</g>
+<!-- guess -->
+<g id="node7" class="node">
+<title>guess</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M240.73,-262.59C240.73,-262.59 113.5,-262.59 113.5,-262.59 107.5,-262.59 101.5,-256.59 101.5,-250.59 101.5,-250.59 101.5,-234.63 101.5,-234.63 101.5,-228.63 107.5,-222.63 113.5,-222.63 113.5,-222.63 240.73,-222.63 240.73,-222.63 246.73,-222.63 252.73,-228.63 252.73,-234.63 252.73,-234.63 252.73,-250.59 252.73,-250.59 252.73,-256.59 246.73,-262.59 240.73,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="177.12" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the CONTAINER column</text>
+<text xml:space="preserve" text-anchor="middle" x="177.12" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(heuristic)</text>
+</g>
+<!-- guess&#45;&gt;path -->
+<g id="edge6" class="edge">
+<title>guess&#45;&gt;path</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M253.27,-239.5C337.59,-234.1 456.52,-215.54 415.12,-152.92 394.24,-121.34 290.22,-107.2 223.4,-101.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="224.02,-98.81 216.63,-100.71 223.59,-103.83 224.02,-98.81"/>
+<text xml:space="preserve" text-anchor="middle" x="460.34" y="-162.75" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is guessed from &#160;</text>
+</g>
+</g>
+</svg>

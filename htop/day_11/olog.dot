@@ -1,0 +1,29 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  htop  [label="an htop session", fillcolor="#e7f0ec", color="#2f7a63"];
+  scr   [label="a screen", fillcolor="#e7f0ec", color="#2f7a63"];
+  nm    [label="a name on the tab bar"];
+  col   [label="an ordered list\nof columns"];
+  srt   [label="a sort column\nand direction"];
+  tv    [label="a tree view state"];
+  cur   [label="the current screen", fillcolor="#f8efdf", color="#d8b784"];
+
+  htop -> scr [label="  holds several"];
+  scr  -> nm  [label="  is labelled by"];
+  scr  -> col [label="  displays"];
+  scr  -> srt [label="  remembers its own"];
+  scr  -> tv  [label="  remembers its own"];
+  cur  -> scr [label="  is"];
+  htop -> cur [label="shows only  ", style=dashed, constraint=false];
+
+}

@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  call  [label="a read() call", fillcolor="#e7f0ec", color="#2f7a63"];
+  cache [label="the page cache"];
+  blk   [label="a block-layer request", fillcolor="#e7f0ec", color="#2f7a63"];
+  dev   [label="the storage device", fillcolor="#f4efe6"];
+  rchar [label="the RCHAR column"];
+  rbyte [label="the RBYTES column"];
+  wait  [label="time spent waiting"];
+  dacct [label="delay accounting\n(often not built in)", fillcolor="#f8efdf", color="#d8b784"];
+
+  call  -> cache [label="  is served from"];
+  cache -> blk   [label="  falls back, on a miss, to"];
+  blk   -> dev   [label="  is answered by"];
+  rchar -> call  [label="  counts the bytes of"];
+  rbyte -> blk   [label="  counts the bytes of"];
+  wait  -> blk   [label="  is spent on"];
+  wait  -> dacct [label="is only visible through  ", style=dashed, constraint=false];
+
+}

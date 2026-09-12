@@ -1,0 +1,91 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="512pt" height="222pt"
+ viewBox="0.00 0.00 512.00 222.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 218.24)">
+<title>olog</title>
+<!-- all -->
+<g id="node1" class="node">
+<title>all</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M93.48,-39.96C93.48,-39.96 12,-39.96 12,-39.96 6,-39.96 0,-33.96 0,-27.96 0,-27.96 0,-12 0,-12 0,-6 6,0 12,0 12,0 93.48,0 93.48,0 99.48,0 105.48,-6 105.48,-12 105.48,-12 105.48,-27.96 105.48,-27.96 105.48,-33.96 99.48,-39.96 93.48,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="52.74" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">every task</text>
+<text xml:space="preserve" text-anchor="middle" x="52.74" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">on the machine</text>
+</g>
+<!-- vis -->
+<g id="node2" class="node">
+<title>vis</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M208.29,-109.67C208.29,-109.67 133.19,-109.67 133.19,-109.67 128.78,-109.67 124.38,-105.26 124.38,-100.85 124.38,-100.85 124.38,-92.03 124.38,-92.03 124.38,-87.62 128.78,-83.21 133.19,-83.21 133.19,-83.21 208.29,-83.21 208.29,-83.21 212.7,-83.21 217.11,-87.62 217.11,-92.03 217.11,-92.03 217.11,-100.85 217.11,-100.85 217.11,-105.26 212.7,-109.67 208.29,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="170.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the visible list</text>
+</g>
+<!-- vis&#45;&gt;all -->
+<g id="edge1" class="edge">
+<title>vis&#45;&gt;all</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M132.61,-82.75C122.21,-78.52 111.21,-73.31 101.74,-67.21 92.68,-61.37 83.79,-53.74 76.12,-46.37"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="78,-44.69 71.12,-41.4 74.45,-48.26 78,-44.69"/>
+<text xml:space="preserve" text-anchor="middle" x="133.24" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a subset of</text>
+</g>
+<!-- filt -->
+<g id="node3" class="node">
+<title>filt</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M202.66,-33.21C202.66,-33.21 138.82,-33.21 138.82,-33.21 134.41,-33.21 130,-28.8 130,-24.39 130,-24.39 130,-15.57 130,-15.57 130,-11.16 134.41,-6.75 138.82,-6.75 138.82,-6.75 202.66,-6.75 202.66,-6.75 207.07,-6.75 211.48,-11.16 211.48,-15.57 211.48,-15.57 211.48,-24.39 211.48,-24.39 211.48,-28.8 207.07,-33.21 202.66,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="170.74" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a filter term</text>
+</g>
+<!-- vis&#45;&gt;filt -->
+<g id="edge2" class="edge">
+<title>vis&#45;&gt;filt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M170.74,-82.81C170.74,-71.62 170.74,-55.06 170.74,-41.89"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="173.26,-42.21 170.74,-35.01 168.22,-42.21 173.26,-42.21"/>
+<text xml:space="preserve" text-anchor="middle" x="204.49" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is narrowed by</text>
+</g>
+<!-- usr -->
+<g id="node4" class="node">
+<title>usr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M338.29,-33.21C338.29,-33.21 245.19,-33.21 245.19,-33.21 240.79,-33.21 236.38,-28.8 236.38,-24.39 236.38,-24.39 236.38,-15.57 236.38,-15.57 236.38,-11.16 240.78,-6.75 245.19,-6.75 245.19,-6.75 338.29,-6.75 338.29,-6.75 342.69,-6.75 347.11,-11.16 347.11,-15.57 347.11,-15.57 347.11,-24.39 347.11,-24.39 347.11,-28.8 342.69,-33.21 338.29,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="291.74" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a user restriction</text>
+</g>
+<!-- vis&#45;&gt;usr -->
+<g id="edge3" class="edge">
+<title>vis&#45;&gt;usr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M212.9,-82.78C223.71,-78.64 235.02,-73.45 244.74,-67.21 256.36,-59.75 267.48,-49.04 275.97,-39.81"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="277.7,-41.66 280.61,-34.61 273.94,-38.31 277.7,-41.66"/>
+<text xml:space="preserve" text-anchor="middle" x="292.85" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is narrowed by</text>
+</g>
+<!-- sel -->
+<g id="node5" class="node">
+<title>sel</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M207.16,-179.38C207.16,-179.38 134.32,-179.38 134.32,-179.38 129.91,-179.38 125.5,-174.97 125.5,-170.56 125.5,-170.56 125.5,-161.74 125.5,-161.74 125.5,-157.33 129.91,-152.92 134.32,-152.92 134.32,-152.92 207.16,-152.92 207.16,-152.92 211.57,-152.92 215.98,-157.33 215.98,-161.74 215.98,-161.74 215.98,-170.56 215.98,-170.56 215.98,-174.97 211.57,-179.38 207.16,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="170.74" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the selection</text>
+</g>
+<!-- sel&#45;&gt;vis -->
+<g id="edge4" class="edge">
+<title>sel&#45;&gt;vis</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M170.74,-152.41C170.74,-142.96 170.74,-129.84 170.74,-118.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="173.26,-118.91 170.74,-111.71 168.22,-118.91 173.26,-118.91"/>
+<text xml:space="preserve" text-anchor="middle" x="208.24" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;picks one row of</text>
+</g>
+<!-- srch -->
+<g id="node6" class="node">
+<title>srch</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M385.16,-179.38C385.16,-179.38 306.32,-179.38 306.32,-179.38 301.91,-179.38 297.5,-174.97 297.5,-170.56 297.5,-170.56 297.5,-161.74 297.5,-161.74 297.5,-157.33 301.91,-152.92 306.32,-152.92 306.32,-152.92 385.16,-152.92 385.16,-152.92 389.57,-152.92 393.98,-157.33 393.98,-161.74 393.98,-161.74 393.98,-170.56 393.98,-170.56 393.98,-174.97 389.57,-179.38 385.16,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="345.74" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a search term</text>
+</g>
+<!-- sel&#45;&gt;srch -->
+<g id="edge5" class="edge">
+<title>sel&#45;&gt;srch</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M216.26,-166.15C238.26,-166.15 264.9,-166.15 288.29,-166.15"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="288.28,-168.67 295.48,-166.15 288.28,-163.63 288.28,-168.67"/>
+<text xml:space="preserve" text-anchor="middle" x="256.74" y="-171.38" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">is moved by &#160;</text>
+</g>
+<!-- pid -->
+<g id="node7" class="node">
+<title>pid</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M495.54,-179.38C495.54,-179.38 427.94,-179.38 427.94,-179.38 423.53,-179.38 419.12,-174.97 419.12,-170.56 419.12,-170.56 419.12,-161.74 419.12,-161.74 419.12,-157.33 423.53,-152.92 427.94,-152.92 427.94,-152.92 495.54,-152.92 495.54,-152.92 499.95,-152.92 504.36,-157.33 504.36,-161.74 504.36,-161.74 504.36,-170.56 504.36,-170.56 504.36,-174.97 499.95,-179.38 495.54,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="461.74" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a typed PID</text>
+</g>
+<!-- sel&#45;&gt;pid -->
+<g id="edge6" class="edge">
+<title>sel&#45;&gt;pid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M207.5,-179.85C230.6,-187.72 261.23,-196.81 289.24,-200.82 314.32,-204.41 321.18,-204.5 346.24,-200.82 370.38,-197.28 396.47,-189.77 417.74,-182.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="418.44,-185.08 424.44,-180.36 416.81,-180.31 418.44,-185.08"/>
+<text xml:space="preserve" text-anchor="middle" x="317.74" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is moved by</text>
+</g>
+</g>
+</svg>

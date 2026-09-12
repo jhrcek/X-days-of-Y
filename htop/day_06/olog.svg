@@ -1,0 +1,86 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="449pt" height="271pt"
+ viewBox="0.00 0.00 449.00 271.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 266.59)">
+<title>olog</title>
+<!-- act -->
+<g id="node1" class="node">
+<title>act</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M260.48,-262.59C260.48,-262.59 162.5,-262.59 162.5,-262.59 156.5,-262.59 150.5,-256.59 150.5,-250.59 150.5,-250.59 150.5,-234.63 150.5,-234.63 150.5,-228.63 156.5,-222.63 162.5,-222.63 162.5,-222.63 260.48,-222.63 260.48,-222.63 266.48,-222.63 272.48,-228.63 272.48,-234.63 272.48,-234.63 272.48,-250.59 272.48,-250.59 272.48,-256.59 266.48,-262.59 260.48,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="211.49" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an action</text>
+<text xml:space="preserve" text-anchor="middle" x="211.49" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(kill, renice, affinity)</text>
+</g>
+<!-- tset -->
+<g id="node2" class="node">
+<title>tset</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M106.98,-179.38C106.98,-179.38 12,-179.38 12,-179.38 6,-179.38 0,-173.38 0,-167.38 0,-167.38 0,-151.42 0,-151.42 0,-145.42 6,-139.42 12,-139.42 12,-139.42 106.98,-139.42 106.98,-139.42 112.98,-139.42 118.98,-145.42 118.98,-151.42 118.98,-151.42 118.98,-167.38 118.98,-167.38 118.98,-173.38 112.98,-179.38 106.98,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="59.49" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the set of</text>
+<text xml:space="preserve" text-anchor="middle" x="59.49" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">tagged processes</text>
+</g>
+<!-- act&#45;&gt;tset -->
+<g id="edge1" class="edge">
+<title>act&#45;&gt;tset</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M175.08,-222.16C153.54,-210.65 126.11,-195.99 103.38,-183.85"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="104.8,-181.75 97.27,-180.58 102.43,-186.2 104.8,-181.75"/>
+<text xml:space="preserve" text-anchor="middle" x="168.22" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;applies to</text>
+</g>
+<!-- sel -->
+<g id="node4" class="node">
+<title>sel</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M243.66,-96.17C243.66,-96.17 151.32,-96.17 151.32,-96.17 146.91,-96.17 142.5,-91.76 142.5,-87.35 142.5,-87.35 142.5,-78.53 142.5,-78.53 142.5,-74.12 146.91,-69.71 151.32,-69.71 151.32,-69.71 243.66,-69.71 243.66,-69.71 248.07,-69.71 252.48,-74.12 252.48,-78.53 252.48,-78.53 252.48,-87.35 252.48,-87.35 252.48,-91.76 248.07,-96.17 243.66,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="197.49" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the selected row</text>
+</g>
+<!-- act&#45;&gt;sel -->
+<g id="edge6" class="edge">
+<title>act&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M207.91,-222.27C205.75,-213.62 202.43,-203.56 197.49,-195.38 192.25,-186.71 185.15,-188.73 181.24,-179.38 171,-154.94 179.54,-124.4 187.61,-104.55"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="189.92,-105.56 190.47,-97.95 185.29,-103.55 189.92,-105.56"/>
+<text xml:space="preserve" text-anchor="middle" x="272.37" y="-156" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">falls back to, only when nothing is tagged &#160;</text>
+</g>
+<!-- sig -->
+<g id="node6" class="node">
+<title>sig</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M432.16,-172.63C432.16,-172.63 384.82,-172.63 384.82,-172.63 380.41,-172.63 376,-168.22 376,-163.81 376,-163.81 376,-154.99 376,-154.99 376,-150.58 380.41,-146.17 384.82,-146.17 384.82,-146.17 432.16,-146.17 432.16,-146.17 436.57,-146.17 440.98,-150.58 440.98,-154.99 440.98,-154.99 440.98,-163.81 440.98,-163.81 440.98,-168.22 436.57,-172.63 432.16,-172.63"/>
+<text xml:space="preserve" text-anchor="middle" x="408.49" y="-155.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a signal</text>
+</g>
+<!-- act&#45;&gt;sig -->
+<g id="edge5" class="edge">
+<title>act&#45;&gt;sig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M258.68,-222.16C292.68,-208.14 337.99,-189.46 369.85,-176.33"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="370.48,-178.8 376.18,-173.72 368.56,-174.14 370.48,-178.8"/>
+<text xml:space="preserve" text-anchor="middle" x="345.41" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may send</text>
+</g>
+<!-- tag -->
+<g id="node3" class="node">
+<title>tag</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M108.66,-96.17C108.66,-96.17 10.32,-96.17 10.32,-96.17 5.91,-96.17 1.5,-91.76 1.5,-87.35 1.5,-87.35 1.5,-78.53 1.5,-78.53 1.5,-74.12 5.91,-69.71 10.32,-69.71 10.32,-69.71 108.66,-69.71 108.66,-69.71 113.07,-69.71 117.48,-74.12 117.48,-78.53 117.48,-78.53 117.48,-87.35 117.48,-87.35 117.48,-91.76 113.07,-96.17 108.66,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="59.49" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a tagged process</text>
+</g>
+<!-- tset&#45;&gt;tag -->
+<g id="edge2" class="edge">
+<title>tset&#45;&gt;tag</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M59.49,-139.22C59.49,-128.83 59.49,-115.95 59.49,-105.24"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="62.01,-105.29 59.49,-98.09 56.97,-105.29 62.01,-105.29"/>
+<text xml:space="preserve" text-anchor="middle" x="84.99" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is made of</text>
+</g>
+<!-- proc -->
+<g id="node5" class="node">
+<title>proc</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M156.79,-26.46C156.79,-26.46 98.19,-26.46 98.19,-26.46 93.78,-26.46 89.38,-22.05 89.38,-17.64 89.38,-17.64 89.38,-8.82 89.38,-8.82 89.38,-4.41 93.78,0 98.19,0 98.19,0 156.79,0 156.79,0 161.2,0 165.61,-4.41 165.61,-8.82 165.61,-8.82 165.61,-17.64 165.61,-17.64 165.61,-22.05 161.2,-26.46 156.79,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="127.49" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a process</text>
+</g>
+<!-- tag&#45;&gt;proc -->
+<g id="edge3" class="edge">
+<title>tag&#45;&gt;proc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M72.28,-69.2C82.54,-58.99 97.08,-44.51 108.67,-32.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="110.31,-34.9 113.63,-28.03 106.75,-31.32 110.31,-34.9"/>
+<text xml:space="preserve" text-anchor="middle" x="103.94" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- sel&#45;&gt;proc -->
+<g id="edge4" class="edge">
+<title>sel&#45;&gt;proc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M184.32,-69.2C173.76,-58.99 158.79,-44.51 146.86,-32.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="148.67,-31.21 141.74,-28.01 145.16,-34.83 148.67,-31.21"/>
+<text xml:space="preserve" text-anchor="middle" x="189.93" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;highlights</text>
+</g>
+</g>
+</svg>

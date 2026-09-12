@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  all   [label="every task\non the machine", fillcolor="#f4efe6"];
+  vis   [label="the visible list", fillcolor="#e7f0ec", color="#2f7a63"];
+  filt  [label="a filter term"];
+  usr   [label="a user restriction"];
+  sel   [label="the selection", fillcolor="#f8efdf", color="#d8b784"];
+  srch  [label="a search term"];
+  pid   [label="a typed PID"];
+
+  vis -> all  [label="  is a subset of"];
+  vis -> filt [label="  is narrowed by"];
+  vis -> usr  [label="  is narrowed by"];
+  sel -> vis  [label="  picks one row of"];
+  sel -> srch [label="is moved by  ", style=dashed, constraint=false];
+  sel -> pid  [label="  is moved by", style=dashed, constraint=false];
+
+}

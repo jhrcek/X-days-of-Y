@@ -13,7 +13,8 @@ executable build-site
         filepath,
         course-builder,
         tmux-course,
-        psql-course
+        psql-course,
+        htop-course
     default-language: GHC2021
     default-extensions: OverloadedStrings
     ghc-options: -Wall

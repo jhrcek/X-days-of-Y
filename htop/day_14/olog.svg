@@ -1,0 +1,67 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="392pt" height="173pt"
+ viewBox="0.00 0.00 392.00 173.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 168.78)">
+<title>olog</title>
+<!-- src -->
+<g id="node1" class="node">
+<title>src</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M156.04,-33.21C156.04,-33.21 70.45,-33.21 70.45,-33.21 66.03,-33.21 61.63,-28.8 61.63,-24.39 61.63,-24.39 61.63,-15.57 61.63,-15.57 61.63,-11.16 66.04,-6.75 70.45,-6.75 70.45,-6.75 156.04,-6.75 156.04,-6.75 160.45,-6.75 164.86,-11.16 164.86,-15.57 164.86,-15.57 164.86,-24.39 164.86,-24.39 164.86,-28.8 160.45,-33.21 156.04,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="113.24" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the source tree</text>
+</g>
+<!-- bin -->
+<g id="node2" class="node">
+<title>bin</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M84.48,-123.17C84.48,-123.17 12,-123.17 12,-123.17 6,-123.17 0,-117.17 0,-111.17 0,-111.17 0,-95.21 0,-95.21 0,-89.21 6,-83.21 12,-83.21 12,-83.21 84.48,-83.21 84.48,-83.21 90.48,-83.21 96.48,-89.21 96.48,-95.21 96.48,-95.21 96.48,-111.17 96.48,-111.17 96.48,-117.17 90.48,-123.17 84.48,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="48.24" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the behaviour</text>
+<text xml:space="preserve" text-anchor="middle" x="48.24" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">of the binary</text>
+</g>
+<!-- bin&#45;&gt;src -->
+<g id="edge1" class="edge">
+<title>bin&#45;&gt;src</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M48.8,-82.85C49.87,-74 52.33,-63.77 57.74,-55.96 62.6,-48.94 69.38,-43.03 76.53,-38.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="77.62,-40.47 82.4,-34.53 74.96,-36.19 77.62,-40.47"/>
+<text xml:space="preserve" text-anchor="middle" x="95.99" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is compiled from</text>
+</g>
+<!-- help -->
+<g id="node3" class="node">
+<title>help</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M211.48,-123.17C211.48,-123.17 133,-123.17 133,-123.17 127,-123.17 121,-117.17 121,-111.17 121,-111.17 121,-95.21 121,-95.21 121,-89.21 127,-83.21 133,-83.21 133,-83.21 211.48,-83.21 211.48,-83.21 217.48,-83.21 223.48,-89.21 223.48,-95.21 223.48,-95.21 223.48,-111.17 223.48,-111.17 223.48,-117.17 217.48,-123.17 211.48,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="172.24" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">&#45;&#45;help and the</text>
+<text xml:space="preserve" text-anchor="middle" x="172.24" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">F1 help screen</text>
+</g>
+<!-- help&#45;&gt;src -->
+<g id="edge2" class="edge">
+<title>help&#45;&gt;src</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M159.07,-82.69C153.38,-74.38 146.58,-64.63 140.24,-55.96 136.44,-50.77 132.23,-45.22 128.29,-40.11"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="130.53,-38.88 124.12,-34.74 126.55,-41.98 130.53,-38.88"/>
+<text xml:space="preserve" text-anchor="middle" x="187.93" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is generated from</text>
+</g>
+<!-- page -->
+<g id="node4" class="node">
+<title>page</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M355.91,-116.42C355.91,-116.42 260.57,-116.42 260.57,-116.42 256.16,-116.42 251.75,-112.01 251.75,-107.6 251.75,-107.6 251.75,-98.78 251.75,-98.78 251.75,-94.37 256.16,-89.96 260.57,-89.96 260.57,-89.96 355.91,-89.96 355.91,-89.96 360.32,-89.96 364.73,-94.37 364.73,-98.78 364.73,-98.78 364.73,-107.6 364.73,-107.6 364.73,-112.01 360.32,-116.42 355.91,-116.42"/>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-99.02" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the manual page</text>
+</g>
+<!-- page&#45;&gt;bin -->
+<g id="edge4" class="edge">
+<title>page&#45;&gt;bin</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M283.79,-116.83C265.17,-126.41 238.54,-138.38 213.49,-143.49 177.56,-150.81 166.72,-151.72 130.99,-143.49 116.81,-140.22 102.24,-134.17 89.36,-127.74"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="90.54,-125.51 82.98,-124.44 88.22,-129.99 90.54,-125.51"/>
+<text xml:space="preserve" text-anchor="middle" x="172.24" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">claims to describe &#160;</text>
+</g>
+<!-- edit -->
+<g id="node5" class="node">
+<title>edit</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M358.36,-39.96C358.36,-39.96 258.12,-39.96 258.12,-39.96 252.12,-39.96 246.12,-33.96 246.12,-27.96 246.12,-27.96 246.12,-12 246.12,-12 246.12,-6 252.12,0 258.12,0 258.12,0 358.36,0 358.36,0 364.36,0 370.36,-6 370.36,-12 370.36,-12 370.36,-27.96 370.36,-27.96 370.36,-33.96 364.36,-39.96 358.36,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a human who must</text>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">remember to edit it</text>
+</g>
+<!-- page&#45;&gt;edit -->
+<g id="edge3" class="edge">
+<title>page&#45;&gt;edit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M308.24,-89.5C308.24,-78.67 308.24,-62.7 308.24,-48.9"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="310.76,-49.01 308.24,-41.81 305.72,-49.01 310.76,-49.01"/>
+<text xml:space="preserve" text-anchor="middle" x="346.12" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is maintained by</text>
+</g>
+</g>
+</svg>

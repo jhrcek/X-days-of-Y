@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  proc  [label="a process", fillcolor="#e7f0ec", color="#2f7a63"];
+  cg    [label="a cgroup", fillcolor="#e7f0ec", color="#2f7a63"];
+  path  [label="a cgroup path"];
+  unit  [label="a systemd unit\nor a container", fillcolor="#f4efe6"];
+  raw   [label="the CGROUP column"];
+  comp  [label="the CCGROUP column"];
+  guess [label="the CONTAINER column\n(heuristic)", fillcolor="#f8efdf", color="#d8b784"];
+
+  proc -> cg   [label="  belongs to"];
+  cg   -> path [label="  is named by"];
+  path -> unit [label="  identifies"];
+  raw  -> path [label="  shows in full"];
+  comp -> path [label="  shows compressed"];
+  guess-> path [label="is guessed from  ", style=dashed, constraint=false];
+
+}

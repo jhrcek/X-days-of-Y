@@ -1,0 +1,105 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="447pt" height="271pt"
+ viewBox="0.00 0.00 447.00 271.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 266.59)">
+<title>olog</title>
+<!-- proc -->
+<g id="node1" class="node">
+<title>proc</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M145.66,-109.67C145.66,-109.67 87.07,-109.67 87.07,-109.67 82.66,-109.67 78.25,-105.26 78.25,-100.85 78.25,-100.85 78.25,-92.03 78.25,-92.03 78.25,-87.62 82.66,-83.21 87.07,-83.21 87.07,-83.21 145.66,-83.21 145.66,-83.21 150.07,-83.21 154.48,-87.62 154.48,-92.03 154.48,-92.03 154.48,-100.85 154.48,-100.85 154.48,-105.26 150.07,-109.67 145.66,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="116.37" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a process</text>
+</g>
+<!-- addr -->
+<g id="node2" class="node">
+<title>addr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M277.98,-39.96C277.98,-39.96 186.75,-39.96 186.75,-39.96 180.75,-39.96 174.75,-33.96 174.75,-27.96 174.75,-27.96 174.75,-12 174.75,-12 174.75,-6 180.75,0 186.75,0 186.75,0 277.98,0 277.98,0 283.98,0 289.98,-6 289.98,-12 289.98,-12 289.98,-27.96 289.98,-27.96 289.98,-33.96 283.98,-39.96 277.98,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="232.37" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a mapped page</text>
+<text xml:space="preserve" text-anchor="middle" x="232.37" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">of address space</text>
+</g>
+<!-- proc&#45;&gt;addr -->
+<g id="edge1" class="edge">
+<title>proc&#45;&gt;addr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M131.68,-82.68C141.68,-74.61 155.2,-64.18 167.87,-55.96 173.86,-52.07 180.32,-48.21 186.75,-44.55"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="187.82,-46.84 192.88,-41.13 185.37,-42.44 187.82,-46.84"/>
+<text xml:space="preserve" text-anchor="middle" x="197.12" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has mapped</text>
+</g>
+<!-- res -->
+<g id="node3" class="node">
+<title>res</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M276.66,-109.67C276.66,-109.67 188.07,-109.67 188.07,-109.67 183.66,-109.67 179.25,-105.26 179.25,-100.85 179.25,-100.85 179.25,-92.03 179.25,-92.03 179.25,-87.62 183.66,-83.21 188.07,-83.21 188.07,-83.21 276.66,-83.21 276.66,-83.21 281.07,-83.21 285.48,-87.62 285.48,-92.03 285.48,-92.03 285.48,-100.85 285.48,-100.85 285.48,-105.26 281.07,-109.67 276.66,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="232.37" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a resident page</text>
+</g>
+<!-- res&#45;&gt;addr -->
+<g id="edge2" class="edge">
+<title>res&#45;&gt;addr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M232.37,-82.81C232.37,-73.55 232.37,-60.62 232.37,-48.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="234.89,-49.19 232.37,-41.99 229.85,-49.19 234.89,-49.19"/>
+<text xml:space="preserve" text-anchor="middle" x="238.74" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- shared -->
+<g id="node4" class="node">
+<title>shared</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M140.73,-192.88C140.73,-192.88 12,-192.88 12,-192.88 6,-192.88 0,-186.88 0,-180.88 0,-180.88 0,-164.92 0,-164.92 0,-158.92 6,-152.92 12,-152.92 12,-152.92 140.73,-152.92 140.73,-152.92 146.73,-152.92 152.73,-158.92 152.73,-164.92 152.73,-164.92 152.73,-180.88 152.73,-180.88 152.73,-186.88 146.73,-192.88 140.73,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="76.37" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a resident page mapped</text>
+<text xml:space="preserve" text-anchor="middle" x="76.37" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">by N processes at once</text>
+</g>
+<!-- shared&#45;&gt;res -->
+<g id="edge3" class="edge">
+<title>shared&#45;&gt;res</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M116.94,-152.53C142.09,-140.53 174.03,-125.28 197.94,-113.87"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="198.87,-116.22 204.28,-110.85 196.69,-111.67 198.87,-116.22"/>
+<text xml:space="preserve" text-anchor="middle" x="179.3" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- virtC -->
+<g id="node5" class="node">
+<title>virtC</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M411.91,-109.67C411.91,-109.67 318.82,-109.67 318.82,-109.67 314.41,-109.67 310,-105.26 310,-100.85 310,-100.85 310,-92.03 310,-92.03 310,-87.62 314.41,-83.21 318.82,-83.21 318.82,-83.21 411.91,-83.21 411.91,-83.21 416.32,-83.21 420.73,-87.62 420.73,-92.03 420.73,-92.03 420.73,-100.85 420.73,-100.85 420.73,-105.26 416.32,-109.67 411.91,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="365.37" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the VIRT column</text>
+</g>
+<!-- virtC&#45;&gt;addr -->
+<g id="edge4" class="edge">
+<title>virtC&#45;&gt;addr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M342.8,-82.81C324.16,-72.37 297.18,-57.26 274.55,-44.6"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="275.96,-42.5 268.45,-41.18 273.5,-46.9 275.96,-42.5"/>
+<text xml:space="preserve" text-anchor="middle" x="344.31" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts every</text>
+</g>
+<!-- resC -->
+<g id="node6" class="node">
+<title>resC</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M277.79,-186.13C277.79,-186.13 186.94,-186.13 186.94,-186.13 182.53,-186.13 178.12,-181.72 178.12,-177.31 178.12,-177.31 178.12,-168.49 178.12,-168.49 178.12,-164.08 182.53,-159.67 186.94,-159.67 186.94,-159.67 277.79,-159.67 277.79,-159.67 282.2,-159.67 286.61,-164.08 286.61,-168.49 286.61,-168.49 286.61,-177.31 286.61,-177.31 286.61,-181.72 282.2,-186.13 277.79,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="232.37" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the RES column</text>
+</g>
+<!-- resC&#45;&gt;res -->
+<g id="edge5" class="edge">
+<title>resC&#45;&gt;res</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M232.37,-159.27C232.37,-148.08 232.37,-131.52 232.37,-118.35"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="234.89,-118.67 232.37,-111.47 229.85,-118.67 234.89,-118.67"/>
+<text xml:space="preserve" text-anchor="middle" x="275.12" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts in full every</text>
+</g>
+<!-- privC -->
+<g id="node7" class="node">
+<title>privC</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M414.29,-186.13C414.29,-186.13 320.44,-186.13 320.44,-186.13 316.03,-186.13 311.62,-181.72 311.62,-177.31 311.62,-177.31 311.62,-168.49 311.62,-168.49 311.62,-164.08 316.03,-159.67 320.44,-159.67 320.44,-159.67 414.29,-159.67 414.29,-159.67 418.7,-159.67 423.11,-164.08 423.11,-168.49 423.11,-168.49 423.11,-177.31 423.11,-177.31 423.11,-181.72 418.7,-186.13 414.29,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="367.37" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the PRIV column</text>
+</g>
+<!-- privC&#45;&gt;res -->
+<g id="edge6" class="edge">
+<title>privC&#45;&gt;res</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M358.52,-159.18C350.67,-148.77 338.3,-134.4 324.37,-125.67 315.11,-119.87 304.59,-115.2 294.05,-111.45"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="295.14,-109.15 287.51,-109.26 293.54,-113.93 295.14,-109.15"/>
+<text xml:space="preserve" text-anchor="middle" x="388.59" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts every unshared</text>
+</g>
+<!-- pssC -->
+<g id="node8" class="node">
+<title>pssC</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M121.41,-262.59C121.41,-262.59 31.32,-262.59 31.32,-262.59 26.91,-262.59 22.5,-258.18 22.5,-253.77 22.5,-253.77 22.5,-244.95 22.5,-244.95 22.5,-240.54 26.91,-236.13 31.32,-236.13 31.32,-236.13 121.41,-236.13 121.41,-236.13 125.82,-236.13 130.23,-240.54 130.23,-244.95 130.23,-244.95 130.23,-253.77 130.23,-253.77 130.23,-258.18 125.82,-262.59 121.41,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="76.37" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the PSS column</text>
+</g>
+<!-- pssC&#45;&gt;shared -->
+<g id="edge7" class="edge">
+<title>pssC&#45;&gt;shared</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M76.37,-235.73C76.37,-226.47 76.37,-213.54 76.37,-201.9"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="78.89,-202.11 76.37,-194.91 73.85,-202.11 78.89,-202.11"/>
+<text xml:space="preserve" text-anchor="middle" x="125.12" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts a 1/N share of</text>
+</g>
+</g>
+</svg>

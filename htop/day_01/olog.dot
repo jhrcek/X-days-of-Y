@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.42;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  kern  [label="the kernel", fillcolor="#f4efe6"];
+  proc  [label="a running process", fillcolor="#f4efe6"];
+  entry [label="a /proc entry"];
+  samp  [label="a sample", fillcolor="#e7f0ec", color="#2f7a63"];
+  pair  [label="a pair of\nconsecutive samples", fillcolor="#e7f0ec", color="#2f7a63"];
+  ivl   [label="the refresh interval"];
+  pct   [label="a percentage\non screen"];
+  row   [label="a row in the\nprocess list"];
+  brief [label="a process that lived\nless than one interval", fillcolor="#f8efdf", color="#d8b784"];
+
+  kern  -> entry [label="  publishes"];
+  entry -> proc  [label="  describes"];
+  samp  -> entry [label="  is one read of"];
+  pair  -> samp  [label="  is made of"];
+  pair  -> ivl   [label="  is separated by"];
+  pct   -> pair  [label="  is computed from"];
+  row   -> pct   [label="  displays"];
+  row   -> proc  [label="  stands for"];
+  pair  -> brief [label="never sees  ", style=dashed, constraint=false];
+
+}

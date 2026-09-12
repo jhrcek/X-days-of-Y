@@ -1,0 +1,26 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  sel   [label="the selected process", fillcolor="#e7f0ec", color="#2f7a63"];
+  aux   [label="an auxiliary screen", fillcolor="#e7f0ec", color="#2f7a63"];
+  procfs[label="a /proc file"];
+  ext   [label="an external tool\n(strace, lsof)", fillcolor="#f4efe6"];
+  priv  [label="a privilege you\nmay not have", fillcolor="#f8efdf", color="#d8b784"];
+
+  aux -> sel    [label="  is about"];
+  aux -> procfs [label="  may be filled from"];
+  aux -> ext    [label="  may be filled by running"];
+  procfs-> sel  [label="  belongs to"];
+  procfs-> priv [label="is gated by  ", style=dashed, constraint=false];
+  ext -> priv   [label="  is gated by", style=dashed, constraint=false];
+
+}

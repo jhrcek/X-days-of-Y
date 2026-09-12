@@ -7,6 +7,7 @@ import Control.Monad (forM_)
 import Course.Build (buildCourse, findRepoRoot)
 import Course.Site
 import Course.Types (Course (..))
+import Courses.Htop qualified as Htop
 import Courses.Psql qualified as Psql
 import Courses.Tmux qualified as Tmux
 import Data.Text qualified as T
@@ -16,6 +17,7 @@ courses :: [Course]
 courses =
     [ Tmux.course
     , Psql.course
+    , Htop.course
     ]
 
 main :: IO ()

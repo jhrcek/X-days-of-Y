@@ -1,0 +1,132 @@
+# ~/.config/htop/htoprc
+#
+# Assembled over Days 9-14 of the '14 Days of htop' course. Every line was
+# introduced with a reason, and the comments are that reason.
+#
+# WARNING, and the reason this file is worth keeping under version control:
+# htop rewrites this path in full whenever you exit cleanly from a session
+# in which any setting changed - including plain toggles like t, K and I,
+# not just the Setup screen. The rewrite drops every comment below.
+# Day 9 covers the two defences: chmod 444, or $HTOPRC pointing elsewhere.
+#
+
+# ==========================================================================
+# Day 09 - Setup and htoprc
+# ==========================================================================
+
+# Highlight processes that have just appeared, or whose command line has changed,
+# for five seconds. Off by default, and the single most useful thing in the Setup
+# screen: it turns 'something keeps restarting' from a hunch into something you can
+# see. Costs nothing when nothing is changing.
+highlight_changes=1
+highlight_changes_delay_secs=5
+
+# Give the terminal back its text selection. With the mouse enabled htop captures
+# drag events, so selecting a PID to copy selects nothing and clicks a column header
+# instead. Turn this off if you copy things out of htop more often than you click
+# inside it; leave it on if the reverse is true.
+enable_mouse=0
+
+# Reclaim the blank line above the meters. One line of a 24-line terminal is one more
+# process visible, and the margin is decoration.
+header_margin=0
+
+# A header that does not grow with the core count. The default puts one bar per CPU
+# up there, which is four lines on a laptop and thirty-five on a build machine; the
+# combined 'CPU' meter is one line on all of them. Left column as bars for shape at a
+# glance, right column as text for numbers you can read off.
+# Modes: 1 bar, 2 text, 3 graph, 4 LED.
+header_layout=two_50_50
+column_meters_0=CPU Memory Swap
+column_meter_modes_0=1 1 1
+column_meters_1=Tasks LoadAverage Uptime Clock
+column_meter_modes_1=2 2 2 2
+
+# Show the tab bar naming each screen. Day 11 adds screens beyond the default two,
+# and without this line there is nothing on screen to tell you which one you are
+# looking at or that the others exist.
+screen_tabs=1
+
+# ==========================================================================
+# Day 10 - The column catalogue
+# ==========================================================================
+
+# A Main screen for the question 'what is this machine doing, and can I afford it'.
+# Changes from the default: PRIORITY dropped (NICE is the part you can act on), and
+# M_PSS added beside RES and PRIV, so the three memory numbers from Day 3 that
+# actually disagree are side by side. Command stays last -- it is the only
+# variable-width column, and anything after it gets squeezed.
+screen:Main=PID USER NICE M_RESIDENT M_PRIV M_PSS STATE PERCENT_CPU PERCENT_MEM TIME Command
+.sort_key=PERCENT_CPU
+.sort_direction=-1
+.tree_sort_key=PID
+.tree_sort_direction=1
+
+# Make threads identifiable without pressing m every time. Kernel threads stay hidden
+# (the default, and right -- there are several hundred and they are almost never your
+# problem); userland threads stay visible but are drawn in their own colour and
+# labelled with their own name, so a row called 'JITWorker' stops masquerading as
+# another copy of the program.
+hide_kernel_threads=1
+hide_userland_threads=0
+highlight_threads=1
+show_thread_names=1
+
+# ==========================================================================
+# Day 11 - Screens as tabs
+# ==========================================================================
+
+# A screen for 'what is eating the memory on this box'. PSS is the sort key because
+# it is the only column from Day 3 that can be added up, and having RES, SHR, PRIV
+# and PSS side by side is what makes the double-counting visible rather than
+# theoretical. No CPU columns at all -- this screen answers one question.
+screen:Memory=PID USER M_RESIDENT M_SHARE M_PRIV M_PSS M_SWAP PERCENT_MEM Command
+.sort_key=M_PSS
+.sort_direction=-1
+
+# ==========================================================================
+# Day 12 - I/O and delays
+# ==========================================================================
+
+# Replace the shipped I/O screen with one that leads with rates rather than totals.
+# Totals since boot answer 'has this process ever done I/O'; rates answer 'is it
+# doing I/O now', which is the question you have during an incident. RCHAR sits at
+# the end so the gap between it and the block-layer numbers stays visible -- that
+# gap is the page cache doing its job.
+screen:I/O=PID USER IO_PRIORITY IO_READ_RATE IO_WRITE_RATE IO_RATE PERCENT_IO_DELAY RCHAR Command
+.sort_key=IO_RATE
+.sort_direction=-1
+
+# ==========================================================================
+# Day 13 - cgroups and containers
+# ==========================================================================
+
+# A screen that groups the machine by service rather than by process. CCGROUP is the
+# point of it: on a systemd box that one column turns an unreadable list of PIDs into
+# 'which unit is this' at a glance, and it costs about a quarter of the width that
+# the raw CGROUP column would. Sorted by CPU% so the noisy unit surfaces on its own.
+screen:Containers=PID USER CONTAINER CCGROUP PERCENT_CPU M_RESIDENT Command
+.sort_key=PERCENT_CPU
+.sort_direction=-1
+
+# ==========================================================================
+# Day 14 - Sharp edges
+# ==========================================================================
+
+# Split the CPU bar so that steal and io-wait are visible as their own segments.
+# Off by default because on a laptop they are always zero; on anything virtualised or
+# anything with real disks they are the only segments that matter, and folded into
+# the defaults they are invisible. The cost is four more colours to recognise.
+detailed_cpu_time=1
+
+# The last line, and a reminder rather than a setting. Keep this file in version
+# control, and once you are happy with it:
+# 
+#     chmod 444 ~/.config/htop/htoprc
+# 
+# Without that, the first time you press t, K or I and quit cleanly, htop rewrites
+# this file in its own canonical form and every comment above is gone. For a
+# shared home directory across several machines, point $HTOPRC at a per-machine
+# file instead -- and remember that if that file does not exist, htop uses its
+# built-in defaults rather than falling back to this one.
+color_scheme=0

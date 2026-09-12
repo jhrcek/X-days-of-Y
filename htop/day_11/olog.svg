@@ -1,0 +1,99 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="526pt" height="187pt"
+ viewBox="0.00 0.00 526.00 187.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 183.38)">
+<title>olog</title>
+<!-- htop -->
+<g id="node1" class="node">
+<title>htop</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M225.04,-179.38C225.04,-179.38 134.94,-179.38 134.94,-179.38 130.53,-179.38 126.12,-174.97 126.12,-170.56 126.12,-170.56 126.12,-161.74 126.12,-161.74 126.12,-157.33 130.53,-152.92 134.94,-152.92 134.94,-152.92 225.04,-152.92 225.04,-152.92 229.45,-152.92 233.86,-157.33 233.86,-161.74 233.86,-161.74 233.86,-170.56 233.86,-170.56 233.86,-174.97 229.45,-179.38 225.04,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="179.99" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an htop session</text>
+</g>
+<!-- scr -->
+<g id="node2" class="node">
+<title>scr</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M301.29,-109.67C301.29,-109.67 248.69,-109.67 248.69,-109.67 244.28,-109.67 239.88,-105.26 239.88,-100.85 239.88,-100.85 239.88,-92.03 239.88,-92.03 239.88,-87.62 244.28,-83.21 248.69,-83.21 248.69,-83.21 301.29,-83.21 301.29,-83.21 305.7,-83.21 310.11,-87.62 310.11,-92.03 310.11,-92.03 310.11,-100.85 310.11,-100.85 310.11,-105.26 305.69,-109.67 301.29,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="274.99" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a screen</text>
+</g>
+<!-- htop&#45;&gt;scr -->
+<g id="edge1" class="edge">
+<title>htop&#45;&gt;scr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M197.86,-152.41C212.72,-141.82 234.02,-126.64 250.48,-114.91"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="251.51,-117.27 255.91,-111.04 248.58,-113.17 251.51,-117.27"/>
+<text xml:space="preserve" text-anchor="middle" x="263.93" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;holds several</text>
+</g>
+<!-- cur -->
+<g id="node7" class="node">
+<title>cur</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M422.04,-179.38C422.04,-179.38 319.94,-179.38 319.94,-179.38 315.53,-179.38 311.12,-174.97 311.12,-170.56 311.12,-170.56 311.12,-161.74 311.12,-161.74 311.12,-157.33 315.53,-152.92 319.94,-152.92 319.94,-152.92 422.04,-152.92 422.04,-152.92 426.45,-152.92 430.86,-157.33 430.86,-161.74 430.86,-161.74 430.86,-170.56 430.86,-170.56 430.86,-174.97 426.45,-179.38 422.04,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="370.99" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the current screen</text>
+</g>
+<!-- htop&#45;&gt;cur -->
+<g id="edge7" class="edge">
+<title>htop&#45;&gt;cur</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M234.21,-166.15C255.24,-166.15 279.58,-166.15 301.85,-166.15"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="301.8,-168.67 309,-166.15 301.8,-163.63 301.8,-168.67"/>
+<text xml:space="preserve" text-anchor="middle" x="272.49" y="-171.38" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">shows only &#160;</text>
+</g>
+<!-- nm -->
+<g id="node3" class="node">
+<title>nm</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M131.16,-33.21C131.16,-33.21 8.82,-33.21 8.82,-33.21 4.41,-33.21 0,-28.8 0,-24.39 0,-24.39 0,-15.57 0,-15.57 0,-11.16 4.41,-6.75 8.82,-6.75 8.82,-6.75 131.16,-6.75 131.16,-6.75 135.57,-6.75 139.98,-11.16 139.98,-15.57 139.98,-15.57 139.98,-24.39 139.98,-24.39 139.98,-28.8 135.57,-33.21 131.16,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="69.99" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a name on the tab bar</text>
+</g>
+<!-- scr&#45;&gt;nm -->
+<g id="edge2" class="edge">
+<title>scr&#45;&gt;nm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M239.62,-86.67C220.45,-81.59 196.45,-74.73 175.49,-67.21 151.07,-58.44 124.29,-46.68 103.83,-37.22"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="105.06,-35.01 97.47,-34.25 102.93,-39.58 105.06,-35.01"/>
+<text xml:space="preserve" text-anchor="middle" x="206.24" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is labelled by</text>
+</g>
+<!-- col -->
+<g id="node4" class="node">
+<title>col</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M251.36,-39.96C251.36,-39.96 176.62,-39.96 176.62,-39.96 170.62,-39.96 164.62,-33.96 164.62,-27.96 164.62,-27.96 164.62,-12 164.62,-12 164.62,-6 170.62,0 176.62,0 176.62,0 251.36,0 251.36,0 257.36,0 263.36,-6 263.36,-12 263.36,-12 263.36,-27.96 263.36,-27.96 263.36,-33.96 257.36,-39.96 251.36,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="213.99" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an ordered list</text>
+<text xml:space="preserve" text-anchor="middle" x="213.99" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">of columns</text>
+</g>
+<!-- scr&#45;&gt;col -->
+<g id="edge3" class="edge">
+<title>scr&#45;&gt;col</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M264.64,-82.81C256.61,-73.01 245.21,-59.09 235.25,-46.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="237.42,-45.61 230.91,-41.63 233.52,-48.8 237.42,-45.61"/>
+<text xml:space="preserve" text-anchor="middle" x="271.62" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;displays</text>
+</g>
+<!-- srt -->
+<g id="node5" class="node">
+<title>srt</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M371.48,-39.96C371.48,-39.96 300.5,-39.96 300.5,-39.96 294.5,-39.96 288.5,-33.96 288.5,-27.96 288.5,-27.96 288.5,-12 288.5,-12 288.5,-6 294.5,0 300.5,0 300.5,0 371.48,0 371.48,0 377.48,0 383.48,-6 383.48,-12 383.48,-12 383.48,-27.96 383.48,-27.96 383.48,-33.96 377.48,-39.96 371.48,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a sort column</text>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">and direction</text>
+</g>
+<!-- scr&#45;&gt;srt -->
+<g id="edge4" class="edge">
+<title>scr&#45;&gt;srt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M285.34,-82.81C293.37,-73.01 304.77,-59.09 314.73,-46.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="316.46,-48.8 319.07,-41.63 312.56,-45.61 316.46,-48.8"/>
+<text xml:space="preserve" text-anchor="middle" x="350.82" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;remembers its own</text>
+</g>
+<!-- tv -->
+<g id="node6" class="node">
+<title>tv</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M508.79,-33.21C508.79,-33.21 417.19,-33.21 417.19,-33.21 412.79,-33.21 408.38,-28.8 408.38,-24.39 408.38,-24.39 408.38,-15.57 408.38,-15.57 408.38,-11.16 412.79,-6.75 417.19,-6.75 417.19,-6.75 508.79,-6.75 508.79,-6.75 513.2,-6.75 517.61,-11.16 517.61,-15.57 517.61,-15.57 517.61,-24.39 517.61,-24.39 517.61,-28.8 513.2,-33.21 508.79,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="462.99" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a tree view state</text>
+</g>
+<!-- scr&#45;&gt;tv -->
+<g id="edge5" class="edge">
+<title>scr&#45;&gt;tv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M310.45,-91.38C336.18,-87.51 371.34,-80.26 399.99,-67.21 415.68,-60.06 431.31,-48.62 443.08,-38.91"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="444.46,-41.04 448.32,-34.46 441.2,-37.2 444.46,-41.04"/>
+<text xml:space="preserve" text-anchor="middle" x="462.18" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;remembers its own</text>
+</g>
+<!-- cur&#45;&gt;scr -->
+<g id="edge6" class="edge">
+<title>cur&#45;&gt;scr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M352.93,-152.41C337.92,-141.82 316.39,-126.64 299.76,-114.91"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="301.6,-113.13 294.26,-111.03 298.7,-117.24 301.6,-113.13"/>
+<text xml:space="preserve" text-anchor="middle" x="335.11" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+</g>
+</svg>

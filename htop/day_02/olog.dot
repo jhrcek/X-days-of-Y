@@ -1,0 +1,29 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  task  [label="a task", fillcolor="#e7f0ec", color="#2f7a63"];
+  col   [label="the Command column", fillcolor="#e7f0ec", color="#2f7a63"];
+  cmdl  [label="an argument vector\n(/proc/[pid]/cmdline)"];
+  comm  [label="a comm string\n(/proc/[pid]/comm)"];
+  exe   [label="an exe path\n(/proc/[pid]/exe)"];
+  kth   [label="a kernel thread", fillcolor="#f8efdf", color="#d8b784"];
+
+  task -> cmdl [label="  was started with"];
+  task -> comm [label="  is named by"];
+  task -> exe  [label="  runs the binary at"];
+  col  -> cmdl [label="  shows"];
+  col  -> comm [label="merges in  ", style=dashed, constraint=false];
+  col  -> exe  [label="  merges in", style=dashed, constraint=false];
+  kth  -> task [label="  is"];
+  kth  -> cmdl [label="has an empty  ", style=dashed, constraint=false];
+
+}
