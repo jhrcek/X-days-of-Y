@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.6;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  proc [label="a running process", fillcolor="#e7f0ec", color="#2f7a63"];
+  ruid [label="its real user"];
+  euid [label="its effective user", fillcolor="#f8efdf", color="#d8b784"];
+  rgid [label="its real group"];
+  ppid [label="its parent process"];
+  pgid [label="its process group", fillcolor="#e7f0ec", color="#2f7a63"];
+  sess [label="its session", fillcolor="#e7f0ec", color="#2f7a63"];
+  tty  [label="a controlling terminal", fillcolor="#f4efe6"];
+
+  proc -> ruid [label="  was started by"];
+  proc -> euid [label="  acts as"];
+  proc -> rgid [label="  belongs to"];
+  proc -> ppid [label="  was forked by"];
+  proc -> pgid [label="  is a member of"];
+  pgid -> sess [label="  belongs to"];
+  sess -> tty  [label="  is attached to"];
+
+}

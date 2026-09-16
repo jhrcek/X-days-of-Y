@@ -1,0 +1,128 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="741pt" height="201pt"
+ viewBox="0.00 0.00 741.00 201.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 196.88)">
+<title>olog</title>
+<!-- proc -->
+<g id="node1" class="node">
+<title>proc</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M202.41,-186.13C202.41,-186.13 95.07,-186.13 95.07,-186.13 90.66,-186.13 86.25,-181.72 86.25,-177.31 86.25,-177.31 86.25,-168.49 86.25,-168.49 86.25,-164.08 90.66,-159.67 95.07,-159.67 95.07,-159.67 202.41,-159.67 202.41,-159.67 206.82,-159.67 211.23,-164.08 211.23,-168.49 211.23,-168.49 211.23,-177.31 211.23,-177.31 211.23,-181.72 206.82,-186.13 202.41,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="148.74" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a matched process</text>
+</g>
+<!-- pid -->
+<g id="node2" class="node">
+<title>pid</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M184.41,-109.67C184.41,-109.67 107.07,-109.67 107.07,-109.67 102.66,-109.67 98.25,-105.26 98.25,-100.85 98.25,-100.85 98.25,-92.03 98.25,-92.03 98.25,-87.62 102.66,-83.21 107.07,-83.21 107.07,-83.21 184.41,-83.21 184.41,-83.21 188.82,-83.21 193.23,-87.62 193.23,-92.03 193.23,-92.03 193.23,-100.85 193.23,-100.85 193.23,-105.26 188.82,-109.67 184.41,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="145.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its process ID</text>
+</g>
+<!-- proc&#45;&gt;pid -->
+<g id="edge1" class="edge">
+<title>proc&#45;&gt;pid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M85.72,-162.14C71.85,-156.94 58.77,-149 50.24,-136.92 36.78,-117.86 61.64,-107.98 89.36,-102.87"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="89.76,-105.35 96.45,-101.69 88.93,-100.38 89.76,-105.35"/>
+<text xml:space="preserve" text-anchor="middle" x="83.99" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is identified by</text>
+</g>
+<!-- nm -->
+<g id="node3" class="node">
+<title>nm</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M445.79,-109.67C445.79,-109.67 349.69,-109.67 349.69,-109.67 345.29,-109.67 340.88,-105.26 340.88,-100.85 340.88,-100.85 340.88,-92.03 340.88,-92.03 340.88,-87.62 345.29,-83.21 349.69,-83.21 349.69,-83.21 445.79,-83.21 445.79,-83.21 450.19,-83.21 454.61,-87.62 454.61,-92.03 454.61,-92.03 454.61,-100.85 454.61,-100.85 454.61,-105.26 450.19,-109.67 445.79,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="397.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its process name</text>
+</g>
+<!-- proc&#45;&gt;nm -->
+<g id="edge2" class="edge">
+<title>proc&#45;&gt;nm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M144.33,-159.3C141.6,-148.98 139.97,-134.65 147.99,-125.67 160.08,-112.13 261.95,-104.27 331.8,-100.42"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="331.93,-102.94 338.99,-100.03 331.66,-97.9 331.93,-102.94"/>
+<text xml:space="preserve" text-anchor="middle" x="178.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as name</text>
+</g>
+<!-- cl -->
+<g id="node4" class="node">
+<title>cl</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M611.03,-109.67C611.03,-109.67 516.44,-109.67 516.44,-109.67 512.03,-109.67 507.62,-105.26 507.62,-100.85 507.62,-100.85 507.62,-92.03 507.62,-92.03 507.62,-87.62 512.03,-83.21 516.45,-83.21 516.45,-83.21 611.04,-83.21 611.04,-83.21 615.45,-83.21 619.86,-87.62 619.86,-92.03 619.86,-92.03 619.86,-100.85 619.86,-100.85 619.86,-105.26 615.45,-109.67 611.03,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="563.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its command line</text>
+</g>
+<!-- proc&#45;&gt;cl -->
+<g id="edge3" class="edge">
+<title>proc&#45;&gt;cl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M211.46,-163.35C245.98,-157.71 289.3,-149.09 326.74,-136.92 338.04,-133.25 339.58,-128.99 350.99,-125.67 354.58,-124.62 437.49,-113.77 498.73,-105.83"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="498.82,-108.36 505.64,-104.94 498.17,-103.36 498.82,-108.36"/>
+<text xml:space="preserve" text-anchor="middle" x="399.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as command line</text>
+</g>
+<!-- dl -->
+<g id="node7" class="node">
+<title>dl</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M123.48,-39.96C123.48,-39.96 12,-39.96 12,-39.96 6,-39.96 0,-33.96 0,-27.96 0,-27.96 0,-12 0,-12 0,-6 6,0 12,0 12,0 123.48,0 123.48,0 129.48,0 135.48,-6 135.48,-12 135.48,-12 135.48,-27.96 135.48,-27.96 135.48,-33.96 129.48,-39.96 123.48,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the delimiter</text>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a newline by default)</text>
+</g>
+<!-- pid&#45;&gt;dl -->
+<g id="edge9" class="edge">
+<title>pid&#45;&gt;dl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M132.51,-82.81C122.05,-72.82 107.12,-58.57 94.22,-46.26"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="96.18,-44.65 89.24,-41.5 92.7,-48.3 96.18,-44.65"/>
+<text xml:space="preserve" text-anchor="middle" x="147.9" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is followed by</text>
+</g>
+<!-- argv -->
+<g id="node8" class="node">
+<title>argv</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M277.11,-39.96C277.11,-39.96 172.38,-39.96 172.38,-39.96 166.38,-39.96 160.38,-33.96 160.38,-27.96 160.38,-27.96 160.38,-12 160.38,-12 160.38,-6 166.38,0 172.38,0 172.38,0 277.11,0 277.11,0 283.11,0 289.11,-6 289.11,-12 289.11,-12 289.11,-27.96 289.11,-27.96 289.11,-33.96 283.11,-39.96 277.11,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="224.74" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">another command&#39;s</text>
+<text xml:space="preserve" text-anchor="middle" x="224.74" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">argument list</text>
+</g>
+<!-- pid&#45;&gt;argv -->
+<g id="edge10" class="edge">
+<title>pid&#45;&gt;argv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M165.63,-82.89C172.3,-78.3 179.6,-72.84 185.74,-67.21 192.36,-61.14 198.9,-53.97 204.69,-47.11"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="206.57,-48.79 209.19,-41.63 202.67,-45.6 206.57,-48.79"/>
+<text xml:space="preserve" text-anchor="middle" x="233.77" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is an element of</text>
+</g>
+<!-- qt -->
+<g id="node5" class="node">
+<title>qt</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M656.36,-39.96C656.36,-39.96 577.12,-39.96 577.12,-39.96 571.12,-39.96 565.12,-33.96 565.12,-27.96 565.12,-27.96 565.12,-12 565.12,-12 565.12,-6 571.12,0 577.12,0 577.12,0 656.36,0 656.36,0 662.36,0 668.36,-6 668.36,-12 668.36,-12 668.36,-27.96 668.36,-27.96 668.36,-33.96 662.36,-39.96 656.36,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="616.74" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its shell&#45;quoted</text>
+<text xml:space="preserve" text-anchor="middle" x="616.74" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">command line</text>
+</g>
+<!-- cl&#45;&gt;qt -->
+<g id="edge4" class="edge">
+<title>cl&#45;&gt;qt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M572.73,-82.81C579.64,-73.1 589.43,-59.34 598.02,-47.27"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="599.87,-49.03 601.99,-41.7 595.76,-46.1 599.87,-49.03"/>
+<text xml:space="preserve" text-anchor="middle" x="620.7" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is quoted as</text>
+</g>
+<!-- out -->
+<g id="node6" class="node">
+<title>out</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M565.36,-192.88C565.36,-192.88 498.12,-192.88 498.12,-192.88 492.12,-192.88 486.12,-186.88 486.12,-180.88 486.12,-180.88 486.12,-164.92 486.12,-164.92 486.12,-158.92 492.12,-152.92 498.12,-152.92 498.12,-152.92 565.36,-152.92 565.36,-152.92 571.36,-152.92 577.36,-158.92 577.36,-164.92 577.36,-164.92 577.36,-180.88 577.36,-180.88 577.36,-186.88 571.36,-192.88 565.36,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="531.74" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a line of</text>
+<text xml:space="preserve" text-anchor="middle" x="531.74" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">pgrep output</text>
+</g>
+<!-- out&#45;&gt;pid -->
+<g id="edge5" class="edge">
+<title>out&#45;&gt;pid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M485.65,-170.37C427.38,-167.53 324.39,-159.51 239.24,-136.92 233.31,-135.35 206.16,-123.8 182.64,-113.6"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="183.9,-111.4 176.29,-110.84 181.89,-116.02 183.9,-111.4"/>
+<text xml:space="preserve" text-anchor="middle" x="281.99" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;always begins with</text>
+</g>
+<!-- out&#45;&gt;nm -->
+<g id="edge6" class="edge">
+<title>out&#45;&gt;nm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M500.14,-152.51C486.07,-144.04 469.2,-134.14 453.74,-125.67 446.66,-121.79 438.98,-117.79 431.64,-114.06"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="432.84,-111.85 425.28,-110.86 430.58,-116.35 432.84,-111.85"/>
+<text xml:space="preserve" text-anchor="middle" x="507.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;carries with &#45;l &#160;</text>
+</g>
+<!-- out&#45;&gt;cl -->
+<g id="edge7" class="edge">
+<title>out&#45;&gt;cl</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M543.75,-152.69C546.6,-147.67 549.47,-142.19 551.74,-136.92 554.26,-131.09 556.47,-124.56 558.29,-118.51"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="560.69,-119.29 560.22,-111.67 555.84,-117.91 560.69,-119.29"/>
+<text xml:space="preserve" text-anchor="middle" x="591.4" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;carries with &#45;a &#160;</text>
+</g>
+<!-- out&#45;&gt;qt -->
+<g id="edge8" class="edge">
+<title>out&#45;&gt;qt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M577.83,-165.53C597.14,-160.67 618.38,-152.07 632.74,-136.92 658.23,-110.01 667.17,-90.1 652.74,-55.96 651.37,-52.71 649.53,-49.61 647.4,-46.7"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="649.59,-45.38 643.03,-41.48 645.72,-48.62 649.59,-45.38"/>
+<text xml:space="preserve" text-anchor="middle" x="696.39" y="-93.04" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;carries with &#45;Q &#160;</text>
+</g>
+</g>
+</svg>

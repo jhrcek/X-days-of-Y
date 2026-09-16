@@ -1,0 +1,101 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="366pt" height="296pt"
+ viewBox="0.00 0.00 366.00 296.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 292.09)">
+<title>olog</title>
+<!-- run -->
+<g id="node1" class="node">
+<title>run</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M190.16,-288.09C190.16,-288.09 122.57,-288.09 122.57,-288.09 118.16,-288.09 113.75,-283.68 113.75,-279.27 113.75,-279.27 113.75,-270.45 113.75,-270.45 113.75,-266.04 118.16,-261.63 122.57,-261.63 122.57,-261.63 190.16,-261.63 190.16,-261.63 194.57,-261.63 198.98,-266.04 198.98,-270.45 198.98,-270.45 198.98,-279.27 198.98,-279.27 198.98,-283.68 194.57,-288.09 190.16,-288.09"/>
+<text xml:space="preserve" text-anchor="middle" x="156.37" y="-270.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pgrep run</text>
+</g>
+<!-- scan -->
+<g id="node2" class="node">
+<title>scan</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M191.86,-214.38C191.86,-214.38 120.88,-214.38 120.88,-214.38 114.88,-214.38 108.88,-208.38 108.88,-202.38 108.88,-202.38 108.88,-186.42 108.88,-186.42 108.88,-180.42 114.88,-174.42 120.88,-174.42 120.88,-174.42 191.86,-174.42 191.86,-174.42 197.86,-174.42 203.86,-180.42 203.86,-186.42 203.86,-186.42 203.86,-202.38 203.86,-202.38 203.86,-208.38 197.86,-214.38 191.86,-214.38"/>
+<text xml:space="preserve" text-anchor="middle" x="156.37" y="-196.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the moment it</text>
+<text xml:space="preserve" text-anchor="middle" x="156.37" y="-183.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">read /proc</text>
+</g>
+<!-- run&#45;&gt;scan -->
+<g id="edge1" class="edge">
+<title>run&#45;&gt;scan</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M156.37,-261.25C156.37,-251.05 156.37,-236.29 156.37,-223.33"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="158.89,-223.51 156.37,-216.31 153.85,-223.51 158.89,-223.51"/>
+<text xml:space="preserve" text-anchor="middle" x="185.99" y="-234.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;happened at</text>
+</g>
+<!-- pid -->
+<g id="node3" class="node">
+<title>pid</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M205.79,-120.42C205.79,-120.42 132.94,-120.42 132.94,-120.42 128.53,-120.42 124.12,-116.01 124.12,-111.6 124.12,-111.6 124.12,-102.78 124.12,-102.78 124.12,-98.37 128.53,-93.96 132.94,-93.96 132.94,-93.96 205.79,-93.96 205.79,-93.96 210.2,-93.96 214.61,-98.37 214.61,-102.78 214.61,-102.78 214.61,-111.6 214.61,-111.6 214.61,-116.01 210.2,-120.42 205.79,-120.42"/>
+<text xml:space="preserve" text-anchor="middle" x="169.37" y="-103.02" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a process ID</text>
+</g>
+<!-- scan&#45;&gt;pid -->
+<g id="edge2" class="edge">
+<title>scan&#45;&gt;pid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M154.2,-174.01C153.66,-165.15 153.65,-154.56 155.37,-145.17 156.37,-139.67 158.15,-133.94 160.11,-128.67"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="162.31,-129.96 162.66,-122.34 157.63,-128.08 162.31,-129.96"/>
+<text xml:space="preserve" text-anchor="middle" x="173.37" y="-147.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;yielded</text>
+</g>
+<!-- match -->
+<g id="node4" class="node">
+<title>match</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M80.73,-39.96C80.73,-39.96 12,-39.96 12,-39.96 6,-39.96 0,-33.96 0,-27.96 0,-27.96 0,-12 0,-12 0,-6 6,0 12,0 12,0 80.73,0 80.73,0 86.73,0 92.73,-6 92.73,-12 92.73,-12 92.73,-27.96 92.73,-27.96 92.73,-33.96 86.73,-39.96 80.73,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="46.37" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the process</text>
+<text xml:space="preserve" text-anchor="middle" x="46.37" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">that matched</text>
+</g>
+<!-- pid&#45;&gt;match -->
+<g id="edge3" class="edge">
+<title>pid&#45;&gt;match</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M150.95,-93.43C132.69,-80.78 104.24,-61.07 81.62,-45.4"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="83.16,-43.4 75.81,-41.38 80.29,-47.55 83.16,-43.4"/>
+<text xml:space="preserve" text-anchor="middle" x="150.1" y="-60.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;identified, then</text>
+</g>
+<!-- holder -->
+<g id="node7" class="node">
+<title>holder</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M333.36,-39.96C333.36,-39.96 253.38,-39.96 253.38,-39.96 247.38,-39.96 241.38,-33.96 241.38,-27.96 241.38,-27.96 241.38,-12 241.38,-12 241.38,-6 247.38,0 253.38,0 253.38,0 333.36,0 333.36,0 339.36,0 345.36,-6 345.36,-12 345.36,-12 345.36,-27.96 345.36,-27.96 345.36,-33.96 339.36,-39.96 333.36,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="293.37" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">whatever holds</text>
+<text xml:space="preserve" text-anchor="middle" x="293.37" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">that PID now</text>
+</g>
+<!-- pid&#45;&gt;holder -->
+<g id="edge6" class="edge">
+<title>pid&#45;&gt;holder</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M187.93,-93.43C206.34,-80.78 235.02,-61.07 257.82,-45.4"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="259.18,-47.53 263.69,-41.37 256.33,-43.37 259.18,-47.53"/>
+<text xml:space="preserve" text-anchor="middle" x="272.54" y="-60.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;identifies, now</text>
+</g>
+<!-- match&#45;&gt;holder -->
+<g id="edge7" class="edge">
+<title>match&#45;&gt;holder</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M93.11,-19.98C132.63,-19.98 189.51,-19.98 232.56,-19.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="232.46,-22.5 239.66,-19.98 232.46,-17.46 232.46,-22.5"/>
+<text xml:space="preserve" text-anchor="middle" x="167.05" y="-25.21" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is usually, but need not be &#160;</text>
+</g>
+<!-- klr -->
+<g id="node5" class="node">
+<title>klr</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M312.79,-207.63C312.79,-207.63 257.94,-207.63 257.94,-207.63 253.53,-207.63 249.12,-203.22 249.12,-198.81 249.12,-198.81 249.12,-189.99 249.12,-189.99 249.12,-185.58 253.53,-181.17 257.94,-181.17 257.94,-181.17 312.79,-181.17 312.79,-181.17 317.2,-181.17 321.61,-185.58 321.61,-189.99 321.61,-189.99 321.61,-198.81 321.61,-198.81 321.61,-203.22 317.2,-207.63 312.79,-207.63"/>
+<text xml:space="preserve" text-anchor="middle" x="285.37" y="-190.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a later kill</text>
+</g>
+<!-- klr&#45;&gt;pid -->
+<g id="edge5" class="edge">
+<title>klr&#45;&gt;pid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M268,-180.64C248.15,-166.06 215.55,-142.11 193.3,-125.77"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="195.05,-123.93 187.75,-121.7 192.06,-127.99 195.05,-123.93"/>
+<text xml:space="preserve" text-anchor="middle" x="260.94" y="-147.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is aimed at</text>
+</g>
+<!-- now -->
+<g id="node6" class="node">
+<title>now</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M346.48,-127.17C346.48,-127.17 264.25,-127.17 264.25,-127.17 258.25,-127.17 252.25,-121.17 252.25,-115.17 252.25,-115.17 252.25,-99.21 252.25,-99.21 252.25,-93.21 258.25,-87.21 264.25,-87.21 264.25,-87.21 346.48,-87.21 346.48,-87.21 352.48,-87.21 358.48,-93.21 358.48,-99.21 358.48,-99.21 358.48,-115.17 358.48,-115.17 358.48,-121.17 352.48,-127.17 346.48,-127.17"/>
+<text xml:space="preserve" text-anchor="middle" x="305.37" y="-109.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the moment the</text>
+<text xml:space="preserve" text-anchor="middle" x="305.37" y="-96.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">signal is sent</text>
+</g>
+<!-- klr&#45;&gt;now -->
+<g id="edge4" class="edge">
+<title>klr&#45;&gt;now</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M288.32,-180.83C291.08,-169.06 295.3,-151.08 298.85,-135.95"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="301.29,-136.58 300.48,-128.99 296.38,-135.43 301.29,-136.58"/>
+<text xml:space="preserve" text-anchor="middle" x="323.19" y="-147.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;happens at</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  proc  [label="a running process\n(the thread group leader)", fillcolor="#e7f0ec", color="#2f7a63"];
+  task  [label="a thread", fillcolor="#e7f0ec", color="#2f7a63"];
+  tid   [label="its thread ID"];
+  tname [label="the thread's own name", fillcolor="#f8efdf", color="#d8b784"];
+  cline [label="the command line"];
+  taskd [label="/proc/PID/task", fillcolor="#f4efe6"];
+  pidf  [label="a pidfile", fillcolor="#f4efe6"];
+  pid   [label="a process ID"];
+
+  task -> proc  [label="  belongs to"];
+  task -> tid   [label="  is identified by"];
+  task -> tname [label="  has as name"];
+  task -> cline [label="  shares"];
+  proc -> taskd [label="  lists its threads in"];
+  proc -> pid   [label="  is identified by"];
+  pidf -> pid   [label="  claims to contain"];
+  tid  -> pid   [label="  equals, for the leader  ", style=dashed, constraint=false];
+
+}

@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  run   [label="a pgrep run", fillcolor="#e7f0ec", color="#2f7a63"];
+  pat   [label="the one pattern", fillcolor="#e7f0ec", color="#2f7a63"];
+  crit  [label="a criterion", fillcolor="#e7f0ec", color="#2f7a63"];
+  procd [label="the /proc filesystem", fillcolor="#f4efe6"];
+  entry [label="a /proc/PID directory", fillcolor="#f4efe6"];
+  proc  [label="a running process"];
+  sel   [label="the selection", fillcolor="#e7f0ec", color="#2f7a63"];
+  pid   [label="a process ID\non stdout"];
+  stat  [label="the exit status", fillcolor="#f8efdf", color="#d8b784"];
+  self  [label="the pgrep process\nitself", fillcolor="#f8efdf", color="#d8b784"];
+
+  run   -> pat   [label="  is given"];
+  run   -> crit  [label="  is narrowed by"];
+  run   -> procd [label="  scans"];
+  procd -> entry [label="  contains"];
+  entry -> proc  [label="  describes"];
+  run   -> sel   [label="  yields"];
+  sel   -> pid   [label="  is printed as"];
+  sel   -> stat  [label="  determines"];
+  proc  -> pid   [label="  is identified by"];
+  run   -> self  [label="  never matches  ", style=dashed, constraint=false];
+
+}

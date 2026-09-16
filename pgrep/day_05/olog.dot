@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  proc  [label="a running process", fillcolor="#e7f0ec", color="#2f7a63"];
+  start [label="its start time"];
+  state [label="its run state", fillcolor="#f8efdf", color="#d8b784"];
+  crit  [label="a criterion", fillcolor="#e7f0ec", color="#2f7a63"];
+  conj  [label="the whole conjunction", fillcolor="#e7f0ec", color="#2f7a63"];
+  sel   [label="the selection", fillcolor="#e7f0ec", color="#2f7a63"];
+  comp  [label="the complement\n(what -v returns)", fillcolor="#f8efdf", color="#d8b784"];
+
+  proc  -> start [label="  was started at"];
+  proc  -> state [label="  is currently in"];
+  start -> crit  [label="  is tested by"];
+  state -> crit  [label="  is tested by"];
+  crit  -> conj  [label="  is a conjunct of"];
+  conj  -> sel   [label="  determines"];
+  conj  -> comp  [label="  is inverted by -v into  ", style=dashed];
+  sel   -> comp  [label="  has as complement  ", style=dashed, constraint=false];
+
+}

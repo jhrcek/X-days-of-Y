@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  proc  [label="a matched process", fillcolor="#e7f0ec", color="#2f7a63"];
+  pid   [label="its process ID", fillcolor="#e7f0ec", color="#2f7a63"];
+  nm    [label="its process name"];
+  cl    [label="its command line"];
+  qt    [label="its shell-quoted\ncommand line"];
+  out   [label="a line of\npgrep output", fillcolor="#e7f0ec", color="#2f7a63"];
+  dl    [label="the delimiter\n(a newline by default)", fillcolor="#f8efdf", color="#d8b784"];
+  argv  [label="another command's\nargument list", fillcolor="#f4efe6"];
+
+  proc -> pid  [label="  is identified by"];
+  proc -> nm   [label="  has as name"];
+  proc -> cl   [label="  has as command line"];
+  cl   -> qt   [label="  is quoted as"];
+  out  -> pid  [label="  always begins with"];
+  out  -> nm   [label="  carries with -l  ", style=dashed];
+  out  -> cl   [label="  carries with -a  ", style=dashed];
+  out  -> qt   [label="  carries with -Q  ", style=dashed];
+  pid  -> dl   [label="  is followed by"];
+  pid  -> argv [label="  is an element of"];
+
+}

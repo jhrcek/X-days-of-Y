@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  grepr [label="a pgrep run"];
+  killr [label="a pkill run", fillcolor="#e7f0ec", color="#2f7a63"];
+  waitr [label="a pidwait run"];
+  q     [label="a selection query", fillcolor="#e7f0ec", color="#2f7a63"];
+  sel   [label="the selection", fillcolor="#e7f0ec", color="#2f7a63"];
+  proc  [label="a matched process"];
+  sig   [label="a signal", fillcolor="#f8efdf", color="#d8b784"];
+  hdlr  [label="a userspace handler"];
+  gone  [label="the moment it exits"];
+
+  grepr -> q    [label="  is"];
+  killr -> q    [label="  is"];
+  waitr -> q    [label="  is"];
+  q     -> sel  [label="  determines"];
+  grepr -> sel  [label="  prints", constraint=false];
+  killr -> sig  [label="  sends"];
+  sig   -> proc [label="  is delivered to"];
+  proc  -> hdlr [label="  may install"];
+  proc  -> gone [label="  has as"];
+  waitr -> gone [label="  blocks until"];
+  sig   -> hdlr [label="  is checked against, under -H  ", style=dashed, constraint=false];
+
+}

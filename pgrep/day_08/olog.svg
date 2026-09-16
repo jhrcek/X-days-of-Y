@@ -1,0 +1,91 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="712pt" height="187pt"
+ viewBox="0.00 0.00 712.00 187.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 183.38)">
+<title>olog</title>
+<!-- unit -->
+<g id="node1" class="node">
+<title>unit</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M96.86,-39.96C96.86,-39.96 20.62,-39.96 20.62,-39.96 14.62,-39.96 8.63,-33.96 8.63,-27.96 8.63,-27.96 8.63,-12 8.63,-12 8.63,-6 14.63,0 20.63,0 20.63,0 96.86,0 96.86,0 102.86,0 108.86,-6 108.86,-12 108.86,-12 108.86,-27.96 108.86,-27.96 108.86,-33.96 102.86,-39.96 96.86,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="58.74" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a systemd unit</text>
+<text xml:space="preserve" text-anchor="middle" x="58.74" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">or a container</text>
+</g>
+<!-- cg -->
+<g id="node2" class="node">
+<title>cg</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M108.66,-109.67C108.66,-109.67 8.82,-109.67 8.82,-109.67 4.41,-109.67 0,-105.26 0,-100.85 0,-100.85 0,-92.03 0,-92.03 0,-87.62 4.41,-83.21 8.82,-83.21 8.82,-83.21 108.66,-83.21 108.66,-83.21 113.07,-83.21 117.48,-87.62 117.48,-92.03 117.48,-92.03 117.48,-100.85 117.48,-100.85 117.48,-105.26 113.07,-109.67 108.66,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="58.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its cgroup v2 path</text>
+</g>
+<!-- cg&#45;&gt;unit -->
+<g id="edge4" class="edge">
+<title>cg&#45;&gt;unit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M58.74,-82.81C58.74,-73.55 58.74,-60.62 58.74,-48.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="61.26,-49.19 58.74,-41.99 56.22,-49.19 61.26,-49.19"/>
+<text xml:space="preserve" text-anchor="middle" x="92.87" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is managed by</text>
+</g>
+<!-- proc -->
+<g id="node3" class="node">
+<title>proc</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M395.41,-179.38C395.41,-179.38 294.07,-179.38 294.07,-179.38 289.66,-179.38 285.25,-174.97 285.25,-170.56 285.25,-170.56 285.25,-161.74 285.25,-161.74 285.25,-157.33 289.66,-152.92 294.07,-152.92 294.07,-152.92 395.41,-152.92 395.41,-152.92 399.82,-152.92 404.23,-157.33 404.23,-161.74 404.23,-161.74 404.23,-170.56 404.23,-170.56 404.23,-174.97 399.82,-179.38 395.41,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="344.74" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a running process</text>
+</g>
+<!-- proc&#45;&gt;cg -->
+<g id="edge3" class="edge">
+<title>proc&#45;&gt;cg</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M287.01,-152.38C265.76,-147.62 241.51,-142.11 219.49,-136.92 185.74,-128.97 148.09,-119.75 117.72,-112.21"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="118.5,-109.81 110.9,-110.52 117.28,-114.7 118.5,-109.81"/>
+<text xml:space="preserve" text-anchor="middle" x="237.12" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;lives in</text>
+</g>
+<!-- env -->
+<g id="node4" class="node">
+<title>env</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M237.91,-109.67C237.91,-109.67 151.57,-109.67 151.57,-109.67 147.16,-109.67 142.75,-105.26 142.75,-100.85 142.75,-100.85 142.75,-92.03 142.75,-92.03 142.75,-87.62 147.16,-83.21 151.57,-83.21 151.57,-83.21 237.91,-83.21 237.91,-83.21 242.32,-83.21 246.73,-87.62 246.73,-92.03 246.73,-92.03 246.73,-100.85 246.73,-100.85 246.73,-105.26 242.32,-109.67 237.91,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="194.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its environment</text>
+</g>
+<!-- proc&#45;&gt;env -->
+<g id="edge2" class="edge">
+<title>proc&#45;&gt;env</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M316.53,-152.41C292.22,-141.44 257.01,-125.55 230.69,-113.67"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="231.88,-111.44 224.28,-110.77 229.8,-116.03 231.88,-111.44"/>
+<text xml:space="preserve" text-anchor="middle" x="302.72" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;was given</text>
+</g>
+<!-- netns -->
+<g id="node5" class="node">
+<title>netns</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M408.54,-109.67C408.54,-109.67 280.94,-109.67 280.94,-109.67 276.53,-109.67 272.12,-105.26 272.12,-100.85 272.12,-100.85 272.12,-92.03 272.12,-92.03 272.12,-87.62 276.54,-83.21 280.94,-83.21 280.94,-83.21 408.54,-83.21 408.54,-83.21 412.95,-83.21 417.36,-87.62 417.36,-92.03 417.36,-92.03 417.36,-100.85 417.36,-100.85 417.36,-105.26 412.94,-109.67 408.54,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="344.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its network namespace</text>
+</g>
+<!-- proc&#45;&gt;netns -->
+<g id="edge5" class="edge">
+<title>proc&#45;&gt;netns</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M344.74,-152.41C344.74,-142.96 344.74,-129.84 344.74,-118.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="347.26,-118.91 344.74,-111.71 342.22,-118.91 347.26,-118.91"/>
+<text xml:space="preserve" text-anchor="middle" x="376.99" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is confined by</text>
+</g>
+<!-- pidns -->
+<g id="node6" class="node">
+<title>pidns</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M556.28,-109.67C556.28,-109.67 451.19,-109.67 451.19,-109.67 446.79,-109.67 442.38,-105.26 442.38,-100.85 442.38,-100.85 442.38,-92.03 442.38,-92.03 442.38,-87.62 446.79,-83.21 451.19,-83.21 451.19,-83.21 556.29,-83.21 556.29,-83.21 560.7,-83.21 565.11,-87.62 565.11,-92.03 565.11,-92.03 565.11,-100.85 565.11,-100.85 565.11,-105.26 560.7,-109.67 556.28,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="503.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its PID namespace</text>
+</g>
+<!-- proc&#45;&gt;pidns -->
+<g id="edge6" class="edge">
+<title>proc&#45;&gt;pidns</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M377.73,-152.37C389.75,-147.63 403.4,-142.14 415.74,-136.92 433.23,-129.52 452.5,-120.93 468.54,-113.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="469.18,-116.13 474.68,-110.85 467.09,-111.54 469.18,-116.13"/>
+<text xml:space="preserve" text-anchor="middle" x="472.3" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is confined by</text>
+</g>
+<!-- name -->
+<g id="node7" class="node">
+<title>name</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M694.78,-109.67C694.78,-109.67 598.7,-109.67 598.7,-109.67 594.28,-109.67 589.88,-105.26 589.88,-100.85 589.88,-100.85 589.88,-92.03 589.88,-92.03 589.88,-87.62 594.28,-83.21 598.7,-83.21 598.7,-83.21 694.78,-83.21 694.78,-83.21 699.2,-83.21 703.61,-87.62 703.61,-92.03 703.61,-92.03 703.61,-100.85 703.61,-100.85 703.61,-105.26 699.2,-109.67 694.78,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="646.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its process name</text>
+</g>
+<!-- proc&#45;&gt;name -->
+<g id="edge1" class="edge">
+<title>proc&#45;&gt;name</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M404.61,-156.66C436.33,-151.73 475.84,-144.93 510.74,-136.92 540.36,-130.12 573.09,-120.69 599.02,-112.74"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="599.53,-115.22 605.66,-110.69 598.04,-110.41 599.53,-115.22"/>
+<text xml:space="preserve" text-anchor="middle" x="582.6" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as name</text>
+</g>
+</g>
+</svg>

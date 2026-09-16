@@ -1,0 +1,29 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.5;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  run    [label="a pgrep run", fillcolor="#e7f0ec", color="#2f7a63"];
+  scan   [label="the moment it\nread /proc", fillcolor="#e7f0ec", color="#2f7a63"];
+  pid    [label="a process ID", fillcolor="#e7f0ec", color="#2f7a63"];
+  match  [label="the process\nthat matched"];
+  klr    [label="a later kill", fillcolor="#e7f0ec", color="#2f7a63"];
+  now    [label="the moment the\nsignal is sent"];
+  holder [label="whatever holds\nthat PID now", fillcolor="#f8efdf", color="#d8b784"];
+
+  run   -> scan   [label="  happened at"];
+  scan  -> pid    [label="  yielded"];
+  pid   -> match  [label="  identified, then"];
+  klr   -> now    [label="  happens at"];
+  klr   -> pid    [label="  is aimed at"];
+  pid   -> holder [label="  identifies, now"];
+  match -> holder [label="  is usually, but need not be  ", style=dashed, constraint=false];
+
+}

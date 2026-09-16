@@ -1,0 +1,103 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="772pt" height="238pt"
+ viewBox="0.00 0.00 772.00 238.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 234.46)">
+<title>olog</title>
+<!-- proc -->
+<g id="node1" class="node">
+<title>proc</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M110.16,-128.46C110.16,-128.46 8.82,-128.46 8.82,-128.46 4.41,-128.46 0,-124.05 0,-119.64 0,-119.64 0,-110.82 0,-110.82 0,-106.41 4.41,-102 8.82,-102 8.82,-102 110.16,-102 110.16,-102 114.57,-102 118.98,-106.41 118.98,-110.82 118.98,-110.82 118.98,-119.64 118.98,-119.64 118.98,-124.05 114.57,-128.46 110.16,-128.46"/>
+<text xml:space="preserve" text-anchor="middle" x="59.49" y="-111.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a running process</text>
+</g>
+<!-- ruid -->
+<g id="node2" class="node">
+<title>ruid</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M325.64,-230.46C325.64,-230.46 258.8,-230.46 258.8,-230.46 254.39,-230.46 249.98,-226.05 249.98,-221.64 249.98,-221.64 249.98,-212.82 249.98,-212.82 249.98,-208.41 254.39,-204 258.8,-204 258.8,-204 325.64,-204 325.64,-204 330.05,-204 334.46,-208.41 334.46,-212.82 334.46,-212.82 334.46,-221.64 334.46,-221.64 334.46,-226.05 330.05,-230.46 325.64,-230.46"/>
+<text xml:space="preserve" text-anchor="middle" x="292.22" y="-213.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its real user</text>
+</g>
+<!-- proc&#45;&gt;ruid -->
+<g id="edge1" class="edge">
+<title>proc&#45;&gt;ruid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M79.64,-128.83C95.53,-139.68 119,-154.76 140.98,-165.23 173.44,-180.69 211.76,-193.88 241.58,-203.11"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="240.61,-205.45 248.23,-205.14 242.08,-200.63 240.61,-205.45"/>
+<text xml:space="preserve" text-anchor="middle" x="176.23" y="-194.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;was started by</text>
+</g>
+<!-- euid -->
+<g id="node3" class="node">
+<title>euid</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M337.64,-179.46C337.64,-179.46 246.8,-179.46 246.8,-179.46 242.39,-179.46 237.98,-175.05 237.98,-170.64 237.98,-170.64 237.98,-161.82 237.98,-161.82 237.98,-157.41 242.39,-153 246.8,-153 246.8,-153 337.64,-153 337.64,-153 342.05,-153 346.46,-157.41 346.46,-161.82 346.46,-161.82 346.46,-170.64 346.46,-170.64 346.46,-175.05 342.05,-179.46 337.64,-179.46"/>
+<text xml:space="preserve" text-anchor="middle" x="292.22" y="-162.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its effective user</text>
+</g>
+<!-- proc&#45;&gt;euid -->
+<g id="edge2" class="edge">
+<title>proc&#45;&gt;euid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M119.31,-128.23C152.91,-135.66 195.02,-144.97 229.15,-152.51"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="228.52,-154.95 236.09,-154.04 229.6,-150.03 228.52,-154.95"/>
+<text xml:space="preserve" text-anchor="middle" x="176.23" y="-150.5" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;acts as</text>
+</g>
+<!-- rgid -->
+<g id="node4" class="node">
+<title>rgid</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M329.39,-128.46C329.39,-128.46 255.05,-128.46 255.05,-128.46 250.64,-128.46 246.23,-124.05 246.23,-119.64 246.23,-119.64 246.23,-110.82 246.23,-110.82 246.23,-106.41 250.64,-102 255.05,-102 255.05,-102 329.39,-102 329.39,-102 333.8,-102 338.21,-106.41 338.21,-110.82 338.21,-110.82 338.21,-119.64 338.21,-119.64 338.21,-124.05 333.8,-128.46 329.39,-128.46"/>
+<text xml:space="preserve" text-anchor="middle" x="292.22" y="-111.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its real group</text>
+</g>
+<!-- proc&#45;&gt;rgid -->
+<g id="edge3" class="edge">
+<title>proc&#45;&gt;rgid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M119.31,-115.23C155.62,-115.23 201.86,-115.23 237.23,-115.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="237.19,-117.75 244.39,-115.23 237.19,-112.71 237.19,-117.75"/>
+<text xml:space="preserve" text-anchor="middle" x="176.23" y="-117.45" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;belongs to</text>
+</g>
+<!-- ppid -->
+<g id="node5" class="node">
+<title>ppid</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M342.14,-77.46C342.14,-77.46 242.3,-77.46 242.3,-77.46 237.89,-77.46 233.48,-73.05 233.48,-68.64 233.48,-68.64 233.48,-59.82 233.48,-59.82 233.48,-55.41 237.89,-51 242.3,-51 242.3,-51 342.14,-51 342.14,-51 346.55,-51 350.96,-55.41 350.96,-59.82 350.96,-59.82 350.96,-68.64 350.96,-68.64 350.96,-73.05 346.55,-77.46 342.14,-77.46"/>
+<text xml:space="preserve" text-anchor="middle" x="292.22" y="-60.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its parent process</text>
+</g>
+<!-- proc&#45;&gt;ppid -->
+<g id="edge4" class="edge">
+<title>proc&#45;&gt;ppid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M119.31,-102.23C151.56,-95.1 191.64,-86.24 224.98,-78.87"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="225.27,-81.39 231.75,-77.37 224.18,-76.47 225.27,-81.39"/>
+<text xml:space="preserve" text-anchor="middle" x="176.23" y="-99.5" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;was forked by</text>
+</g>
+<!-- pgid -->
+<g id="node6" class="node">
+<title>pgid</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M340.64,-26.46C340.64,-26.46 243.8,-26.46 243.8,-26.46 239.39,-26.46 234.98,-22.05 234.98,-17.64 234.98,-17.64 234.98,-8.82 234.98,-8.82 234.98,-4.41 239.39,0 243.8,0 243.8,0 340.64,0 340.64,0 345.05,0 349.46,-4.41 349.46,-8.82 349.46,-8.82 349.46,-17.64 349.46,-17.64 349.46,-22.05 345.05,-26.46 340.64,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="292.22" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its process group</text>
+</g>
+<!-- proc&#45;&gt;pgid -->
+<g id="edge5" class="edge">
+<title>proc&#45;&gt;pgid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M79.63,-101.55C95.51,-90.63 118.97,-75.47 140.98,-64.98 170.78,-50.77 205.56,-38.54 234.14,-29.54"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="234.77,-31.98 240.9,-27.44 233.27,-27.17 234.77,-31.98"/>
+<text xml:space="preserve" text-anchor="middle" x="176.23" y="-67.2" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a member of</text>
+</g>
+<!-- sess -->
+<g id="node7" class="node">
+<title>sess</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M515.62,-26.46C515.62,-26.46 454.03,-26.46 454.03,-26.46 449.62,-26.46 445.21,-22.05 445.21,-17.64 445.21,-17.64 445.21,-8.82 445.21,-8.82 445.21,-4.41 449.62,0 454.03,0 454.03,0 515.62,0 515.62,0 520.03,0 524.44,-4.41 524.44,-8.82 524.44,-8.82 524.44,-17.64 524.44,-17.64 524.44,-22.05 520.03,-26.46 515.62,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="484.83" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its session</text>
+</g>
+<!-- pgid&#45;&gt;sess -->
+<g id="edge6" class="edge">
+<title>pgid&#45;&gt;sess</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M349.89,-13.23C377.4,-13.23 410.07,-13.23 436.26,-13.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="436.09,-15.75 443.29,-13.23 436.09,-10.71 436.09,-15.75"/>
+<text xml:space="preserve" text-anchor="middle" x="398.09" y="-15.46" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;belongs to</text>
+</g>
+<!-- tty -->
+<g id="node8" class="node">
+<title>tty</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M755.1,-26.46C755.1,-26.46 641.01,-26.46 641.01,-26.46 636.6,-26.46 632.19,-22.05 632.19,-17.64 632.19,-17.64 632.19,-8.82 632.19,-8.82 632.19,-4.41 636.6,0 641.01,0 641.01,0 755.1,0 755.1,0 759.51,0 763.92,-4.41 763.92,-8.82 763.92,-8.82 763.92,-17.64 763.92,-17.64 763.92,-22.05 759.51,-26.46 755.1,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="698.06" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a controlling terminal</text>
+</g>
+<!-- sess&#45;&gt;tty -->
+<g id="edge7" class="edge">
+<title>sess&#45;&gt;tty</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M524.57,-13.23C552.12,-13.23 589.99,-13.23 623.22,-13.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="623.22,-15.75 630.42,-13.23 623.22,-10.71 623.22,-15.75"/>
+<text xml:space="preserve" text-anchor="middle" x="578.32" y="-15.46" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is attached to</text>
+</g>
+</g>
+</svg>

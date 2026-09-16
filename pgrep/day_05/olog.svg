@@ -1,0 +1,105 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="327pt" height="327pt"
+ viewBox="0.00 0.00 327.00 327.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 322.8)">
+<title>olog</title>
+<!-- proc -->
+<g id="node1" class="node">
+<title>proc</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M205.91,-318.8C205.91,-318.8 104.57,-318.8 104.57,-318.8 100.16,-318.8 95.75,-314.39 95.75,-309.98 95.75,-309.98 95.75,-301.16 95.75,-301.16 95.75,-296.75 100.16,-292.34 104.57,-292.34 104.57,-292.34 205.91,-292.34 205.91,-292.34 210.32,-292.34 214.73,-296.75 214.73,-301.16 214.73,-301.16 214.73,-309.98 214.73,-309.98 214.73,-314.39 210.32,-318.8 205.91,-318.8"/>
+<text xml:space="preserve" text-anchor="middle" x="155.24" y="-301.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a running process</text>
+</g>
+<!-- start -->
+<g id="node2" class="node">
+<title>start</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M134.41,-249.09C134.41,-249.09 66.07,-249.09 66.07,-249.09 61.66,-249.09 57.25,-244.68 57.25,-240.27 57.25,-240.27 57.25,-231.45 57.25,-231.45 57.25,-227.04 61.66,-222.63 66.07,-222.63 66.07,-222.63 134.41,-222.63 134.41,-222.63 138.82,-222.63 143.23,-227.04 143.23,-231.45 143.23,-231.45 143.23,-240.27 143.23,-240.27 143.23,-244.68 138.82,-249.09 134.41,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="100.24" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its start time</text>
+</g>
+<!-- proc&#45;&gt;start -->
+<g id="edge1" class="edge">
+<title>proc&#45;&gt;start</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M126.58,-291.83C120.05,-287.72 113.72,-282.58 109.24,-276.34 105.41,-271 103.18,-264.29 101.88,-257.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="104.44,-257.95 100.88,-251.2 99.45,-258.7 104.44,-257.95"/>
+<text xml:space="preserve" text-anchor="middle" x="142.24" y="-267.32" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;was started at</text>
+</g>
+<!-- state -->
+<g id="node3" class="node">
+<title>state</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M243.66,-249.09C243.66,-249.09 176.82,-249.09 176.82,-249.09 172.41,-249.09 168,-244.68 168,-240.27 168,-240.27 168,-231.45 168,-231.45 168,-227.04 172.41,-222.63 176.82,-222.63 176.82,-222.63 243.66,-222.63 243.66,-222.63 248.07,-222.63 252.48,-227.04 252.48,-231.45 252.48,-231.45 252.48,-240.27 252.48,-240.27 252.48,-244.68 248.07,-249.09 243.66,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="210.24" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its run state</text>
+</g>
+<!-- proc&#45;&gt;state -->
+<g id="edge2" class="edge">
+<title>proc&#45;&gt;state</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M165.59,-291.83C173.73,-281.81 185.21,-267.67 194.5,-256.24"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="196.36,-257.95 198.94,-250.77 192.44,-254.77 196.36,-257.95"/>
+<text xml:space="preserve" text-anchor="middle" x="217.16" y="-267.32" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is currently in</text>
+</g>
+<!-- crit -->
+<g id="node4" class="node">
+<title>crit</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M183.16,-179.38C183.16,-179.38 125.32,-179.38 125.32,-179.38 120.91,-179.38 116.5,-174.97 116.5,-170.56 116.5,-170.56 116.5,-161.74 116.5,-161.74 116.5,-157.33 120.91,-152.92 125.32,-152.92 125.32,-152.92 183.16,-152.92 183.16,-152.92 187.57,-152.92 191.98,-157.33 191.98,-161.74 191.98,-161.74 191.98,-170.56 191.98,-170.56 191.98,-174.97 187.57,-179.38 183.16,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="154.24" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a criterion</text>
+</g>
+<!-- start&#45;&gt;crit -->
+<g id="edge3" class="edge">
+<title>start&#45;&gt;crit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M103.93,-222.25C106.75,-214.03 111.22,-203.39 117.49,-195.38 120.34,-191.74 123.76,-188.31 127.36,-185.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="128.67,-187.36 132.69,-180.88 125.51,-183.43 128.67,-187.36"/>
+<text xml:space="preserve" text-anchor="middle" x="144.87" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is tested by</text>
+</g>
+<!-- state&#45;&gt;crit -->
+<g id="edge4" class="edge">
+<title>state&#45;&gt;crit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M199.71,-222.12C191.42,-212.1 179.72,-197.96 170.27,-186.53"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="172.27,-185 165.74,-181.05 168.39,-188.21 172.27,-185"/>
+<text xml:space="preserve" text-anchor="middle" x="212.97" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is tested by</text>
+</g>
+<!-- conj -->
+<g id="node5" class="node">
+<title>conj</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M214.29,-109.67C214.29,-109.67 94.19,-109.67 94.19,-109.67 89.78,-109.67 85.38,-105.26 85.38,-100.85 85.38,-100.85 85.38,-92.03 85.38,-92.03 85.38,-87.62 89.79,-83.21 94.2,-83.21 94.2,-83.21 214.29,-83.21 214.29,-83.21 218.7,-83.21 223.11,-87.62 223.11,-92.03 223.11,-92.03 223.11,-100.85 223.11,-100.85 223.11,-105.26 218.7,-109.67 214.29,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="154.24" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the whole conjunction</text>
+</g>
+<!-- crit&#45;&gt;conj -->
+<g id="edge5" class="edge">
+<title>crit&#45;&gt;conj</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M154.24,-152.41C154.24,-142.96 154.24,-129.84 154.24,-118.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="156.76,-118.91 154.24,-111.71 151.72,-118.91 156.76,-118.91"/>
+<text xml:space="preserve" text-anchor="middle" x="189.49" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a conjunct of</text>
+</g>
+<!-- sel -->
+<g id="node6" class="node">
+<title>sel</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M81.66,-33.21C81.66,-33.21 8.82,-33.21 8.82,-33.21 4.41,-33.21 0,-28.8 0,-24.39 0,-24.39 0,-15.57 0,-15.57 0,-11.16 4.41,-6.75 8.82,-6.75 8.82,-6.75 81.66,-6.75 81.66,-6.75 86.07,-6.75 90.48,-11.16 90.48,-15.57 90.48,-15.57 90.48,-24.39 90.48,-24.39 90.48,-28.8 86.07,-33.21 81.66,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="45.24" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the selection</text>
+</g>
+<!-- conj&#45;&gt;sel -->
+<g id="edge6" class="edge">
+<title>conj&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M135.75,-82.81C117.98,-70.67 90.96,-52.21 71.06,-38.62"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="72.5,-36.55 65.13,-34.57 69.66,-40.71 72.5,-36.55"/>
+<text xml:space="preserve" text-anchor="middle" x="139.33" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;determines</text>
+</g>
+<!-- comp -->
+<g id="node7" class="node">
+<title>comp</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M306.86,-39.96C306.86,-39.96 221.62,-39.96 221.62,-39.96 215.62,-39.96 209.62,-33.96 209.62,-27.96 209.62,-27.96 209.62,-12 209.62,-12 209.62,-6 215.62,0 221.62,0 221.62,0 306.86,0 306.86,0 312.86,0 318.86,-6 318.86,-12 318.86,-12 318.86,-27.96 318.86,-27.96 318.86,-33.96 312.86,-39.96 306.86,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="264.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the complement</text>
+<text xml:space="preserve" text-anchor="middle" x="264.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(what &#45;v returns)</text>
+</g>
+<!-- conj&#45;&gt;comp -->
+<g id="edge7" class="edge">
+<title>conj&#45;&gt;comp</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M172.9,-82.81C188.05,-72.55 209.86,-57.79 228.37,-45.26"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="229.68,-47.42 234.23,-41.29 226.85,-43.24 229.68,-47.42"/>
+<text xml:space="preserve" text-anchor="middle" x="261.29" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is inverted by &#45;v into &#160;</text>
+</g>
+<!-- sel&#45;&gt;comp -->
+<g id="edge8" class="edge">
+<title>sel&#45;&gt;comp</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M90.88,-19.98C122.66,-19.98 165.47,-19.98 200.6,-19.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="200.56,-22.5 207.76,-19.98 200.56,-17.46 200.56,-22.5"/>
+<text xml:space="preserve" text-anchor="middle" x="150.05" y="-25.21" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as complement &#160;</text>
+</g>
+</g>
+</svg>

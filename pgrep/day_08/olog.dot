@@ -1,0 +1,28 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  unit  [label="a systemd unit\nor a container", fillcolor="#f4efe6"];
+  cg    [label="its cgroup v2 path", fillcolor="#e7f0ec", color="#2f7a63"];
+  proc  [label="a running process", fillcolor="#e7f0ec", color="#2f7a63"];
+  env   [label="its environment", fillcolor="#e7f0ec", color="#2f7a63"];
+  netns [label="its network namespace"];
+  pidns [label="its PID namespace"];
+  name  [label="its process name", fillcolor="#f8efdf", color="#d8b784"];
+
+  proc -> name  [label="  has as name"];
+  proc -> env   [label="  was given"];
+  proc -> cg    [label="  lives in"];
+  cg   -> unit  [label="  is managed by"];
+  proc -> netns [label="  is confined by"];
+  proc -> pidns [label="  is confined by"];
+
+}

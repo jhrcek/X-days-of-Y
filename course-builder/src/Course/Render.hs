@@ -435,8 +435,10 @@ pageReference c = shell_ c "" "day reference" ("Reference · " <> courseTitle c)
         sect "Commands" "cmds" "Command" dayCmds
         sect "Options" "cmds" "Option" dayOpts
   where
+    -- A course need not use every kind of entry: pgrep has no key bindings at
+    -- all, so its Keys section would be a heading over an empty table.
     sect :: Text -> Text -> Text -> (Day -> [Entry]) -> Html ()
-    sect lbl cls headA sel = section_ [class_ "block"] $ do
+    sect lbl cls headA sel = unless (all (null . sel) (courseDays c)) $ section_ [class_ "block"] $ do
         h2_ (toHtml lbl)
         table_ [class_ (cls <> " ref")] $ do
             thead_ $ tr_ $ th_ (toHtml headA) <> th_ "Does" <> th_ "Day"
