@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.4;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  re   [label="a regular expression", fillcolor="#e7f0ec", color="#2f7a63"];
+  alt  [label="an alternation\nx|y", fillcolor="#e7f0ec", color="#2f7a63"];
+  cat  [label="a concatenation\nxy", fillcolor="#e7f0ec", color="#2f7a63"];
+  rep  [label="a repetition\nx*  x+  x?  x{n,m}", fillcolor="#e7f0ec", color="#2f7a63"];
+  atom [label="an atom"];
+  sub  [label="a subexpression\n( ... )"];
+  bref [label="a back-reference\n\\1", fillcolor="#f8efdf", color="#d8b784"];
+
+  re   -> alt  [label="  is"];
+  alt  -> cat  [label="  is a choice between"];
+  cat  -> rep  [label="  is a sequence of"];
+  rep  -> atom [label="  repeats"];
+  sub  -> atom [label="  is"];
+  sub  -> re   [label="  encloses  ", constraint=false];
+  bref -> atom [label="  is"];
+  bref -> sub  [label="  re-matches the text of  ", style=dashed, constraint=false];
+
+}

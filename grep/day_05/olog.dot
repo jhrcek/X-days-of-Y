@@ -1,0 +1,31 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  sel  [label="a selected line", fillcolor="#e7f0ec", color="#2f7a63"];
+  rep  [label="a report", fillcolor="#e7f0ec", color="#2f7a63"];
+  whole[label="the line itself\n(the default)"];
+  cnt  [label="a count per file\n(-c)"];
+  fn   [label="a file name\n(-l, -L)"];
+  frag [label="a matched substring\n(-o)"];
+  st   [label="an exit status", fillcolor="#f8efdf", color="#d8b784"];
+
+  whole -> rep [label="  is"];
+  cnt   -> rep [label="  is"];
+  fn    -> rep [label="  is"];
+  frag  -> rep [label="  is"];
+  whole -> sel [label="  is"];
+  cnt   -> sel [label="  counts"];
+  fn    -> sel [label="  names the file holding"];
+  frag  -> sel [label="  is part of"];
+  rep   -> st  [label="  never changes  ", style=dashed, constraint=false];
+
+}

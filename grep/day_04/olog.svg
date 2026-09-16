@@ -1,0 +1,109 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="510pt" height="346pt"
+ viewBox="0.00 0.00 510.00 346.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 341.8)">
+<title>olog</title>
+<!-- re -->
+<g id="node1" class="node">
+<title>re</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M122.91,-337.8C122.91,-337.8 8.82,-337.8 8.82,-337.8 4.41,-337.8 0,-333.39 0,-328.98 0,-328.98 0,-320.16 0,-320.16 0,-315.75 4.41,-311.34 8.82,-311.34 8.82,-311.34 122.91,-311.34 122.91,-311.34 127.32,-311.34 131.73,-315.75 131.73,-320.16 131.73,-320.16 131.73,-328.98 131.73,-328.98 131.73,-333.39 127.32,-337.8 122.91,-337.8"/>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-320.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a regular expression</text>
+</g>
+<!-- alt -->
+<g id="node2" class="node">
+<title>alt</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M101.73,-270.09C101.73,-270.09 30,-270.09 30,-270.09 24,-270.09 18,-264.09 18,-258.09 18,-258.09 18,-242.13 18,-242.13 18,-236.13 24,-230.13 30,-230.13 30,-230.13 101.73,-230.13 101.73,-230.13 107.73,-230.13 113.73,-236.13 113.73,-242.13 113.73,-242.13 113.73,-258.09 113.73,-258.09 113.73,-264.09 107.73,-270.09 101.73,-270.09"/>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-252.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an alternation</text>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-239.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">x|y</text>
+</g>
+<!-- re&#45;&gt;alt -->
+<g id="edge1" class="edge">
+<title>re&#45;&gt;alt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M65.87,-310.95C65.87,-302.12 65.87,-289.97 65.87,-278.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="68.39,-279.19 65.87,-271.99 63.35,-279.19 68.39,-279.19"/>
+<text xml:space="preserve" text-anchor="middle" x="72.24" y="-287.32" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- cat -->
+<g id="node3" class="node">
+<title>cat</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M108.11,-188.88C108.11,-188.88 23.62,-188.88 23.62,-188.88 17.62,-188.88 11.63,-182.88 11.63,-176.88 11.63,-176.88 11.63,-160.92 11.63,-160.92 11.63,-154.92 17.63,-148.92 23.63,-148.92 23.63,-148.92 108.11,-148.92 108.11,-148.92 114.11,-148.92 120.11,-154.92 120.11,-160.92 120.11,-160.92 120.11,-176.88 120.11,-176.88 120.11,-182.88 114.11,-188.88 108.11,-188.88"/>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-171.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a concatenation</text>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-157.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">xy</text>
+</g>
+<!-- alt&#45;&gt;cat -->
+<g id="edge2" class="edge">
+<title>alt&#45;&gt;cat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M65.2,-229.71C65.06,-224.94 64.93,-219.85 64.87,-215.13 64.78,-209.56 64.82,-203.61 64.92,-197.92"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="67.44,-198.11 65.09,-190.86 62.4,-198 67.44,-198.11"/>
+<text xml:space="preserve" text-anchor="middle" x="109.87" y="-206.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a choice between</text>
+</g>
+<!-- rep -->
+<g id="node4" class="node">
+<title>rep</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M109.61,-107.67C109.61,-107.67 22.12,-107.67 22.12,-107.67 16.12,-107.67 10.13,-101.67 10.13,-95.67 10.13,-95.67 10.13,-79.71 10.13,-79.71 10.13,-73.71 16.13,-67.71 22.13,-67.71 22.13,-67.71 109.61,-67.71 109.61,-67.71 115.61,-67.71 121.61,-73.71 121.61,-79.71 121.61,-79.71 121.61,-95.67 121.61,-95.67 121.61,-101.67 115.61,-107.67 109.61,-107.67"/>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a repetition</text>
+<text xml:space="preserve" text-anchor="middle" x="65.87" y="-76.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">x* &#160;x+ &#160;x? &#160;x{n,m}</text>
+</g>
+<!-- cat&#45;&gt;rep -->
+<g id="edge3" class="edge">
+<title>cat&#45;&gt;rep</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M65.87,-148.73C65.87,-139.07 65.87,-127.18 65.87,-116.53"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="68.39,-116.75 65.87,-109.55 63.35,-116.75 68.39,-116.75"/>
+<text xml:space="preserve" text-anchor="middle" x="103.74" y="-124.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a sequence of</text>
+</g>
+<!-- atom -->
+<g id="node5" class="node">
+<title>atom</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M226.66,-26.46C226.66,-26.46 177.07,-26.46 177.07,-26.46 172.66,-26.46 168.25,-22.05 168.25,-17.64 168.25,-17.64 168.25,-8.82 168.25,-8.82 168.25,-4.41 172.66,0 177.07,0 177.07,0 226.66,0 226.66,0 231.07,0 235.48,-4.41 235.48,-8.82 235.48,-8.82 235.48,-17.64 235.48,-17.64 235.48,-22.05 231.07,-26.46 226.66,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="201.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an atom</text>
+</g>
+<!-- rep&#45;&gt;atom -->
+<g id="edge4" class="edge">
+<title>rep&#45;&gt;atom</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M102.31,-67.27C123.57,-55.95 150.11,-41.81 170.44,-30.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="171.61,-33.21 176.78,-27.6 169.24,-28.76 171.61,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="168.8" y="-43.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;repeats</text>
+</g>
+<!-- sub -->
+<g id="node6" class="node">
+<title>sub</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M245.61,-107.67C245.61,-107.67 158.12,-107.67 158.12,-107.67 152.12,-107.67 146.12,-101.67 146.12,-95.67 146.12,-95.67 146.12,-79.71 146.12,-79.71 146.12,-73.71 152.12,-67.71 158.12,-67.71 158.12,-67.71 245.61,-67.71 245.61,-67.71 251.61,-67.71 257.61,-73.71 257.61,-79.71 257.61,-79.71 257.61,-95.67 257.61,-95.67 257.61,-101.67 251.61,-107.67 245.61,-107.67"/>
+<text xml:space="preserve" text-anchor="middle" x="201.87" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a subexpression</text>
+<text xml:space="preserve" text-anchor="middle" x="201.87" y="-76.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">( ... )</text>
+</g>
+<!-- sub&#45;&gt;re -->
+<g id="edge6" class="edge">
+<title>sub&#45;&gt;re</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M197.57,-108.01C188.95,-143.32 166.78,-219.3 125.87,-270.09 115.33,-283.17 101.43,-295.77 89.67,-305.46"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="88.3,-303.33 84.27,-309.81 91.46,-307.25 88.3,-303.33"/>
+<text xml:space="preserve" text-anchor="middle" x="189.17" y="-206.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;encloses &#160;</text>
+</g>
+<!-- sub&#45;&gt;atom -->
+<g id="edge5" class="edge">
+<title>sub&#45;&gt;atom</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M201.87,-67.27C201.87,-57.39 201.87,-45.36 201.87,-35.25"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="204.39,-35.42 201.87,-28.22 199.35,-35.42 204.39,-35.42"/>
+<text xml:space="preserve" text-anchor="middle" x="208.24" y="-43.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- bref -->
+<g id="node7" class="node">
+<title>bref</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M489.73,-107.67C489.73,-107.67 400,-107.67 400,-107.67 394,-107.67 388,-101.67 388,-95.67 388,-95.67 388,-79.71 388,-79.71 388,-73.71 394,-67.71 400,-67.71 400,-67.71 489.73,-67.71 489.73,-67.71 495.73,-67.71 501.73,-73.71 501.73,-79.71 501.73,-79.71 501.73,-95.67 501.73,-95.67 501.73,-101.67 495.73,-107.67 489.73,-107.67"/>
+<text xml:space="preserve" text-anchor="middle" x="444.87" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a back&#45;reference</text>
+<text xml:space="preserve" text-anchor="middle" x="444.87" y="-76.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">\1</text>
+</g>
+<!-- bref&#45;&gt;atom -->
+<g id="edge7" class="edge">
+<title>bref&#45;&gt;atom</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M387.59,-69.61C343.57,-56.48 283.78,-38.65 244.06,-26.81"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="245.04,-24.48 237.42,-24.83 243.6,-29.31 245.04,-24.48"/>
+<text xml:space="preserve" text-anchor="middle" x="337.03" y="-43.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- bref&#45;&gt;sub -->
+<g id="edge8" class="edge">
+<title>bref&#45;&gt;sub</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M387.83,-87.69C351.41,-87.69 304.1,-87.69 266.32,-87.69"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="266.71,-85.17 259.51,-87.69 266.71,-90.21 266.71,-85.17"/>
+<text xml:space="preserve" text-anchor="middle" x="322.8" y="-92.92" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;re&#45;matches the text of &#160;</text>
+</g>
+</g>
+</svg>

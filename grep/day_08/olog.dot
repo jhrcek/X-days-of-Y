@@ -1,0 +1,31 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  loc  [label="the locale\nLC_ALL, LC_CTYPE, LANG", fillcolor="#f4efe6"];
+  ch   [label="a character", fillcolor="#e7f0ec", color="#2f7a63"];
+  by   [label="a byte", fillcolor="#e7f0ec", color="#2f7a63"];
+  err  [label="an encoding error", fillcolor="#f8efdf", color="#d8b784"];
+  nul  [label="a NUL byte"];
+  file [label="an input file"];
+  bin  [label="a binary file", fillcolor="#f8efdf", color="#d8b784"];
+
+  ch   -> loc  [label="  is defined by"];
+  ch   -> by   [label="  is encoded as a sequence of"];
+  err  -> by   [label="  is a sequence of"];
+  err  -> loc  [label="  is only an error relative to  ", style=dashed];
+  nul  -> by   [label="  is"];
+  file -> by   [label="  contains"];
+  bin  -> file [label="  is"];
+  err  -> bin  [label="  makes its file  ", style=dashed, constraint=false];
+  nul  -> bin  [label="  makes its file  ", style=dashed, constraint=false];
+
+}

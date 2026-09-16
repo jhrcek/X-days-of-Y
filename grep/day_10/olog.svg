@@ -1,0 +1,115 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="483pt" height="214pt"
+ viewBox="0.00 0.00 483.00 214.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 210.38)">
+<title>olog</title>
+<!-- pat -->
+<g id="node1" class="node">
+<title>pat</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M231.91,-116.42C231.91,-116.42 178.57,-116.42 178.57,-116.42 174.16,-116.42 169.75,-112.01 169.75,-107.6 169.75,-107.6 169.75,-98.78 169.75,-98.78 169.75,-94.37 174.16,-89.96 178.57,-89.96 178.57,-89.96 231.91,-89.96 231.91,-89.96 236.32,-89.96 240.73,-94.37 240.73,-98.78 240.73,-98.78 240.73,-107.6 240.73,-107.6 240.73,-112.01 236.32,-116.42 231.91,-116.42"/>
+<text xml:space="preserve" text-anchor="middle" x="205.24" y="-99.02" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a pattern</text>
+</g>
+<!-- posix -->
+<g id="node2" class="node">
+<title>posix</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M190.48,-206.38C190.48,-206.38 100,-206.38 100,-206.38 94,-206.38 88,-200.38 88,-194.38 88,-194.38 88,-178.42 88,-178.42 88,-172.42 94,-166.42 100,-166.42 100,-166.42 190.48,-166.42 190.48,-166.42 196.48,-166.42 202.48,-172.42 202.48,-178.42 202.48,-178.42 202.48,-194.38 202.48,-194.38 202.48,-200.38 196.48,-206.38 190.48,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="145.24" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a POSIX matcher</text>
+<text xml:space="preserve" text-anchor="middle" x="145.24" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">&#45;G &#160;&#45;E &#160;&#45;F</text>
+</g>
+<!-- posix&#45;&gt;pat -->
+<g id="edge1" class="edge">
+<title>posix&#45;&gt;pat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M159.46,-166.15C168.96,-153.29 181.42,-136.44 190.93,-123.55"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="192.96,-125.05 195.21,-117.76 188.91,-122.06 192.96,-125.05"/>
+<text xml:space="preserve" text-anchor="middle" x="201.71" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;interprets</text>
+</g>
+<!-- dfa -->
+<g id="node4" class="node">
+<title>dfa</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M132.98,-123.17C132.98,-123.17 57.5,-123.17 57.5,-123.17 51.5,-123.17 45.5,-117.17 45.5,-111.17 45.5,-111.17 45.5,-95.21 45.5,-95.21 45.5,-89.21 51.5,-83.21 57.5,-83.21 57.5,-83.21 132.98,-83.21 132.98,-83.21 138.98,-83.21 144.98,-89.21 144.98,-95.21 144.98,-95.21 144.98,-111.17 144.98,-111.17 144.98,-117.17 138.98,-123.17 132.98,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="95.24" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a deterministic</text>
+<text xml:space="preserve" text-anchor="middle" x="95.24" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">automaton</text>
+</g>
+<!-- posix&#45;&gt;dfa -->
+<g id="edge3" class="edge">
+<title>posix&#45;&gt;dfa</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M109.86,-166.23C104.51,-161.76 99.71,-156.49 96.49,-150.42 93.54,-144.86 92.28,-138.37 91.95,-132.05"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="94.47,-132.42 92,-125.21 89.43,-132.39 94.47,-132.42"/>
+<text xml:space="preserve" text-anchor="middle" x="123.87" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;compiles to</text>
+</g>
+<!-- pcre -->
+<g id="node3" class="node">
+<title>pcre</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M337.98,-206.38C337.98,-206.38 250.5,-206.38 250.5,-206.38 244.5,-206.38 238.5,-200.38 238.5,-194.38 238.5,-194.38 238.5,-178.42 238.5,-178.42 238.5,-172.42 244.5,-166.42 250.5,-166.42 250.5,-166.42 337.98,-166.42 337.98,-166.42 343.98,-166.42 349.98,-172.42 349.98,-178.42 349.98,-178.42 349.98,-194.38 349.98,-194.38 349.98,-200.38 343.98,-206.38 337.98,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="294.24" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a PCRE matcher</text>
+<text xml:space="preserve" text-anchor="middle" x="294.24" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">&#45;P</text>
+</g>
+<!-- pcre&#45;&gt;pat -->
+<g id="edge2" class="edge">
+<title>pcre&#45;&gt;pat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M273.15,-166.15C258.62,-152.89 239.43,-135.39 225.16,-122.36"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="227.17,-120.79 220.15,-117.8 223.77,-124.51 227.17,-120.79"/>
+<text xml:space="preserve" text-anchor="middle" x="277.94" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;interprets</text>
+</g>
+<!-- bt -->
+<g id="node5" class="node">
+<title>bt</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M396.41,-116.42C396.41,-116.42 274.07,-116.42 274.07,-116.42 269.66,-116.42 265.25,-112.01 265.25,-107.6 265.25,-107.6 265.25,-98.78 265.25,-98.78 265.25,-94.37 269.66,-89.96 274.07,-89.96 274.07,-89.96 396.41,-89.96 396.41,-89.96 400.82,-89.96 405.23,-94.37 405.23,-98.78 405.23,-98.78 405.23,-107.6 405.23,-107.6 405.23,-112.01 400.82,-116.42 396.41,-116.42"/>
+<text xml:space="preserve" text-anchor="middle" x="335.24" y="-99.02" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a backtracking search</text>
+</g>
+<!-- pcre&#45;&gt;bt -->
+<g id="edge4" class="edge">
+<title>pcre&#45;&gt;bt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M303.96,-166.15C310.33,-153.53 318.64,-137.07 325.1,-124.28"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="327.32,-125.47 328.32,-117.9 322.82,-123.2 327.32,-125.47"/>
+<text xml:space="preserve" text-anchor="middle" x="344.57" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;compiles to</text>
+</g>
+<!-- llm -->
+<g id="node6" class="node">
+<title>llm</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M114.48,-39.96C114.48,-39.96 12,-39.96 12,-39.96 6,-39.96 0,-33.96 0,-27.96 0,-27.96 0,-12 0,-12 0,-6 6,0 12,0 12,0 114.48,0 114.48,0 120.48,0 126.48,-6 126.48,-12 126.48,-12 126.48,-27.96 126.48,-27.96 126.48,-33.96 120.48,-39.96 114.48,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="63.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the leftmost&#45;longest</text>
+<text xml:space="preserve" text-anchor="middle" x="63.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">match</text>
+</g>
+<!-- dfa&#45;&gt;llm -->
+<g id="edge5" class="edge">
+<title>dfa&#45;&gt;llm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M72.21,-83.02C68.04,-78.32 64.29,-72.97 61.99,-67.21 59.75,-61.6 58.93,-55.29 58.9,-49.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="61.41,-49.38 59.25,-42.07 56.38,-49.13 61.41,-49.38"/>
+<text xml:space="preserve" text-anchor="middle" x="79.62" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;returns</text>
+</g>
+<!-- len -->
+<g id="node8" class="node">
+<title>len</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M271.79,-33.21C271.79,-33.21 184.69,-33.21 184.69,-33.21 180.28,-33.21 175.88,-28.8 175.88,-24.39 175.88,-24.39 175.88,-15.57 175.88,-15.57 175.88,-11.16 180.28,-6.75 184.69,-6.75 184.69,-6.75 271.79,-6.75 271.79,-6.75 276.2,-6.75 280.61,-11.16 280.61,-15.57 280.61,-15.57 280.61,-24.39 280.61,-24.39 280.61,-28.8 276.19,-33.21 271.79,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="228.24" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the input length</text>
+</g>
+<!-- dfa&#45;&gt;len -->
+<g id="edge7" class="edge">
+<title>dfa&#45;&gt;len</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M110.36,-82.73C118.2,-73.65 128.39,-63.26 139.24,-55.96 150.76,-48.21 164.25,-41.79 177.2,-36.66"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="177.85,-39.11 183.68,-34.19 176.06,-34.39 177.85,-39.11"/>
+<text xml:space="preserve" text-anchor="middle" x="185.74" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;runs in time linear in</text>
+</g>
+<!-- lfm -->
+<g id="node7" class="node">
+<title>lfm</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M463.36,-39.96C463.36,-39.96 381.12,-39.96 381.12,-39.96 375.12,-39.96 369.12,-33.96 369.12,-27.96 369.12,-27.96 369.12,-12 369.12,-12 369.12,-6 375.12,0 381.12,0 381.12,0 463.36,0 463.36,0 469.36,0 475.36,-6 475.36,-12 475.36,-12 475.36,-27.96 475.36,-27.96 475.36,-33.96 469.36,-39.96 463.36,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="422.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the leftmost&#45;first</text>
+<text xml:space="preserve" text-anchor="middle" x="422.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">match</text>
+</g>
+<!-- bt&#45;&gt;lfm -->
+<g id="edge6" class="edge">
+<title>bt&#45;&gt;lfm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M361.9,-89.56C372.44,-83.73 384.18,-76.11 393.24,-67.21 399,-61.55 404.13,-54.54 408.43,-47.7"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="410.43,-49.27 411.93,-41.79 406.09,-46.7 410.43,-49.27"/>
+<text xml:space="preserve" text-anchor="middle" x="419.63" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;returns</text>
+</g>
+<!-- bt&#45;&gt;len -->
+<g id="edge8" class="edge">
+<title>bt&#45;&gt;len</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M282.03,-89.41C269.05,-84.25 256.09,-77.09 246.24,-67.21 239.4,-60.35 235.09,-50.59 232.42,-41.8"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="234.91,-41.36 230.65,-35.03 230.03,-42.63 234.91,-41.36"/>
+<text xml:space="preserve" text-anchor="middle" x="316.74" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may run in time exponential in &#160;</text>
+</g>
+</g>
+</svg>

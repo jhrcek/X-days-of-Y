@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.5;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  inv  [label="an invocation\nof grep", fillcolor="#e7f0ec", color="#2f7a63"];
+  pat  [label="a pattern", fillcolor="#e7f0ec", color="#2f7a63"];
+  sel  [label="a selected line", fillcolor="#e7f0ec", color="#2f7a63"];
+  line [label="an input line"];
+  src  [label="a file, or\nstandard input", fillcolor="#f4efe6"];
+  diag [label="a diagnostic", fillcolor="#f8efdf", color="#d8b784"];
+  st   [label="an exit status", fillcolor="#f8efdf", color="#d8b784"];
+  sc   [label="the calling script", fillcolor="#f4efe6"];
+
+  inv -> pat  [label="  is given"];
+  inv -> src  [label="  reads"];
+  src -> line [label="  contains"];
+  sel -> line [label="  is"];
+  sel -> pat  [label="  matches"];
+  inv -> sel  [label="  prints on stdout"];
+  inv -> diag [label="  may print on stderr  ", style=dashed];
+  inv -> st   [label="  always yields"];
+  sc  -> st   [label="  branches on"];
+  sc  -> sel  [label="  pipes onward  ", style=dashed, constraint=false];
+
+}

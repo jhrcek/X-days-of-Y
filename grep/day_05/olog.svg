@@ -1,0 +1,115 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="729pt" height="118pt"
+ viewBox="0.00 0.00 729.00 118.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 113.67)">
+<title>olog</title>
+<!-- sel -->
+<g id="node1" class="node">
+<title>sel</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M119.78,-26.46C119.78,-26.46 37.94,-26.46 37.94,-26.46 33.53,-26.46 29.12,-22.05 29.12,-17.64 29.12,-17.64 29.12,-8.82 29.12,-8.82 29.12,-4.41 33.53,0 37.94,0 37.94,0 119.78,0 119.78,0 124.19,0 128.6,-4.41 128.6,-8.82 128.6,-8.82 128.6,-17.64 128.6,-17.64 128.6,-22.05 124.19,-26.46 119.78,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="78.86" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a selected line</text>
+</g>
+<!-- rep -->
+<g id="node2" class="node">
+<title>rep</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M507.53,-26.46C507.53,-26.46 460.19,-26.46 460.19,-26.46 455.78,-26.46 451.37,-22.05 451.37,-17.64 451.37,-17.64 451.37,-8.82 451.37,-8.82 451.37,-4.41 455.78,0 460.19,0 460.19,0 507.53,0 507.53,0 511.94,0 516.35,-4.41 516.35,-8.82 516.35,-8.82 516.35,-17.64 516.35,-17.64 516.35,-22.05 511.94,-26.46 507.53,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="483.86" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a report</text>
+</g>
+<!-- st -->
+<g id="node7" class="node">
+<title>st</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M711.78,-102.92C711.78,-102.92 635.94,-102.92 635.94,-102.92 631.53,-102.92 627.12,-98.51 627.12,-94.1 627.12,-94.1 627.12,-85.28 627.12,-85.28 627.12,-80.87 631.53,-76.46 635.94,-76.46 635.94,-76.46 711.78,-76.46 711.78,-76.46 716.19,-76.46 720.6,-80.87 720.6,-85.28 720.6,-85.28 720.6,-94.1 720.6,-94.1 720.6,-98.51 716.19,-102.92 711.78,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="673.86" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an exit status</text>
+</g>
+<!-- rep&#45;&gt;st -->
+<g id="edge9" class="edge">
+<title>rep&#45;&gt;st</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M450.84,-14.9C406.8,-16.57 332.37,-22.37 315.36,-42.46 312.13,-46.28 311.92,-50.08 315.36,-53.71 338.29,-77.89 582.09,-63.67 614.86,-69.71 620.14,-70.68 625.6,-72 630.97,-73.48"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="630.16,-75.87 637.78,-75.49 631.58,-71.04 630.16,-75.87"/>
+<text xml:space="preserve" text-anchor="middle" x="352.11" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;never changes &#160;</text>
+</g>
+<!-- whole -->
+<g id="node3" class="node">
+<title>whole</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M124.98,-109.67C124.98,-109.67 60.75,-109.67 60.75,-109.67 54.75,-109.67 48.75,-103.67 48.75,-97.67 48.75,-97.67 48.75,-81.71 48.75,-81.71 48.75,-75.71 54.75,-69.71 60.75,-69.71 60.75,-69.71 124.98,-69.71 124.98,-69.71 130.98,-69.71 136.98,-75.71 136.98,-81.71 136.98,-81.71 136.98,-97.67 136.98,-97.67 136.98,-103.67 130.98,-109.67 124.98,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="92.86" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the line itself</text>
+<text xml:space="preserve" text-anchor="middle" x="92.86" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(the default)</text>
+</g>
+<!-- whole&#45;&gt;sel -->
+<g id="edge5" class="edge">
+<title>whole&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M48.24,-82.22C31.2,-77.33 13.4,-68.76 3.11,-53.71 -5.52,-41.08 5.1,-32.22 20.85,-26.14"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="21.44,-28.61 27.43,-23.89 19.81,-23.84 21.44,-28.61"/>
+<text xml:space="preserve" text-anchor="middle" x="9.49" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- whole&#45;&gt;rep -->
+<g id="edge1" class="edge">
+<title>whole&#45;&gt;rep</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M137.45,-79.27C154.97,-75.84 175.29,-72.2 193.86,-69.71 280.93,-58.03 305.6,-74.84 390.86,-53.71 403.18,-50.66 405.43,-47.43 417.11,-42.46 426.33,-38.53 436.28,-34.32 445.61,-30.37"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="446.5,-32.73 452.15,-27.61 444.53,-28.09 446.5,-32.73"/>
+<text xml:space="preserve" text-anchor="middle" x="423.49" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- cnt -->
+<g id="node4" class="node">
+<title>cnt</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M295.35,-109.67C295.35,-109.67 218.37,-109.67 218.37,-109.67 212.37,-109.67 206.37,-103.67 206.37,-97.67 206.37,-97.67 206.37,-81.71 206.37,-81.71 206.37,-75.71 212.37,-69.71 218.37,-69.71 218.37,-69.71 295.35,-69.71 295.35,-69.71 301.35,-69.71 307.35,-75.71 307.35,-81.71 307.35,-81.71 307.35,-97.67 307.35,-97.67 307.35,-103.67 301.35,-109.67 295.35,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="256.86" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a count per file</text>
+<text xml:space="preserve" text-anchor="middle" x="256.86" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(&#45;c)</text>
+</g>
+<!-- cnt&#45;&gt;sel -->
+<g id="edge6" class="edge">
+<title>cnt&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M206.01,-79.43C188.26,-76.26 168.2,-72.75 149.86,-69.71 126.85,-65.89 61.3,-71.42 46.11,-53.71 40.13,-46.74 44.29,-38.98 51.38,-32.19"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="52.74,-34.34 56.65,-27.78 49.51,-30.47 52.74,-34.34"/>
+<text xml:space="preserve" text-anchor="middle" x="62.99" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;counts</text>
+</g>
+<!-- cnt&#45;&gt;rep -->
+<g id="edge2" class="edge">
+<title>cnt&#45;&gt;rep</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M307.57,-76.95C318.84,-74.46 330.74,-71.92 341.86,-69.71 382.57,-61.63 395.97,-70.64 433.86,-53.71 445.29,-48.6 456.38,-40.3 465.21,-32.62"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="466.66,-34.7 470.3,-28 463.27,-30.97 466.66,-34.7"/>
+<text xml:space="preserve" text-anchor="middle" x="458.25" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- fn -->
+<g id="node5" class="node">
+<title>fn</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M423.6,-109.67C423.6,-109.67 366.12,-109.67 366.12,-109.67 360.12,-109.67 354.12,-103.67 354.12,-97.67 354.12,-97.67 354.12,-81.71 354.12,-81.71 354.12,-75.71 360.12,-69.71 366.12,-69.71 366.12,-69.71 423.6,-69.71 423.6,-69.71 429.6,-69.71 435.6,-75.71 435.6,-81.71 435.6,-81.71 435.6,-97.67 435.6,-97.67 435.6,-103.67 429.6,-109.67 423.6,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="394.86" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a file name</text>
+<text xml:space="preserve" text-anchor="middle" x="394.86" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(&#45;l, &#45;L)</text>
+</g>
+<!-- fn&#45;&gt;sel -->
+<g id="edge7" class="edge">
+<title>fn&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M353.87,-76.96C342.9,-74.2 331,-71.53 319.86,-69.71 273.78,-62.18 151.63,-75.55 110.36,-53.71 101.99,-49.28 95.08,-41.56 89.88,-34.12"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="92.12,-32.95 86.12,-28.24 87.88,-35.66 92.12,-32.95"/>
+<text xml:space="preserve" text-anchor="middle" x="160.61" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;names the file holding</text>
+</g>
+<!-- fn&#45;&gt;rep -->
+<g id="edge3" class="edge">
+<title>fn&#45;&gt;rep</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M435.81,-79.96C450.84,-74.76 466.65,-66.55 476.86,-53.71 480.97,-48.54 483,-41.78 483.92,-35.32"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="486.4,-35.83 484.46,-28.45 481.38,-35.43 486.4,-35.83"/>
+<text xml:space="preserve" text-anchor="middle" x="488.56" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- frag -->
+<g id="node6" class="node">
+<title>frag</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M590.35,-109.67C590.35,-109.67 483.37,-109.67 483.37,-109.67 477.37,-109.67 471.37,-103.67 471.37,-97.67 471.37,-97.67 471.37,-81.71 471.37,-81.71 471.37,-75.71 477.37,-69.71 483.37,-69.71 483.37,-69.71 590.35,-69.71 590.35,-69.71 596.35,-69.71 602.35,-75.71 602.35,-81.71 602.35,-81.71 602.35,-97.67 602.35,-97.67 602.35,-103.67 596.35,-109.67 590.35,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="536.86" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a matched substring</text>
+<text xml:space="preserve" text-anchor="middle" x="536.86" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(&#45;o)</text>
+</g>
+<!-- frag&#45;&gt;sel -->
+<g id="edge8" class="edge">
+<title>frag&#45;&gt;sel</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M470.93,-73.68C463.18,-72.2 455.36,-70.83 447.86,-69.71 366.46,-57.55 344.71,-66.24 263.36,-53.71 240.64,-50.21 235.34,-47.33 212.86,-42.46 188.13,-37.1 160.81,-31.32 137.31,-26.39"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="137.96,-23.95 130.4,-24.94 136.93,-28.89 137.96,-23.95"/>
+<text xml:space="preserve" text-anchor="middle" x="285.11" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is part of</text>
+</g>
+<!-- frag&#45;&gt;rep -->
+<g id="edge4" class="edge">
+<title>frag&#45;&gt;rep</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M532.41,-69.53C529.74,-60.72 525.7,-50.48 519.86,-42.46 517.24,-38.86 514.04,-35.48 510.64,-32.4"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="512.34,-30.53 505.19,-27.88 509.12,-34.42 512.34,-30.53"/>
+<text xml:space="preserve" text-anchor="middle" x="532.37" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,47 @@
+cabal-version:      3.0
+name:               grep-course
+version:            1.0.0
+synopsis:           "10 Days of grep" - the course content
+description:
+  Ten lessons distilled from grep(1), written as Lucid markup against the
+  course-builder library. @cabal run grep-course@ regenerates just this course;
+  @cabal run build-site@ at the repository root regenerates everything.
+build-type:         Simple
+
+common shared
+    default-language: GHC2021
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+    ghc-options: -Wall -Wno-missing-signatures
+
+library
+    import:           shared
+    hs-source-dirs:   src
+    exposed-modules:  Courses.Grep
+    other-modules:
+        Course.Day.D01
+        Course.Day.D02
+        Course.Day.D03
+        Course.Day.D04
+        Course.Day.D05
+        Course.Day.D06
+        Course.Day.D07
+        Course.Day.D08
+        Course.Day.D09
+        Course.Day.D10
+    build-depends:
+        base   >=4.17 && <5,
+        text   >=2.0,
+        lucid  >=2.11,
+        course-builder
+
+executable grep-course
+    import:           shared
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:
+        base,
+        filepath,
+        course-builder,
+        grep-course

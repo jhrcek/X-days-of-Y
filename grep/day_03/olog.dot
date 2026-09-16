@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  scr  [label="a single-character\nregex", fillcolor="#e7f0ec", color="#2f7a63"];
+  br   [label="a bracket expression\n[...]", fillcolor="#e7f0ec", color="#2f7a63"];
+  cls  [label="a named class\n[:digit:]"];
+  rng  [label="a range\na-d"];
+  dot  [label="the period ."];
+  ch   [label="a character"];
+  anc  [label="an anchor\n^ $ \\< \\> \\b \\B", fillcolor="#f8efdf", color="#d8b784"];
+  pos  [label="a position\nbetween characters"];
+  loc  [label="the locale", fillcolor="#f4efe6"];
+
+  br  -> scr [label="  is"];
+  dot -> scr [label="  is"];
+  cls -> br  [label="  may appear inside"];
+  rng -> br  [label="  may appear inside"];
+  cls -> loc [label="  is defined by"];
+  rng -> loc [label="  is interpreted by"];
+  scr -> ch  [label="  consumes"];
+  anc -> pos [label="  matches"];
+  anc -> ch  [label="  never consumes  ", style=dashed, constraint=false];
+
+}

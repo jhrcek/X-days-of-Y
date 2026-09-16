@@ -1,0 +1,29 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  dir  [label="a directory"];
+  file [label="a file"];
+  base [label="a base name", fillcolor="#e7f0ec", color="#2f7a63"];
+  glob [label="a glob\n--include / --exclude", fillcolor="#e7f0ec", color="#2f7a63"];
+  srch [label="a searched file", fillcolor="#e7f0ec", color="#2f7a63"];
+  link [label="a symbolic link", fillcolor="#f8efdf", color="#d8b784"];
+
+  dir  -> file [label="  contains"];
+  dir  -> dir  [label="  contains  ", constraint=false];
+  file -> base [label="  has"];
+  glob -> base [label="  is tested against"];
+  srch -> file [label="  is"];
+  srch -> glob [label="  was admitted by the last matching  ", style=dashed, constraint=false];
+  link -> dir  [label="  points to"];
+  link -> dir  [label="  is descended into only under -R  ", style=dashed, constraint=false];
+
+}

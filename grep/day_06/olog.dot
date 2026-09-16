@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  out  [label="an output line", fillcolor="#e7f0ec", color="#2f7a63"];
+  sel  [label="a selected line", fillcolor="#e7f0ec", color="#2f7a63"];
+  ctx  [label="a context line\n(-A, -B, -C)", fillcolor="#e7f0ec", color="#2f7a63"];
+  pfx  [label="a prefix field\nname, line no., offset"];
+  fsep [label="a field separator\n: or -", fillcolor="#f8efdf", color="#d8b784"];
+  grp  [label="a group of\nadjacent lines"];
+  gsep [label="a group separator\n--", fillcolor="#f8efdf", color="#d8b784"];
+
+  sel  -> out  [label="  is"];
+  ctx  -> out  [label="  is"];
+  ctx  -> sel  [label="  is within NUM lines of"];
+  out  -> pfx  [label="  may carry"];
+  pfx  -> fsep [label="  is followed by"];
+  grp  -> out  [label="  is a run of"];
+  gsep -> grp  [label="  is printed between"];
+  fsep -> out  [label="  reveals the kind of  ", style=dashed, constraint=false];
+
+}

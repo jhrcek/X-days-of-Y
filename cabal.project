@@ -5,3 +5,4 @@ packages:
   psql
   htop
   pgrep
+  grep

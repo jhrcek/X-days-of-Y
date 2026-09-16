@@ -15,7 +15,8 @@ executable build-site
         tmux-course,
         psql-course,
         htop-course,
-        pgrep-course
+        pgrep-course,
+        grep-course
     default-language: GHC2021
     default-extensions: OverloadedStrings
     ghc-options: -Wall
