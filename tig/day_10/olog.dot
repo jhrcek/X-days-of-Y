@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  cl   [label="a tig command line", fillcolor="#e7f0ec", color="#2f7a63"];
+  sub  [label="a subcommand\nlog show blame\ngrep refs stash status"];
+  opt  [label="an option\n--since=1.month  -n20"];
+  rev  [label="a revision\nv1.0..master  ^branch"];
+  path [label="a path\n(after --)"];
+  brk  [label="the first argument\nnot starting with -\nENDS option parsing", fillcolor="#f8efdf", color="#d8b784"];
+  git  [label="a git command", fillcolor="#f4efe6"];
+  pipe [label="a pipe on stdin", fillcolor="#f4efe6"];
+  pv   [label="the pager view", fillcolor="#e7f0ec", color="#2f7a63"];
+
+  cl  -> sub  [label="  may begin with"];
+  cl  -> opt  [label="  contains"];
+  cl  -> rev [label="  contains"];
+  cl  -> path [label="  contains"];
+  brk -> rev  [label="  turns the rest into", style=dashed];
+  opt -> git  [label="  is passed to"];
+  rev -> git  [label="  is passed to"];
+  path -> git [label="  is passed to"];
+  pipe -> pv  [label="  opens"];
+
+  { rank=same; sub; opt; rev; path; }
+
+}

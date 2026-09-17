@@ -1,0 +1,29 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  vs   [label="a view setting\nmain-view, blame-view, …", fillcolor="#e7f0ec", color="#2f7a63"];
+  spec [label="a column specification\nauthor:email,width=20", fillcolor="#e7f0ec", color="#2f7a63"];
+  type [label="a column type\nauthor date id text\nfile-name commit-title"];
+  disp [label="a display option\n(always first)"];
+  copt [label="a column option\nwidth= maxwidth=\ninterval= format="];
+  short [label="a shorthand setting\nmain-view-date", fillcolor="#f8efdf", color="#d8b784"];
+  tog  [label="a toggle\n:toggle author-display", fillcolor="#f4efe6"];
+
+  vs   -> spec  [label="  is a list of"];
+  spec -> type  [label="  names"];
+  spec -> disp  [label="  begins with"];
+  spec -> copt  [label="  may carry"];
+  short -> spec [label="  patches one", style=dashed];
+  vs   -> spec  [label="replaces every  ", style=dashed, constraint=false];
+  tog  -> disp  [label="  cycles"];
+
+}

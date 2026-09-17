@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  mv   [label="the main view", fillcolor="#e7f0ec", color="#2f7a63"];
+  line [label="a line"];
+  cmt  [label="a commit", fillcolor="#e7f0ec", color="#2f7a63"];
+  wt   [label="a working-tree row\n(staged / unstaged /\nuntracked changes)", fillcolor="#f8efdf", color="#d8b784"];
+  col  [label="a column\n(date, author, id,\ncommit-title)"];
+  mode [label="a display mode"];
+  key  [label="a toggle key\n(D A X G F)", fillcolor="#f4efe6"];
+  ref  [label="a reference label\n[branch] <tag> {remote}"];
+
+  mv   -> line [label="  is a list of"];
+  line -> cmt  [label="  is either"];
+  line -> wt   [label="  or"];
+  mv   -> col  [label="  is drawn from"];
+  col  -> mode [label="  has as current", style=dashed];
+  key  -> mode [label="  cycles"];
+  cmt  -> ref  [label="  may carry"];
+
+  { rank=same; cmt; wt; }
+
+}

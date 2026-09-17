@@ -270,9 +270,9 @@ body fig = do
             , ".tree_view=0"
             ]
         defs
-            [ (c "screen:" <> var "Name" <> "=", do "The tab's name, then its columns in order. Use the internal names from " ; c "htop --sort-key help" ; ", not the display headings.")
+            [ (c "screen:" <> var "Name" <> "=", do "The tab's name, then its columns in order. Use the internal names from "; c "htop --sort-key help"; ", not the display headings.")
             , (c ".sort_key", "A column name — and it does not have to be one of the columns on screen.")
-            , (c ".sort_direction", do c "-1" ; " descending, " ; c "1" ; " ascending.")
+            , (c ".sort_direction", do c "-1"; " descending, "; c "1"; " ascending.")
             , (c ".tree_view" <> ", " <> c ".tree_sort_key" <> ", " <> c ".all_branches_collapsed", "The tree state, remembered per screen.")
             ]
         tip $ p_ $ do

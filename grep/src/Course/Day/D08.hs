@@ -130,7 +130,7 @@ day =
 
 d8diagram :: Diagram
 d8diagram =
-    (diagram
+    ( diagram
         "A character is defined by the locale and encoded as a sequence of bytes; a run of bytes that decodes to no character is an encoding error, and either an encoding error or a NUL byte makes the containing file binary."
         body'
     )

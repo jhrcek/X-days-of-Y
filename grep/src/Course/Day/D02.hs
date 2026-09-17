@@ -150,7 +150,7 @@ day =
 
 d2diagram :: Diagram
 d2diagram =
-    (diagram
+    ( diagram
         "A match is an occurrence of one pattern from the pattern set inside an input line; whole-word and whole-line matches are progressively stricter kinds of match, and a matched line is selected unless -v is in force."
         body'
     )

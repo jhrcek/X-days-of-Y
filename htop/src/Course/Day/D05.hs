@@ -328,7 +328,7 @@ body fig = do
             ]
         defs
             [ (k "+" <> " " <> k "-", "Expand or collapse the selected subtree. A collapsed subtree shows a " <> c "+" <> " to the left of the name.")
-            , (k "*", do "Expand or collapse everything at once — strictly, every child of every parentless PID, which on Linux means PID 1 and " ; c "kthreadd" ; ".")
+            , (k "*", do "Expand or collapse everything at once — strictly, every child of every parentless PID, which on Linux means PID 1 and "; c "kthreadd"; ".")
             ]
         gotcha $ p_ $ do
             "A collapsed subtree hides rows exactly as effectively as a filter, and gives you even \

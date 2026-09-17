@@ -308,14 +308,14 @@ body fig = do
 
     block "The eight families" $ do
         defs
-            [ ("Identity", do opt "PID" ; ", " ; opt "PPID" ; ", " ; opt "PGRP" ; ", " ; opt "SESSION" ; ", " ; opt "TGID" ; ", " ; opt "TTY" ; ", " ; opt "TPGID" ; ", " ; opt "USER" ; ", " ; opt "ST_UID" ; ". Who and what — and the parentage that Day 5's tree draws.")
-            , ("What it is running", do opt "Command" ; ", " ; opt "COMM" ; ", " ; opt "EXE" ; ", " ; opt "CWD" ; ". Day 2's three sources, each available as its own column.")
-            , ("State and scheduling", do opt "STATE" ; ", " ; opt "PRIORITY" ; ", " ; opt "NICE" ; ", " ; opt "PROCESSOR" ; ", " ; opt "SCHEDULERPOLICY" ; ", " ; opt "AGRP" ; ", " ; opt "ANI" ; ". What the scheduler thinks of it.")
-            , ("Lifetime", do opt "STARTTIME" ; " and " ; opt "ELAPSED" ; ". When it started, and how long ago — the pair that answers “did this restart?”.")
-            , ("CPU", do opt "PERCENT_CPU" ; ", " ; opt "PERCENT_NORM_CPU" ; ", " ; opt "TIME" ; ", and the four-way split " ; opt "UTIME" ; " / " ; opt "STIME" ; " / " ; opt "CUTIME" ; " / " ; opt "CSTIME" ; " — user and system time, for the process and for its reaped children.")
-            , ("Memory", do "Day 3's nine, plus " ; opt "MINFLT" ; ", " ; opt "MAJFLT" ; " and their " ; c "C" ; "-prefixed child versions. A high " ; opt "MAJFLT" ; " means going to disk for pages, which is what thrashing looks like.")
+            [ ("Identity", do opt "PID"; ", "; opt "PPID"; ", "; opt "PGRP"; ", "; opt "SESSION"; ", "; opt "TGID"; ", "; opt "TTY"; ", "; opt "TPGID"; ", "; opt "USER"; ", "; opt "ST_UID"; ". Who and what — and the parentage that Day 5's tree draws.")
+            , ("What it is running", do opt "Command"; ", "; opt "COMM"; ", "; opt "EXE"; ", "; opt "CWD"; ". Day 2's three sources, each available as its own column.")
+            , ("State and scheduling", do opt "STATE"; ", "; opt "PRIORITY"; ", "; opt "NICE"; ", "; opt "PROCESSOR"; ", "; opt "SCHEDULERPOLICY"; ", "; opt "AGRP"; ", "; opt "ANI"; ". What the scheduler thinks of it.")
+            , ("Lifetime", do opt "STARTTIME"; " and "; opt "ELAPSED"; ". When it started, and how long ago — the pair that answers “did this restart?”.")
+            , ("CPU", do opt "PERCENT_CPU"; ", "; opt "PERCENT_NORM_CPU"; ", "; opt "TIME"; ", and the four-way split "; opt "UTIME"; " / "; opt "STIME"; " / "; opt "CUTIME"; " / "; opt "CSTIME"; " — user and system time, for the process and for its reaped children.")
+            , ("Memory", do "Day 3's nine, plus "; opt "MINFLT"; ", "; opt "MAJFLT"; " and their "; c "C"; "-prefixed child versions. A high "; opt "MAJFLT"; " means going to disk for pages, which is what thrashing looks like.")
             , ("I/O and cgroups", "Day 12 and Day 13 respectively.")
-            , ("The odds and ends", do opt "NLWP" ; ", " ; opt "OOM" ; ", " ; opt "CTXT" ; ", " ; opt "SECATTR" ; ", " ; opt "GPU_TIME" ; ", " ; opt "GPU_PERCENT" ; ".")
+            , ("The odds and ends", do opt "NLWP"; ", "; opt "OOM"; ", "; opt "CTXT"; ", "; opt "SECATTR"; ", "; opt "GPU_TIME"; ", "; opt "GPU_PERCENT"; ".")
             ]
         tip $ p_ $ do
             opt "OOM"
@@ -338,10 +338,10 @@ body fig = do
             " means 219 processes, 2396 threads, 422 of which belong to the kernel — and by \
             \default htop shows you the userland threads as rows while hiding the kernel ones."
         defs
-            [ (k "K", do "Kernel threads — " ; c "kworker" ; ", " ; c "ksoftirqd" ; ", " ; c "kswapd" ; ". Hidden by default, and that is the right default.")
+            [ (k "K", do "Kernel threads — "; c "kworker"; ", "; c "ksoftirqd"; ", "; c "kswapd"; ". Hidden by default, and that is the right default.")
             , (k "H", "Userland threads. Shown by default, which is why your list is ten times longer than your process count.")
             , (opt "NLWP", "How many threads a process has. Sort by it to find every thread pool on the machine at once.")
-            , (opt "TGID", do "A thread's process. For a process, " ; opt "TGID" ; " equals " ; opt "PID" ; "; for a thread it does not.")
+            , (opt "TGID", do "A thread's process. For a process, "; opt "TGID"; " equals "; opt "PID"; "; for a thread it does not.")
             ]
         p_ $ do
             "Two display settings make threads legible rather than confusing. "

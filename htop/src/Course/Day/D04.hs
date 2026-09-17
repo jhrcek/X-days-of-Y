@@ -243,7 +243,8 @@ body fig = do
     block "Two levels, four keys" $ do
         p_ [class_ "lede"] $ do
             "htop gives you four ways to find a process and they sit on two different levels. "
-            b_ "Filter and the user menu change which rows exist. Search and a typed PID only move \
+            b_
+                "Filter and the user menu change which rows exist. Search and a typed PID only move \
                 \the selection."
             " Almost every complaint about htop's searching comes from reaching for one when you \
             \meant the other."
@@ -366,7 +367,7 @@ body fig = do
     block "Arriving already narrowed" $ do
         p_ "Every one of these has a command-line form, which is usually the better move — you were going to type something anyway."
         defs
-            [ (c "htop -F " <> var "term", do "Start filtered. Same semantics as " ; k "F4" ; ": fixed strings, case-insensitive, " ; c "|" ; " for alternatives.")
+            [ (c "htop -F " <> var "term", do "Start filtered. Same semantics as "; k "F4"; ": fixed strings, case-insensitive, "; c "|"; " for alternatives.")
             , (c "htop -p " <> var "pid,pid", "Show exactly these PIDs. A frozen set — nothing new ever joins it.")
             , (c "htop -u", "Your own processes.")
             , (c "htop -u " <> var "user", "One user's. A numeric UID works, despite what " <> c "--help" <> " implies.")

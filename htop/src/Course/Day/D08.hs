@@ -288,10 +288,10 @@ body fig = do
         p_ "The Setup screen's “Available meters” list is long and is documented nowhere in the manual page. The useful groups:"
         defs
             [ ("CPU", "Ten different groupings — one combined average, all cores, or the cores split across two or four shorter columns. On a 32-core machine this choice is the difference between a three-line header and a thirty-five-line one.")
-            , ("Memory", do "Memory, Swap, a combined memory-and-swap meter, and " ; c "HugePages" ; ".")
+            , ("Memory", do "Memory, Swap, a combined memory-and-swap meter, and "; c "HugePages"; ".")
             , ("Load and tasks", "Load average, the one-minute load alone, and the Task counter that gives you the processes / threads / kernel-threads / running line.")
-            , ("Time", do c "Clock" ; ", " ; c "Date" ; ", " ; c "Date and Time" ; ", " ; c "Uptime" ; " and uptime in raw seconds.")
-            , ("System", do "A " ; c "System" ; " meter, " ; c "Hostname" ; ", " ; c "Battery" ; ", and — where libsystemd is present — the number of running, failed and jobs-queued systemd units.")
+            , ("Time", do c "Clock"; ", "; c "Date"; ", "; c "Date and Time"; ", "; c "Uptime"; " and uptime in raw seconds.")
+            , ("System", do "A "; c "System"; " meter, "; c "Hostname"; ", "; c "Battery"; ", and — where libsystemd is present — the number of running, failed and jobs-queued systemd units.")
             , ("Pressure Stall Information", "Five PSI meters: some-cpu, some-io, full-io, full-irq and some-memory. These are the modern answer to “is this machine actually struggling”, and they are worth more than most of the bars above them.")
             , ("Blank", "A spacer. Genuinely useful for lining two header columns up.")
             ]

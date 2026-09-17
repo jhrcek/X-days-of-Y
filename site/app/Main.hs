@@ -11,6 +11,7 @@ import Courses.Grep qualified as Grep
 import Courses.Htop qualified as Htop
 import Courses.Pgrep qualified as Pgrep
 import Courses.Psql qualified as Psql
+import Courses.Tig qualified as Tig
 import Courses.Tmux qualified as Tmux
 import Data.Text qualified as T
 import System.FilePath ((</>))
@@ -22,6 +23,7 @@ courses =
     , Htop.course
     , Pgrep.course
     , Grep.course
+    , Tig.course
     ]
 
 main :: IO ()

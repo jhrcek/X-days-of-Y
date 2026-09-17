@@ -112,8 +112,9 @@ day =
                 ( "You press "
                     <> k "s"
                     <> " to trace a process and get "
-                    <> c "Could not execute 'strace'. Please make sure it is available in your \
-                       \$PATH."
+                    <> c
+                        "Could not execute 'strace'. Please make sure it is available in your \
+                        \$PATH."
                     <> " But the screen opened anyway. Why did htop not just grey the key out?"
                 , do
                     p_ $ do

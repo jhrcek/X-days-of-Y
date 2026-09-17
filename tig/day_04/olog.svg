@@ -1,0 +1,109 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="410pt" height="394pt"
+ viewBox="0.00 0.00 410.00 394.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 390.3)">
+<title>olog</title>
+<!-- show -->
+<g id="node1" class="node">
+<title>show</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M221.11,-386.3C221.11,-386.3 137.38,-386.3 137.38,-386.3 131.38,-386.3 125.38,-380.3 125.38,-374.3 125.38,-374.3 125.38,-358.34 125.38,-358.34 125.38,-352.34 131.38,-346.34 137.38,-346.34 137.38,-346.34 221.11,-346.34 221.11,-346.34 227.11,-346.34 233.11,-352.34 233.11,-358.34 233.11,-358.34 233.11,-374.3 233.11,-374.3 233.11,-380.3 227.11,-386.3 221.11,-386.3"/>
+<text xml:space="preserve" text-anchor="middle" x="179.24" y="-368.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git show</text>
+<text xml:space="preserve" text-anchor="middle" x="179.24" y="-355.4" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">&#45;&#45;patch&#45;with&#45;stat</text>
+</g>
+<!-- dv -->
+<g id="node2" class="node">
+<title>dv</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M213.03,-296.34C213.03,-296.34 145.45,-296.34 145.45,-296.34 141.04,-296.34 136.62,-291.93 136.62,-287.52 136.62,-287.52 136.62,-278.7 136.62,-278.7 136.62,-274.29 141.03,-269.88 145.45,-269.88 145.45,-269.88 213.03,-269.88 213.03,-269.88 217.44,-269.88 221.86,-274.29 221.86,-278.7 221.86,-278.7 221.86,-287.52 221.86,-287.52 221.86,-291.93 217.45,-296.34 213.03,-296.34"/>
+<text xml:space="preserve" text-anchor="middle" x="179.24" y="-278.94" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the diff view</text>
+</g>
+<!-- show&#45;&gt;dv -->
+<g id="edge1" class="edge">
+<title>show&#45;&gt;dv</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M179.24,-346.07C179.24,-333.69 179.24,-317.61 179.24,-304.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="181.76,-305.19 179.24,-297.99 176.72,-305.19 181.76,-305.19"/>
+<text xml:space="preserve" text-anchor="middle" x="189.37" y="-321.32" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;fills</text>
+</g>
+<!-- hdr -->
+<g id="node3" class="node">
+<title>hdr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M108.48,-219.88C108.48,-219.88 12,-219.88 12,-219.88 6,-219.88 0,-213.88 0,-207.88 0,-207.88 0,-178.42 0,-178.42 0,-172.42 6,-166.42 12,-166.42 12,-166.42 108.48,-166.42 108.48,-166.42 114.48,-166.42 120.48,-172.42 120.48,-178.42 120.48,-178.42 120.48,-207.88 120.48,-207.88 120.48,-213.88 114.48,-219.88 108.48,-219.88"/>
+<text xml:space="preserve" text-anchor="middle" x="60.24" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit header</text>
+<text xml:space="preserve" text-anchor="middle" x="60.24" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(author, committer,</text>
+<text xml:space="preserve" text-anchor="middle" x="60.24" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">message)</text>
+</g>
+<!-- dv&#45;&gt;hdr -->
+<g id="edge2" class="edge">
+<title>dv&#45;&gt;hdr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M154.13,-269.33C142.81,-263.17 129.48,-255.33 118.24,-247.13 109.46,-240.72 100.53,-233.17 92.39,-225.81"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="94.51,-224.33 87.5,-221.31 91.09,-228.04 94.51,-224.33"/>
+<text xml:space="preserve" text-anchor="middle" x="145.24" y="-238.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;begins with</text>
+</g>
+<!-- stat -->
+<g id="node4" class="node">
+<title>stat</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M204.41,-206.38C204.41,-206.38 154.07,-206.38 154.07,-206.38 149.66,-206.38 145.25,-201.97 145.25,-197.56 145.25,-197.56 145.25,-188.74 145.25,-188.74 145.25,-184.33 149.66,-179.92 154.07,-179.92 154.07,-179.92 204.41,-179.92 204.41,-179.92 208.82,-179.92 213.23,-184.33 213.23,-188.74 213.23,-188.74 213.23,-197.56 213.23,-197.56 213.23,-201.97 208.82,-206.38 204.41,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="179.24" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a diffstat</text>
+</g>
+<!-- dv&#45;&gt;stat -->
+<g id="edge3" class="edge">
+<title>dv&#45;&gt;stat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M178.79,-269.48C178.58,-262.83 178.35,-254.54 178.24,-247.13 178.09,-236.67 178.27,-225.06 178.52,-215.37"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="181.03,-215.64 178.72,-208.37 175.99,-215.49 181.03,-215.64"/>
+<text xml:space="preserve" text-anchor="middle" x="205.24" y="-238.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;then shows</text>
+</g>
+<!-- patch -->
+<g id="node5" class="node">
+<title>patch</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M331.16,-206.38C331.16,-206.38 285.32,-206.38 285.32,-206.38 280.91,-206.38 276.5,-201.97 276.5,-197.56 276.5,-197.56 276.5,-188.74 276.5,-188.74 276.5,-184.33 280.91,-179.92 285.32,-179.92 285.32,-179.92 331.16,-179.92 331.16,-179.92 335.57,-179.92 339.98,-184.33 339.98,-188.74 339.98,-188.74 339.98,-197.56 339.98,-197.56 339.98,-201.97 335.57,-206.38 331.16,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a patch</text>
+</g>
+<!-- dv&#45;&gt;patch -->
+<g id="edge4" class="edge">
+<title>dv&#45;&gt;patch</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M199.79,-269.42C210.2,-262.89 222.99,-254.73 234.24,-247.13 251.08,-235.76 269.67,-222.45 284.01,-212.01"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="285.47,-214.06 289.8,-207.78 282.5,-209.99 285.47,-214.06"/>
+<text xml:space="preserve" text-anchor="middle" x="275.6" y="-238.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;then shows</text>
+</g>
+<!-- chunk -->
+<g id="node6" class="node">
+<title>chunk</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M358.73,-123.17C358.73,-123.17 257.75,-123.17 257.75,-123.17 251.75,-123.17 245.75,-117.17 245.75,-111.17 245.75,-111.17 245.75,-95.21 245.75,-95.21 245.75,-89.21 251.75,-83.21 257.75,-83.21 257.75,-83.21 358.73,-83.21 358.73,-83.21 364.73,-83.21 370.73,-89.21 370.73,-95.21 370.73,-95.21 370.73,-111.17 370.73,-111.17 370.73,-117.17 364.73,-123.17 358.73,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a chunk</text>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">@@ &#45;1,8 +1,8 @@</text>
+</g>
+<!-- patch&#45;&gt;chunk -->
+<g id="edge5" class="edge">
+<title>patch&#45;&gt;chunk</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M308.24,-179.55C308.24,-167.2 308.24,-147.98 308.24,-132.03"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="310.76,-132.37 308.24,-125.17 305.72,-132.37 310.76,-132.37"/>
+<text xml:space="preserve" text-anchor="middle" x="331.87" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a list of</text>
+</g>
+<!-- ctx -->
+<g id="node7" class="node">
+<title>ctx</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M366.23,-39.96C366.23,-39.96 250.25,-39.96 250.25,-39.96 244.25,-39.96 238.25,-33.96 238.25,-27.96 238.25,-27.96 238.25,-12 238.25,-12 238.25,-6 244.25,0 250.25,0 250.25,0 366.23,0 366.23,0 372.23,0 378.23,-6 378.23,-12 378.23,-12 378.23,-27.96 378.23,-27.96 378.23,-33.96 372.23,-39.96 366.23,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">context lines</text>
+<text xml:space="preserve" text-anchor="middle" x="308.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(diff&#45;context, default 3)</text>
+</g>
+<!-- chunk&#45;&gt;ctx -->
+<g id="edge6" class="edge">
+<title>chunk&#45;&gt;ctx</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M308.24,-82.94C308.24,-72.8 308.24,-60.18 308.24,-48.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="310.76,-49.16 308.24,-41.96 305.72,-49.16 310.76,-49.16"/>
+<text xml:space="preserve" text-anchor="middle" x="346.12" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is surrounded by</text>
+</g>
+<!-- filt -->
+<g id="node8" class="node">
+<title>filt</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M376.36,-303.09C376.36,-303.09 318.12,-303.09 318.12,-303.09 312.12,-303.09 306.12,-297.09 306.12,-291.09 306.12,-291.09 306.12,-275.13 306.12,-275.13 306.12,-269.13 312.12,-263.13 318.12,-263.13 318.12,-263.13 376.36,-263.13 376.36,-263.13 382.36,-263.13 388.36,-269.13 388.36,-275.13 388.36,-275.13 388.36,-291.09 388.36,-291.09 388.36,-297.09 382.36,-303.09 376.36,-303.09"/>
+<text xml:space="preserve" text-anchor="middle" x="347.24" y="-285.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the file filter</text>
+<text xml:space="preserve" text-anchor="middle" x="347.24" y="-272.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(%)</text>
+</g>
+<!-- filt&#45;&gt;patch -->
+<g id="edge7" class="edge">
+<title>filt&#45;&gt;patch</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M338.58,-262.59C332.28,-248.37 323.76,-229.16 317.35,-214.71"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="319.73,-213.84 314.5,-208.28 315.12,-215.88 319.73,-213.84"/>
+<text xml:space="preserve" text-anchor="middle" x="366.86" y="-238.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;silently narrows</text>
+</g>
+</g>
+</svg>

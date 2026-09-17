@@ -1,0 +1,117 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="676pt" height="228pt"
+ viewBox="0.00 0.00 676.00 228.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 223.88)">
+<title>olog</title>
+<!-- rule -->
+<g id="node1" class="node">
+<title>rule</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M398.54,-219.88C398.54,-219.88 327.19,-219.88 327.19,-219.88 322.78,-219.88 318.38,-215.47 318.38,-211.06 318.38,-211.06 318.38,-202.24 318.38,-202.24 318.38,-197.83 322.78,-193.42 327.19,-193.42 327.19,-193.42 398.54,-193.42 398.54,-193.42 402.95,-193.42 407.36,-197.83 407.36,-202.24 407.36,-202.24 407.36,-211.06 407.36,-211.06 407.36,-215.47 402.95,-219.88 398.54,-219.88"/>
+<text xml:space="preserve" text-anchor="middle" x="362.87" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a colour rule</text>
+</g>
+<!-- area -->
+<g id="node2" class="node">
+<title>area</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M242.54,-136.67C242.54,-136.67 195.19,-136.67 195.19,-136.67 190.78,-136.67 186.38,-132.26 186.38,-127.85 186.38,-127.85 186.38,-119.03 186.38,-119.03 186.38,-114.62 190.78,-110.21 195.19,-110.21 195.19,-110.21 242.54,-110.21 242.54,-110.21 246.95,-110.21 251.36,-114.62 251.36,-119.03 251.36,-119.03 251.36,-127.85 251.36,-127.85 251.36,-132.26 246.95,-136.67 242.54,-136.67"/>
+<text xml:space="preserve" text-anchor="middle" x="218.87" y="-119.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an area</text>
+</g>
+<!-- rule&#45;&gt;area -->
+<g id="edge1" class="edge">
+<title>rule&#45;&gt;area</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M340.37,-192.96C315.64,-179.02 275.81,-156.56 248.54,-141.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="250.1,-139.16 242.59,-137.82 247.62,-143.55 250.1,-139.16"/>
+<text xml:space="preserve" text-anchor="middle" x="329.43" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;names</text>
+</g>
+<!-- fg -->
+<g id="node6" class="node">
+<title>fg</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M415.23,-143.42C415.23,-143.42 310.5,-143.42 310.5,-143.42 304.5,-143.42 298.5,-137.42 298.5,-131.42 298.5,-131.42 298.5,-115.46 298.5,-115.46 298.5,-109.46 304.5,-103.46 310.5,-103.46 310.5,-103.46 415.23,-103.46 415.23,-103.46 421.23,-103.46 427.23,-109.46 427.23,-115.46 427.23,-115.46 427.23,-131.42 427.23,-131.42 427.23,-137.42 421.23,-143.42 415.23,-143.42"/>
+<text xml:space="preserve" text-anchor="middle" x="362.87" y="-126.02" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a colour</text>
+<text xml:space="preserve" text-anchor="middle" x="362.87" y="-112.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">named, colorN, or N</text>
+</g>
+<!-- rule&#45;&gt;fg -->
+<g id="edge5" class="edge">
+<title>rule&#45;&gt;fg</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M362.46,-193C362.32,-188.13 362.18,-182.52 362.12,-177.42 362.01,-169.27 362.06,-160.41 362.18,-152.31"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="364.7,-152.4 362.31,-145.16 359.66,-152.31 364.7,-152.4"/>
+<text xml:space="preserve" text-anchor="middle" x="404.49" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;sets as foreground</text>
+</g>
+<!-- rule&#45;&gt;fg -->
+<g id="edge6" class="edge">
+<title>rule&#45;&gt;fg</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M407.68,-201.61C423.29,-197.8 439.28,-190.66 448.87,-177.42 458.32,-164.36 449.89,-153.85 435.2,-145.74"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="436.53,-143.58 428.96,-142.65 434.3,-148.1 436.53,-143.58"/>
+<text xml:space="preserve" text-anchor="middle" x="495.98" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">and as background &#160;</text>
+</g>
+<!-- attr -->
+<g id="node7" class="node">
+<title>attr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M656.36,-150.17C656.36,-150.17 531.38,-150.17 531.38,-150.17 525.38,-150.17 519.38,-144.17 519.38,-138.17 519.38,-138.17 519.38,-108.71 519.38,-108.71 519.38,-102.71 525.38,-96.71 531.38,-96.71 531.38,-96.71 656.36,-96.71 656.36,-96.71 662.36,-96.71 668.36,-102.71 668.36,-108.71 668.36,-108.71 668.36,-138.17 668.36,-138.17 668.36,-144.17 662.36,-150.17 656.36,-150.17"/>
+<text xml:space="preserve" text-anchor="middle" x="593.87" y="-132.76" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an attribute</text>
+<text xml:space="preserve" text-anchor="middle" x="593.87" y="-119.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">bold dim reverse</text>
+<text xml:space="preserve" text-anchor="middle" x="593.87" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">underline blink standout</text>
+</g>
+<!-- rule&#45;&gt;attr -->
+<g id="edge7" class="edge">
+<title>rule&#45;&gt;attr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M407.52,-202.11C453.54,-197.86 521.72,-189.74 544.87,-177.42 554.2,-172.45 562.7,-165 569.91,-157.25"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="571.74,-158.98 574.6,-151.91 567.95,-155.66 571.74,-158.98"/>
+<text xml:space="preserve" text-anchor="middle" x="580.71" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may add</text>
+</g>
+<!-- bi -->
+<g id="node3" class="node">
+<title>bi</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M113.73,-53.46C113.73,-53.46 12,-53.46 12,-53.46 6,-53.46 0,-47.46 0,-41.46 0,-41.46 0,-12 0,-12 0,-6 6,0 12,0 12,0 113.73,0 113.73,0 119.73,0 125.73,-6 125.73,-12 125.73,-12 125.73,-41.46 125.73,-41.46 125.73,-47.46 119.73,-53.46 113.73,-53.46"/>
+<text xml:space="preserve" text-anchor="middle" x="62.87" y="-36.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a built&#45;in name</text>
+<text xml:space="preserve" text-anchor="middle" x="62.87" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">cursor &#160;title&#45;focus</text>
+<text xml:space="preserve" text-anchor="middle" x="62.87" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">diff&#45;add &#160;main&#45;head</text>
+</g>
+<!-- area&#45;&gt;bi -->
+<g id="edge2" class="edge">
+<title>area&#45;&gt;bi</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M197.83,-109.67C176.21,-96.54 141.75,-75.62 113.06,-58.2"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="114.72,-56.27 107.26,-54.68 112.11,-60.57 114.72,-56.27"/>
+<text xml:space="preserve" text-anchor="middle" x="165.42" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is either</text>
+</g>
+<!-- vp -->
+<g id="node4" class="node">
+<title>vp</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M274.98,-46.71C274.98,-46.71 162.75,-46.71 162.75,-46.71 156.75,-46.71 150.75,-40.71 150.75,-34.71 150.75,-34.71 150.75,-18.75 150.75,-18.75 150.75,-12.75 156.75,-6.75 162.75,-6.75 162.75,-6.75 274.98,-6.75 274.98,-6.75 280.98,-6.75 286.98,-12.75 286.98,-18.75 286.98,-18.75 286.98,-34.71 286.98,-34.71 286.98,-40.71 280.98,-46.71 274.98,-46.71"/>
+<text xml:space="preserve" text-anchor="middle" x="218.87" y="-29.31" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a view&#45;prefixed name</text>
+<text xml:space="preserve" text-anchor="middle" x="218.87" y="-15.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">stage.diff&#45;chunk</text>
+</g>
+<!-- area&#45;&gt;vp -->
+<g id="edge3" class="edge">
+<title>area&#45;&gt;vp</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M218.87,-109.67C218.87,-95.87 218.87,-73.46 218.87,-55.56"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="221.39,-55.98 218.87,-48.78 216.35,-55.98 221.39,-55.98"/>
+<text xml:space="preserve" text-anchor="middle" x="225.99" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;or</text>
+</g>
+<!-- re -->
+<g id="node5" class="node">
+<title>re</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M402.11,-46.71C402.11,-46.71 323.62,-46.71 323.62,-46.71 317.62,-46.71 311.62,-40.71 311.62,-34.71 311.62,-34.71 311.62,-18.75 311.62,-18.75 311.62,-12.75 317.62,-6.75 323.62,-6.75 323.62,-6.75 402.11,-6.75 402.11,-6.75 408.11,-6.75 414.11,-12.75 414.11,-18.75 414.11,-18.75 414.11,-34.71 414.11,-34.71 414.11,-40.71 408.11,-46.71 402.11,-46.71"/>
+<text xml:space="preserve" text-anchor="middle" x="362.87" y="-29.31" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a quoted string</text>
+<text xml:space="preserve" text-anchor="middle" x="362.87" y="-15.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">or /regexp/</text>
+</g>
+<!-- area&#45;&gt;re -->
+<g id="edge4" class="edge">
+<title>area&#45;&gt;re</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M238.29,-109.67C260.7,-94.93 298.05,-70.36 326.02,-51.96"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="327.32,-54.13 331.95,-48.06 324.55,-49.92 327.32,-54.13"/>
+<text xml:space="preserve" text-anchor="middle" x="302.31" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;or</text>
+</g>
+<!-- gitc -->
+<g id="node8" class="node">
+<title>gitc</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M248.79,-219.88C248.79,-219.88 142.94,-219.88 142.94,-219.88 138.53,-219.88 134.12,-215.47 134.12,-211.06 134.12,-211.06 134.12,-202.24 134.12,-202.24 134.12,-197.83 138.53,-193.42 142.94,-193.42 142.94,-193.42 248.79,-193.42 248.79,-193.42 253.2,-193.42 257.61,-197.83 257.61,-202.24 257.61,-202.24 257.61,-211.06 257.61,-211.06 257.61,-215.47 253.2,-219.88 248.79,-219.88"/>
+<text xml:space="preserve" text-anchor="middle" x="195.87" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git&#39;s color.* settings</text>
+</g>
+<!-- gitc&#45;&gt;area -->
+<g id="edge8" class="edge">
+<title>gitc&#45;&gt;area</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M193.74,-192.99C192.87,-185.14 192.53,-174.91 194.87,-166.17 196.88,-158.63 200.62,-151.03 204.56,-144.42"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="206.57,-145.95 208.33,-138.53 202.33,-143.24 206.57,-145.95"/>
+<text xml:space="preserve" text-anchor="middle" x="230.87" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is mapped onto</text>
+</g>
+</g>
+</svg>

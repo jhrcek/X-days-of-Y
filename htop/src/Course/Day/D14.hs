@@ -69,7 +69,9 @@ day =
                 <> c "HTOPRC=/tmp/nope htop"
                 <> ". You get default htop, no error, and no file created at "
                 <> c "/tmp/nope"
-                <> ". Setting " <> c "$HTOPRC" <> " replaces the search rather than extending it."
+                <> ". Setting "
+                <> c "$HTOPRC"
+                <> " replaces the search rather than extending it."
             , "Ask htop a question it cannot answer: “how much memory did this process use at its \
               \peak?” Nothing on any screen will tell you. Then get it from "
                 <> c "/proc/PID/status"
@@ -238,16 +240,16 @@ body fig = do
             \wrong one."
         fig
         defs
-            [ ("The SYNOPSIS is wrong", do "It reads " ; c "htop [-dCFhpustvH]" ; ", but " ; c "-v" ; " does not exist — the version flag is " ; c "-V" ; ", and " ; c "htop -v" ; " answers " ; c "invalid option" ; ". The same line omits " ; c "-n" ; ", " ; c "-M" ; ", " ; c "-U" ; ", " ; c "--readonly" ; ", " ; c "--no-meters" ; " and " ; c "--no-function-bar" ; ".")
-            , (c "-n" <> " is undocumented", do c "--max-iterations" ; " draws N frames and exits. It is in " ; c "--help" ; " and works; the manual page has never heard of it.")
-            , ("Six interactive keys are missing", do k "#" ; " hides the header, " ; k "e" ; " shows the environment, " ; k "i" ; " sets I/O priority, " ; k "Y" ; " sets the scheduling policy, and " ; k "." ; " and " ; k "C" ; " are aliases for sort and Setup. All are in the " ; k "F1" ; " help.")
-            , ("The sort-key aliases disagree", do "The page lists " ; k "F6" ; ", " ; k "<" ; ", " ; k ">" ; "; the help lists " ; k "F6" ; ", " ; k ">" ; ", " ; k "." ; ". All four work — each source has a different incomplete subset.")
-            , ("COLUMNS is stale", do "No entry for " ; opt "ELAPSED" ; ", " ; opt "SCHEDULERPOLICY" ; ", " ; opt "SECATTR" ; ", " ; opt "CWD" ; ", " ; opt "CONTAINER" ; ", " ; opt "ISCONTAINER" ; ", " ; opt "GPU_TIME" ; " or " ; opt "GPU_PERCENT" ; ".")
-            , (c "M_M_PSSWP" <> " does not exist", do "A typo for " ; opt "M_PSSWP" ; ". Copy it into a config and htop drops it in silence.")
-            , ("The traced-state letter", do "COLUMNS says " ; c "T" ; " for traced or suspended; the " ; k "F1" ; " help says " ; c "t" ; ". Believe the help.")
+            [ ("The SYNOPSIS is wrong", do "It reads "; c "htop [-dCFhpustvH]"; ", but "; c "-v"; " does not exist — the version flag is "; c "-V"; ", and "; c "htop -v"; " answers "; c "invalid option"; ". The same line omits "; c "-n"; ", "; c "-M"; ", "; c "-U"; ", "; c "--readonly"; ", "; c "--no-meters"; " and "; c "--no-function-bar"; ".")
+            , (c "-n" <> " is undocumented", do c "--max-iterations"; " draws N frames and exits. It is in "; c "--help"; " and works; the manual page has never heard of it.")
+            , ("Six interactive keys are missing", do k "#"; " hides the header, "; k "e"; " shows the environment, "; k "i"; " sets I/O priority, "; k "Y"; " sets the scheduling policy, and "; k "."; " and "; k "C"; " are aliases for sort and Setup. All are in the "; k "F1"; " help.")
+            , ("The sort-key aliases disagree", do "The page lists "; k "F6"; ", "; k "<"; ", "; k ">"; "; the help lists "; k "F6"; ", "; k ">"; ", "; k "."; ". All four work — each source has a different incomplete subset.")
+            , ("COLUMNS is stale", do "No entry for "; opt "ELAPSED"; ", "; opt "SCHEDULERPOLICY"; ", "; opt "SECATTR"; ", "; opt "CWD"; ", "; opt "CONTAINER"; ", "; opt "ISCONTAINER"; ", "; opt "GPU_TIME"; " or "; opt "GPU_PERCENT"; ".")
+            , (c "M_M_PSSWP" <> " does not exist", do "A typo for "; opt "M_PSSWP"; ". Copy it into a config and htop drops it in silence.")
+            , ("The traced-state letter", do "COLUMNS says "; c "T"; " for traced or suspended; the "; k "F1"; " help says "; c "t"; ". Believe the help.")
             , ("METERS has lost some words", do "“Default CPU bar segments ( use text attributes instead of hues:” — an unclosed parenthesis and a missing subject. The content around it is correct.")
-            , ("The rewrite rule is overstated", do "The page says the config “is overwritten upon clean exit”. In 3.5.3 it is overwritten only if a setting actually changed — and plain toggles like " ; k "t" ; ", " ; k "K" ; " and " ; k "I" ; " count, not just Setup.")
-            , (c "fields=" <> " is undocumented entirely", do "The legacy numeric column list silently overrides " ; c "screen:Main=" ; " regardless of order. Nothing anywhere mentions it.")
+            , ("The rewrite rule is overstated", do "The page says the config “is overwritten upon clean exit”. In 3.5.3 it is overwritten only if a setting actually changed — and plain toggles like "; k "t"; ", "; k "K"; " and "; k "I"; " count, not just Setup.")
+            , (c "fields=" <> " is undocumented entirely", do "The legacy numeric column list silently overrides "; c "screen:Main="; " regardless of order. Nothing anywhere mentions it.")
             ]
         note $ p_ $ do
             "Two smaller ones, in the other direction: the page is "
@@ -371,7 +373,8 @@ body fig = do
     block "Today's habit" $ do
         p_ $ do
             "Keep the one that built this course: "
-            b_ "when a tool and its documentation disagree, believe the tool, and write the \
+            b_
+                "when a tool and its documentation disagree, believe the tool, and write the \
                 \disagreement down."
             " Ten of them turned up in a 768-line manual page for a program in its third major \
             \version and under active maintenance. That is not a criticism of htop — it is the \

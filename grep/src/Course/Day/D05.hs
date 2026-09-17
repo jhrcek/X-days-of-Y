@@ -169,7 +169,7 @@ day =
 
 d5diagram :: Diagram
 d5diagram =
-    (diagram
+    ( diagram
         "The line itself, a per-file count, a file name and a matched substring are four kinds of report grep can print about the selected lines; none of them affects the exit status."
         body'
     )

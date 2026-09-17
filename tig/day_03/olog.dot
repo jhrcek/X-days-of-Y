@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  par  [label="a parent view\n(main)", fillcolor="#e7f0ec", color="#2f7a63"];
+  chi  [label="a child view\n(diff)", fillcolor="#e7f0ec", color="#2f7a63"];
+  sel  [label="the selected line", fillcolor="#f8efdf", color="#d8b784"];
+  cur  [label="a cursor"];
+  foc  [label="the focus"];
+  nxt  [label="the next action\n(<Down>, J)", fillcolor="#f4efe6"];
+  mvd  [label="the move-down action\n(j)", fillcolor="#f4efe6"];
+  tab  [label="the view-next action\n(<Tab>)", fillcolor="#f4efe6"];
+
+  par -> chi [label="  opens"];
+  par -> sel [label="  owns"];
+  sel -> chi [label="  determines the content of", style=dashed];
+  nxt -> sel [label="  advances"];
+  mvd -> cur [label="  moves"];
+  chi -> cur [label="  has"];
+  tab -> foc [label="  moves"];
+  foc -> chi [label="  may rest on", style=dashed];
+  foc -> par [label="  may rest on", style=dashed];
+
+}

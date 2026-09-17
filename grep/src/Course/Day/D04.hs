@@ -159,7 +159,7 @@ day =
 
 d4diagram :: Diagram
 d4diagram =
-    (diagram
+    ( diagram
         "A regular expression is an alternation of concatenations of repetitions of atoms; a parenthesised subexpression is itself an atom, which is how the ladder recurses, and a back-reference is an atom that re-matches a subexpression's captured text."
         body'
     )

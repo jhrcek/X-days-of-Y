@@ -1,0 +1,111 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="521pt" height="311pt"
+ viewBox="0.00 0.00 521.00 311.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 307.09)">
+<title>olog</title>
+<!-- sys -->
+<g id="node1" class="node">
+<title>sys</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M97.98,-289.59C97.98,-289.59 12,-289.59 12,-289.59 6,-289.59 0,-283.59 0,-277.59 0,-277.59 0,-261.63 0,-261.63 0,-255.63 6,-249.63 12,-249.63 12,-249.63 97.98,-249.63 97.98,-249.63 103.98,-249.63 109.98,-255.63 109.98,-261.63 109.98,-261.63 109.98,-277.59 109.98,-277.59 109.98,-283.59 103.98,-289.59 97.98,-289.59"/>
+<text xml:space="preserve" text-anchor="middle" x="54.99" y="-272.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the system tigrc</text>
+<text xml:space="preserve" text-anchor="middle" x="54.99" y="-258.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">{sysconfdir}/tigrc</text>
+</g>
+<!-- set -->
+<g id="node4" class="node">
+<title>set</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M259.54,-186.13C259.54,-186.13 208.44,-186.13 208.44,-186.13 204.03,-186.13 199.62,-181.72 199.62,-177.31 199.62,-177.31 199.62,-168.49 199.62,-168.49 199.62,-164.08 204.03,-159.67 208.44,-159.67 208.44,-159.67 259.54,-159.67 259.54,-159.67 263.95,-159.67 268.36,-164.08 268.36,-168.49 268.36,-168.49 268.36,-177.31 268.36,-177.31 268.36,-181.72 263.95,-186.13 259.54,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="233.99" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a setting</text>
+</g>
+<!-- sys&#45;&gt;set -->
+<g id="edge1" class="edge">
+<title>sys&#45;&gt;set</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M91.65,-249.22C124.27,-231.95 171.49,-206.97 202.46,-190.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="203.37,-192.95 208.56,-187.36 201.02,-188.5 203.37,-192.95"/>
+<text xml:space="preserve" text-anchor="middle" x="186.04" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;supplies</text>
+</g>
+<!-- usr -->
+<g id="node2" class="node">
+<title>usr</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M320.86,-303.09C320.86,-303.09 147.13,-303.09 147.13,-303.09 141.13,-303.09 135.13,-297.09 135.13,-291.09 135.13,-291.09 135.13,-248.13 135.13,-248.13 135.13,-242.13 141.13,-236.13 147.13,-236.13 147.13,-236.13 320.86,-236.13 320.86,-236.13 326.86,-236.13 332.86,-242.13 332.86,-248.13 332.86,-248.13 332.86,-291.09 332.86,-291.09 332.86,-297.09 326.86,-303.09 320.86,-303.09"/>
+<text xml:space="preserve" text-anchor="middle" x="233.99" y="-285.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the user config file</text>
+<text xml:space="preserve" text-anchor="middle" x="233.99" y="-272.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">$XDG_CONFIG_HOME/tig/config</text>
+<text xml:space="preserve" text-anchor="middle" x="233.99" y="-258.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">~/.config/tig/config</text>
+<text xml:space="preserve" text-anchor="middle" x="233.99" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">~/.tigrc</text>
+</g>
+<!-- usr&#45;&gt;set -->
+<g id="edge2" class="edge">
+<title>usr&#45;&gt;set</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M233.99,-235.75C233.99,-222.13 233.99,-206.73 233.99,-194.71"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="236.51,-195.05 233.99,-187.85 231.47,-195.05 236.51,-195.05"/>
+<text xml:space="preserve" text-anchor="middle" x="266.24" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;overrides with</text>
+</g>
+<!-- gitc -->
+<g id="node3" class="node">
+<title>gitc</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M462.36,-289.59C462.36,-289.59 369.62,-289.59 369.62,-289.59 363.62,-289.59 357.62,-283.59 357.62,-277.59 357.62,-277.59 357.62,-261.63 357.62,-261.63 357.62,-255.63 363.62,-249.63 369.62,-249.63 369.62,-249.63 462.36,-249.63 462.36,-249.63 468.36,-249.63 474.36,-255.63 474.36,-261.63 474.36,-261.63 474.36,-277.59 474.36,-277.59 474.36,-283.59 468.36,-289.59 462.36,-289.59"/>
+<text xml:space="preserve" text-anchor="middle" x="415.99" y="-272.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git configuration</text>
+<text xml:space="preserve" text-anchor="middle" x="415.99" y="-258.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">[tig] name = value</text>
+</g>
+<!-- gitc&#45;&gt;set -->
+<g id="edge3" class="edge">
+<title>gitc&#45;&gt;set</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M380.67,-249.19C358.94,-237.34 330.47,-222.01 304.99,-208.88 293.08,-202.74 279.94,-196.21 268.24,-190.47"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="269.41,-188.23 261.83,-187.33 267.19,-192.76 269.41,-188.23"/>
+<text xml:space="preserve" text-anchor="middle" x="356.75" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;also supplies</text>
+</g>
+<!-- sess -->
+<g id="node5" class="node">
+<title>sess</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M386.86,-109.67C386.86,-109.67 285.12,-109.67 285.12,-109.67 279.12,-109.67 273.12,-103.67 273.12,-97.67 273.12,-97.67 273.12,-81.71 273.12,-81.71 273.12,-75.71 279.12,-69.71 285.12,-69.71 285.12,-69.71 386.86,-69.71 386.86,-69.71 392.86,-69.71 398.86,-75.71 398.86,-81.71 398.86,-81.71 398.86,-97.67 398.86,-97.67 398.86,-103.67 392.86,-109.67 386.86,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">this session&#39;s value</text>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(forgotten on quit)</text>
+</g>
+<!-- set&#45;&gt;sess -->
+<g id="edge4" class="edge">
+<title>set&#45;&gt;sess</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M246.98,-159.22C257.04,-149.63 271.49,-136.34 284.99,-125.67 289.46,-122.14 294.27,-118.56 299.09,-115.12"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="300.36,-117.3 304.81,-111.1 297.47,-113.18 300.36,-117.3"/>
+<text xml:space="preserve" text-anchor="middle" x="307.49" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;initialises</text>
+</g>
+<!-- view -->
+<g id="node8" class="node">
+<title>view</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M374.29,-26.46C374.29,-26.46 297.69,-26.46 297.69,-26.46 293.28,-26.46 288.88,-22.05 288.88,-17.64 288.88,-17.64 288.88,-8.82 288.88,-8.82 288.88,-4.41 293.29,0 297.69,0 297.69,0 374.29,0 374.29,0 378.7,0 383.11,-4.41 383.11,-8.82 383.11,-8.82 383.11,-17.64 383.11,-17.64 383.11,-22.05 378.69,-26.46 374.29,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">what you see</text>
+</g>
+<!-- sess&#45;&gt;view -->
+<g id="edge7" class="edge">
+<title>sess&#45;&gt;view</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M335.99,-69.51C335.99,-59.12 335.99,-46.24 335.99,-35.53"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="338.51,-35.58 335.99,-28.38 333.47,-35.58 338.51,-35.58"/>
+<text xml:space="preserve" text-anchor="middle" x="362.62" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;determines</text>
+</g>
+<!-- pr -->
+<g id="node6" class="node">
+<title>pr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M366.23,-192.88C366.23,-192.88 305.75,-192.88 305.75,-192.88 299.75,-192.88 293.75,-186.88 293.75,-180.88 293.75,-180.88 293.75,-164.92 293.75,-164.92 293.75,-158.92 299.75,-152.92 305.75,-152.92 305.75,-152.92 366.23,-152.92 366.23,-152.92 372.23,-152.92 378.23,-158.92 378.23,-164.92 378.23,-164.92 378.23,-180.88 378.23,-180.88 378.23,-186.88 372.23,-192.88 366.23,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the prompt</text>
+<text xml:space="preserve" text-anchor="middle" x="335.99" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">:set &#160;:toggle</text>
+</g>
+<!-- pr&#45;&gt;sess -->
+<g id="edge5" class="edge">
+<title>pr&#45;&gt;sess</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M335.99,-152.65C335.99,-142.51 335.99,-129.89 335.99,-118.68"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="338.51,-118.87 335.99,-111.67 333.47,-118.87 338.51,-118.87"/>
+<text xml:space="preserve" text-anchor="middle" x="356.62" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;changes</text>
+</g>
+<!-- menu -->
+<g id="node7" class="node">
+<title>menu</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M500.61,-192.88C500.61,-192.88 415.38,-192.88 415.38,-192.88 409.38,-192.88 403.38,-186.88 403.38,-180.88 403.38,-180.88 403.38,-164.92 403.38,-164.92 403.38,-158.92 409.38,-152.92 415.38,-152.92 415.38,-152.92 500.61,-152.92 500.61,-152.92 506.61,-152.92 512.61,-158.92 512.61,-164.92 512.61,-164.92 512.61,-180.88 512.61,-180.88 512.61,-186.88 506.61,-192.88 500.61,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="457.99" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the option menu</text>
+<text xml:space="preserve" text-anchor="middle" x="457.99" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(o)</text>
+</g>
+<!-- menu&#45;&gt;sess -->
+<g id="edge6" class="edge">
+<title>menu&#45;&gt;sess</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M428.77,-152.45C411.72,-141.1 390.07,-126.69 371.97,-114.64"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="373.69,-112.76 366.3,-110.86 370.89,-116.95 373.69,-112.76"/>
+<text xml:space="preserve" text-anchor="middle" x="424.92" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;changes</text>
+</g>
+</g>
+</svg>

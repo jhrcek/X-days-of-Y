@@ -1,0 +1,119 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="474pt" height="325pt"
+ viewBox="0.00 0.00 474.00 325.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 320.59)">
+<title>olog</title>
+<!-- bind -->
+<g id="node1" class="node">
+<title>bind</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M177.61,-316.59C177.61,-316.59 83.38,-316.59 83.38,-316.59 77.38,-316.59 71.38,-310.59 71.38,-304.59 71.38,-304.59 71.38,-288.63 71.38,-288.63 71.38,-282.63 77.38,-276.63 83.38,-276.63 83.38,-276.63 177.61,-276.63 177.61,-276.63 183.61,-276.63 189.61,-282.63 189.61,-288.63 189.61,-288.63 189.61,-304.59 189.61,-304.59 189.61,-310.59 183.61,-316.59 177.61,-316.59"/>
+<text xml:space="preserve" text-anchor="middle" x="130.49" y="-299.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an external</text>
+<text xml:space="preserve" text-anchor="middle" x="130.49" y="-285.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">command binding</text>
+</g>
+<!-- flag -->
+<g id="node2" class="node">
+<title>flag</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M99.23,-233.38C99.23,-233.38 41.75,-233.38 41.75,-233.38 35.75,-233.38 29.75,-227.38 29.75,-221.38 29.75,-221.38 29.75,-205.42 29.75,-205.42 29.75,-199.42 35.75,-193.42 41.75,-193.42 41.75,-193.42 99.23,-193.42 99.23,-193.42 105.23,-193.42 111.23,-199.42 111.23,-205.42 111.23,-205.42 111.23,-221.38 111.23,-221.38 111.23,-227.38 105.23,-233.38 99.23,-233.38"/>
+<text xml:space="preserve" text-anchor="middle" x="70.49" y="-215.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a flag</text>
+<text xml:space="preserve" text-anchor="middle" x="70.49" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">! @ + ? &lt; &gt;</text>
+</g>
+<!-- bind&#45;&gt;flag -->
+<g id="edge1" class="edge">
+<title>bind&#45;&gt;flag</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M110.13,-276.44C105.39,-271.51 100.55,-266.06 96.49,-260.63 91.97,-254.59 87.68,-247.68 83.94,-241.07"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="86.24,-240.03 80.58,-234.92 81.82,-242.45 86.24,-240.03"/>
+<text xml:space="preserve" text-anchor="middle" x="123.49" y="-251.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;begins with</text>
+</g>
+<!-- cmd -->
+<g id="node3" class="node">
+<title>cmd</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M239.54,-226.63C239.54,-226.63 149.44,-226.63 149.44,-226.63 145.03,-226.63 140.62,-222.22 140.62,-217.81 140.62,-217.81 140.62,-208.99 140.62,-208.99 140.62,-204.58 145.03,-200.17 149.44,-200.17 149.44,-200.17 239.54,-200.17 239.54,-200.17 243.95,-200.17 248.36,-204.58 248.36,-208.99 248.36,-208.99 248.36,-217.81 248.36,-217.81 248.36,-222.22 243.95,-226.63 239.54,-226.63"/>
+<text xml:space="preserve" text-anchor="middle" x="194.49" y="-209.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a command line</text>
+</g>
+<!-- bind&#45;&gt;cmd -->
+<g id="edge2" class="edge">
+<title>bind&#45;&gt;cmd</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M145.66,-276.36C155.89,-263.38 169.33,-246.33 179.51,-233.4"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="181.34,-235.16 183.82,-227.94 177.38,-232.04 181.34,-235.16"/>
+<text xml:space="preserve" text-anchor="middle" x="183.2" y="-251.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;carries</text>
+</g>
+<!-- run -->
+<g id="node7" class="node">
+<title>run</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M110.16,-136.67C110.16,-136.67 8.82,-136.67 8.82,-136.67 4.41,-136.67 0,-132.26 0,-127.85 0,-127.85 0,-119.03 0,-119.03 0,-114.62 4.41,-110.21 8.82,-110.21 8.82,-110.21 110.16,-110.21 110.16,-110.21 114.57,-110.21 118.98,-114.62 118.98,-119.03 118.98,-119.03 118.98,-127.85 118.98,-127.85 118.98,-132.26 114.57,-136.67 110.16,-136.67"/>
+<text xml:space="preserve" text-anchor="middle" x="59.49" y="-119.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a running process</text>
+</g>
+<!-- flag&#45;&gt;run -->
+<g id="edge7" class="edge">
+<title>flag&#45;&gt;run</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M40.06,-192.99C35.27,-188.49 31,-183.28 28.24,-177.42 22.72,-165.69 29.47,-153.17 38.08,-143.25"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="39.67,-145.24 42.81,-138.29 36.02,-141.76 39.67,-145.24"/>
+<text xml:space="preserve" text-anchor="middle" x="77.37" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;decides how tig starts</text>
+</g>
+<!-- vars -->
+<g id="node4" class="node">
+<title>vars</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M454.11,-150.17C454.11,-150.17 326.88,-150.17 326.88,-150.17 320.88,-150.17 314.88,-144.17 314.88,-138.17 314.88,-138.17 314.88,-108.71 314.88,-108.71 314.88,-102.71 320.88,-96.71 326.88,-96.71 326.88,-96.71 454.11,-96.71 454.11,-96.71 460.11,-96.71 466.11,-102.71 466.11,-108.71 466.11,-108.71 466.11,-138.17 466.11,-138.17 466.11,-144.17 460.11,-150.17 454.11,-150.17"/>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-132.76" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">browsing&#45;state variables</text>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-119.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">%(commit) %(branch)</text>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">%(file) %(lineno)</text>
+</g>
+<!-- cmd&#45;&gt;vars -->
+<g id="edge3" class="edge">
+<title>cmd&#45;&gt;vars</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M223.41,-199.66C238.37,-193.06 256.93,-184.84 273.49,-177.42 290.26,-169.91 308.35,-161.75 325.17,-154.13"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="325.84,-156.6 331.36,-151.33 323.76,-152.01 325.84,-156.6"/>
+<text xml:space="preserve" text-anchor="middle" x="316.54" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- sh -->
+<g id="node6" class="node">
+<title>sh</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M277.86,-150.17C277.86,-150.17 185.12,-150.17 185.12,-150.17 179.12,-150.17 173.12,-144.17 173.12,-138.17 173.12,-138.17 173.12,-108.71 173.12,-108.71 173.12,-102.71 179.12,-96.71 185.12,-96.71 185.12,-96.71 277.86,-96.71 277.86,-96.71 283.86,-96.71 289.86,-102.71 289.86,-108.71 289.86,-108.71 289.86,-138.17 289.86,-138.17 289.86,-144.17 283.86,-150.17 277.86,-150.17"/>
+<text xml:space="preserve" text-anchor="middle" x="231.49" y="-132.76" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">sh &#45;c</text>
+<text xml:space="preserve" text-anchor="middle" x="231.49" y="-119.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(needed for pipes</text>
+<text xml:space="preserve" text-anchor="middle" x="231.49" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">and redirection)</text>
+</g>
+<!-- cmd&#45;&gt;sh -->
+<g id="edge6" class="edge">
+<title>cmd&#45;&gt;sh</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M199.79,-199.8C204.34,-188.98 211.12,-172.86 217.24,-158.31"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="219.47,-159.51 219.94,-151.9 214.82,-157.56 219.47,-159.51"/>
+<text xml:space="preserve" text-anchor="middle" x="239.99" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may invoke</text>
+</g>
+<!-- cmd&#45;&gt;run -->
+<g id="edge8" class="edge">
+<title>cmd&#45;&gt;run</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M177.06,-199.71C163.88,-190.24 145.25,-177.09 128.49,-166.17 115.57,-157.75 101,-148.85 88.58,-141.45"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="90.01,-139.36 82.53,-137.85 87.44,-143.7 90.01,-139.36"/>
+<text xml:space="preserve" text-anchor="middle" x="167.16" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;becomes</text>
+</g>
+<!-- empty -->
+<g id="node8" class="node">
+<title>empty</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M449.98,-53.46C449.98,-53.46 331,-53.46 331,-53.46 325,-53.46 319,-47.46 319,-41.46 319,-41.46 319,-12 319,-12 319,-6 325,0 331,0 331,0 449.98,0 449.98,0 455.98,0 461.98,-6 461.98,-12 461.98,-12 461.98,-41.46 461.98,-41.46 461.98,-47.46 455.98,-53.46 449.98,-53.46"/>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-36.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the empty string</text>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(when the variable has</text>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">no value in this view)</text>
+</g>
+<!-- vars&#45;&gt;empty -->
+<g id="edge5" class="edge">
+<title>vars&#45;&gt;empty</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M390.49,-96.31C390.49,-85.85 390.49,-73.66 390.49,-62.47"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="393.01,-62.56 390.49,-55.36 387.97,-62.56 393.01,-62.56"/>
+<text xml:space="preserve" text-anchor="middle" x="424.99" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may expand to</text>
+</g>
+<!-- state -->
+<g id="node5" class="node">
+<title>state</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M448.48,-233.38C448.48,-233.38 332.5,-233.38 332.5,-233.38 326.5,-233.38 320.5,-227.38 320.5,-221.38 320.5,-221.38 320.5,-205.42 320.5,-205.42 320.5,-199.42 326.5,-193.42 332.5,-193.42 332.5,-193.42 448.48,-193.42 448.48,-193.42 454.48,-193.42 460.48,-199.42 460.48,-205.42 460.48,-205.42 460.48,-221.38 460.48,-221.38 460.48,-227.38 454.48,-233.38 448.48,-233.38"/>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-215.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the browsing state</text>
+<text xml:space="preserve" text-anchor="middle" x="390.49" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(the view + the cursor)</text>
+</g>
+<!-- state&#45;&gt;vars -->
+<g id="edge4" class="edge">
+<title>state&#45;&gt;vars</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M390.49,-192.88C390.49,-182.96 390.49,-170.6 390.49,-159.13"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="393.01,-159.37 390.49,-152.17 387.97,-159.37 393.01,-159.37"/>
+<text xml:space="preserve" text-anchor="middle" x="410.74" y="-168.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;supplies</text>
+</g>
+</g>
+</svg>

@@ -267,12 +267,12 @@ body fig = do
             [ (c "/*.slice" <> " → " <> c "/[*]", "The generic rule. " <> c "app.slice" <> " becomes " <> c "[app]" <> ".")
             , (c "/system.slice" <> " → " <> c "/[S]", "The system services.")
             , (c "/user.slice" <> " → " <> c "/[U]", "The user sessions.")
-            , (c "/user-*.slice" <> " → " <> c "/[U:*]", do "One user, by UID — and it swallows the " ; c "/[U]" ; " immediately before it, so you get " ; c "/[U:1000]" ; " rather than " ; c "/[U]/[U:1000]" ; ".")
+            , (c "/user-*.slice" <> " → " <> c "/[U:*]", do "One user, by UID — and it swallows the "; c "/[U]"; " immediately before it, so you get "; c "/[U:1000]"; " rather than "; c "/[U]/[U:1000]"; ".")
             , (c "/machine.slice" <> " → " <> c "/[M]", "Machines and VMs.")
             , (c "/machine-*.scope" <> " → " <> c "/[SNC:*]", "A systemd-nspawn container. Uppercase for the monitor process.")
             , (c "/lxc.monitor.*" <> " → " <> c "/[LXC:*]", "An LXC monitor.")
             , (c "/lxc.payload.*" <> " → " <> c "/[lxc:*]", "An LXC payload — lowercase, and the distinction from the monitor is deliberate.")
-            , (c "/*.scope" <> " → " <> c "/!*", do "A scope. This is why PID 1 reads " ; c "/!init" ; ".")
+            , (c "/*.scope" <> " → " <> c "/!*", do "A scope. This is why PID 1 reads "; c "/!init"; ".")
             , (c "/*.service" <> " → " <> c "/*", "The suffix is simply dropped, because on a systemd box almost everything is a service.")
             ]
         why $ p_ $ do

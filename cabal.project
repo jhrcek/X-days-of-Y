@@ -6,3 +6,4 @@ packages:
   htop
   pgrep
   grep
+  tig

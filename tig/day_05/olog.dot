@@ -1,0 +1,37 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  view [label="a view", fillcolor="#f4efe6"];
+  srch [label="a search\n(/ and ?)", fillcolor="#e7f0ec", color="#2f7a63"];
+  re   [label="a POSIX regexp\n(PCRE only if\ncompiled in)", fillcolor="#f8efdf", color="#d8b784"];
+  mat  [label="a match"];
+  pr   [label="the prompt\n(:)", fillcolor="#e7f0ec", color="#2f7a63"];
+  ln   [label="a line number\n:42"];
+  rev  [label="a revision\n:goto HEAD~3"];
+  act  [label="an action name\n:edit"];
+  cmd  [label="a system command\n:!git shortlog"];
+  cur  [label="the cursor"];
+
+  srch -> re   [label="  takes"];
+  srch -> mat  [label="  finds"];
+  view -> mat  [label="  contains"];
+  mat  -> cur  [label="  moves"];
+  pr   -> ln   [label="  accepts"];
+  pr   -> rev  [label="  accepts"];
+  pr   -> act  [label="  accepts"];
+  pr   -> cmd  [label="  accepts"];
+  ln   -> cur  [label="  moves", style=dashed];
+  rev  -> cur  [label="  moves", style=dashed];
+
+  { rank=same; ln; rev; act; cmd; }
+
+}

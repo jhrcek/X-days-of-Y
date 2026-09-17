@@ -156,7 +156,7 @@ day =
 
 d6diagram :: Diagram
 d6diagram =
-    (diagram
+    ( diagram
         "An output line is either a selected line or a context line; it may carry prefix fields joined by a field separator, and that separator reveals which kind of line it is. A group separator is printed between non-adjacent groups."
         body'
     )

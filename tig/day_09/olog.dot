@@ -1,0 +1,37 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  refs  [label="the refs view", fillcolor="#e7f0ec", color="#2f7a63"];
+  stash [label="the stash view", fillcolor="#e7f0ec", color="#2f7a63"];
+  rlog  [label="the reflog view", fillcolor="#e7f0ec", color="#2f7a63"];
+  grep  [label="the grep view", fillcolor="#e7f0ec", color="#2f7a63"];
+  name  [label="a branch, remote\nor tag name"];
+  entry [label="a stash entry"];
+  pos   [label="a position HEAD held"];
+  line  [label="a matching line"];
+  cmt   [label="a commit", fillcolor="#f4efe6"];
+  act   [label="a git command\nC checkout  ! delete/reset\nA apply  P pop", fillcolor="#f8efdf", color="#d8b784"];
+
+  refs  -> name  [label="  lists"];
+  stash -> entry [label="  lists"];
+  rlog  -> pos   [label="  lists"];
+  grep  -> line  [label="  lists"];
+  name  -> cmt   [label="  points at"];
+  entry -> cmt   [label="  is"];
+  pos   -> cmt   [label="  was"];
+  line  -> cmt   [label="  can be blamed to", style=dashed];
+  act   -> name  [label="  acts on", style=dashed];
+  act   -> entry [label="  acts on", style=dashed];
+
+  { rank=same; refs; stash; rlog; grep; }
+
+}

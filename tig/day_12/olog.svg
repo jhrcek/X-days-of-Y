@@ -1,0 +1,122 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="476pt" height="367pt"
+ viewBox="0.00 0.00 476.00 367.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 363.3)">
+<title>olog</title>
+<!-- press -->
+<g id="node1" class="node">
+<title>press</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M208.03,-359.3C208.03,-359.3 140.45,-359.3 140.45,-359.3 136.04,-359.3 131.62,-354.89 131.62,-350.48 131.62,-350.48 131.62,-341.66 131.62,-341.66 131.62,-337.25 136.03,-332.84 140.45,-332.84 140.45,-332.84 208.03,-332.84 208.03,-332.84 212.44,-332.84 216.86,-337.25 216.86,-341.66 216.86,-341.66 216.86,-350.48 216.86,-350.48 216.86,-354.89 212.45,-359.3 208.03,-359.3"/>
+<text xml:space="preserve" text-anchor="middle" x="174.24" y="-341.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a key press</text>
+</g>
+<!-- vkm -->
+<g id="node2" class="node">
+<title>vkm</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M242.36,-289.59C242.36,-289.59 106.12,-289.59 106.12,-289.59 100.12,-289.59 94.13,-283.59 94.13,-277.59 94.13,-277.59 94.13,-248.13 94.13,-248.13 94.13,-242.13 100.13,-236.13 106.13,-236.13 106.13,-236.13 242.36,-236.13 242.36,-236.13 248.36,-236.13 254.36,-242.13 254.36,-248.13 254.36,-248.13 254.36,-277.59 254.36,-277.59 254.36,-283.59 248.36,-289.59 242.36,-289.59"/>
+<text xml:space="preserve" text-anchor="middle" x="174.24" y="-272.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the current view&#39;s keymap</text>
+<text xml:space="preserve" text-anchor="middle" x="174.24" y="-258.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">main diff log status</text>
+<text xml:space="preserve" text-anchor="middle" x="174.24" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">stage tree blame refs …</text>
+</g>
+<!-- press&#45;&gt;vkm -->
+<g id="edge1" class="edge">
+<title>press&#45;&gt;vkm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M174.24,-332.38C174.24,-323.26 174.24,-310.51 174.24,-298.47"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="176.76,-298.68 174.24,-291.48 171.72,-298.68 176.76,-298.68"/>
+<text xml:space="preserve" text-anchor="middle" x="217.37" y="-307.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is looked up first in</text>
+</g>
+<!-- gkm -->
+<g id="node3" class="node">
+<title>gkm</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M167.41,-192.88C167.41,-192.88 57.07,-192.88 57.07,-192.88 52.66,-192.88 48.25,-188.47 48.25,-184.06 48.25,-184.06 48.25,-175.24 48.25,-175.24 48.25,-170.83 52.66,-166.42 57.07,-166.42 57.07,-166.42 167.41,-166.42 167.41,-166.42 171.82,-166.42 176.23,-170.83 176.23,-175.24 176.23,-175.24 176.23,-184.06 176.23,-184.06 176.23,-188.47 171.82,-192.88 167.41,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="112.24" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the generic keymap</text>
+</g>
+<!-- vkm&#45;&gt;gkm -->
+<g id="edge2" class="edge">
+<title>vkm&#45;&gt;gkm</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M151.62,-235.69C147.42,-230.6 143.13,-225.25 139.24,-220.13 134.48,-213.85 129.54,-206.81 125.21,-200.42"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="127.43,-199.22 121.33,-194.64 123.24,-202.02 127.43,-199.22"/>
+<text xml:space="preserve" text-anchor="middle" x="167.74" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;falls back to</text>
+</g>
+<!-- bind -->
+<g id="node5" class="node">
+<title>bind</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M264.66,-192.88C264.66,-192.88 209.82,-192.88 209.82,-192.88 205.41,-192.88 201,-188.47 201,-184.06 201,-184.06 201,-175.24 201,-175.24 201,-170.83 205.41,-166.42 209.82,-166.42 209.82,-166.42 264.66,-166.42 264.66,-166.42 269.07,-166.42 273.48,-170.83 273.48,-175.24 273.48,-175.24 273.48,-184.06 273.48,-184.06 273.48,-188.47 269.07,-192.88 264.66,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="237.24" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a binding</text>
+</g>
+<!-- vkm&#45;&gt;bind -->
+<g id="edge4" class="edge">
+<title>vkm&#45;&gt;bind</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M194.52,-235.72C203.52,-224.11 213.93,-210.7 222.22,-200.01"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="224.18,-201.6 226.6,-194.36 220.2,-198.51 224.18,-201.6"/>
+<text xml:space="preserve" text-anchor="middle" x="235.69" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- dflt -->
+<g id="node4" class="node">
+<title>dflt</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M164.41,-123.17C164.41,-123.17 60.07,-123.17 60.07,-123.17 55.66,-123.17 51.25,-118.76 51.25,-114.35 51.25,-114.35 51.25,-105.53 51.25,-105.53 51.25,-101.12 55.66,-96.71 60.07,-96.71 60.07,-96.71 164.41,-96.71 164.41,-96.71 168.82,-96.71 173.23,-101.12 173.23,-105.53 173.23,-105.53 173.23,-114.35 173.23,-114.35 173.23,-118.76 168.82,-123.17 164.41,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="112.24" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the built&#45;in defaults</text>
+</g>
+<!-- gkm&#45;&gt;dflt -->
+<g id="edge3" class="edge">
+<title>gkm&#45;&gt;dflt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M112.24,-165.91C112.24,-156.46 112.24,-143.34 112.24,-132.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="114.76,-132.41 112.24,-125.21 109.72,-132.41 114.76,-132.41"/>
+<text xml:space="preserve" text-anchor="middle" x="140.74" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;falls back to</text>
+</g>
+<!-- act -->
+<g id="node6" class="node">
+<title>act</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M264.66,-123.17C264.66,-123.17 209.82,-123.17 209.82,-123.17 205.41,-123.17 201,-118.76 201,-114.35 201,-114.35 201,-105.53 201,-105.53 201,-101.12 205.41,-96.71 209.82,-96.71 209.82,-96.71 264.66,-96.71 264.66,-96.71 269.07,-96.71 273.48,-101.12 273.48,-105.53 273.48,-105.53 273.48,-114.35 273.48,-114.35 273.48,-118.76 269.07,-123.17 264.66,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="237.24" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an action</text>
+</g>
+<!-- bind&#45;&gt;act -->
+<g id="edge5" class="edge">
+<title>bind&#45;&gt;act</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M237.24,-165.91C237.24,-156.46 237.24,-143.34 237.24,-132.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="239.76,-132.41 237.24,-125.21 234.72,-132.41 239.76,-132.41"/>
+<text xml:space="preserve" text-anchor="middle" x="249.24" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;runs</text>
+</g>
+<!-- name -->
+<g id="node7" class="node">
+<title>name</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M132.48,-53.46C132.48,-53.46 12,-53.46 12,-53.46 6,-53.46 0,-47.46 0,-41.46 0,-41.46 0,-12 0,-12 0,-6 6,0 12,0 12,0 132.48,0 132.48,0 138.48,0 144.48,-6 144.48,-12 144.48,-12 144.48,-41.46 144.48,-41.46 144.48,-47.46 138.48,-53.46 132.48,-53.46"/>
+<text xml:space="preserve" text-anchor="middle" x="72.24" y="-36.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a named action</text>
+<text xml:space="preserve" text-anchor="middle" x="72.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">view&#45;main &#160;move&#45;down</text>
+<text xml:space="preserve" text-anchor="middle" x="72.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">status&#45;update &#160;none</text>
+</g>
+<!-- act&#45;&gt;name -->
+<g id="edge6" class="edge">
+<title>act&#45;&gt;name</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M211.46,-96.25C190.59,-85.98 160.33,-71.09 133.35,-57.81"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="134.47,-55.55 126.89,-54.63 132.24,-60.07 134.47,-55.55"/>
+<text xml:space="preserve" text-anchor="middle" x="199.04" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is either</text>
+</g>
+<!-- int -->
+<g id="node8" class="node">
+<title>int</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M292.61,-46.71C292.61,-46.71 181.88,-46.71 181.88,-46.71 175.88,-46.71 169.88,-40.71 169.88,-34.71 169.88,-34.71 169.88,-18.75 169.88,-18.75 169.88,-12.75 175.88,-6.75 181.88,-6.75 181.88,-6.75 292.61,-6.75 292.61,-6.75 298.61,-6.75 304.61,-12.75 304.61,-18.75 304.61,-18.75 304.61,-34.71 304.61,-34.71 304.61,-40.71 298.61,-46.71 292.61,-46.71"/>
+<text xml:space="preserve" text-anchor="middle" x="237.24" y="-29.31" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an internal command</text>
+<text xml:space="preserve" text-anchor="middle" x="237.24" y="-15.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">:toggle &#160;:set &#160;:/regexp</text>
+</g>
+<!-- act&#45;&gt;int -->
+<g id="edge7" class="edge">
+<title>act&#45;&gt;int</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M237.24,-96.25C237.24,-85.42 237.24,-69.45 237.24,-55.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="239.76,-55.76 237.24,-48.56 234.72,-55.76 239.76,-55.76"/>
+<text xml:space="preserve" text-anchor="middle" x="244.37" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;or</text>
+</g>
+<!-- ext -->
+<g id="node9" class="node">
+<title>ext</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M456.48,-46.71C456.48,-46.71 342,-46.71 342,-46.71 336,-46.71 330,-40.71 330,-34.71 330,-34.71 330,-18.75 330,-18.75 330,-12.75 336,-6.75 342,-6.75 342,-6.75 456.48,-6.75 456.48,-6.75 462.48,-6.75 468.48,-12.75 468.48,-18.75 468.48,-18.75 468.48,-34.71 468.48,-34.71 468.48,-40.71 462.48,-46.71 456.48,-46.71"/>
+<text xml:space="preserve" text-anchor="middle" x="399.24" y="-29.31" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an external command</text>
+<text xml:space="preserve" text-anchor="middle" x="399.24" y="-15.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">! @ + ? &lt; &gt; &#160;(Day 13)</text>
+</g>
+<!-- act&#45;&gt;ext -->
+<g id="edge8" class="edge">
+<title>act&#45;&gt;ext</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M262.55,-96.25C286.65,-84.17 323.5,-65.7 352.86,-50.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="353.81,-53.32 359.12,-47.84 351.55,-48.82 353.81,-53.32"/>
+<text xml:space="preserve" text-anchor="middle" x="320.51" y="-71.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;or</text>
+</g>
+</g>
+</svg>

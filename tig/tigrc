@@ -1,0 +1,120 @@
+# ~/.tigrc
+#
+# Assembled over Days 7-14 of the '14 Days of tig' course. Every line was
+# introduced with a reason, and the comments are that reason.
+#
+# tig reads this file once, at startup. A syntax error is reported as a
+# 'tig warning:' line and the rest of the file still loads, so check with:
+#
+#     tig 2>&1 | head
+#
+
+# ==========================================================================
+# Day 07 - Options and your first tigrc
+# ==========================================================================
+
+# Case-insensitive searching until you type a capital letter, which is what you meant
+# nearly every time. tig's default is fully case-sensitive.
+set ignore-case = smart-case
+
+# Three lines of context is rarely enough to tell which function a change sits in.
+# Five usually is, and ] still widens further when a particular diff needs it.
+set diff-context = 5
+
+# When reading history the question is almost always how long ago, not on which
+# Tuesday. D still cycles to an absolute date when you need to quote one.
+set main-view-date = relative
+
+# Stop at the ends of a view rather than silently wrapping to the top, so that
+# walking search results with n terminates instead of looping.
+set wrap-search = no
+
+# ==========================================================================
+# Day 08 - Files through time
+# ==========================================================================
+
+# Make blame follow code that was moved or copied between files, instead of crediting
+# whoever moved it. Three -C's widen the search to every file in the parent commit; it
+# costs time on a big repository, and it is worth it every single time you use blame.
+set blame-options = -C -C -C
+
+# ==========================================================================
+# Day 09 - Refs, stashes and the reflog
+# ==========================================================================
+
+# Put the filename on every grep match instead of grouping matches under per-file
+# headings. Same shape as git grep, so the view can be read and copied line by line.
+set grep-view = file-name:yes line-number:yes,interval=1 text
+
+# ==========================================================================
+# Day 11 - Columns and view settings
+# ==========================================================================
+
+# Show the abbreviated commit ID in the main view. You copy hashes out of tig often
+# enough that pressing X every session is wasted motion, and the column is narrow.
+set main-view-id = yes
+
+# Highlight commit titles running past 72 characters, so that over-long subject lines
+# are visible while reviewing rather than after pushing.
+set main-view-commit-title-overflow = 72
+
+# Human-readable file sizes in the tree view: 12.2K rather than 12524.
+set tree-view-file-size = units
+
+# ==========================================================================
+# Day 12 - Bindings and keymaps
+# ==========================================================================
+
+# Reload this file without restarting. Bind it first and everything else in the config
+# becomes cheap to experiment with: edit, press Ctrl-r, see the result.
+bind generic <Ctrl-r> :source ~/.tigrc
+
+# In the diff view, make the arrow keys scroll the patch instead of moving to the next
+# commit in the parent view. Keep J and K for walking commits; this is the split tigmanual
+# itself suggests, and it stops long patches jumping out from under you.
+bind diff <Down> scroll-line-down
+bind diff <Up>   scroll-line-up
+
+# Step file by file through a large commit, the way @ steps chunk by chunk. Both are
+# ordinary searches, so n repeats whichever you used last.
+bind diff F :/^diff --(git|cc)
+
+# ==========================================================================
+# Day 13 - External commands
+# ==========================================================================
+
+# Copy the full commit ID of the selected commit to the clipboard. Needs a shell because
+# of the pipe, and printf rather than echo -n so no trailing newline is copied.
+# Replace xclip with pbcopy on macOS, or wl-copy under Wayland.
+bind generic Y @sh -c "printf '%s' %(commit) | xclip -selection clipboard"
+
+# Amend the last commit without leaving tig. The ! flag runs in the foreground and hands
+# over the terminal, which is what lets your editor open properly.
+bind main A !git commit --amend
+
+# Create and check out a branch from the selected commit, asking for the name first.
+# The prompt text is part of the variable, and ? confirms before anything runs.
+bind main B ?git checkout -b "%(prompt Enter new branch name: )" %(commit)
+
+# In the refs view only, show the tip commit of the branch under the cursor in the status
+# bar. Bound in the refs keymap because %(branch) is empty everywhere else - and an empty
+# expansion is silent, not an error.
+bind refs U +sh -c 'git log --oneline -1 %(branch)'
+
+# ==========================================================================
+# Day 14 - Colours and sharp edges
+# ==========================================================================
+
+# Let the cursor line invert whatever the terminal theme already is, instead of forcing
+# a colour pair that fights it. Survives changing terminal themes, which a hard-coded
+# pair does not.
+color cursor default default reverse
+
+# Make TODO, FIXME and XXX stand out anywhere they appear, in any view. A quoted area
+# of the form /.../ is a regular expression matched against the whole line.
+color "/(TODO|FIXME|XXX)/" yellow default bold
+
+# Refresh only on returning from an external command, rather than whenever tig notices
+# a change elsewhere. Views stop reloading underneath you while you are reading a diff,
+# but still update after you stage or commit something.
+set refresh-mode = after-command

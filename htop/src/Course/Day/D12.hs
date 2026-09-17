@@ -270,9 +270,9 @@ body fig = do
             \Confusing them produces confident, wrong conclusions — most often “this process is \
             \hammering the disk” about a process that has not touched a disk in an hour."
         defs
-            [ (opt "RCHAR" <> " / " <> opt "WCHAR", do "Bytes through " ; c "read()" ; " and " ; c "write()" ; ". What the program asked for. Cache hits count; a " ; c "write()" ; " counts the moment it returns, long before anything reaches a disk.")
+            [ (opt "RCHAR" <> " / " <> opt "WCHAR", do "Bytes through "; c "read()"; " and "; c "write()"; ". What the program asked for. Cache hits count; a "; c "write()"; " counts the moment it returns, long before anything reaches a disk.")
             , (opt "RBYTES" <> " / " <> opt "WBYTES", "Bytes that actually reached the block layer. What the device had to do.")
-            , (opt "IO_READ_RATE" <> " / " <> opt "IO_WRITE_RATE" <> " / " <> opt "IO_RATE", do "The same block-layer traffic as a rate, in bytes per second. Displayed as " ; c "DISK READ" ; ", " ; c "DISK WRITE" ; " and " ; c "DISK R/W" ; ".")
+            , (opt "IO_READ_RATE" <> " / " <> opt "IO_WRITE_RATE" <> " / " <> opt "IO_RATE", do "The same block-layer traffic as a rate, in bytes per second. Displayed as "; c "DISK READ"; ", "; c "DISK WRITE"; " and "; c "DISK R/W"; ".")
             ]
         p_ $ do
             "The gap between the first two is the page cache, and reading it is a skill. 4 GB of "
@@ -352,7 +352,7 @@ body fig = do
             b_ "why is this process not getting anything done?"
         defs
             [ (opt "PERCENT_CPU_DELAY" <> " (" <> c "CPUD%" <> ")", "Share of time the process was runnable but not running. Pure CPU contention — it is ready and the scheduler is busy elsewhere.")
-            , (opt "PERCENT_IO_DELAY" <> " (" <> c "IOD%" <> ")", do "Share of time blocked on synchronous block I/O. This is Day 2's " ; c "D" ; " state, quantified.")
+            , (opt "PERCENT_IO_DELAY" <> " (" <> c "IOD%" <> ")", do "Share of time blocked on synchronous block I/O. This is Day 2's "; c "D"; " state, quantified.")
             , (opt "PERCENT_SWAP_DELAY" <> " (" <> c "SWAPD%" <> ")", "Share of time waiting for pages to be swapped back in. On a machine with swap in use, the most important number on the screen.")
             ]
         p_ $ do

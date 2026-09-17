@@ -1,0 +1,139 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="667pt" height="214pt"
+ viewBox="0.00 0.00 667.00 214.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 210.38)">
+<title>olog</title>
+<!-- refs -->
+<g id="node1" class="node">
+<title>refs</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M80.91,-192.88C80.91,-192.88 8.82,-192.88 8.82,-192.88 4.41,-192.88 0,-188.47 0,-184.06 0,-184.06 0,-175.24 0,-175.24 0,-170.83 4.41,-166.42 8.82,-166.42 8.82,-166.42 80.91,-166.42 80.91,-166.42 85.32,-166.42 89.73,-170.83 89.73,-175.24 89.73,-175.24 89.73,-184.06 89.73,-184.06 89.73,-188.47 85.32,-192.88 80.91,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="44.87" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the refs view</text>
+</g>
+<!-- name -->
+<g id="node5" class="node">
+<title>name</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M237.73,-109.67C237.73,-109.67 148,-109.67 148,-109.67 142,-109.67 136,-103.67 136,-97.67 136,-97.67 136,-81.71 136,-81.71 136,-75.71 142,-69.71 148,-69.71 148,-69.71 237.73,-69.71 237.73,-69.71 243.73,-69.71 249.73,-75.71 249.73,-81.71 249.73,-81.71 249.73,-97.67 249.73,-97.67 249.73,-103.67 243.73,-109.67 237.73,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="192.87" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a branch, remote</text>
+<text xml:space="preserve" text-anchor="middle" x="192.87" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">or tag name</text>
+</g>
+<!-- refs&#45;&gt;name -->
+<g id="edge1" class="edge">
+<title>refs&#45;&gt;name</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M66.07,-166.05C88.67,-152.62 124.97,-131.04 152.96,-114.41"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="153.97,-116.74 158.88,-110.89 151.4,-112.4 153.97,-116.74"/>
+<text xml:space="preserve" text-anchor="middle" x="143.37" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;lists</text>
+</g>
+<!-- stash -->
+<g id="node2" class="node">
+<title>stash</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M386.41,-192.88C386.41,-192.88 305.32,-192.88 305.32,-192.88 300.91,-192.88 296.5,-188.47 296.5,-184.06 296.5,-184.06 296.5,-175.24 296.5,-175.24 296.5,-170.83 300.91,-166.42 305.32,-166.42 305.32,-166.42 386.41,-166.42 386.41,-166.42 390.82,-166.42 395.23,-170.83 395.23,-175.24 395.23,-175.24 395.23,-184.06 395.23,-184.06 395.23,-188.47 390.82,-192.88 386.41,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="345.87" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the stash view</text>
+</g>
+<!-- entry -->
+<g id="node6" class="node">
+<title>entry</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M363.04,-102.92C363.04,-102.92 288.69,-102.92 288.69,-102.92 284.28,-102.92 279.88,-98.51 279.88,-94.1 279.88,-94.1 279.88,-85.28 279.88,-85.28 279.88,-80.87 284.29,-76.46 288.69,-76.46 288.69,-76.46 363.04,-76.46 363.04,-76.46 367.45,-76.46 371.86,-80.87 371.86,-85.28 371.86,-85.28 371.86,-94.1 371.86,-94.1 371.86,-98.51 367.44,-102.92 363.04,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="325.87" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a stash entry</text>
+</g>
+<!-- stash&#45;&gt;entry -->
+<g id="edge2" class="edge">
+<title>stash&#45;&gt;entry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M343,-166.05C339.76,-151.81 334.44,-128.41 330.59,-111.46"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="333.13,-111.28 329.08,-104.82 328.22,-112.4 333.13,-111.28"/>
+<text xml:space="preserve" text-anchor="middle" x="347.12" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;lists</text>
+</g>
+<!-- rlog -->
+<g id="node3" class="node">
+<title>rlog</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M510.79,-192.88C510.79,-192.88 428.94,-192.88 428.94,-192.88 424.53,-192.88 420.12,-188.47 420.12,-184.06 420.12,-184.06 420.12,-175.24 420.12,-175.24 420.12,-170.83 424.53,-166.42 428.94,-166.42 428.94,-166.42 510.79,-166.42 510.79,-166.42 515.2,-166.42 519.61,-170.83 519.61,-175.24 519.61,-175.24 519.61,-184.06 519.61,-184.06 519.61,-188.47 515.2,-192.88 510.79,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="469.87" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the reflog view</text>
+</g>
+<!-- pos -->
+<g id="node7" class="node">
+<title>pos</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M522.41,-102.92C522.41,-102.92 405.32,-102.92 405.32,-102.92 400.91,-102.92 396.5,-98.51 396.5,-94.1 396.5,-94.1 396.5,-85.28 396.5,-85.28 396.5,-80.87 400.91,-76.46 405.32,-76.46 405.32,-76.46 522.41,-76.46 522.41,-76.46 526.82,-76.46 531.23,-80.87 531.23,-85.28 531.23,-85.28 531.23,-94.1 531.23,-94.1 531.23,-98.51 526.82,-102.92 522.41,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="463.87" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a position HEAD held</text>
+</g>
+<!-- rlog&#45;&gt;pos -->
+<g id="edge3" class="edge">
+<title>rlog&#45;&gt;pos</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M469.01,-166.05C468.04,-151.94 466.47,-128.84 465.31,-111.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="467.84,-111.87 464.83,-104.85 462.81,-112.21 467.84,-111.87"/>
+<text xml:space="preserve" text-anchor="middle" x="478.12" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;lists</text>
+</g>
+<!-- grep -->
+<g id="node4" class="node">
+<title>grep</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M646.16,-192.88C646.16,-192.88 569.57,-192.88 569.57,-192.88 565.16,-192.88 560.75,-188.47 560.75,-184.06 560.75,-184.06 560.75,-175.24 560.75,-175.24 560.75,-170.83 565.16,-166.42 569.57,-166.42 569.57,-166.42 646.16,-166.42 646.16,-166.42 650.57,-166.42 654.98,-170.83 654.98,-175.24 654.98,-175.24 654.98,-184.06 654.98,-184.06 654.98,-188.47 650.57,-192.88 646.16,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="607.87" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the grep view</text>
+</g>
+<!-- line -->
+<g id="node8" class="node">
+<title>line</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M650.66,-102.92C650.66,-102.92 565.07,-102.92 565.07,-102.92 560.66,-102.92 556.25,-98.51 556.25,-94.1 556.25,-94.1 556.25,-85.28 556.25,-85.28 556.25,-80.87 560.66,-76.46 565.07,-76.46 565.07,-76.46 650.66,-76.46 650.66,-76.46 655.07,-76.46 659.48,-80.87 659.48,-85.28 659.48,-85.28 659.48,-94.1 659.48,-94.1 659.48,-98.51 655.07,-102.92 650.66,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="607.87" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a matching line</text>
+</g>
+<!-- grep&#45;&gt;line -->
+<g id="edge4" class="edge">
+<title>grep&#45;&gt;line</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M607.87,-166.05C607.87,-151.94 607.87,-128.84 607.87,-111.93"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="610.39,-112.06 607.87,-104.86 605.35,-112.06 610.39,-112.06"/>
+<text xml:space="preserve" text-anchor="middle" x="619.12" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;lists</text>
+</g>
+<!-- cmt -->
+<g id="node9" class="node">
+<title>cmt</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M421.91,-26.46C421.91,-26.46 367.82,-26.46 367.82,-26.46 363.41,-26.46 359,-22.05 359,-17.64 359,-17.64 359,-8.82 359,-8.82 359,-4.41 363.41,0 367.82,0 367.82,0 421.91,0 421.91,0 426.32,0 430.73,-4.41 430.73,-8.82 430.73,-8.82 430.73,-17.64 430.73,-17.64 430.73,-22.05 426.32,-26.46 421.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="394.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit</text>
+</g>
+<!-- name&#45;&gt;cmt -->
+<g id="edge5" class="edge">
+<title>name&#45;&gt;cmt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M239.85,-69.26C260.92,-60.74 286.15,-50.8 309.12,-42.46 322.54,-37.59 337.26,-32.61 350.67,-28.22"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="351.24,-30.68 357.31,-26.05 349.68,-25.89 351.24,-30.68"/>
+<text xml:space="preserve" text-anchor="middle" x="330.49" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;points at</text>
+</g>
+<!-- entry&#45;&gt;cmt -->
+<g id="edge6" class="edge">
+<title>entry&#45;&gt;cmt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M337.57,-76.06C348.54,-64.22 365.08,-46.38 377.57,-32.9"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="379.21,-34.83 382.25,-27.84 375.51,-31.41 379.21,-34.83"/>
+<text xml:space="preserve" text-anchor="middle" x="374.95" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is</text>
+</g>
+<!-- pos&#45;&gt;cmt -->
+<g id="edge7" class="edge">
+<title>pos&#45;&gt;cmt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M452.16,-76.06C441.19,-64.22 424.65,-46.38 412.16,-32.9"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="414.22,-31.41 407.48,-27.84 410.52,-34.83 414.22,-31.41"/>
+<text xml:space="preserve" text-anchor="middle" x="442.68" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;was</text>
+</g>
+<!-- line&#45;&gt;cmt -->
+<g id="edge8" class="edge">
+<title>line&#45;&gt;cmt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M571.73,-76.06C535.17,-63.28 478.57,-43.49 439.28,-29.76"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="440.3,-27.44 432.67,-27.45 438.64,-32.2 440.3,-27.44"/>
+<text xml:space="preserve" text-anchor="middle" x="547.88" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;can be blamed to</text>
+</g>
+<!-- act -->
+<g id="node10" class="node">
+<title>act</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M259.48,-206.38C259.48,-206.38 126.25,-206.38 126.25,-206.38 120.25,-206.38 114.25,-200.38 114.25,-194.38 114.25,-194.38 114.25,-164.92 114.25,-164.92 114.25,-158.92 120.25,-152.92 126.25,-152.92 126.25,-152.92 259.48,-152.92 259.48,-152.92 265.48,-152.92 271.48,-158.92 271.48,-164.92 271.48,-164.92 271.48,-194.38 271.48,-194.38 271.48,-200.38 265.48,-206.38 259.48,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="192.87" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a git command</text>
+<text xml:space="preserve" text-anchor="middle" x="192.87" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">C checkout &#160;! delete/reset</text>
+<text xml:space="preserve" text-anchor="middle" x="192.87" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">A apply &#160;P pop</text>
+</g>
+<!-- act&#45;&gt;name -->
+<g id="edge9" class="edge">
+<title>act&#45;&gt;name</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M192.87,-152.73C192.87,-142.05 192.87,-129.63 192.87,-118.73"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="195.39,-118.79 192.87,-111.59 190.35,-118.79 195.39,-118.79"/>
+<text xml:space="preserve" text-anchor="middle" x="211.24" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;acts on</text>
+</g>
+<!-- act&#45;&gt;entry -->
+<g id="edge10" class="edge">
+<title>act&#45;&gt;entry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M232.41,-152.5C254.04,-138.19 280.25,-120.86 299.41,-108.19"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="300.69,-110.36 305.31,-104.29 297.91,-106.16 300.69,-110.36"/>
+<text xml:space="preserve" text-anchor="middle" x="289.65" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;acts on</text>
+</g>
+</g>
+</svg>

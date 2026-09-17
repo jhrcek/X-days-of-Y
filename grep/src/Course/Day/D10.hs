@@ -156,7 +156,7 @@ day =
 
 d10diagram :: Diagram
 d10diagram =
-    (diagram
+    ( diagram
         "A POSIX matcher compiles a pattern to a deterministic automaton that returns the leftmost-longest match in linear time; a PCRE matcher compiles it to a backtracking search that returns the leftmost-first match and may take exponential time."
         body'
     )

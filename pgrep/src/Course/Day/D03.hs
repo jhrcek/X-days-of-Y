@@ -243,11 +243,11 @@ body fig = do
         cols
             [ do
                 p_ $ b_ "What -a shows"
-                sh [ "--worker shard 3" ]
+                sh ["--worker shard 3"]
                 p_ "Two arguments, or three? The output cannot say."
             , do
                 p_ $ b_ "What -a -Q shows"
-                sh [ "--worker 'shard 3'" ]
+                sh ["--worker 'shard 3'"]
                 p_ "Two. The quoting is the answer."
             ]
         p_ $ do

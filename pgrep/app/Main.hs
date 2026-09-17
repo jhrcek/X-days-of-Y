@@ -3,9 +3,9 @@ inside the repository.
 -}
 module Main (main) where
 
+import Course.Build (buildCourse, findRepoRoot)
 import System.FilePath ((</>))
 
-import Course.Build (buildCourse, findRepoRoot)
 import Courses.Pgrep (course)
 
 main :: IO ()

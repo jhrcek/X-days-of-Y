@@ -142,7 +142,7 @@ day =
 
 d9diagram :: Diagram
 d9diagram =
-    (diagram
+    ( diagram
         "A grep invocation yields an exit status that a shell conditional branches on, and prints file names; a file name may contain a newline but can never contain a NUL byte, which is why -Z exists."
         body'
     )

@@ -110,7 +110,8 @@ day =
                     p_ $ do
                         "You had tagged those three earlier and forgotten. Every action key in \
                         \htop follows the same rule: "
-                        b_ "if anything is tagged, act on the tagged set; otherwise act on the \
+                        b_
+                            "if anything is tagged, act on the tagged set; otherwise act on the \
                             \selected row"
                         ". The cursor position is a fallback, not the target."
                     p_ $ do

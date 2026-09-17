@@ -169,7 +169,7 @@ day =
 
 d3diagram :: Diagram
 d3diagram =
-    (diagram
+    ( diagram
         "A bracket expression, the period and a literal are the three kinds of single-character regex, all of which consume a character; anchors are a separate kind that match a position and consume nothing. Ranges and named classes are interpreted by the locale."
         body'
     )

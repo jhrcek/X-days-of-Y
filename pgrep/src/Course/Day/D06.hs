@@ -312,15 +312,24 @@ body fig = do
             ]
         p_ "It fails in three distinguishable ways, and all three are exit status 1:"
         defs
-            [ ("The PID is gone", do
-                "No output, no message. Identical to any other empty result — which is correct, \
-                \and is what a health check wants.")
-            , ("The file is not a number", do
-                c "pgrep: pidfile not valid"
-                ". A truncated or half-written file lands here.")
-            , (c "-L" <> " and no lock", do
-                c "pgrep: Locking check for pidfile failed: No such file or directory"
-                ". The file exists but nobody holds a lock on it.")
+            [
+                ( "The PID is gone"
+                , do
+                    "No output, no message. Identical to any other empty result — which is correct, \
+                    \and is what a health check wants."
+                )
+            ,
+                ( "The file is not a number"
+                , do
+                    c "pgrep: pidfile not valid"
+                    ". A truncated or half-written file lands here."
+                )
+            ,
+                ( c "-L" <> " and no lock"
+                , do
+                    c "pgrep: Locking check for pidfile failed: No such file or directory"
+                    ". The file exists but nobody holds a lock on it."
+                )
             ]
         gotcha $ p_ $ do
             "The failure a pidfile "

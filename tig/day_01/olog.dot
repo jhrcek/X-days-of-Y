@@ -1,0 +1,34 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  git  [label="a git command\n(git log, git show,\ngit blame)", fillcolor="#f4efe6"];
+  out  [label="captured output", fillcolor="#f4efe6"];
+  view [label="a view", fillcolor="#e7f0ec", color="#2f7a63"];
+  stack [label="the view stack", fillcolor="#e7f0ec", color="#2f7a63"];
+  state [label="the browsing state\n(a head ID,\na commit ID)", fillcolor="#f8efdf", color="#d8b784"];
+  disp [label="the display"];
+  title [label="the title window"];
+  stat [label="the status window"];
+
+  git   -> out   [label="  produces"];
+  view  -> out   [label="  captures"];
+  stack -> view  [label="  is built from"];
+  stack -> view  [label="has as current  ", style=dashed, constraint=false];
+  disp  -> stack [label="  shows the top of"];
+  disp  -> title [label="  reserves"];
+  disp  -> stat  [label="  reserves"];
+  view  -> state [label="  updates", style=dashed];
+  state -> git   [label="  parameterises", style=dashed];
+
+  { rank=same; title; stat; }
+
+}

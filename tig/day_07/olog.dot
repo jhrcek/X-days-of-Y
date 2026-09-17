@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  sys  [label="the system tigrc\n{sysconfdir}/tigrc", fillcolor="#f4efe6"];
+  usr  [label="the user config file\n$XDG_CONFIG_HOME/tig/config\n~/.config/tig/config\n~/.tigrc", fillcolor="#e7f0ec", color="#2f7a63"];
+  gitc [label="git configuration\n[tig] name = value", fillcolor="#f4efe6"];
+  set  [label="a setting", fillcolor="#e7f0ec", color="#2f7a63"];
+  sess [label="this session's value\n(forgotten on quit)", fillcolor="#f8efdf", color="#d8b784"];
+  pr   [label="the prompt\n:set  :toggle"];
+  menu [label="the option menu\n(o)"];
+  view [label="what you see"];
+
+  sys  -> set  [label="  supplies"];
+  usr  -> set  [label="  overrides with"];
+  gitc -> set  [label="  also supplies"];
+  set  -> sess [label="  initialises"];
+  pr   -> sess [label="  changes", style=dashed];
+  menu -> sess [label="  changes", style=dashed];
+  sess -> view [label="  determines"];
+
+  { rank=same; sys; usr; gitc; }
+  { rank=same; pr; menu; }
+
+}

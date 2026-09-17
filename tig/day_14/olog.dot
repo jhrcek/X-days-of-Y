@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  rule [label="a colour rule", fillcolor="#e7f0ec", color="#2f7a63"];
+  area [label="an area", fillcolor="#e7f0ec", color="#2f7a63"];
+  bi   [label="a built-in name\ncursor  title-focus\ndiff-add  main-head"];
+  vp   [label="a view-prefixed name\nstage.diff-chunk"];
+  re   [label="a quoted string\nor /regexp/", fillcolor="#f8efdf", color="#d8b784"];
+  fg   [label="a colour\nnamed, colorN, or N"];
+  attr [label="an attribute\nbold dim reverse\nunderline blink standout"];
+  gitc [label="git's color.* settings", fillcolor="#f4efe6"];
+
+  rule -> area [label="  names"];
+  area -> bi   [label="  is either"];
+  area -> vp   [label="  or"];
+  area -> re   [label="  or"];
+  rule -> fg   [label="  sets as foreground"];
+  rule -> fg   [label="and as background  ", style=dashed, constraint=false];
+  rule -> attr [label="  may add"];
+  gitc -> area [label="  is mapped onto", style=dashed];
+
+  { rank=same; bi; vp; re; }
+
+}

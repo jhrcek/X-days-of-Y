@@ -1,0 +1,31 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  rev  [label="a revision", fillcolor="#f4efe6"];
+  tree [label="a tree\n(the tree view)", fillcolor="#e7f0ec", color="#2f7a63"];
+  dir  [label="a directory"];
+  blob [label="a blob\n(the blob view)", fillcolor="#e7f0ec", color="#2f7a63"];
+  line [label="a line"];
+  blame [label="the blame view", fillcolor="#e7f0ec", color="#2f7a63"];
+  cmt  [label="a commit"];
+  par  [label="its parent", fillcolor="#f8efdf", color="#d8b784"];
+
+  rev   -> tree  [label="  has as its"];
+  tree  -> dir   [label="  contains"];
+  dir   -> blob  [label="  contains"];
+  blob  -> line  [label="  is made of"];
+  blame -> line  [label="  annotates"];
+  line  -> cmt   [label="  was last changed by"];
+  cmt   -> par   [label="  has"];
+  par   -> blame [label="  , re-blames at", style=dashed];
+
+}

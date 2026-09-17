@@ -1,0 +1,109 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="421pt" height="311pt"
+ viewBox="0.00 0.00 421.00 311.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 307.09)">
+<title>olog</title>
+<!-- mv -->
+<g id="node1" class="node">
+<title>mv</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M230.78,-303.09C230.78,-303.09 152.69,-303.09 152.69,-303.09 148.28,-303.09 143.88,-298.68 143.88,-294.27 143.88,-294.27 143.88,-285.45 143.88,-285.45 143.88,-281.04 148.28,-276.63 152.7,-276.63 152.7,-276.63 230.79,-276.63 230.79,-276.63 235.2,-276.63 239.61,-281.04 239.61,-285.45 239.61,-285.45 239.61,-294.27 239.61,-294.27 239.61,-298.68 235.2,-303.09 230.78,-303.09"/>
+<text xml:space="preserve" text-anchor="middle" x="191.74" y="-285.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the main view</text>
+</g>
+<!-- line -->
+<g id="node2" class="node">
+<title>line</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M157.92,-219.88C157.92,-219.88 121.56,-219.88 121.56,-219.88 117.15,-219.88 112.74,-215.47 112.74,-211.06 112.74,-211.06 112.74,-202.24 112.74,-202.24 112.74,-197.83 117.15,-193.42 121.56,-193.42 121.56,-193.42 157.92,-193.42 157.92,-193.42 162.33,-193.42 166.74,-197.83 166.74,-202.24 166.74,-202.24 166.74,-211.06 166.74,-211.06 166.74,-215.47 162.33,-219.88 157.92,-219.88"/>
+<text xml:space="preserve" text-anchor="middle" x="139.74" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a line</text>
+</g>
+<!-- mv&#45;&gt;line -->
+<g id="edge1" class="edge">
+<title>mv&#45;&gt;line</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M174.12,-276.17C168.87,-271.72 163.46,-266.39 159.49,-260.63 152.85,-251.01 148.11,-238.87 144.94,-228.64"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="147.39,-228.02 142.99,-221.78 142.54,-229.4 147.39,-228.02"/>
+<text xml:space="preserve" text-anchor="middle" x="183.12" y="-251.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a list of</text>
+</g>
+<!-- col -->
+<g id="node5" class="node">
+<title>col</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M287.98,-233.38C287.98,-233.38 203.5,-233.38 203.5,-233.38 197.5,-233.38 191.5,-227.38 191.5,-221.38 191.5,-221.38 191.5,-191.92 191.5,-191.92 191.5,-185.92 197.5,-179.92 203.5,-179.92 203.5,-179.92 287.98,-179.92 287.98,-179.92 293.98,-179.92 299.98,-185.92 299.98,-191.92 299.98,-191.92 299.98,-221.38 299.98,-221.38 299.98,-227.38 293.98,-233.38 287.98,-233.38"/>
+<text xml:space="preserve" text-anchor="middle" x="245.74" y="-215.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a column</text>
+<text xml:space="preserve" text-anchor="middle" x="245.74" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(date, author, id,</text>
+<text xml:space="preserve" text-anchor="middle" x="245.74" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">commit&#45;title)</text>
+</g>
+<!-- mv&#45;&gt;col -->
+<g id="edge4" class="edge">
+<title>mv&#45;&gt;col</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M200.18,-276.17C206.48,-266.7 215.39,-253.3 223.66,-240.86"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="225.66,-242.39 227.55,-235 221.47,-239.6 225.66,-242.39"/>
+<text xml:space="preserve" text-anchor="middle" x="249" y="-251.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is drawn from</text>
+</g>
+<!-- cmt -->
+<g id="node3" class="node">
+<title>cmt</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M100.79,-123.17C100.79,-123.17 46.7,-123.17 46.7,-123.17 42.28,-123.17 37.88,-118.76 37.88,-114.35 37.88,-114.35 37.88,-105.53 37.88,-105.53 37.88,-101.12 42.29,-96.71 46.7,-96.71 46.7,-96.71 100.79,-96.71 100.79,-96.71 105.2,-96.71 109.61,-101.12 109.61,-105.53 109.61,-105.53 109.61,-114.35 109.61,-114.35 109.61,-118.76 105.2,-123.17 100.79,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="73.74" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit</text>
+</g>
+<!-- line&#45;&gt;cmt -->
+<g id="edge2" class="edge">
+<title>line&#45;&gt;cmt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M130.84,-192.88C119.66,-176.83 100.36,-149.13 87.32,-130.43"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="89.59,-129.28 83.41,-124.81 85.46,-132.16 89.59,-129.28"/>
+<text xml:space="preserve" text-anchor="middle" x="128.59" y="-154.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is either</text>
+</g>
+<!-- wt -->
+<g id="node4" class="node">
+<title>wt</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M252.48,-136.67C252.48,-136.67 147,-136.67 147,-136.67 141,-136.67 135,-130.67 135,-124.67 135,-124.67 135,-95.21 135,-95.21 135,-89.21 141,-83.21 147,-83.21 147,-83.21 252.48,-83.21 252.48,-83.21 258.48,-83.21 264.48,-89.21 264.48,-95.21 264.48,-95.21 264.48,-124.67 264.48,-124.67 264.48,-130.67 258.48,-136.67 252.48,-136.67"/>
+<text xml:space="preserve" text-anchor="middle" x="199.74" y="-119.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a working&#45;tree row</text>
+<text xml:space="preserve" text-anchor="middle" x="199.74" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(staged / unstaged /</text>
+<text xml:space="preserve" text-anchor="middle" x="199.74" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">untracked changes)</text>
+</g>
+<!-- line&#45;&gt;wt -->
+<g id="edge3" class="edge">
+<title>line&#45;&gt;wt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M148.07,-192.9C153.44,-184.66 160.54,-173.68 166.74,-163.92 170.71,-157.67 174.9,-150.99 178.93,-144.55"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="181.04,-145.93 182.71,-138.48 176.76,-143.26 181.04,-145.93"/>
+<text xml:space="preserve" text-anchor="middle" x="180.24" y="-154.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;or</text>
+</g>
+<!-- ref -->
+<g id="node8" class="node">
+<title>ref</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M135.48,-39.96C135.48,-39.96 12,-39.96 12,-39.96 6,-39.96 0,-33.96 0,-27.96 0,-27.96 0,-12 0,-12 0,-6 6,0 12,0 12,0 135.48,0 135.48,0 141.48,0 147.48,-6 147.48,-12 147.48,-12 147.48,-27.96 147.48,-27.96 147.48,-33.96 141.48,-39.96 135.48,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="73.74" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a reference label</text>
+<text xml:space="preserve" text-anchor="middle" x="73.74" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">[branch] &lt;tag&gt; {remote}</text>
+</g>
+<!-- cmt&#45;&gt;ref -->
+<g id="edge7" class="edge">
+<title>cmt&#45;&gt;ref</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M73.74,-96.34C73.74,-83.99 73.74,-64.77 73.74,-48.82"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="76.26,-49.16 73.74,-41.96 71.22,-49.16 76.26,-49.16"/>
+<text xml:space="preserve" text-anchor="middle" x="97.37" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may carry</text>
+</g>
+<!-- mode -->
+<g id="node6" class="node">
+<title>mode</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M402.91,-123.17C402.91,-123.17 316.57,-123.17 316.57,-123.17 312.16,-123.17 307.75,-118.76 307.75,-114.35 307.75,-114.35 307.75,-105.53 307.75,-105.53 307.75,-101.12 312.16,-96.71 316.57,-96.71 316.57,-96.71 402.91,-96.71 402.91,-96.71 407.32,-96.71 411.73,-101.12 411.73,-105.53 411.73,-105.53 411.73,-114.35 411.73,-114.35 411.73,-118.76 407.32,-123.17 402.91,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="359.74" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a display mode</text>
+</g>
+<!-- col&#45;&gt;mode -->
+<g id="edge5" class="edge">
+<title>col&#45;&gt;mode</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M265.81,-179.38C273.4,-170.35 282.45,-160.55 291.74,-152.67 302.66,-143.41 315.85,-134.83 327.69,-127.88"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="328.86,-130.11 333.86,-124.35 326.36,-125.74 328.86,-130.11"/>
+<text xml:space="preserve" text-anchor="middle" x="324.74" y="-154.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as current</text>
+</g>
+<!-- key -->
+<g id="node7" class="node">
+<title>key</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M400.86,-226.63C400.86,-226.63 336.62,-226.63 336.62,-226.63 330.62,-226.63 324.62,-220.63 324.62,-214.63 324.62,-214.63 324.62,-198.67 324.62,-198.67 324.62,-192.67 330.62,-186.67 336.62,-186.67 336.62,-186.67 400.86,-186.67 400.86,-186.67 406.86,-186.67 412.86,-192.67 412.86,-198.67 412.86,-198.67 412.86,-214.63 412.86,-214.63 412.86,-220.63 406.86,-226.63 400.86,-226.63"/>
+<text xml:space="preserve" text-anchor="middle" x="368.74" y="-209.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a toggle key</text>
+<text xml:space="preserve" text-anchor="middle" x="368.74" y="-195.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(D A X G F)</text>
+</g>
+<!-- key&#45;&gt;mode -->
+<g id="edge6" class="edge">
+<title>key&#45;&gt;mode</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M366.92,-186.48C365.42,-170.7 363.3,-148.36 361.75,-132.07"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="364.29,-132.23 361.1,-125.3 359.28,-132.7 364.29,-132.23"/>
+<text xml:space="preserve" text-anchor="middle" x="380.26" y="-154.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;cycles</text>
+</g>
+</g>
+</svg>

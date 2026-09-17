@@ -144,7 +144,7 @@ day =
 
 d1diagram :: Diagram
 d1diagram =
-    (diagram
+    ( diagram
         "grep reads lines from a source, prints the ones matching a pattern to standard output, may print diagnostics to standard error, and always yields an exit status that the calling script branches on."
         body'
     )

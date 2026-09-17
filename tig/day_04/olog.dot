@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  show [label="git show\n--patch-with-stat", fillcolor="#f4efe6"];
+  dv   [label="the diff view", fillcolor="#e7f0ec", color="#2f7a63"];
+  hdr  [label="a commit header\n(author, committer,\nmessage)"];
+  stat [label="a diffstat"];
+  patch [label="a patch"];
+  chunk [label="a chunk\n@@ -1,8 +1,8 @@", fillcolor="#e7f0ec", color="#2f7a63"];
+  ctx  [label="context lines\n(diff-context, default 3)"];
+  filt [label="the file filter\n(%)", fillcolor="#f8efdf", color="#d8b784"];
+
+  show  -> dv    [label="  fills"];
+  dv    -> hdr   [label="  begins with"];
+  dv    -> stat  [label="  then shows"];
+  dv    -> patch [label="  then shows"];
+  patch -> chunk [label="  is a list of"];
+  chunk -> ctx   [label="  is surrounded by"];
+  filt  -> patch [label="  silently narrows", style=dashed];
+
+  { rank=same; hdr; stat; }
+
+}

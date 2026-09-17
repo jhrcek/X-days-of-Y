@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  wt   [label="the working tree", fillcolor="#f4efe6"];
+  idx  [label="the index", fillcolor="#e7f0ec", color="#2f7a63"];
+  head [label="the last commit", fillcolor="#f4efe6"];
+  sv   [label="the status view", fillcolor="#e7f0ec", color="#2f7a63"];
+  stv  [label="the stage view", fillcolor="#e7f0ec", color="#2f7a63"];
+  file [label="a file"];
+  chunk [label="a chunk"];
+  line [label="a line"];
+  gone [label="discarded\n(no reflog,\nno recovery)", fillcolor="#f8efdf", color="#d8b784"];
+
+  sv   -> file  [label="  lists"];
+  stv  -> chunk [label="  shows"];
+  chunk -> line [label="  is made of"];
+  file -> idx   [label="  u stages into"];
+  chunk -> idx  [label="  u stages into"];
+  line -> idx   [label="  1 stages into"];
+  wt   -> file  [label="  supplies"];
+  idx  -> head  [label="  C commits into"];
+  chunk -> gone [label="  ! reverts to", style=dashed];
+
+  { rank=same; wt; idx; head; }
+
+}

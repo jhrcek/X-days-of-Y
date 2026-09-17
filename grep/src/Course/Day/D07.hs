@@ -155,7 +155,7 @@ day =
 
 d7diagram :: Diagram
 d7diagram =
-    (diagram
+    ( diagram
         "A directory contains files and further directories; every file has a base name, and that base name is the only thing an --include or --exclude glob is tested against. Symbolic links are descended into only under -R."
         body'
     )

@@ -1,0 +1,121 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="381pt" height="437pt"
+ viewBox="0.00 0.00 381.00 437.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 433.01)">
+<title>olog</title>
+<!-- git -->
+<g id="node1" class="node">
+<title>git</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M170.48,-123.17C170.48,-123.17 84.5,-123.17 84.5,-123.17 78.5,-123.17 72.5,-117.17 72.5,-111.17 72.5,-111.17 72.5,-81.71 72.5,-81.71 72.5,-75.71 78.5,-69.71 84.5,-69.71 84.5,-69.71 170.48,-69.71 170.48,-69.71 176.48,-69.71 182.48,-75.71 182.48,-81.71 182.48,-81.71 182.48,-111.17 182.48,-111.17 182.48,-117.17 176.48,-123.17 170.48,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="127.49" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a git command</text>
+<text xml:space="preserve" text-anchor="middle" x="127.49" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(git log, git show,</text>
+<text xml:space="preserve" text-anchor="middle" x="127.49" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git blame)</text>
+</g>
+<!-- out -->
+<g id="node2" class="node">
+<title>out</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M98.16,-26.46C98.16,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 98.16,0 98.16,0 102.57,0 106.98,-4.41 106.98,-8.82 106.98,-8.82 106.98,-17.64 106.98,-17.64 106.98,-22.05 102.57,-26.46 98.16,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="53.49" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">captured output</text>
+</g>
+<!-- git&#45;&gt;out -->
+<g id="edge1" class="edge">
+<title>git&#45;&gt;out</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M103.67,-69.3C92.89,-57.47 80.4,-43.76 70.58,-32.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="72.62,-31.49 65.91,-27.86 68.9,-34.88 72.62,-31.49"/>
+<text xml:space="preserve" text-anchor="middle" x="110.4" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;produces</text>
+</g>
+<!-- view -->
+<g id="node3" class="node">
+<title>view</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M73.41,-289.59C73.41,-289.59 33.57,-289.59 33.57,-289.59 29.16,-289.59 24.75,-285.18 24.75,-280.77 24.75,-280.77 24.75,-271.95 24.75,-271.95 24.75,-267.54 29.16,-263.13 33.57,-263.13 33.57,-263.13 73.41,-263.13 73.41,-263.13 77.82,-263.13 82.23,-267.54 82.23,-271.95 82.23,-271.95 82.23,-280.77 82.23,-280.77 82.23,-285.18 77.82,-289.59 73.41,-289.59"/>
+<text xml:space="preserve" text-anchor="middle" x="53.49" y="-272.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a view</text>
+</g>
+<!-- view&#45;&gt;out -->
+<g id="edge2" class="edge">
+<title>view&#45;&gt;out</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M53.49,-262.77C53.49,-221.15 53.49,-87.75 53.49,-35.5"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="56.01,-35.79 53.49,-28.59 50.97,-35.79 56.01,-35.79"/>
+<text xml:space="preserve" text-anchor="middle" x="74.49" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;captures</text>
+</g>
+<!-- state -->
+<g id="node5" class="node">
+<title>state</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M178.36,-219.88C178.36,-219.88 82.63,-219.88 82.63,-219.88 76.63,-219.88 70.63,-213.88 70.63,-207.88 70.63,-207.88 70.63,-178.42 70.63,-178.42 70.63,-172.42 76.63,-166.42 82.63,-166.42 82.63,-166.42 178.36,-166.42 178.36,-166.42 184.36,-166.42 190.36,-172.42 190.36,-178.42 190.36,-178.42 190.36,-207.88 190.36,-207.88 190.36,-213.88 184.36,-219.88 178.36,-219.88"/>
+<text xml:space="preserve" text-anchor="middle" x="130.49" y="-202.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the browsing state</text>
+<text xml:space="preserve" text-anchor="middle" x="130.49" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(a head ID,</text>
+<text xml:space="preserve" text-anchor="middle" x="130.49" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit ID)</text>
+</g>
+<!-- view&#45;&gt;state -->
+<g id="edge8" class="edge">
+<title>view&#45;&gt;state</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M65.52,-262.67C74.75,-252.93 87.92,-239.04 99.99,-226.31"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="101.59,-228.29 104.72,-221.33 97.93,-224.82 101.59,-228.29"/>
+<text xml:space="preserve" text-anchor="middle" x="109.56" y="-238.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;updates</text>
+</g>
+<!-- stack -->
+<g id="node4" class="node">
+<title>stack</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M93.66,-359.3C93.66,-359.3 13.32,-359.3 13.32,-359.3 8.91,-359.3 4.5,-354.89 4.5,-350.48 4.5,-350.48 4.5,-341.66 4.5,-341.66 4.5,-337.25 8.91,-332.84 13.32,-332.84 13.32,-332.84 93.66,-332.84 93.66,-332.84 98.07,-332.84 102.48,-337.25 102.48,-341.66 102.48,-341.66 102.48,-350.48 102.48,-350.48 102.48,-354.89 98.07,-359.3 93.66,-359.3"/>
+<text xml:space="preserve" text-anchor="middle" x="53.49" y="-341.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the view stack</text>
+</g>
+<!-- stack&#45;&gt;view -->
+<g id="edge3" class="edge">
+<title>stack&#45;&gt;view</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M52.81,-332.43C52.58,-327.56 52.35,-321.94 52.24,-316.84 52.11,-310.9 52.21,-304.46 52.4,-298.54"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="54.92,-298.69 52.69,-291.39 49.88,-298.49 54.92,-298.69"/>
+<text xml:space="preserve" text-anchor="middle" x="80.37" y="-307.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is built from</text>
+</g>
+<!-- stack&#45;&gt;view -->
+<g id="edge4" class="edge">
+<title>stack&#45;&gt;view</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M94.42,-332.35C107.76,-325.87 117.54,-316.94 110.49,-305.59 105.82,-298.06 98.47,-292.48 90.59,-288.36"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="91.65,-286.07 84.05,-285.37 89.56,-290.66 91.65,-286.07"/>
+<text xml:space="preserve" text-anchor="middle" x="145.84" y="-307.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c">has as current &#160;</text>
+</g>
+<!-- state&#45;&gt;git -->
+<g id="edge9" class="edge">
+<title>state&#45;&gt;git</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M129.66,-166.02C129.33,-155.56 128.94,-143.37 128.59,-132.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="131.11,-132.19 128.37,-125.07 126.07,-132.35 131.11,-132.19"/>
+<text xml:space="preserve" text-anchor="middle" x="162.08" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;parameterises</text>
+</g>
+<!-- disp -->
+<g id="node6" class="node">
+<title>disp</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M211.03,-429.01C211.03,-429.01 147.94,-429.01 147.94,-429.01 143.54,-429.01 139.12,-424.6 139.12,-420.19 139.12,-420.19 139.12,-411.37 139.12,-411.37 139.12,-406.96 143.53,-402.55 147.95,-402.55 147.95,-402.55 211.04,-402.55 211.04,-402.55 215.44,-402.55 219.86,-406.96 219.86,-411.37 219.86,-411.37 219.86,-420.19 219.86,-420.19 219.86,-424.6 215.45,-429.01 211.03,-429.01"/>
+<text xml:space="preserve" text-anchor="middle" x="179.49" y="-411.61" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the display</text>
+</g>
+<!-- disp&#45;&gt;stack -->
+<g id="edge5" class="edge">
+<title>disp&#45;&gt;stack</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M138.6,-404.41C124.85,-400 109.77,-394.09 96.99,-386.55 87.38,-380.88 78.05,-372.85 70.5,-365.51"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="72.59,-364.04 65.74,-360.7 69.01,-367.59 72.59,-364.04"/>
+<text xml:space="preserve" text-anchor="middle" x="135.24" y="-377.53" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;shows the top of</text>
+</g>
+<!-- title -->
+<g id="node7" class="node">
+<title>title</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M222.28,-359.3C222.28,-359.3 136.7,-359.3 136.7,-359.3 132.28,-359.3 127.88,-354.89 127.88,-350.48 127.88,-350.48 127.88,-341.66 127.88,-341.66 127.88,-337.25 132.28,-332.84 136.7,-332.84 136.7,-332.84 222.28,-332.84 222.28,-332.84 226.7,-332.84 231.11,-337.25 231.11,-341.66 231.11,-341.66 231.11,-350.48 231.11,-350.48 231.11,-354.89 226.7,-359.3 222.28,-359.3"/>
+<text xml:space="preserve" text-anchor="middle" x="179.49" y="-341.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the title window</text>
+</g>
+<!-- disp&#45;&gt;title -->
+<g id="edge6" class="edge">
+<title>disp&#45;&gt;title</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M179.49,-402.04C179.49,-392.59 179.49,-379.47 179.49,-368.42"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="182.01,-368.54 179.49,-361.34 176.97,-368.54 182.01,-368.54"/>
+<text xml:space="preserve" text-anchor="middle" x="200.12" y="-377.53" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;reserves</text>
+</g>
+<!-- stat -->
+<g id="node8" class="node">
+<title>stat</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M364.41,-359.3C364.41,-359.3 264.57,-359.3 264.57,-359.3 260.16,-359.3 255.75,-354.89 255.75,-350.48 255.75,-350.48 255.75,-341.66 255.75,-341.66 255.75,-337.25 260.16,-332.84 264.57,-332.84 264.57,-332.84 364.41,-332.84 364.41,-332.84 368.82,-332.84 373.23,-337.25 373.23,-341.66 373.23,-341.66 373.23,-350.48 373.23,-350.48 373.23,-354.89 368.82,-359.3 364.41,-359.3"/>
+<text xml:space="preserve" text-anchor="middle" x="314.49" y="-341.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the status window</text>
+</g>
+<!-- disp&#45;&gt;stat -->
+<g id="edge7" class="edge">
+<title>disp&#45;&gt;stat</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M204.88,-402.04C226.57,-391.17 257.9,-375.45 281.52,-363.6"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="282.48,-365.94 287.79,-360.46 280.23,-361.44 282.48,-365.94"/>
+<text xml:space="preserve" text-anchor="middle" x="275.7" y="-377.53" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;reserves</text>
+</g>
+</g>
+</svg>
