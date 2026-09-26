@@ -1,0 +1,37 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.4;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  repo   [label="a repository (.git)", fillcolor="#f4efe6"];
+  store  [label="the object store", fillcolor="#e7f0ec", color="#2f7a63"];
+  refs   [label="refs and packed-refs"];
+  logs   [label="reflogs"];
+  obj    [label="an object", fillcolor="#e7f0ec", color="#2f7a63"];
+  loose  [label="a loose object file"];
+  pack   [label="a packfile"];
+  delta  [label="a delta\nagainst another object"];
+  cruft  [label="a cruft pack", fillcolor="#f8efdf", color="#d8b784"];
+
+  repo  -> store [label="  contains"];
+  repo  -> refs  [label="  contains"];
+  repo  -> logs  [label="  contains"];
+  store -> obj   [label="  holds"];
+  obj   -> loose [label="  is stored as"];
+  obj   -> pack  [label="  or is stored in"];
+  pack  -> delta [label="  may encode it as"];
+  refs  -> obj   [label="  keep reachable  ", style=dashed, constraint=false];
+  logs  -> obj   [label="  keep reachable  ", style=dashed, constraint=false];
+  cruft -> pack  [label="  is a kind of  ", constraint=false];
+  cruft -> obj   [label="  holds, for two weeks,\n  an unreachable", style=dashed];
+
+  { rank=same; cruft; pack; }
+
+}

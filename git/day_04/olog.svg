@@ -1,0 +1,88 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="491pt" height="201pt"
+ viewBox="0.00 0.00 491.00 201.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 196.88)">
+<title>olog</title>
+<!-- merge -->
+<g id="node1" class="node">
+<title>merge</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M106.72,-186.13C106.72,-186.13 15.88,-186.13 15.88,-186.13 11.47,-186.13 7.06,-181.72 7.06,-177.31 7.06,-177.31 7.06,-168.49 7.06,-168.49 7.06,-164.08 11.47,-159.67 15.88,-159.67 15.88,-159.67 106.72,-159.67 106.72,-159.67 111.13,-159.67 115.54,-164.08 115.54,-168.49 115.54,-168.49 115.54,-177.31 115.54,-177.31 115.54,-181.72 111.13,-186.13 106.72,-186.13"/>
+<text xml:space="preserve" text-anchor="middle" x="61.3" y="-168.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a merge commit</text>
+</g>
+<!-- ours -->
+<g id="node2" class="node">
+<title>ours</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M241.17,-109.67C241.17,-109.67 169.44,-109.67 169.44,-109.67 163.44,-109.67 157.44,-103.67 157.44,-97.67 157.44,-97.67 157.44,-81.71 157.44,-81.71 157.44,-75.71 163.44,-69.71 169.44,-69.71 169.44,-69.71 241.17,-69.71 241.17,-69.71 247.17,-69.71 253.17,-75.71 253.17,-81.71 253.17,-81.71 253.17,-97.67 253.17,-97.67 253.17,-103.67 247.17,-109.67 241.17,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="205.3" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the current tip</text>
+<text xml:space="preserve" text-anchor="middle" x="205.3" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(ours)</text>
+</g>
+<!-- merge&#45;&gt;ours -->
+<g id="edge1" class="edge">
+<title>merge&#45;&gt;ours</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M26.64,-159.17C8.78,-150.67 -7.17,-138.71 3.8,-125.67 21.99,-104.05 95.43,-95.79 148.4,-92.64"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="148.41,-95.16 155.46,-92.25 148.13,-90.13 148.41,-95.16"/>
+<text xml:space="preserve" text-anchor="middle" x="45.05" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as first parent</text>
+</g>
+<!-- theirs -->
+<g id="node3" class="node">
+<title>theirs</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M366.04,-109.67C366.04,-109.67 290.56,-109.67 290.56,-109.67 284.56,-109.67 278.56,-103.67 278.56,-97.67 278.56,-97.67 278.56,-81.71 278.56,-81.71 278.56,-75.71 284.56,-69.71 290.56,-69.71 290.56,-69.71 366.04,-69.71 366.04,-69.71 372.04,-69.71 378.04,-75.71 378.04,-81.71 378.04,-81.71 378.04,-97.67 378.04,-97.67 378.04,-103.67 372.04,-109.67 366.04,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="328.3" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the merged tip</text>
+<text xml:space="preserve" text-anchor="middle" x="328.3" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(theirs)</text>
+</g>
+<!-- merge&#45;&gt;theirs -->
+<g id="edge2" class="edge">
+<title>merge&#45;&gt;theirs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M78.5,-159.29C94.13,-148.52 118.24,-133.54 141.55,-125.67 194.1,-107.93 211.07,-121.26 265.3,-109.67 266.89,-109.33 268.5,-108.97 270.12,-108.59"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="270.36,-111.13 276.75,-106.95 269.15,-106.23 270.36,-111.13"/>
+<text xml:space="preserve" text-anchor="middle" x="189.93" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as second parent</text>
+</g>
+<!-- base -->
+<g id="node4" class="node">
+<title>base</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M372.97,-26.46C372.97,-26.46 283.63,-26.46 283.63,-26.46 279.22,-26.46 274.81,-22.05 274.81,-17.64 274.81,-17.64 274.81,-8.82 274.81,-8.82 274.81,-4.41 279.22,0 283.63,0 283.63,0 372.97,0 372.97,0 377.38,0 381.79,-4.41 381.79,-8.82 381.79,-8.82 381.79,-17.64 381.79,-17.64 381.79,-22.05 377.38,-26.46 372.97,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="328.3" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the merge base</text>
+</g>
+<!-- ours&#45;&gt;base -->
+<g id="edge3" class="edge">
+<title>ours&#45;&gt;base</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M222.37,-69.26C231.13,-60.18 242.4,-49.78 254.05,-42.46 261.48,-37.79 269.81,-33.7 278.13,-30.18"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="278.86,-32.6 284.6,-27.58 276.98,-27.93 278.86,-32.6"/>
+<text xml:space="preserve" text-anchor="middle" x="288.18" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;descends from</text>
+</g>
+<!-- theirs&#45;&gt;base -->
+<g id="edge4" class="edge">
+<title>theirs&#45;&gt;base</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M328.3,-69.51C328.3,-59.12 328.3,-46.24 328.3,-35.53"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="330.82,-35.58 328.3,-28.38 325.78,-35.58 330.82,-35.58"/>
+<text xml:space="preserve" text-anchor="middle" x="362.43" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;descends from</text>
+</g>
+<!-- entry -->
+<g id="node5" class="node">
+<title>entry</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M372.17,-192.88C372.17,-192.88 312.44,-192.88 312.44,-192.88 306.44,-192.88 300.44,-186.88 300.44,-180.88 300.44,-180.88 300.44,-164.92 300.44,-164.92 300.44,-158.92 306.44,-152.92 312.44,-152.92 312.44,-152.92 372.17,-152.92 372.17,-152.92 378.17,-152.92 384.17,-158.92 384.17,-164.92 384.17,-164.92 384.17,-180.88 384.17,-180.88 384.17,-186.88 378.17,-192.88 372.17,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="342.3" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a conflicted</text>
+<text xml:space="preserve" text-anchor="middle" x="342.3" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">index entry</text>
+</g>
+<!-- entry&#45;&gt;ours -->
+<g id="edge6" class="edge">
+<title>entry&#45;&gt;ours</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M300.1,-156.79C286.86,-151.31 272.47,-144.56 260.05,-136.92 250.27,-130.9 240.42,-123.21 231.83,-115.84"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="233.5,-113.95 226.43,-111.08 230.17,-117.73 233.5,-113.95"/>
+<text xml:space="preserve" text-anchor="middle" x="294.18" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as stage 2</text>
+</g>
+<!-- entry&#45;&gt;theirs -->
+<g id="edge7" class="edge">
+<title>entry&#45;&gt;theirs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M338.98,-152.65C337.24,-142.51 335.06,-129.89 333.13,-118.68"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="335.62,-118.31 331.91,-111.65 330.65,-119.17 335.62,-118.31"/>
+<text xml:space="preserve" text-anchor="middle" x="370.26" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as stage 3</text>
+</g>
+<!-- entry&#45;&gt;base -->
+<g id="edge5" class="edge">
+<title>entry&#45;&gt;base</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M384.57,-159C394.73,-153.81 404.35,-146.67 410.3,-136.92 412.91,-132.65 410.54,-130.66 410.3,-125.67 408.52,-88.56 424.82,-72.01 402.3,-42.46 398.77,-37.83 394.39,-33.96 389.53,-30.72"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="390.98,-28.65 383.49,-27.22 388.45,-33.01 390.98,-28.65"/>
+<text xml:space="preserve" text-anchor="middle" x="448.47" y="-86.29" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as stage 1</text>
+</g>
+</g>
+</svg>

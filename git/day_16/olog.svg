@@ -1,0 +1,112 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="584pt" height="340pt"
+ viewBox="0.00 0.00 584.00 340.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 336.3)">
+<title>olog</title>
+<!-- sess -->
+<g id="node1" class="node">
+<title>sess</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M274.04,-332.3C274.04,-332.3 183.19,-332.3 183.19,-332.3 178.79,-332.3 174.38,-327.89 174.38,-323.48 174.38,-323.48 174.38,-314.66 174.38,-314.66 174.38,-310.25 178.78,-305.84 183.2,-305.84 183.2,-305.84 274.04,-305.84 274.04,-305.84 278.44,-305.84 282.86,-310.25 282.86,-314.66 282.86,-314.66 282.86,-323.48 282.86,-323.48 282.86,-327.89 278.44,-332.3 274.04,-332.3"/>
+<text xml:space="preserve" text-anchor="middle" x="228.62" y="-314.9" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a bisect session</text>
+</g>
+<!-- bad -->
+<g id="node2" class="node">
+<title>bad</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M124.41,-262.59C124.41,-262.59 8.82,-262.59 8.82,-262.59 4.41,-262.59 0,-258.18 0,-253.77 0,-253.77 0,-244.95 0,-244.95 0,-240.54 4.41,-236.13 8.82,-236.13 8.82,-236.13 124.41,-236.13 124.41,-236.13 128.82,-236.13 133.23,-240.54 133.23,-244.95 133.23,-244.95 133.23,-253.77 133.23,-253.77 133.23,-258.18 128.82,-262.59 124.41,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="66.62" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a known&#45;bad commit</text>
+</g>
+<!-- sess&#45;&gt;bad -->
+<g id="edge1" class="edge">
+<title>sess&#45;&gt;bad</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M198.14,-305.33C171.67,-294.27 133.21,-278.19 104.71,-266.28"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="106.03,-264.1 98.42,-263.65 104.09,-268.75 106.03,-264.1"/>
+<text xml:space="preserve" text-anchor="middle" x="167.81" y="-280.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has</text>
+</g>
+<!-- good -->
+<g id="node3" class="node">
+<title>good</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M289.79,-262.59C289.79,-262.59 167.45,-262.59 167.45,-262.59 163.03,-262.59 158.62,-258.18 158.62,-253.77 158.62,-253.77 158.62,-244.95 158.62,-244.95 158.62,-240.54 163.03,-236.13 167.44,-236.13 167.44,-236.13 289.78,-236.13 289.78,-236.13 294.2,-236.13 298.61,-240.54 298.61,-244.95 298.61,-244.95 298.61,-253.77 298.61,-253.77 298.61,-258.18 294.19,-262.59 289.79,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="228.62" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a known&#45;good commit</text>
+</g>
+<!-- sess&#45;&gt;good -->
+<g id="edge2" class="edge">
+<title>sess&#45;&gt;good</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M228.62,-305.33C228.62,-295.88 228.62,-282.76 228.62,-271.71"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="231.14,-271.83 228.62,-264.63 226.1,-271.83 231.14,-271.83"/>
+<text xml:space="preserve" text-anchor="middle" x="239.12" y="-280.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has</text>
+</g>
+<!-- cand -->
+<g id="node4" class="node">
+<title>cand</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M488.66,-262.59C488.66,-262.59 332.57,-262.59 332.57,-262.59 328.16,-262.59 323.75,-258.18 323.75,-253.77 323.75,-253.77 323.75,-244.95 323.75,-244.95 323.75,-240.54 328.16,-236.13 332.57,-236.13 332.57,-236.13 488.66,-236.13 488.66,-236.13 493.07,-236.13 497.48,-240.54 497.48,-244.95 497.48,-244.95 497.48,-253.77 497.48,-253.77 497.48,-258.18 493.07,-262.59 488.66,-262.59"/>
+<text xml:space="preserve" text-anchor="middle" x="410.62" y="-245.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the set of candidate commits</text>
+</g>
+<!-- sess&#45;&gt;cand -->
+<g id="edge3" class="edge">
+<title>sess&#45;&gt;cand</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M262.85,-305.33C292.84,-294.17 336.54,-277.92 368.64,-265.98"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="369.18,-268.47 375.05,-263.59 367.42,-263.74 369.18,-268.47"/>
+<text xml:space="preserve" text-anchor="middle" x="350.01" y="-280.82" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;narrows</text>
+</g>
+<!-- mid -->
+<g id="node5" class="node">
+<title>mid</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M383.04,-192.88C383.04,-192.88 226.19,-192.88 226.19,-192.88 221.78,-192.88 217.38,-188.47 217.38,-184.06 217.38,-184.06 217.38,-175.24 217.38,-175.24 217.38,-170.83 221.78,-166.42 226.19,-166.42 226.19,-166.42 383.04,-166.42 383.04,-166.42 387.45,-166.42 391.86,-170.83 391.86,-175.24 391.86,-175.24 391.86,-184.06 391.86,-184.06 391.86,-188.47 387.45,-192.88 383.04,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="304.62" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the commit checked out next</text>
+</g>
+<!-- cand&#45;&gt;mid -->
+<g id="edge4" class="edge">
+<title>cand&#45;&gt;mid</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M387.69,-235.86C379.23,-231.1 369.64,-225.53 361.12,-220.13 350.21,-213.23 338.47,-205.14 328.53,-198.08"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="330.26,-196.23 322.94,-194.09 327.33,-200.33 330.26,-196.23"/>
+<text xml:space="preserve" text-anchor="middle" x="397.87" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as midpoint</text>
+</g>
+<!-- first -->
+<g id="node8" class="node">
+<title>first</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M533.66,-192.88C533.66,-192.88 425.57,-192.88 425.57,-192.88 421.16,-192.88 416.75,-188.47 416.75,-184.06 416.75,-184.06 416.75,-175.24 416.75,-175.24 416.75,-170.83 421.16,-166.42 425.57,-166.42 425.57,-166.42 533.66,-166.42 533.66,-166.42 538.07,-166.42 542.48,-170.83 542.48,-175.24 542.48,-175.24 542.48,-184.06 542.48,-184.06 542.48,-188.47 538.07,-192.88 533.66,-192.88"/>
+<text xml:space="preserve" text-anchor="middle" x="479.62" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the first bad commit</text>
+</g>
+<!-- cand&#45;&gt;first -->
+<g id="edge5" class="edge">
+<title>cand&#45;&gt;first</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M423.59,-235.62C434,-225.41 448.76,-210.93 460.52,-199.39"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="462.19,-201.28 465.56,-194.44 458.66,-197.69 462.19,-201.28"/>
+<text xml:space="preserve" text-anchor="middle" x="496.5" y="-211.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;ends, at size one, as</text>
+</g>
+<!-- test -->
+<g id="node6" class="node">
+<title>test</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M346.86,-123.17C346.86,-123.17 262.38,-123.17 262.38,-123.17 256.38,-123.17 250.38,-117.17 250.38,-111.17 250.38,-111.17 250.38,-95.21 250.38,-95.21 250.38,-89.21 256.38,-83.21 262.38,-83.21 262.38,-83.21 346.86,-83.21 346.86,-83.21 352.86,-83.21 358.86,-89.21 358.86,-95.21 358.86,-95.21 358.86,-111.17 358.86,-111.17 358.86,-117.17 352.86,-123.17 346.86,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="304.62" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a test</text>
+<text xml:space="preserve" text-anchor="middle" x="304.62" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(you, or a script)</text>
+</g>
+<!-- mid&#45;&gt;test -->
+<g id="edge6" class="edge">
+<title>mid&#45;&gt;test</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M304.62,-157.35C304.62,-146.72 304.62,-133.97 304.62,-123.61"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="302.1,-157.23 304.62,-164.43 307.14,-157.23 302.1,-157.23"/>
+<text xml:space="preserve" text-anchor="middle" x="321.49" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;judges</text>
+</g>
+<!-- verd -->
+<g id="node7" class="node">
+<title>verd</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M348.73,-39.96C348.73,-39.96 260.5,-39.96 260.5,-39.96 254.5,-39.96 248.5,-33.96 248.5,-27.96 248.5,-27.96 248.5,-12 248.5,-12 248.5,-6 254.5,0 260.5,0 260.5,0 348.73,0 348.73,0 354.73,0 360.73,-6 360.73,-12 360.73,-12 360.73,-27.96 360.73,-27.96 360.73,-33.96 354.73,-39.96 348.73,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="304.62" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a verdict</text>
+<text xml:space="preserve" text-anchor="middle" x="304.62" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(good, bad, skip)</text>
+</g>
+<!-- test&#45;&gt;verd -->
+<g id="edge7" class="edge">
+<title>test&#45;&gt;verd</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M304.62,-82.94C304.62,-72.8 304.62,-60.18 304.62,-48.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="307.14,-49.16 304.62,-41.96 302.1,-49.16 307.14,-49.16"/>
+<text xml:space="preserve" text-anchor="middle" x="322.24" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;returns</text>
+</g>
+<!-- verd&#45;&gt;cand -->
+<g id="edge8" class="edge">
+<title>verd&#45;&gt;cand</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M361.27,-35.82C421.39,-54.94 513.31,-94.6 554.62,-166.42 566.57,-187.2 566.41,-203.02 549.62,-220.13 542.56,-227.32 525.82,-232.8 506.3,-236.92"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="505.92,-234.43 499.35,-238.3 506.9,-239.37 505.92,-234.43"/>
+<text xml:space="preserve" text-anchor="middle" x="559.75" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;halves</text>
+</g>
+</g>
+</svg>

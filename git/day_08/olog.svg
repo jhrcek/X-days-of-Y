@@ -1,0 +1,110 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="557pt" height="174pt"
+ viewBox="0.00 0.00 557.00 174.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 169.88)">
+<title>olog</title>
+<!-- reset -->
+<g id="node1" class="node">
+<title>reset</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M484.79,-165.88C484.79,-165.88 436.69,-165.88 436.69,-165.88 432.28,-165.88 427.88,-161.47 427.88,-157.06 427.88,-157.06 427.88,-148.24 427.88,-148.24 427.88,-143.83 432.28,-139.42 436.69,-139.42 436.69,-139.42 484.79,-139.42 484.79,-139.42 489.2,-139.42 493.61,-143.83 493.61,-148.24 493.61,-148.24 493.61,-157.06 493.61,-157.06 493.61,-161.47 489.2,-165.88 484.79,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="460.74" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git reset</text>
+</g>
+<!-- branch -->
+<g id="node4" class="node">
+<title>branch</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M459.41,-26.46C459.41,-26.46 406.07,-26.46 406.07,-26.46 401.66,-26.46 397.25,-22.05 397.25,-17.64 397.25,-17.64 397.25,-8.82 397.25,-8.82 397.25,-4.41 401.66,0 406.07,0 406.07,0 459.41,0 459.41,0 463.82,0 468.23,-4.41 468.23,-8.82 468.23,-8.82 468.23,-17.64 468.23,-17.64 468.23,-22.05 463.82,-26.46 459.41,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="432.74" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a branch</text>
+</g>
+<!-- reset&#45;&gt;branch -->
+<g id="edge1" class="edge">
+<title>reset&#45;&gt;branch</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M493.79,-144.15C511.67,-138.17 528.95,-128.1 522.74,-112.17 509.73,-78.78 479.41,-49.87 457.56,-32.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="459.27,-30.43 452.04,-27.97 456.16,-34.4 459.27,-30.43"/>
+<text xml:space="preserve" text-anchor="middle" x="531.88" y="-79.54" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;moves</text>
+</g>
+<!-- index -->
+<g id="node5" class="node">
+<title>index</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M261.16,-96.17C261.16,-96.17 206.32,-96.17 206.32,-96.17 201.91,-96.17 197.5,-91.76 197.5,-87.35 197.5,-87.35 197.5,-78.53 197.5,-78.53 197.5,-74.12 201.91,-69.71 206.32,-69.71 206.32,-69.71 261.16,-69.71 261.16,-69.71 265.57,-69.71 269.98,-74.12 269.98,-78.53 269.98,-78.53 269.98,-87.35 269.98,-87.35 269.98,-91.76 265.57,-96.17 261.16,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="233.74" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the index</text>
+</g>
+<!-- reset&#45;&gt;index -->
+<g id="edge2" class="edge">
+<title>reset&#45;&gt;index</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M427.5,-147.44C398.13,-143.17 354.41,-135.45 317.74,-123.42 317.4,-123.31 291.51,-111.13 268.56,-100.34"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="269.64,-98.06 262.05,-97.27 267.5,-102.62 269.64,-98.06"/>
+<text xml:space="preserve" text-anchor="middle" x="371.74" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;overwrites (mixed, hard)</text>
+</g>
+<!-- wt -->
+<g id="node6" class="node">
+<title>wt</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M445.79,-96.17C445.79,-96.17 355.69,-96.17 355.69,-96.17 351.29,-96.17 346.88,-91.76 346.88,-87.35 346.88,-87.35 346.88,-78.53 346.88,-78.53 346.88,-74.12 351.29,-69.71 355.69,-69.71 355.69,-69.71 445.79,-69.71 445.79,-69.71 450.19,-69.71 454.61,-74.12 454.61,-78.53 454.61,-78.53 454.61,-87.35 454.61,-87.35 454.61,-91.76 450.19,-96.17 445.79,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="400.74" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the working tree</text>
+</g>
+<!-- reset&#45;&gt;wt -->
+<g id="edge3" class="edge">
+<title>reset&#45;&gt;wt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M452.45,-139.07C446.95,-131.06 439.36,-120.64 431.74,-112.17 428.77,-108.87 425.46,-105.55 422.14,-102.39"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="424,-100.68 416.99,-97.66 420.59,-104.39 424,-100.68"/>
+<text xml:space="preserve" text-anchor="middle" x="478.6" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;overwrites (hard)</text>
+</g>
+<!-- restore -->
+<g id="node2" class="node">
+<title>restore</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M202.04,-165.88C202.04,-165.88 143.44,-165.88 143.44,-165.88 139.03,-165.88 134.62,-161.47 134.62,-157.06 134.62,-157.06 134.62,-148.24 134.62,-148.24 134.62,-143.83 139.03,-139.42 143.44,-139.42 143.44,-139.42 202.04,-139.42 202.04,-139.42 206.45,-139.42 210.86,-143.83 210.86,-148.24 210.86,-148.24 210.86,-157.06 210.86,-157.06 210.86,-161.47 206.45,-165.88 202.04,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="172.74" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git restore</text>
+</g>
+<!-- restore&#45;&gt;index -->
+<g id="edge5" class="edge">
+<title>restore&#45;&gt;index</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M134.18,-146.53C105.65,-141.13 74.19,-130.76 89.49,-112.17 95.86,-104.44 148.66,-95.57 188.55,-89.87"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="188.75,-92.39 195.52,-88.89 188.04,-87.4 188.75,-92.39"/>
+<text xml:space="preserve" text-anchor="middle" x="135.62" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;overwrites (&#45;&#45;staged)</text>
+</g>
+<!-- restore&#45;&gt;wt -->
+<g id="edge4" class="edge">
+<title>restore&#45;&gt;wt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M180.76,-139.19C187.29,-130.15 197.35,-118.44 209.24,-112.17 220.61,-106.17 286.78,-97.26 338.19,-91.06"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="338.2,-93.6 345.05,-90.24 337.6,-88.59 338.2,-93.6"/>
+<text xml:space="preserve" text-anchor="middle" x="248.99" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;overwrites files in</text>
+</g>
+<!-- revert -->
+<g id="node3" class="node">
+<title>revert</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M60.66,-165.88C60.66,-165.88 8.82,-165.88 8.82,-165.88 4.41,-165.88 0,-161.47 0,-157.06 0,-157.06 0,-148.24 0,-148.24 0,-143.83 4.41,-139.42 8.82,-139.42 8.82,-139.42 60.66,-139.42 60.66,-139.42 65.07,-139.42 69.48,-143.83 69.48,-148.24 69.48,-148.24 69.48,-157.06 69.48,-157.06 69.48,-161.47 65.07,-165.88 60.66,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="34.74" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">git revert</text>
+</g>
+<!-- newc -->
+<g id="node7" class="node">
+<title>newc</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M119.16,-96.17C119.16,-96.17 40.32,-96.17 40.32,-96.17 35.91,-96.17 31.5,-91.76 31.5,-87.35 31.5,-87.35 31.5,-78.53 31.5,-78.53 31.5,-74.12 35.91,-69.71 40.32,-69.71 40.32,-69.71 119.16,-69.71 119.16,-69.71 123.57,-69.71 127.98,-74.12 127.98,-78.53 127.98,-78.53 127.98,-87.35 127.98,-87.35 127.98,-91.76 123.57,-96.17 119.16,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="79.74" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a new commit</text>
+</g>
+<!-- revert&#45;&gt;newc -->
+<g id="edge6" class="edge">
+<title>revert&#45;&gt;newc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M31.16,-139.12C29.56,-130.94 28.93,-120.3 33.49,-112.17 35.68,-108.27 38.65,-104.85 42.03,-101.85"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="43.47,-103.93 47.69,-97.58 40.43,-99.91 43.47,-103.93"/>
+<text xml:space="preserve" text-anchor="middle" x="46.62" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;adds</text>
+</g>
+<!-- newc&#45;&gt;branch -->
+<g id="edge8" class="edge">
+<title>newc&#45;&gt;branch</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M128.45,-72.6C197.24,-59.4 321.83,-35.5 388.24,-22.77"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="388.67,-25.25 395.26,-21.42 387.72,-20.3 388.67,-25.25"/>
+<text xml:space="preserve" text-anchor="middle" x="319" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is added on top of</text>
+</g>
+<!-- old -->
+<g id="node8" class="node">
+<title>old</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M119.54,-26.46C119.54,-26.46 39.94,-26.46 39.94,-26.46 35.54,-26.46 31.12,-22.05 31.12,-17.64 31.12,-17.64 31.12,-8.82 31.12,-8.82 31.12,-4.41 35.53,0 39.95,0 39.95,0 119.54,0 119.54,0 123.95,0 128.36,-4.41 128.36,-8.82 128.36,-8.82 128.36,-17.64 128.36,-17.64 128.36,-22.05 123.95,-26.46 119.54,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="79.74" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an old commit</text>
+</g>
+<!-- newc&#45;&gt;old -->
+<g id="edge7" class="edge">
+<title>newc&#45;&gt;old</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M79.74,-69.2C79.74,-59.75 79.74,-46.63 79.74,-35.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="82.26,-35.7 79.74,-28.5 77.22,-35.7 82.26,-35.7"/>
+<text xml:space="preserve" text-anchor="middle" x="131.12" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;undoes the changes of</text>
+</g>
+</g>
+</svg>

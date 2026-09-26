@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  rebase [label="an interactive rebase", fillcolor="#e7f0ec", color="#2f7a63"];
+  todo   [label="the todo list", fillcolor="#e7f0ec", color="#2f7a63"];
+  instr  [label="an instruction\n(pick, fixup, edit…)"];
+  orig   [label="an original commit"];
+  newc   [label="a new commit"];
+  fix    [label="a fixup! commit", fillcolor="#f8efdf", color="#d8b784"];
+  editor [label="your editor", fillcolor="#f4efe6"];
+  rd     [label="a range-diff"];
+
+  rebase -> todo   [label="  runs"];
+  editor -> todo   [label="  edits"];
+  todo   -> instr  [label="  is a sequence of"];
+  instr  -> orig   [label="  names"];
+  instr  -> newc   [label="  produces (unless drop)", style=dashed];
+  fix    -> orig   [label="  targets"];
+  rd     -> orig   [label="  pairs"];
+  rd     -> newc   [label="  pairs"];
+
+  { rank=same; editor; rebase; }
+
+}

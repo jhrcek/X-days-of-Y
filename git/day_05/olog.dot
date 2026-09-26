@@ -1,0 +1,22 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=LR;
+  splines=spline;
+  nodesep=0.5;
+  ranksep=0.6;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  local  [label="a local branch\n(main)", fillcolor="#e7f0ec", color="#2f7a63"];
+  rtb    [label="a remote-tracking ref\n(origin/main)", fillcolor="#f8efdf", color="#d8b784"];
+  remote [label="a branch in\nthe remote repository", fillcolor="#f4efe6"];
+
+  local  -> rtb    [label="  has as upstream"];
+  rtb    -> remote [label="  records\n  (moved by fetch)"];
+  local  -> remote [label="  is sent to\n  (by push)", style=dashed];
+  rtb    -> local  [label="  is integrated into\n  (by merge / pull)", style=dashed];
+
+}

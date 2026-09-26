@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  cmd    [label="a git command\n(commit, push, switch…)", fillcolor="#f4efe6"];
+  point  [label="a hook point\n(pre-commit, commit-msg…)"];
+  dir    [label="the hooks directory", fillcolor="#e7f0ec", color="#2f7a63"];
+  path   [label="core.hooksPath", fillcolor="#f8efdf", color="#d8b784"];
+  hook   [label="an executable hook", fillcolor="#e7f0ec", color="#2f7a63"];
+  input  [label="arguments, stdin\nand GIT_* variables"];
+  status [label="an exit status"];
+  clone  [label="a clone", fillcolor="#f4efe6"];
+
+  cmd   -> point  [label="  reaches"];
+  point -> hook   [label="  runs, if present,"];
+  dir   -> hook   [label="  contains"];
+  path  -> dir    [label="  replaces"];
+  hook  -> input  [label="  is given"];
+  hook  -> status [label="  returns"];
+  status -> cmd   [label="  can veto  ", style=dashed, constraint=false];
+  clone -> dir    [label="  never copies", style=dashed];
+
+  { rank=same; path; clone; }
+
+}

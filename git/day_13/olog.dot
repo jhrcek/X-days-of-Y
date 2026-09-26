@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  stash [label="a stash entry", fillcolor="#e7f0ec", color="#2f7a63"];
+  base  [label="the commit you were on"];
+  idx   [label="a commit of the index"];
+  untr  [label="a commit of\nuntracked files", fillcolor="#f8efdf", color="#d8b784"];
+  wt    [label="a worktree", fillcolor="#e7f0ec", color="#2f7a63"];
+  own   [label="a HEAD, an index\nand a directory of files"];
+  store [label="the object store and refs", fillcolor="#f4efe6"];
+  br    [label="a branch"];
+
+  stash -> base  [label="  has as first parent"];
+  stash -> idx   [label="  has as second parent"];
+  stash -> untr  [label="  has as third parent\n  (with -u)", style=dashed];
+  wt    -> own   [label="  has its own"];
+  wt    -> store [label="  shares"];
+  store -> stash [label="  holds, as refs/stash,"];
+  wt    -> br    [label="  has checked out", style=dashed];
+
+  { rank=same; wt; }
+
+}

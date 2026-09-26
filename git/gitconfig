@@ -1,0 +1,148 @@
+# ~/.gitconfig
+#
+# Assembled over Days 2-21 of the '21 Days of git' course. Every line was
+# introduced with a reason, and the comments are that reason.
+#
+# Edit the [user] block before using this. git reads the file on every
+# command; check what is in force, and where it came from, with:
+#
+#     git config list --show-origin
+#
+
+# ==========================================================================
+# Day 02 - The three states
+# ==========================================================================
+
+# Who you are. Git refuses to commit without this, and it is copied into
+# every commit you make, so set it once here rather than per repository.
+[user]
+	name = Your Name
+	email = you@example.com
+
+# git 2.52 still names the first branch 'master' and prints a hint saying
+# the default becomes 'main' in Git 3.0. Settle it now; the hint goes away.
+# The diff below the commit message means you write the message while
+# looking at what you are actually committing.
+[init]
+	defaultBranch = main
+[commit]
+	verbose = true
+
+# ==========================================================================
+# Day 03 - Branches are pointers
+# ==========================================================================
+
+# List branches most-recently-committed first. Alphabetical order puts
+# the branch you touched this morning somewhere in the middle of forty.
+[branch]
+	sort = -committerdate
+
+# ==========================================================================
+# Day 04 - Merging
+# ==========================================================================
+
+# Show the common ancestor inside every conflict, not just the two sides.
+# Without the base you can see what each side has, but not what each side
+# changed. zdiff3 also moves lines both sides agree on out of the markers.
+[merge]
+	conflictStyle = zdiff3
+
+# ==========================================================================
+# Day 05 - Remotes
+# ==========================================================================
+
+# pull only ever fast-forwards; merge-or-rebase stays a separate, deliberate
+# command. Unset, git already refuses diverged pulls but nags about choosing
+# a policy every time - this is that choice, written down, so a future
+# default or someone else's dotfile cannot change what pull does to you.
+[pull]
+	ff = only
+
+# The first push of a new branch works and sets its upstream, instead of
+# failing with 'has no upstream branch'. Stale origin/* refs for branches
+# deleted on the server disappear on the next fetch instead of accumulating.
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+
+# ==========================================================================
+# Day 06 - Reading history
+# ==========================================================================
+
+# In a diff, a block that was moved is shown in its own colours instead of as
+# an unrelated deletion and addition, so a refactor that moves code around
+# reads as a move and the real edits stand out. Re-indented moves count too.
+[diff]
+	colorMoved = default
+	colorMovedWS = allow-indentation-change
+
+# ==========================================================================
+# Day 10 - Interactive rebase
+# ==========================================================================
+
+# Fold fixup! commits into their targets on every interactive rebase, and keep
+# stacked branches attached when the branch under them is rebased.
+[rebase]
+	autoSquash = true
+	updateRefs = true
+
+# ==========================================================================
+# Day 12 - Config and aliases
+# ==========================================================================
+
+# Aliases for things no built-in says in one word. lg shows every branch as a graph;
+# last is the commit you just made, with its files; aliases lists these very lines,
+# using get --all --show-names because plain get --regexp prints one bare value.
+[alias]
+	lg = log --graph --oneline --all
+	last = log -1 --stat
+	aliases = !git config get --all --show-names --regexp '^alias\\.'
+
+# A second identity for everything under ~/work/. The trailing slash matters: it means
+# every repository below that directory. If ~/.gitconfig-work does not exist git
+# silently skips it, so this line is harmless until you create that file.
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig-work
+
+# ==========================================================================
+# Day 15 - Cherry-pick, tags, describe
+# ==========================================================================
+
+# List tags in version order, not string order: v1.9 before v1.10, and a release
+# candidate before its release (versionsort.suffix).
+[tag]
+	sort = version:refname
+[versionsort]
+	suffix = -rc
+
+# Push annotated tags along with the commits they point at, so a release tag cannot be
+# forgotten. Lightweight tags stay local, which is what they are for.
+[push]
+	followTags = true
+
+# ==========================================================================
+# Day 17 - Conflicts at scale
+# ==========================================================================
+
+# Remember how I resolved each conflict and replay it when the same conflict comes
+# back - repeated rebases of a long-lived branch, test merges I abort. The merge
+# still stops for me to review and commit; autoUpdate only saves the git add.
+[rerere]
+	enabled = true
+	autoUpdate = true
+
+# ==========================================================================
+# Day 21 - Sharp edges and what next
+# ==========================================================================
+
+# Check objects as they arrive. Off by default; it catches corrupt or deliberately
+# malformed objects (bad idents, hostile .gitmodules, .GIT directories) before they
+# land in my repository, at the cost of some CPU on large fetches.
+[transfer]
+	fsckObjects = true
+
+# When I mistype a command and git finds exactly one likely match, ask before running
+# it. Never runs anything without a y; off a terminal it prints only the error.
+[help]
+	autocorrect = prompt

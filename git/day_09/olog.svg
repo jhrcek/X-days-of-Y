@@ -1,0 +1,111 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="450pt" height="244pt"
+ viewBox="0.00 0.00 450.00 244.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 239.59)">
+<title>olog</title>
+<!-- rebase -->
+<g id="node1" class="node">
+<title>rebase</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M232.41,-235.59C232.41,-235.59 179.07,-235.59 179.07,-235.59 174.66,-235.59 170.25,-231.18 170.25,-226.77 170.25,-226.77 170.25,-217.95 170.25,-217.95 170.25,-213.54 174.66,-209.13 179.07,-209.13 179.07,-209.13 232.41,-209.13 232.41,-209.13 236.82,-209.13 241.23,-213.54 241.23,-217.95 241.23,-217.95 241.23,-226.77 241.23,-226.77 241.23,-231.18 236.82,-235.59 232.41,-235.59"/>
+<text xml:space="preserve" text-anchor="middle" x="205.74" y="-218.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a rebase</text>
+</g>
+<!-- range -->
+<g id="node2" class="node">
+<title>range</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M327.04,-165.88C327.04,-165.88 184.44,-165.88 184.44,-165.88 180.03,-165.88 175.62,-161.47 175.62,-157.06 175.62,-157.06 175.62,-148.24 175.62,-148.24 175.62,-143.83 180.03,-139.42 184.44,-139.42 184.44,-139.42 327.04,-139.42 327.04,-139.42 331.45,-139.42 335.86,-143.83 335.86,-148.24 335.86,-148.24 335.86,-157.06 335.86,-157.06 335.86,-161.47 331.45,-165.88 327.04,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="255.74" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a range upstream..branch</text>
+</g>
+<!-- rebase&#45;&gt;range -->
+<g id="edge1" class="edge">
+<title>rebase&#45;&gt;range</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M215.14,-208.62C222.48,-198.69 232.79,-184.73 241.19,-173.36"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="243.18,-174.9 245.43,-167.61 239.13,-171.9 243.18,-174.9"/>
+<text xml:space="preserve" text-anchor="middle" x="251.73" y="-184.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;replays</text>
+</g>
+<!-- copy -->
+<g id="node4" class="node">
+<title>copy</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M141.78,-165.88C141.78,-165.88 99.69,-165.88 99.69,-165.88 95.28,-165.88 90.88,-161.47 90.88,-157.06 90.88,-157.06 90.88,-148.24 90.88,-148.24 90.88,-143.83 95.28,-139.42 99.69,-139.42 99.69,-139.42 141.78,-139.42 141.78,-139.42 146.19,-139.42 150.6,-143.83 150.6,-148.24 150.6,-148.24 150.6,-157.06 150.6,-157.06 150.6,-161.47 146.19,-165.88 141.78,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="120.74" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a copy</text>
+</g>
+<!-- rebase&#45;&gt;copy -->
+<g id="edge3" class="edge">
+<title>rebase&#45;&gt;copy</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M189.75,-208.62C176.69,-198.22 158.07,-183.39 143.46,-171.75"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="145.1,-169.83 137.9,-167.32 141.96,-173.78 145.1,-169.83"/>
+<text xml:space="preserve" text-anchor="middle" x="190.45" y="-184.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;produces</text>
+</g>
+<!-- orig -->
+<g id="node3" class="node">
+<title>orig</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M340.41,-96.17C340.41,-96.17 239.07,-96.17 239.07,-96.17 234.66,-96.17 230.25,-91.76 230.25,-87.35 230.25,-87.35 230.25,-78.53 230.25,-78.53 230.25,-74.12 234.66,-69.71 239.07,-69.71 239.07,-69.71 340.41,-69.71 340.41,-69.71 344.82,-69.71 349.23,-74.12 349.23,-78.53 349.23,-78.53 349.23,-87.35 349.23,-87.35 349.23,-91.76 344.82,-96.17 340.41,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="289.74" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an original commit</text>
+</g>
+<!-- range&#45;&gt;orig -->
+<g id="edge2" class="edge">
+<title>range&#45;&gt;orig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M282.25,-138.95C288.05,-134.84 293.44,-129.69 296.74,-123.42 299.72,-117.74 299.65,-111.04 298.34,-104.78"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="300.85,-104.39 296.4,-98.19 296.02,-105.81 300.85,-104.39"/>
+<text xml:space="preserve" text-anchor="middle" x="319.83" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- change -->
+<g id="node6" class="node">
+<title>change</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M126.66,-26.46C126.66,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 126.66,0 126.66,0 131.07,0 135.48,-4.41 135.48,-8.82 135.48,-8.82 135.48,-17.64 135.48,-17.64 135.48,-22.05 131.07,-26.46 126.66,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="67.74" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a change + message</text>
+</g>
+<!-- orig&#45;&gt;change -->
+<g id="edge5" class="edge">
+<title>orig&#45;&gt;change</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M247.98,-69.2C210.93,-57.9 156.73,-41.37 117.45,-29.39"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="118.45,-27.06 110.83,-27.37 116.98,-31.88 118.45,-27.06"/>
+<text xml:space="preserve" text-anchor="middle" x="208.91" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;carries</text>
+</g>
+<!-- copy&#45;&gt;orig -->
+<g id="edge4" class="edge">
+<title>copy&#45;&gt;orig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M150.96,-142.87C172.91,-136.38 200.62,-127.92 211.74,-123.42 220.83,-119.74 240.61,-109.72 257.98,-100.69"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="259.12,-102.94 264.34,-97.38 256.79,-98.47 259.12,-102.94"/>
+<text xml:space="preserve" text-anchor="middle" x="261.88" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a copy of</text>
+</g>
+<!-- base -->
+<g id="node5" class="node">
+<title>base</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M191.41,-96.17C191.41,-96.17 114.07,-96.17 114.07,-96.17 109.66,-96.17 105.25,-91.76 105.25,-87.35 105.25,-87.35 105.25,-78.53 105.25,-78.53 105.25,-74.12 109.66,-69.71 114.07,-69.71 114.07,-69.71 191.41,-69.71 191.41,-69.71 195.82,-69.71 200.23,-74.12 200.23,-78.53 200.23,-78.53 200.23,-87.35 200.23,-87.35 200.23,-91.76 195.82,-96.17 191.41,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="152.74" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the new base</text>
+</g>
+<!-- copy&#45;&gt;base -->
+<g id="edge7" class="edge">
+<title>copy&#45;&gt;base</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M117.66,-138.98C116.35,-130.94 115.9,-120.52 119.74,-112.17 121.39,-108.59 123.74,-105.3 126.43,-102.32"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="127.73,-104.57 131.19,-97.77 124.25,-100.92 127.73,-104.57"/>
+<text xml:space="preserve" text-anchor="middle" x="164.74" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as (new) parent</text>
+</g>
+<!-- copy&#45;&gt;change -->
+<g id="edge6" class="edge">
+<title>copy&#45;&gt;change</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M98.95,-138.94C84.65,-129.25 67.15,-114.47 58.99,-96.17 50.31,-76.7 54.7,-52.13 59.88,-35"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="62.23,-35.92 62.1,-28.29 57.45,-34.33 62.23,-35.92"/>
+<text xml:space="preserve" text-anchor="middle" x="75.86" y="-79.54" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;carries</text>
+</g>
+<!-- br -->
+<g id="node7" class="node">
+<title>br</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M357.29,-235.59C357.29,-235.59 294.19,-235.59 294.19,-235.59 289.78,-235.59 285.38,-231.18 285.38,-226.77 285.38,-226.77 285.38,-217.95 285.38,-217.95 285.38,-213.54 289.78,-209.13 294.19,-209.13 294.19,-209.13 357.29,-209.13 357.29,-209.13 361.7,-209.13 366.11,-213.54 366.11,-217.95 366.11,-217.95 366.11,-226.77 366.11,-226.77 366.11,-231.18 361.7,-235.59 357.29,-235.59"/>
+<text xml:space="preserve" text-anchor="middle" x="325.74" y="-218.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the branch</text>
+</g>
+<!-- br&#45;&gt;orig -->
+<g id="edge9" class="edge">
+<title>br&#45;&gt;orig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M344,-208.6C348.72,-204.28 353.19,-199.04 355.74,-193.13 364.73,-172.33 390.27,-173.18 346.74,-112.17 343.78,-108.02 340.04,-104.45 335.89,-101.39"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="337.35,-99.33 329.93,-97.56 334.62,-103.57 337.35,-99.33"/>
+<text xml:space="preserve" text-anchor="middle" x="406.64" y="-149.25" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;used to name &#160;</text>
+</g>
+<!-- br&#45;&gt;copy -->
+<g id="edge8" class="edge">
+<title>br&#45;&gt;copy</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M313.81,-208.9C304.37,-199.86 290.38,-188.15 275.74,-181.88 229.11,-161.92 212.33,-176.55 162.74,-165.88 161.53,-165.62 160.31,-165.34 159.08,-165.06"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="160.03,-162.7 152.43,-163.38 158.8,-167.58 160.03,-162.7"/>
+<text xml:space="preserve" text-anchor="middle" x="321.57" y="-184.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is moved to</text>
+</g>
+</g>
+</svg>

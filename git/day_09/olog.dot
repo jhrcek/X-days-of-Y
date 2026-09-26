@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  rebase [label="a rebase", fillcolor="#e7f0ec", color="#2f7a63"];
+  range  [label="a range upstream..branch"];
+  orig   [label="an original commit"];
+  copy   [label="a copy", fillcolor="#f8efdf", color="#d8b784"];
+  base   [label="the new base"];
+  change [label="a change + message", fillcolor="#f4efe6"];
+  br     [label="the branch", fillcolor="#e7f0ec", color="#2f7a63"];
+
+  rebase -> range  [label="  replays"];
+  range  -> orig   [label="  contains"];
+  rebase -> copy   [label="  produces"];
+  copy   -> orig   [label="  is a copy of"];
+  orig   -> change [label="  carries"];
+  copy   -> change [label="  carries"];
+  copy   -> base   [label="  has as (new) parent"];
+  br     -> copy   [label="  is moved to"];
+  br     -> orig   [label="  used to name  ", style=dashed];
+
+  { rank=same; rebase; br; }
+
+}

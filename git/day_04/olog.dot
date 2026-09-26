@@ -1,0 +1,27 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  merge  [label="a merge commit", fillcolor="#e7f0ec", color="#2f7a63"];
+  ours   [label="the current tip\n(ours)"];
+  theirs [label="the merged tip\n(theirs)"];
+  base   [label="the merge base", fillcolor="#e7f0ec", color="#2f7a63"];
+  entry  [label="a conflicted\nindex entry", fillcolor="#f8efdf", color="#d8b784"];
+
+  merge  -> ours   [label="  has as first parent"];
+  merge  -> theirs [label="  has as second parent"];
+  ours   -> base   [label="  descends from"];
+  theirs -> base   [label="  descends from"];
+  entry  -> base   [label="  has as stage 1", style=dashed];
+  entry  -> ours   [label="  has as stage 2", style=dashed];
+  entry  -> theirs [label="  has as stage 3", style=dashed];
+
+}

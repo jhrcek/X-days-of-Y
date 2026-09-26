@@ -1,0 +1,34 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  sess  [label="a bisect session", fillcolor="#e7f0ec", color="#2f7a63"];
+  bad   [label="a known-bad commit"];
+  good  [label="a known-good commit"];
+  cand  [label="the set of candidate commits", fillcolor="#e7f0ec", color="#2f7a63"];
+  mid   [label="the commit checked out next"];
+  test  [label="a test\n(you, or a script)", fillcolor="#f8efdf", color="#d8b784"];
+  verd  [label="a verdict\n(good, bad, skip)"];
+  first [label="the first bad commit"];
+
+  sess -> bad   [label="  has"];
+  sess -> good  [label="  has"];
+  sess -> cand  [label="  narrows"];
+  cand -> mid   [label="  has as midpoint"];
+  cand -> first [label="  ends, at size one, as", style=dashed];
+  mid  -> test  [label="  judges", dir=back];
+  test -> verd  [label="  returns"];
+  verd -> cand  [label="  halves", constraint=false];
+
+  { rank=same; bad; good; cand; }
+  { rank=same; mid; first; }
+
+}

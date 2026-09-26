@@ -7,6 +7,7 @@ import Control.Monad (forM_)
 import Course.Build (buildCourse, findRepoRoot)
 import Course.Site
 import Course.Types (Course (..))
+import Courses.Git qualified as Git
 import Courses.Grep qualified as Grep
 import Courses.Htop qualified as Htop
 import Courses.Pgrep qualified as Pgrep
@@ -24,6 +25,7 @@ courses =
     , Pgrep.course
     , Grep.course
     , Tig.course
+    , Git.course
     ]
 
 main :: IO ()

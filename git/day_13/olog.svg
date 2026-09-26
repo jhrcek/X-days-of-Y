@@ -1,0 +1,106 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="459pt" height="282pt"
+ viewBox="0.00 0.00 459.00 282.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 277.84)">
+<title>olog</title>
+<!-- stash -->
+<g id="node1" class="node">
+<title>stash</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M278.66,-120.92C278.66,-120.92 204.32,-120.92 204.32,-120.92 199.91,-120.92 195.5,-116.51 195.5,-112.1 195.5,-112.1 195.5,-103.28 195.5,-103.28 195.5,-98.87 199.91,-94.46 204.32,-94.46 204.32,-94.46 278.66,-94.46 278.66,-94.46 283.07,-94.46 287.48,-98.87 287.48,-103.28 287.48,-103.28 287.48,-112.1 287.48,-112.1 287.48,-116.51 283.07,-120.92 278.66,-120.92"/>
+<text xml:space="preserve" text-anchor="middle" x="241.49" y="-103.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a stash entry</text>
+</g>
+<!-- base -->
+<g id="node2" class="node">
+<title>base</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M140.16,-33.21C140.16,-33.21 8.82,-33.21 8.82,-33.21 4.41,-33.21 0,-28.8 0,-24.39 0,-24.39 0,-15.57 0,-15.57 0,-11.16 4.41,-6.75 8.82,-6.75 8.82,-6.75 140.16,-6.75 140.16,-6.75 144.57,-6.75 148.98,-11.16 148.98,-15.57 148.98,-15.57 148.98,-24.39 148.98,-24.39 148.98,-28.8 144.57,-33.21 140.16,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="74.49" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the commit you were on</text>
+</g>
+<!-- stash&#45;&gt;base -->
+<g id="edge1" class="edge">
+<title>stash&#45;&gt;base</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M195.35,-95.06C181.37,-90.72 166.22,-85.18 152.99,-78.46 131.97,-67.77 110.53,-51.64 95.38,-39.19"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="97.24,-37.46 90.1,-34.78 94.01,-41.33 97.24,-37.46"/>
+<text xml:space="preserve" text-anchor="middle" x="194.24" y="-63.81" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as first parent</text>
+</g>
+<!-- idx -->
+<g id="node3" class="node">
+<title>idx</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M300.41,-33.21C300.41,-33.21 182.57,-33.21 182.57,-33.21 178.16,-33.21 173.75,-28.8 173.75,-24.39 173.75,-24.39 173.75,-15.57 173.75,-15.57 173.75,-11.16 178.16,-6.75 182.57,-6.75 182.57,-6.75 300.41,-6.75 300.41,-6.75 304.82,-6.75 309.23,-11.16 309.23,-15.57 309.23,-15.57 309.23,-24.39 309.23,-24.39 309.23,-28.8 304.82,-33.21 300.41,-33.21"/>
+<text xml:space="preserve" text-anchor="middle" x="241.49" y="-15.8" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit of the index</text>
+</g>
+<!-- stash&#45;&gt;idx -->
+<g id="edge2" class="edge">
+<title>stash&#45;&gt;idx</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M241.49,-94.04C241.49,-80.37 241.49,-58.35 241.49,-42.05"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="244.01,-42.47 241.49,-35.27 238.97,-42.47 244.01,-42.47"/>
+<text xml:space="preserve" text-anchor="middle" x="289.87" y="-63.81" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as second parent</text>
+</g>
+<!-- untr -->
+<g id="node4" class="node">
+<title>untr</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M422.61,-39.96C422.61,-39.96 346.38,-39.96 346.38,-39.96 340.38,-39.96 334.38,-33.96 334.38,-27.96 334.38,-27.96 334.38,-12 334.38,-12 334.38,-6 340.38,0 346.38,0 346.38,0 422.61,0 422.61,0 428.61,0 434.61,-6 434.61,-12 434.61,-12 434.61,-27.96 434.61,-27.96 434.61,-33.96 428.61,-39.96 422.61,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="384.49" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit of</text>
+<text xml:space="preserve" text-anchor="middle" x="384.49" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">untracked files</text>
+</g>
+<!-- stash&#45;&gt;untr -->
+<g id="edge3" class="edge">
+<title>stash&#45;&gt;untr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M287.79,-101.05C306.67,-97.04 327.91,-90.18 344.49,-78.46 355.54,-70.65 364.55,-58.76 371.19,-47.82"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="373.23,-49.34 374.62,-41.84 368.86,-46.83 373.23,-49.34"/>
+<text xml:space="preserve" text-anchor="middle" x="408.19" y="-69.44" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as third parent</text>
+<text xml:space="preserve" text-anchor="middle" x="408.19" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(with &#45;u)</text>
+</g>
+<!-- wt -->
+<g id="node5" class="node">
+<title>wt</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M272.29,-273.84C272.29,-273.84 210.69,-273.84 210.69,-273.84 206.28,-273.84 201.88,-269.43 201.88,-265.02 201.88,-265.02 201.88,-256.2 201.88,-256.2 201.88,-251.79 206.28,-247.38 210.69,-247.38 210.69,-247.38 272.29,-247.38 272.29,-247.38 276.7,-247.38 281.11,-251.79 281.11,-256.2 281.11,-256.2 281.11,-265.02 281.11,-265.02 281.11,-269.43 276.69,-273.84 272.29,-273.84"/>
+<text xml:space="preserve" text-anchor="middle" x="241.49" y="-256.44" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a worktree</text>
+</g>
+<!-- own -->
+<g id="node6" class="node">
+<title>own</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M129.73,-204.13C129.73,-204.13 15.25,-204.13 15.25,-204.13 9.25,-204.13 3.25,-198.13 3.25,-192.13 3.25,-192.13 3.25,-176.17 3.25,-176.17 3.25,-170.17 9.25,-164.17 15.25,-164.17 15.25,-164.17 129.73,-164.17 129.73,-164.17 135.73,-164.17 141.73,-170.17 141.73,-176.17 141.73,-176.17 141.73,-192.13 141.73,-192.13 141.73,-198.13 135.73,-204.13 129.73,-204.13"/>
+<text xml:space="preserve" text-anchor="middle" x="72.49" y="-186.73" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a HEAD, an index</text>
+<text xml:space="preserve" text-anchor="middle" x="72.49" y="-173.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">and a directory of files</text>
+</g>
+<!-- wt&#45;&gt;own -->
+<g id="edge4" class="edge">
+<title>wt&#45;&gt;own</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M212.82,-246.98C188.72,-236.36 153.65,-220.91 124.6,-208.11"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="125.63,-205.81 118.03,-205.21 123.6,-210.42 125.63,-205.81"/>
+<text xml:space="preserve" text-anchor="middle" x="204.1" y="-222.36" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has its own</text>
+</g>
+<!-- store -->
+<g id="node7" class="node">
+<title>store</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M307.91,-197.38C307.91,-197.38 175.07,-197.38 175.07,-197.38 170.66,-197.38 166.25,-192.97 166.25,-188.56 166.25,-188.56 166.25,-179.74 166.25,-179.74 166.25,-175.33 170.66,-170.92 175.07,-170.92 175.07,-170.92 307.91,-170.92 307.91,-170.92 312.32,-170.92 316.73,-175.33 316.73,-179.74 316.73,-179.74 316.73,-188.56 316.73,-188.56 316.73,-192.97 312.32,-197.38 307.91,-197.38"/>
+<text xml:space="preserve" text-anchor="middle" x="241.49" y="-179.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the object store and refs</text>
+</g>
+<!-- wt&#45;&gt;store -->
+<g id="edge5" class="edge">
+<title>wt&#45;&gt;store</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M241.49,-246.98C241.49,-235.79 241.49,-219.23 241.49,-206.06"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="244.01,-206.38 241.49,-199.18 238.97,-206.38 244.01,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="258.37" y="-222.36" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;shares</text>
+</g>
+<!-- br -->
+<g id="node8" class="node">
+<title>br</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M404.16,-197.38C404.16,-197.38 350.82,-197.38 350.82,-197.38 346.41,-197.38 342,-192.97 342,-188.56 342,-188.56 342,-179.74 342,-179.74 342,-175.33 346.41,-170.92 350.82,-170.92 350.82,-170.92 404.16,-170.92 404.16,-170.92 408.57,-170.92 412.98,-175.33 412.98,-179.74 412.98,-179.74 412.98,-188.56 412.98,-188.56 412.98,-192.97 408.57,-197.38 404.16,-197.38"/>
+<text xml:space="preserve" text-anchor="middle" x="377.49" y="-179.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a branch</text>
+</g>
+<!-- wt&#45;&gt;br -->
+<g id="edge7" class="edge">
+<title>wt&#45;&gt;br</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M264.56,-246.98C287.22,-234.57 321.94,-215.56 346.9,-201.9"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="347.81,-204.27 352.91,-198.61 345.39,-199.85 347.81,-204.27"/>
+<text xml:space="preserve" text-anchor="middle" x="351.07" y="-222.36" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has checked out</text>
+</g>
+<!-- store&#45;&gt;stash -->
+<g id="edge6" class="edge">
+<title>store&#45;&gt;stash</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M241.49,-170.52C241.49,-159.33 241.49,-142.77 241.49,-129.6"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="244.01,-129.92 241.49,-122.72 238.97,-129.92 244.01,-129.92"/>
+<text xml:space="preserve" text-anchor="middle" x="287.24" y="-139.15" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;holds, as refs/stash,</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,34 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  path   [label="a conflicted path", fillcolor="#e7f0ec", color="#2f7a63"];
+  s1     [label="stage 1\n(the merge base)"];
+  s2     [label="stage 2\n(ours: HEAD)", fillcolor="#e7f0ec", color="#2f7a63"];
+  s3     [label="stage 3\n(theirs: incoming)", fillcolor="#e7f0ec", color="#2f7a63"];
+  file   [label="the working file\nwith markers"];
+  pre    [label="a preimage\n(the conflict)"];
+  res    [label="a recorded resolution", fillcolor="#f8efdf", color="#d8b784"];
+  cache  [label=".git/rr-cache", fillcolor="#f4efe6"];
+
+  path -> s1   [label="  has"];
+  path -> s2   [label="  has"];
+  path -> s3   [label="  has"];
+  s2   -> file [label="  is written into"];
+  s3   -> file [label="  is written into"];
+  file -> pre  [label="  is recorded by rerere as"];
+  pre  -> res  [label="  is paired with"];
+  res  -> cache [label="  is kept in"];
+  res  -> file [label="  is replayed into  ", style=dashed, constraint=false];
+
+  { rank=same; s1; s2; s3; }
+
+}

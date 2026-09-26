@@ -1,0 +1,30 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  start  [label="a starting commit\n(HEAD, a branch, --all)", fillcolor="#f4efe6"];
+  commit [label="a commit\nin the walk", fillcolor="#e7f0ec", color="#2f7a63"];
+  filter [label="a filter\n(-- path, --author, -S, -G)"];
+  diff   [label="the diff against\nits parent", fillcolor="#f8efdf", color="#d8b784"];
+  meta   [label="its metadata\n(author, date, message)"];
+  line   [label="a line of a file"];
+
+  start  -> commit [label="  is walked back to"];
+  commit -> diff   [label="  has (computed on demand)"];
+  commit -> meta   [label="  has"];
+  filter -> diff   [label="  tests"];
+  filter -> meta   [label="  tests"];
+  line   -> commit [label="  is blamed on", style=dashed];
+
+  { rank=same; start; line; }
+  { rank=same; diff; meta; }
+
+}

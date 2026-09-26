@@ -1,0 +1,58 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="616pt" height="97pt"
+ viewBox="0.00 0.00 616.00 97.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 93.36)">
+<title>olog</title>
+<!-- local -->
+<g id="node1" class="node">
+<title>local</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M85.98,-69.96C85.98,-69.96 12,-69.96 12,-69.96 6,-69.96 0,-63.96 0,-57.96 0,-57.96 0,-42 0,-42 0,-36 6,-30 12,-30 12,-30 85.98,-30 85.98,-30 91.98,-30 97.98,-36 97.98,-42 97.98,-42 97.98,-57.96 97.98,-57.96 97.98,-63.96 91.98,-69.96 85.98,-69.96"/>
+<text xml:space="preserve" text-anchor="middle" x="48.99" y="-52.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a local branch</text>
+<text xml:space="preserve" text-anchor="middle" x="48.99" y="-39.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(main)</text>
+</g>
+<!-- rtb -->
+<g id="node2" class="node">
+<title>rtb</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M339.71,-87.96C339.71,-87.96 231.23,-87.96 231.23,-87.96 225.23,-87.96 219.23,-81.96 219.23,-75.96 219.23,-75.96 219.23,-60 219.23,-60 219.23,-54 225.23,-48 231.23,-48 231.23,-48 339.71,-48 339.71,-48 345.71,-48 351.71,-54 351.71,-60 351.71,-60 351.71,-75.96 351.71,-75.96 351.71,-81.96 345.71,-87.96 339.71,-87.96"/>
+<text xml:space="preserve" text-anchor="middle" x="285.47" y="-70.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a remote&#45;tracking ref</text>
+<text xml:space="preserve" text-anchor="middle" x="285.47" y="-57.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(origin/main)</text>
+</g>
+<!-- local&#45;&gt;rtb -->
+<g id="edge1" class="edge">
+<title>local&#45;&gt;rtb</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M98.41,-68.87C105.54,-70.98 112.88,-72.8 119.98,-73.98 149.23,-78.86 181.79,-78.79 210.18,-76.99"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="210.25,-79.52 217.26,-76.5 209.9,-74.49 210.25,-79.52"/>
+<text xml:space="preserve" text-anchor="middle" x="158.61" y="-80.34" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has as upstream</text>
+</g>
+<!-- remote -->
+<g id="node3" class="node">
+<title>remote</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M596.44,-39.96C596.44,-39.96 484.96,-39.96 484.96,-39.96 478.96,-39.96 472.96,-33.96 472.96,-27.96 472.96,-27.96 472.96,-12 472.96,-12 472.96,-6 478.96,0 484.96,0 484.96,0 596.44,0 596.44,0 602.44,0 608.44,-6 608.44,-12 608.44,-12 608.44,-27.96 608.44,-27.96 608.44,-33.96 602.44,-39.96 596.44,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="540.7" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a branch in</text>
+<text xml:space="preserve" text-anchor="middle" x="540.7" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the remote repository</text>
+</g>
+<!-- local&#45;&gt;remote -->
+<g id="edge3" class="edge">
+<title>local&#45;&gt;remote</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M98.25,-34.31C131.77,-24.3 177.71,-12.33 219.23,-7.48 302.59,2.25 398.89,-3.81 463.99,-10.44"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="463.56,-12.93 470.98,-11.17 464.08,-7.92 463.56,-12.93"/>
+<text xml:space="preserve" text-anchor="middle" x="285.47" y="-20.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is sent to</text>
+<text xml:space="preserve" text-anchor="middle" x="285.47" y="-9.71" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(by push)</text>
+</g>
+<!-- rtb&#45;&gt;local -->
+<g id="edge4" class="edge">
+<title>rtb&#45;&gt;local</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M222.52,-47.54C214.1,-45.45 205.51,-43.67 197.23,-42.48 163.24,-37.61 154.26,-40.65 119.98,-42.48 115.74,-42.71 111.36,-43.01 106.96,-43.36"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="107.04,-40.83 100.09,-43.97 107.48,-45.85 107.04,-40.83"/>
+<text xml:space="preserve" text-anchor="middle" x="158.61" y="-55.96" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is integrated into</text>
+<text xml:space="preserve" text-anchor="middle" x="158.61" y="-44.71" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(by merge / pull)</text>
+</g>
+<!-- rtb&#45;&gt;remote -->
+<g id="edge2" class="edge">
+<title>rtb&#45;&gt;remote</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M352.01,-55.56C386.34,-49.05 428.53,-41.05 464.22,-34.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="464.5,-36.8 471.11,-32.98 463.56,-31.85 464.5,-36.8"/>
+<text xml:space="preserve" text-anchor="middle" x="412.34" y="-64.56" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;records</text>
+<text xml:space="preserve" text-anchor="middle" x="412.34" y="-53.31" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(moved by fetch)</text>
+</g>
+</g>
+</svg>

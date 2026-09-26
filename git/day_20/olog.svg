@@ -1,0 +1,139 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="479pt" height="330pt"
+ viewBox="0.00 0.00 479.00 330.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 326.05)">
+<title>olog</title>
+<!-- repo -->
+<g id="node1" class="node">
+<title>repo</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M367.16,-322.05C367.16,-322.05 273.32,-322.05 273.32,-322.05 268.91,-322.05 264.5,-317.64 264.5,-313.23 264.5,-313.23 264.5,-304.41 264.5,-304.41 264.5,-300 268.91,-295.59 273.32,-295.59 273.32,-295.59 367.16,-295.59 367.16,-295.59 371.57,-295.59 375.98,-300 375.98,-304.41 375.98,-304.41 375.98,-313.23 375.98,-313.23 375.98,-317.64 371.57,-322.05 367.16,-322.05"/>
+<text xml:space="preserve" text-anchor="middle" x="320.24" y="-304.65" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a repository (.git)</text>
+</g>
+<!-- store -->
+<g id="node2" class="node">
+<title>store</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M219.79,-254.34C219.79,-254.34 132.69,-254.34 132.69,-254.34 128.28,-254.34 123.88,-249.93 123.88,-245.52 123.88,-245.52 123.88,-236.7 123.88,-236.7 123.88,-232.29 128.28,-227.88 132.69,-227.88 132.69,-227.88 219.79,-227.88 219.79,-227.88 224.2,-227.88 228.61,-232.29 228.61,-236.7 228.61,-236.7 228.61,-245.52 228.61,-245.52 228.61,-249.93 224.2,-254.34 219.79,-254.34"/>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-236.94" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the object store</text>
+</g>
+<!-- repo&#45;&gt;store -->
+<g id="edge1" class="edge">
+<title>repo&#45;&gt;store</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M292.48,-295.15C269.47,-284.65 236.62,-269.66 211.71,-258.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="212.96,-256.1 205.37,-255.4 210.87,-260.68 212.96,-256.1"/>
+<text xml:space="preserve" text-anchor="middle" x="277.49" y="-271.57" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- refs -->
+<g id="node3" class="node">
+<title>refs</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M377.66,-254.34C377.66,-254.34 262.82,-254.34 262.82,-254.34 258.41,-254.34 254,-249.93 254,-245.52 254,-245.52 254,-236.7 254,-236.7 254,-232.29 258.41,-227.88 262.82,-227.88 262.82,-227.88 377.66,-227.88 377.66,-227.88 382.07,-227.88 386.48,-232.29 386.48,-236.7 386.48,-236.7 386.48,-245.52 386.48,-245.52 386.48,-249.93 382.07,-254.34 377.66,-254.34"/>
+<text xml:space="preserve" text-anchor="middle" x="320.24" y="-236.94" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">refs and packed&#45;refs</text>
+</g>
+<!-- repo&#45;&gt;refs -->
+<g id="edge2" class="edge">
+<title>repo&#45;&gt;refs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M320.24,-295.15C320.24,-286.15 320.24,-273.85 320.24,-263.36"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="322.76,-263.53 320.24,-256.33 317.72,-263.53 322.76,-263.53"/>
+<text xml:space="preserve" text-anchor="middle" x="340.87" y="-271.57" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- logs -->
+<g id="node4" class="node">
+<title>logs</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M462.29,-254.34C462.29,-254.34 420.19,-254.34 420.19,-254.34 415.78,-254.34 411.38,-249.93 411.38,-245.52 411.38,-245.52 411.38,-236.7 411.38,-236.7 411.38,-232.29 415.78,-227.88 420.19,-227.88 420.19,-227.88 462.29,-227.88 462.29,-227.88 466.7,-227.88 471.11,-232.29 471.11,-236.7 471.11,-236.7 471.11,-245.52 471.11,-245.52 471.11,-249.93 466.7,-254.34 462.29,-254.34"/>
+<text xml:space="preserve" text-anchor="middle" x="441.24" y="-236.94" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">reflogs</text>
+</g>
+<!-- repo&#45;&gt;logs -->
+<g id="edge3" class="edge">
+<title>repo&#45;&gt;logs</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M343.57,-295.15C362.57,-284.83 389.55,-270.18 410.35,-258.89"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="411.46,-261.15 416.59,-255.5 409.06,-256.72 411.46,-261.15"/>
+<text xml:space="preserve" text-anchor="middle" x="408.61" y="-271.57" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;contains</text>
+</g>
+<!-- obj -->
+<g id="node5" class="node">
+<title>obj</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M203.66,-186.63C203.66,-186.63 148.82,-186.63 148.82,-186.63 144.41,-186.63 140,-182.22 140,-177.81 140,-177.81 140,-168.99 140,-168.99 140,-164.58 144.41,-160.17 148.82,-160.17 148.82,-160.17 203.66,-160.17 203.66,-160.17 208.07,-160.17 212.48,-164.58 212.48,-168.99 212.48,-168.99 212.48,-177.81 212.48,-177.81 212.48,-182.22 208.07,-186.63 203.66,-186.63"/>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-169.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an object</text>
+</g>
+<!-- store&#45;&gt;obj -->
+<g id="edge4" class="edge">
+<title>store&#45;&gt;obj</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M176.24,-227.44C176.24,-218.44 176.24,-206.14 176.24,-195.65"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="178.76,-195.82 176.24,-188.62 173.72,-195.82 178.76,-195.82"/>
+<text xml:space="preserve" text-anchor="middle" x="190.49" y="-203.86" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;holds</text>
+</g>
+<!-- refs&#45;&gt;obj -->
+<g id="edge8" class="edge">
+<title>refs&#45;&gt;obj</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M292.48,-227.44C269.47,-216.94 236.62,-201.95 211.71,-190.58"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="212.96,-188.39 205.37,-187.69 210.87,-192.97 212.96,-188.39"/>
+<text xml:space="preserve" text-anchor="middle" x="295.11" y="-203.86" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;keep reachable &#160;</text>
+</g>
+<!-- logs&#45;&gt;obj -->
+<g id="edge9" class="edge">
+<title>logs&#45;&gt;obj</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M412.28,-227.45C392.13,-219.07 364.46,-208.42 339.24,-201.63 300.08,-191.08 254.46,-183.88 221.46,-179.54"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="221.97,-177.07 214.51,-178.65 221.33,-182.07 221.97,-177.07"/>
+<text xml:space="preserve" text-anchor="middle" x="411.75" y="-203.86" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;keep reachable &#160;</text>
+</g>
+<!-- loose -->
+<g id="node6" class="node">
+<title>loose</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M105.66,-107.67C105.66,-107.67 8.82,-107.67 8.82,-107.67 4.41,-107.67 0,-103.26 0,-98.85 0,-98.85 0,-90.03 0,-90.03 0,-85.62 4.41,-81.21 8.82,-81.21 8.82,-81.21 105.66,-81.21 105.66,-81.21 110.07,-81.21 114.48,-85.62 114.48,-90.03 114.48,-90.03 114.48,-98.85 114.48,-98.85 114.48,-103.26 110.07,-107.67 105.66,-107.67"/>
+<text xml:space="preserve" text-anchor="middle" x="57.24" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a loose object file</text>
+</g>
+<!-- obj&#45;&gt;loose -->
+<g id="edge5" class="edge">
+<title>obj&#45;&gt;loose</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M143.2,-159.64C133.95,-155.52 124.09,-150.61 115.49,-145.17 101.34,-136.22 87.03,-124.05 76.13,-113.99"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="77.94,-112.23 70.97,-109.13 74.48,-115.9 77.94,-112.23"/>
+<text xml:space="preserve" text-anchor="middle" x="142.87" y="-130.52" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is stored as</text>
+</g>
+<!-- pack -->
+<g id="node7" class="node">
+<title>pack</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M204.41,-107.67C204.41,-107.67 148.07,-107.67 148.07,-107.67 143.66,-107.67 139.25,-103.26 139.25,-98.85 139.25,-98.85 139.25,-90.03 139.25,-90.03 139.25,-85.62 143.66,-81.21 148.07,-81.21 148.07,-81.21 204.41,-81.21 204.41,-81.21 208.82,-81.21 213.23,-85.62 213.23,-90.03 213.23,-90.03 213.23,-98.85 213.23,-98.85 213.23,-103.26 208.82,-107.67 204.41,-107.67"/>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a packfile</text>
+</g>
+<!-- obj&#45;&gt;pack -->
+<g id="edge6" class="edge">
+<title>obj&#45;&gt;pack</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M176.24,-159.69C176.24,-147.99 176.24,-130.42 176.24,-116.6"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="178.76,-116.96 176.24,-109.76 173.72,-116.96 178.76,-116.96"/>
+<text xml:space="preserve" text-anchor="middle" x="208.12" y="-130.52" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;or is stored in</text>
+</g>
+<!-- delta -->
+<g id="node8" class="node">
+<title>delta</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M234.61,-39.96C234.61,-39.96 117.88,-39.96 117.88,-39.96 111.88,-39.96 105.88,-33.96 105.88,-27.96 105.88,-27.96 105.88,-12 105.88,-12 105.88,-6 111.88,0 117.88,0 117.88,0 234.61,0 234.61,0 240.61,0 246.61,-6 246.61,-12 246.61,-12 246.61,-27.96 246.61,-27.96 246.61,-33.96 240.61,-39.96 234.61,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a delta</text>
+<text xml:space="preserve" text-anchor="middle" x="176.24" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">against another object</text>
+</g>
+<!-- pack&#45;&gt;delta -->
+<g id="edge7" class="edge">
+<title>pack&#45;&gt;delta</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M176.24,-80.82C176.24,-71.99 176.24,-59.84 176.24,-48.8"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="178.76,-49.06 176.24,-41.86 173.72,-49.06 178.76,-49.06"/>
+<text xml:space="preserve" text-anchor="middle" x="215.62" y="-57.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;may encode it as</text>
+</g>
+<!-- cruft -->
+<g id="node9" class="node">
+<title>cruft</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M373.04,-107.67C373.04,-107.67 305.44,-107.67 305.44,-107.67 301.03,-107.67 296.62,-103.26 296.62,-98.85 296.62,-98.85 296.62,-90.03 296.62,-90.03 296.62,-85.62 301.04,-81.21 305.44,-81.21 305.44,-81.21 373.04,-81.21 373.04,-81.21 377.45,-81.21 381.86,-85.62 381.86,-90.03 381.86,-90.03 381.86,-98.85 381.86,-98.85 381.86,-103.26 377.44,-107.67 373.04,-107.67"/>
+<text xml:space="preserve" text-anchor="middle" x="339.24" y="-90.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a cruft pack</text>
+</g>
+<!-- cruft&#45;&gt;obj -->
+<g id="edge11" class="edge">
+<title>cruft&#45;&gt;obj</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M317.44,-108.06C298.83,-118.59 271.19,-133.7 246.24,-145.17 237.71,-149.09 228.45,-152.96 219.54,-156.49"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="218.75,-154.1 212.96,-159.06 220.58,-158.79 218.75,-154.1"/>
+<text xml:space="preserve" text-anchor="middle" x="338.1" y="-136.15" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;holds, for two weeks,</text>
+<text xml:space="preserve" text-anchor="middle" x="338.1" y="-124.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;an unreachable</text>
+</g>
+<!-- cruft&#45;&gt;pack -->
+<g id="edge10" class="edge">
+<title>cruft&#45;&gt;pack</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M296.26,-94.44C273.48,-94.44 245.5,-94.44 222.28,-94.44"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="222.42,-91.92 215.22,-94.44 222.42,-96.96 222.42,-91.92"/>
+<text xml:space="preserve" text-anchor="middle" x="254.93" y="-99.67" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a kind of &#160;</text>
+</g>
+</g>
+</svg>

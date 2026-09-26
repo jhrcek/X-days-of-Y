@@ -1,0 +1,35 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  br     [label="a branch", fillcolor="#f8efdf", color="#d8b784"];
+  commit [label="a commit", fillcolor="#e7f0ec", color="#2f7a63"];
+  tree   [label="a tree", fillcolor="#e7f0ec", color="#2f7a63"];
+  blob   [label="a blob", fillcolor="#e7f0ec", color="#2f7a63"];
+  tag    [label="an annotated tag"];
+  person [label="a person\n(name, email, time)", fillcolor="#f4efe6"];
+  bytes  [label="the bytes of a file", fillcolor="#f4efe6"];
+  hash   [label="a SHA-1 hash\nof the object's contents"];
+
+  br     -> commit [label="  names"];
+  tag    -> commit [label="  points at"];
+  commit -> tree   [label="  has as snapshot"];
+  commit -> commit [label="  has as parent", style=dashed];
+  commit -> person [label="  has as author"];
+  tree   -> blob   [label="  lists"];
+  tree   -> tree   [label="  lists"];
+  blob   -> bytes  [label="  holds"];
+  blob   -> hash   [label="  is named by"];
+
+  { rank=same; br; tag; }
+  { rank=same; person; tree; }
+
+}

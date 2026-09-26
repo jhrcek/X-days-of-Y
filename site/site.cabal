@@ -17,7 +17,8 @@ executable build-site
         htop-course,
         pgrep-course,
         grep-course,
-        tig-course
+        tig-course,
+        git-course
     default-language: GHC2021
     default-extensions: OverloadedStrings
     ghc-options: -Wall

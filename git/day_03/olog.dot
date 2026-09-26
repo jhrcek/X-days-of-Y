@@ -1,0 +1,26 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.5;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  head   [label="HEAD", fillcolor="#f8efdf", color="#d8b784"];
+  branch [label="a branch\n(refs/heads/<name>)", fillcolor="#e7f0ec", color="#2f7a63"];
+  commit [label="a commit", fillcolor="#e7f0ec", color="#2f7a63"];
+  file   [label="a 41-byte file\nin .git/refs/heads", fillcolor="#f4efe6"];
+
+  head   -> branch [label="  names"];
+  head   -> commit [label="  names directly\n  (detached)  ", style=dashed];
+  branch -> commit [label="  names"];
+  branch -> file   [label="  is stored as"];
+  commit -> commit [label="  has as parent"];
+
+  { rank=same; branch; file; }
+
+}

@@ -1,0 +1,105 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="537pt" height="257pt"
+ viewBox="0.00 0.00 537.00 257.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 253.09)">
+<title>olog</title>
+<!-- ref -->
+<g id="node1" class="node">
+<title>ref</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M190.86,-249.09C190.86,-249.09 98.88,-249.09 98.88,-249.09 92.88,-249.09 86.88,-243.09 86.88,-237.09 86.88,-237.09 86.88,-221.13 86.88,-221.13 86.88,-215.13 92.88,-209.13 98.88,-209.13 98.88,-209.13 190.86,-209.13 190.86,-209.13 196.86,-209.13 202.86,-215.13 202.86,-221.13 202.86,-221.13 202.86,-237.09 202.86,-237.09 202.86,-243.09 196.86,-249.09 190.86,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="144.87" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a ref</text>
+<text xml:space="preserve" text-anchor="middle" x="144.87" y="-218.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(HEAD, a branch)</text>
+</g>
+<!-- log -->
+<g id="node2" class="node">
+<title>log</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M214.79,-165.88C214.79,-165.88 168.94,-165.88 168.94,-165.88 164.53,-165.88 160.12,-161.47 160.12,-157.06 160.12,-157.06 160.12,-148.24 160.12,-148.24 160.12,-143.83 164.53,-139.42 168.94,-139.42 168.94,-139.42 214.79,-139.42 214.79,-139.42 219.2,-139.42 223.61,-143.83 223.61,-148.24 223.61,-148.24 223.61,-157.06 223.61,-157.06 223.61,-161.47 219.2,-165.88 214.79,-165.88"/>
+<text xml:space="preserve" text-anchor="middle" x="191.87" y="-148.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a reflog</text>
+</g>
+<!-- ref&#45;&gt;log -->
+<g id="edge1" class="edge">
+<title>ref&#45;&gt;log</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M156.97,-208.93C163.86,-198.01 172.49,-184.35 179.43,-173.34"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="181.37,-174.99 183.09,-167.56 177.11,-172.3 181.37,-174.99"/>
+<text xml:space="preserve" text-anchor="middle" x="184.46" y="-184.11" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has</text>
+</g>
+<!-- entry -->
+<g id="node3" class="node">
+<title>entry</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M293.41,-96.17C293.41,-96.17 218.32,-96.17 218.32,-96.17 213.91,-96.17 209.5,-91.76 209.5,-87.35 209.5,-87.35 209.5,-78.53 209.5,-78.53 209.5,-74.12 213.91,-69.71 218.32,-69.71 218.32,-69.71 293.41,-69.71 293.41,-69.71 297.82,-69.71 302.23,-74.12 302.23,-78.53 302.23,-78.53 302.23,-87.35 302.23,-87.35 302.23,-91.76 297.82,-96.17 293.41,-96.17"/>
+<text xml:space="preserve" text-anchor="middle" x="255.87" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a reflog entry</text>
+</g>
+<!-- log&#45;&gt;entry -->
+<g id="edge2" class="edge">
+<title>log&#45;&gt;entry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M203.9,-138.91C213.47,-128.79 226.99,-114.48 237.85,-103"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="239.67,-104.74 242.79,-97.77 236.01,-101.28 239.67,-104.74"/>
+<text xml:space="preserve" text-anchor="middle" x="251.32" y="-114.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a list of</text>
+</g>
+<!-- commit -->
+<g id="node4" class="node">
+<title>commit</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M62.91,-26.46C62.91,-26.46 8.82,-26.46 8.82,-26.46 4.41,-26.46 0,-22.05 0,-17.64 0,-17.64 0,-8.82 0,-8.82 0,-4.41 4.41,0 8.82,0 8.82,0 62.91,0 62.91,0 67.32,0 71.73,-4.41 71.73,-8.82 71.73,-8.82 71.73,-17.64 71.73,-17.64 71.73,-22.05 67.32,-26.46 62.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="35.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit</text>
+</g>
+<!-- entry&#45;&gt;commit -->
+<g id="edge3" class="edge">
+<title>entry&#45;&gt;commit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M209.08,-81.23C172.79,-79.1 122.03,-72.55 81.62,-53.71 71.07,-48.79 61.07,-40.72 53.13,-33.16"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="54.97,-31.43 48.09,-28.12 51.4,-35 54.97,-31.43"/>
+<text xml:space="preserve" text-anchor="middle" x="142.74" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;records as the new position</text>
+</g>
+<!-- why -->
+<g id="node5" class="node">
+<title>why</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M229.41,-26.46C229.41,-26.46 118.32,-26.46 118.32,-26.46 113.91,-26.46 109.5,-22.05 109.5,-17.64 109.5,-17.64 109.5,-8.82 109.5,-8.82 109.5,-4.41 113.91,0 118.32,0 118.32,0 229.41,0 229.41,0 233.82,0 238.23,-4.41 238.23,-8.82 238.23,-8.82 238.23,-17.64 238.23,-17.64 238.23,-22.05 233.82,-26.46 229.41,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="173.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a reason and a time</text>
+</g>
+<!-- entry&#45;&gt;why -->
+<g id="edge4" class="edge">
+<title>entry&#45;&gt;why</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M240.44,-69.2C227.84,-58.8 209.88,-43.97 195.79,-32.33"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="197.6,-30.56 190.44,-27.92 194.39,-34.45 197.6,-30.56"/>
+<text xml:space="preserve" text-anchor="middle" x="238.15" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;records</text>
+</g>
+<!-- gc -->
+<g id="node7" class="node">
+<title>gc</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M375.29,-26.46C375.29,-26.46 272.44,-26.46 272.44,-26.46 268.03,-26.46 263.62,-22.05 263.62,-17.64 263.62,-17.64 263.62,-8.82 263.62,-8.82 263.62,-4.41 268.04,0 272.44,0 272.44,0 375.29,0 375.29,0 379.7,0 384.11,-4.41 384.11,-8.82 384.11,-8.82 384.11,-17.64 384.11,-17.64 384.11,-22.05 379.69,-26.46 375.29,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="323.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">garbage collection</text>
+</g>
+<!-- entry&#45;&gt;gc -->
+<g id="edge6" class="edge">
+<title>entry&#45;&gt;gc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M268.66,-69.2C278.91,-58.99 293.46,-44.51 305.05,-32.97"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="306.68,-34.9 310.01,-28.03 303.13,-31.32 306.68,-34.9"/>
+<text xml:space="preserve" text-anchor="middle" x="348.69" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;protects its commit from</text>
+</g>
+<!-- work -->
+<g id="node8" class="node">
+<title>work</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M519.91,-26.46C519.91,-26.46 417.82,-26.46 417.82,-26.46 413.41,-26.46 409,-22.05 409,-17.64 409,-17.64 409,-8.82 409,-8.82 409,-4.41 413.41,0 417.82,0 417.82,0 519.91,0 519.91,0 524.32,0 528.73,-4.41 528.73,-8.82 528.73,-8.82 528.73,-17.64 528.73,-17.64 528.73,-22.05 524.32,-26.46 519.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="468.87" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">uncommitted work</text>
+</g>
+<!-- entry&#45;&gt;work -->
+<g id="edge7" class="edge">
+<title>entry&#45;&gt;work</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M302.73,-78.35C333.99,-74.76 375.49,-67.66 409.87,-53.71 423.04,-48.36 436.32,-39.82 446.94,-32.04"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="448.34,-34.14 452.57,-27.79 445.3,-30.12 448.34,-34.14"/>
+<text xml:space="preserve" text-anchor="middle" x="462.09" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;never records</text>
+</g>
+<!-- expr -->
+<g id="node6" class="node">
+<title>expr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M400.36,-249.09C400.36,-249.09 239.38,-249.09 239.38,-249.09 233.38,-249.09 227.38,-243.09 227.38,-237.09 227.38,-237.09 227.38,-221.13 227.38,-221.13 227.38,-215.13 233.38,-209.13 239.38,-209.13 239.38,-209.13 400.36,-209.13 400.36,-209.13 406.36,-209.13 412.36,-215.13 412.36,-221.13 412.36,-221.13 412.36,-237.09 412.36,-237.09 412.36,-243.09 406.36,-249.09 400.36,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="319.87" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an expression</text>
+<text xml:space="preserve" text-anchor="middle" x="319.87" y="-218.19" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">HEAD@{n}, main@{yesterday}</text>
+</g>
+<!-- expr&#45;&gt;entry -->
+<g id="edge5" class="edge">
+<title>expr&#45;&gt;entry</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M315.84,-208.65C310.35,-184.77 299.06,-143.6 280.87,-112.17 279.06,-109.05 276.87,-105.96 274.55,-103.04"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="276.64,-101.61 270.04,-97.79 272.82,-104.89 276.64,-101.61"/>
+<text xml:space="preserve" text-anchor="middle" x="321.28" y="-149.25" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;selects</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,111 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="397pt" height="257pt"
+ viewBox="0.00 0.00 397.00 257.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 253.09)">
+<title>olog</title>
+<!-- rebase -->
+<g id="node1" class="node">
+<title>rebase</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M179.41,-249.09C179.41,-249.09 63.07,-249.09 63.07,-249.09 58.66,-249.09 54.25,-244.68 54.25,-240.27 54.25,-240.27 54.25,-231.45 54.25,-231.45 54.25,-227.04 58.66,-222.63 63.07,-222.63 63.07,-222.63 179.41,-222.63 179.41,-222.63 183.82,-222.63 188.23,-227.04 188.23,-231.45 188.23,-231.45 188.23,-240.27 188.23,-240.27 188.23,-244.68 183.82,-249.09 179.41,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="121.24" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an interactive rebase</text>
+</g>
+<!-- todo -->
+<g id="node2" class="node">
+<title>todo</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M220.29,-179.38C220.29,-179.38 154.19,-179.38 154.19,-179.38 149.78,-179.38 145.38,-174.97 145.38,-170.56 145.38,-170.56 145.38,-161.74 145.38,-161.74 145.38,-157.33 149.78,-152.92 154.19,-152.92 154.19,-152.92 220.29,-152.92 220.29,-152.92 224.7,-152.92 229.11,-157.33 229.11,-161.74 229.11,-161.74 229.11,-170.56 229.11,-170.56 229.11,-174.97 224.7,-179.38 220.29,-179.38"/>
+<text xml:space="preserve" text-anchor="middle" x="187.24" y="-161.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the todo list</text>
+</g>
+<!-- rebase&#45;&gt;todo -->
+<g id="edge1" class="edge">
+<title>rebase&#45;&gt;todo</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M133.65,-222.12C143.61,-211.91 157.73,-197.43 168.97,-185.89"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="170.55,-187.88 173.77,-180.97 166.94,-184.36 170.55,-187.88"/>
+<text xml:space="preserve" text-anchor="middle" x="170.19" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;runs</text>
+</g>
+<!-- instr -->
+<g id="node3" class="node">
+<title>instr</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M235.11,-109.67C235.11,-109.67 139.38,-109.67 139.38,-109.67 133.38,-109.67 127.38,-103.67 127.38,-97.67 127.38,-97.67 127.38,-81.71 127.38,-81.71 127.38,-75.71 133.38,-69.71 139.38,-69.71 139.38,-69.71 235.11,-69.71 235.11,-69.71 241.11,-69.71 247.11,-75.71 247.11,-81.71 247.11,-81.71 247.11,-97.67 247.11,-97.67 247.11,-103.67 241.11,-109.67 235.11,-109.67"/>
+<text xml:space="preserve" text-anchor="middle" x="187.24" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an instruction</text>
+<text xml:space="preserve" text-anchor="middle" x="187.24" y="-78.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(pick, fixup, edit…)</text>
+</g>
+<!-- todo&#45;&gt;instr -->
+<g id="edge3" class="edge">
+<title>todo&#45;&gt;instr</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M187.24,-152.52C187.24,-143.26 187.24,-130.33 187.24,-118.69"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="189.76,-118.9 187.24,-111.7 184.72,-118.9 189.76,-118.9"/>
+<text xml:space="preserve" text-anchor="middle" x="225.12" y="-127.9" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is a sequence of</text>
+</g>
+<!-- orig -->
+<g id="node4" class="node">
+<title>orig</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M172.91,-26.46C172.91,-26.46 71.57,-26.46 71.57,-26.46 67.16,-26.46 62.75,-22.05 62.75,-17.64 62.75,-17.64 62.75,-8.82 62.75,-8.82 62.75,-4.41 67.16,0 71.57,0 71.57,0 172.91,0 172.91,0 177.32,0 181.73,-4.41 181.73,-8.82 181.73,-8.82 181.73,-17.64 181.73,-17.64 181.73,-22.05 177.32,-26.46 172.91,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="122.24" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an original commit</text>
+</g>
+<!-- instr&#45;&gt;orig -->
+<g id="edge4" class="edge">
+<title>instr&#45;&gt;orig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M136.57,-69.34C130.68,-65.06 125.45,-59.9 121.74,-53.71 118.52,-48.34 117.66,-41.77 117.89,-35.55"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="120.39,-35.86 118.68,-28.43 115.38,-35.31 120.39,-35.86"/>
+<text xml:space="preserve" text-anchor="middle" x="138.99" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;names</text>
+</g>
+<!-- newc -->
+<g id="node5" class="node">
+<title>newc</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M354.66,-26.46C354.66,-26.46 275.82,-26.46 275.82,-26.46 271.41,-26.46 267,-22.05 267,-17.64 267,-17.64 267,-8.82 267,-8.82 267,-4.41 271.41,0 275.82,0 275.82,0 354.66,0 354.66,0 359.07,0 363.48,-4.41 363.48,-8.82 363.48,-8.82 363.48,-17.64 363.48,-17.64 363.48,-22.05 359.07,-26.46 354.66,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="315.24" y="-9.05" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a new commit</text>
+</g>
+<!-- instr&#45;&gt;newc -->
+<g id="edge5" class="edge">
+<title>instr&#45;&gt;newc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M181.5,-69.31C180.05,-60.24 180.3,-49.84 186.24,-42.46 195.5,-30.95 228.14,-23.88 258.26,-19.69"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="258.28,-22.22 265.09,-18.79 257.62,-17.23 258.28,-22.22"/>
+<text xml:space="preserve" text-anchor="middle" x="237.24" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;produces (unless drop)</text>
+</g>
+<!-- fix -->
+<g id="node6" class="node">
+<title>fix</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M93.66,-102.92C93.66,-102.92 8.82,-102.92 8.82,-102.92 4.41,-102.92 0,-98.51 0,-94.1 0,-94.1 0,-85.28 0,-85.28 0,-80.87 4.41,-76.46 8.82,-76.46 8.82,-76.46 93.66,-76.46 93.66,-76.46 98.07,-76.46 102.48,-80.87 102.48,-85.28 102.48,-85.28 102.48,-94.1 102.48,-94.1 102.48,-98.51 98.07,-102.92 93.66,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="51.24" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a fixup! commit</text>
+</g>
+<!-- fix&#45;&gt;orig -->
+<g id="edge6" class="edge">
+<title>fix&#45;&gt;orig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M56.12,-76.21C60.48,-66.22 67.62,-52.31 76.99,-42.46 80.76,-38.5 85.2,-34.86 89.8,-31.61"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="91.12,-33.76 95.75,-27.7 88.35,-29.55 91.12,-33.76"/>
+<text xml:space="preserve" text-anchor="middle" x="94.62" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;targets</text>
+</g>
+<!-- editor -->
+<g id="node7" class="node">
+<title>editor</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M284.41,-249.09C284.41,-249.09 222.07,-249.09 222.07,-249.09 217.66,-249.09 213.25,-244.68 213.25,-240.27 213.25,-240.27 213.25,-231.45 213.25,-231.45 213.25,-227.04 217.66,-222.63 222.07,-222.63 222.07,-222.63 284.41,-222.63 284.41,-222.63 288.82,-222.63 293.23,-227.04 293.23,-231.45 293.23,-231.45 293.23,-240.27 293.23,-240.27 293.23,-244.68 288.82,-249.09 284.41,-249.09"/>
+<text xml:space="preserve" text-anchor="middle" x="253.24" y="-231.69" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">your editor</text>
+</g>
+<!-- editor&#45;&gt;todo -->
+<g id="edge2" class="edge">
+<title>editor&#45;&gt;todo</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M240.83,-222.12C230.87,-211.91 216.75,-197.43 205.51,-185.89"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="207.54,-184.36 200.71,-180.97 203.93,-187.88 207.54,-184.36"/>
+<text xml:space="preserve" text-anchor="middle" x="237.32" y="-197.61" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;edits</text>
+</g>
+<!-- rd -->
+<g id="node8" class="node">
+<title>rd</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M380.29,-102.92C380.29,-102.92 314.19,-102.92 314.19,-102.92 309.78,-102.92 305.38,-98.51 305.38,-94.1 305.38,-94.1 305.38,-85.28 305.38,-85.28 305.38,-80.87 309.79,-76.46 314.19,-76.46 314.19,-76.46 380.29,-76.46 380.29,-76.46 384.7,-76.46 389.11,-80.87 389.11,-85.28 389.11,-85.28 389.11,-94.1 389.11,-94.1 389.11,-98.51 384.69,-102.92 380.29,-102.92"/>
+<text xml:space="preserve" text-anchor="middle" x="347.24" y="-85.52" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a range&#45;diff</text>
+</g>
+<!-- rd&#45;&gt;orig -->
+<g id="edge7" class="edge">
+<title>rd&#45;&gt;orig</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M335.4,-75.94C324.68,-65.23 307.89,-50.43 290.24,-42.46 259.19,-28.45 222.08,-21.33 190.64,-17.74"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="190.94,-15.24 183.51,-16.98 190.41,-20.25 190.94,-15.24"/>
+<text xml:space="preserve" text-anchor="middle" x="322.37" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;pairs</text>
+</g>
+<!-- rd&#45;&gt;newc -->
+<g id="edge8" class="edge">
+<title>rd&#45;&gt;newc</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M349.58,-75.93C350.74,-66.29 351.03,-52.98 346.24,-42.46 344.71,-39.11 342.58,-35.97 340.14,-33.11"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="341.99,-31.4 335.14,-28.05 338.41,-34.94 341.99,-31.4"/>
+<text xml:space="preserve" text-anchor="middle" x="362.54" y="-44.69" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;pairs</text>
+</g>
+</g>
+</svg>

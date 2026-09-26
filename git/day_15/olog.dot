@@ -1,0 +1,33 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  orig  [label="the original commit"];
+  pick  [label="a cherry-picked commit", fillcolor="#e7f0ec", color="#2f7a63"];
+  tip   [label="the tip of your branch"];
+  light [label="a lightweight tag"];
+  ann   [label="an annotated tag", fillcolor="#e7f0ec", color="#2f7a63"];
+  tobj  [label="a tag object"];
+  who   [label="a tagger, date\nand message", fillcolor="#f4efe6"];
+  rel   [label="a release commit"];
+  desc  [label="a describe name\n(v1.1-1-gc6dcec7)", fillcolor="#f8efdf", color="#d8b784"];
+
+  pick  -> tip   [label="  has as parent"];
+  pick  -> orig  [label="  has the same patch as", style=dashed];
+  light -> rel   [label="  names"];
+  ann   -> tobj  [label="  names"];
+  tobj  -> rel   [label="  points at"];
+  tobj  -> who   [label="  has"];
+  desc  -> ann   [label="  counts commits from"];
+
+  { rank=same; pick; light; ann; }
+
+}

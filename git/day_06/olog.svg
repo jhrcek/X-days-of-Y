@@ -1,0 +1,89 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="393pt" height="214pt"
+ viewBox="0.00 0.00 393.00 214.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 210.38)">
+<title>olog</title>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M128.73,-206.38C128.73,-206.38 12,-206.38 12,-206.38 6,-206.38 0,-200.38 0,-194.38 0,-194.38 0,-178.42 0,-178.42 0,-172.42 6,-166.42 12,-166.42 12,-166.42 128.73,-166.42 128.73,-166.42 134.73,-166.42 140.73,-172.42 140.73,-178.42 140.73,-178.42 140.73,-194.38 140.73,-194.38 140.73,-200.38 134.73,-206.38 128.73,-206.38"/>
+<text xml:space="preserve" text-anchor="middle" x="70.36" y="-188.98" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a starting commit</text>
+<text xml:space="preserve" text-anchor="middle" x="70.36" y="-175.48" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(HEAD, a branch, &#45;&#45;all)</text>
+</g>
+<!-- commit -->
+<g id="node2" class="node">
+<title>commit</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M167.98,-123.17C167.98,-123.17 112.75,-123.17 112.75,-123.17 106.75,-123.17 100.75,-117.17 100.75,-111.17 100.75,-111.17 100.75,-95.21 100.75,-95.21 100.75,-89.21 106.75,-83.21 112.75,-83.21 112.75,-83.21 167.98,-83.21 167.98,-83.21 173.98,-83.21 179.98,-89.21 179.98,-95.21 179.98,-95.21 179.98,-111.17 179.98,-111.17 179.98,-117.17 173.98,-123.17 167.98,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="140.37" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a commit</text>
+<text xml:space="preserve" text-anchor="middle" x="140.37" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">in the walk</text>
+</g>
+<!-- start&#45;&gt;commit -->
+<g id="edge1" class="edge">
+<title>start&#45;&gt;commit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M81.86,-166.2C87.38,-157.59 94.37,-147.51 101.61,-139.17 104.51,-135.84 107.71,-132.5 110.99,-129.29"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="112.29,-131.54 115.79,-124.76 108.82,-127.88 112.29,-131.54"/>
+<text xml:space="preserve" text-anchor="middle" x="140.99" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is walked back to</text>
+</g>
+<!-- diff -->
+<g id="node4" class="node">
+<title>diff</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M172.48,-39.96C172.48,-39.96 96.25,-39.96 96.25,-39.96 90.25,-39.96 84.25,-33.96 84.25,-27.96 84.25,-27.96 84.25,-12 84.25,-12 84.25,-6 90.25,0 96.25,0 96.25,0 172.48,0 172.48,0 178.48,0 184.48,-6 184.48,-12 184.48,-12 184.48,-27.96 184.48,-27.96 184.48,-33.96 178.48,-39.96 172.48,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="134.37" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the diff against</text>
+<text xml:space="preserve" text-anchor="middle" x="134.37" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its parent</text>
+</g>
+<!-- commit&#45;&gt;diff -->
+<g id="edge2" class="edge">
+<title>commit&#45;&gt;diff</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M100.46,-87.81C91.67,-82.7 83.48,-75.96 78.36,-67.21 73.69,-59.21 76.32,-51.99 82.44,-45.77"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="83.81,-47.91 87.71,-41.35 80.57,-44.04 83.81,-47.91"/>
+<text xml:space="preserve" text-anchor="middle" x="139.87" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has (computed on demand)</text>
+</g>
+<!-- meta -->
+<g id="node5" class="node">
+<title>meta</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M347.86,-39.96C347.86,-39.96 222.88,-39.96 222.88,-39.96 216.88,-39.96 210.88,-33.96 210.88,-27.96 210.88,-27.96 210.88,-12 210.88,-12 210.88,-6 216.88,0 222.88,0 222.88,0 347.86,0 347.86,0 353.86,0 359.86,-6 359.86,-12 359.86,-12 359.86,-27.96 359.86,-27.96 359.86,-33.96 353.86,-39.96 347.86,-39.96"/>
+<text xml:space="preserve" text-anchor="middle" x="285.37" y="-22.56" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">its metadata</text>
+<text xml:space="preserve" text-anchor="middle" x="285.37" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(author, date, message)</text>
+</g>
+<!-- commit&#45;&gt;meta -->
+<g id="edge3" class="edge">
+<title>commit&#45;&gt;meta</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M175.38,-82.8C184.5,-77.74 194.3,-72.28 203.37,-67.21 216.48,-59.87 230.75,-51.84 243.66,-44.56"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="244.67,-46.89 249.7,-41.15 242.19,-42.5 244.67,-46.89"/>
+<text xml:space="preserve" text-anchor="middle" x="231.86" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;has</text>
+</g>
+<!-- filter -->
+<g id="node3" class="node">
+<title>filter</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M373.48,-123.17C373.48,-123.17 249.25,-123.17 249.25,-123.17 243.25,-123.17 237.25,-117.17 237.25,-111.17 237.25,-111.17 237.25,-95.21 237.25,-95.21 237.25,-89.21 243.25,-83.21 249.25,-83.21 249.25,-83.21 373.48,-83.21 373.48,-83.21 379.48,-83.21 385.48,-89.21 385.48,-95.21 385.48,-95.21 385.48,-111.17 385.48,-111.17 385.48,-117.17 379.48,-123.17 373.48,-123.17"/>
+<text xml:space="preserve" text-anchor="middle" x="311.37" y="-105.77" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a filter</text>
+<text xml:space="preserve" text-anchor="middle" x="311.37" y="-92.27" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">(&#45;&#45; path, &#45;&#45;author, &#45;S, &#45;G)</text>
+</g>
+<!-- filter&#45;&gt;diff -->
+<g id="edge4" class="edge">
+<title>filter&#45;&gt;diff</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M288.94,-82.87C277.42,-73.7 262.79,-63.2 248.37,-55.96 245.55,-54.54 219.57,-46.55 193.12,-38.56"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="194.07,-36.21 186.45,-36.54 192.61,-41.03 194.07,-36.21"/>
+<text xml:space="preserve" text-anchor="middle" x="279.96" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;tests</text>
+</g>
+<!-- filter&#45;&gt;meta -->
+<g id="edge5" class="edge">
+<title>filter&#45;&gt;meta</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M313.47,-82.86C313.75,-74.41 313.2,-64.49 310.37,-55.96 309.39,-53.02 308.07,-50.12 306.55,-47.32"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="308.91,-46.34 302.99,-41.54 304.62,-48.99 308.91,-46.34"/>
+<text xml:space="preserve" text-anchor="middle" x="325.93" y="-58.19" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;tests</text>
+</g>
+<!-- line -->
+<g id="node6" class="node">
+<title>line</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M248.54,-199.63C248.54,-199.63 174.19,-199.63 174.19,-199.63 169.78,-199.63 165.38,-195.22 165.38,-190.81 165.38,-190.81 165.38,-181.99 165.38,-181.99 165.38,-177.58 169.78,-173.17 174.19,-173.17 174.19,-173.17 248.54,-173.17 248.54,-173.17 252.95,-173.17 257.36,-177.58 257.36,-181.99 257.36,-181.99 257.36,-190.81 257.36,-190.81 257.36,-195.22 252.95,-199.63 248.54,-199.63"/>
+<text xml:space="preserve" text-anchor="middle" x="211.37" y="-182.23" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a line of a file</text>
+</g>
+<!-- line&#45;&gt;commit -->
+<g id="edge6" class="edge">
+<title>line&#45;&gt;commit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M204.95,-172.9C199.62,-163.16 191.47,-149.59 182.37,-139.17 179.47,-135.86 176.25,-132.6 172.92,-129.49"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="174.66,-127.66 167.6,-124.76 171.3,-131.43 174.66,-127.66"/>
+<text xml:space="preserve" text-anchor="middle" x="221.02" y="-141.4" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is blamed on</text>
+</g>
+</g>
+</svg>

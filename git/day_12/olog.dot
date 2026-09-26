@@ -1,0 +1,32 @@
+digraph olog {
+  bgcolor="transparent";
+  rankdir=TB;
+  splines=spline;
+  nodesep=0.35;
+  ranksep=0.45;
+  node [shape=box, style="rounded,filled", fillcolor="#ffffff",
+        color="#d6cfc4", penwidth=1.1, fontname="Helvetica", fontsize=11.5,
+        fontcolor="#23201c", margin="0.17,0.09", height=0.34];
+  edge [color="#a09587", penwidth=1.05, fontname="Helvetica", fontsize=9.5,
+        fontcolor="#6f675c", arrowsize=0.72];
+
+  cmd   [label="a git command", fillcolor="#f4efe6"];
+  var   [label="a config variable\n(section.key = value)", fillcolor="#e7f0ec", color="#2f7a63"];
+  file  [label="a config file", fillcolor="#e7f0ec", color="#2f7a63"];
+  scope [label="a scope\n(system, global, local,\nworktree, command)"];
+  flag  [label="a -c argument"];
+  cond  [label="an includeIf condition", fillcolor="#f8efdf", color="#d8b784"];
+  alias [label="an alias"];
+
+  cmd   -> var   [label="  reads the last value of"];
+  var   -> file  [label="  is set in"];
+  flag  -> var   [label="  sets, for one command,"];
+  file  -> scope [label="  has"];
+  file  -> file  [label="  may include"];
+  file  -> cond  [label="  guards an include with", style=dashed];
+  alias -> var   [label="  is"];
+  alias -> cmd   [label="  expands to", style=dashed, constraint=false];
+
+  { rank=same; flag; cmd; alias; }
+
+}

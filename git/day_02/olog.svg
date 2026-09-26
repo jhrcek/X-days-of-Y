@@ -1,0 +1,70 @@
+<svg style="--sans:ui-sans-serif,system-ui,'Segoe UI',Helvetica,Arial,sans-serif" width="571pt" height="142pt"
+ viewBox="0.00 0.00 571.00 142.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 137.73)">
+<title>olog</title>
+<!-- wt -->
+<g id="node1" class="node">
+<title>wt</title>
+<path fill="#f4efe6" stroke="#d6cfc4" stroke-width="1.1" d="M107.16,-124.46C107.16,-124.46 8.82,-124.46 8.82,-124.46 4.41,-124.46 0,-120.05 0,-115.64 0,-115.64 0,-106.82 0,-106.82 0,-102.41 4.41,-98 8.82,-98 8.82,-98 107.16,-98 107.16,-98 111.57,-98 115.98,-102.41 115.98,-106.82 115.98,-106.82 115.98,-115.64 115.98,-115.64 115.98,-120.05 111.57,-124.46 107.16,-124.46"/>
+<text xml:space="preserve" text-anchor="middle" x="57.99" y="-107.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a working&#45;tree file</text>
+</g>
+<!-- index -->
+<g id="node2" class="node">
+<title>index</title>
+<path fill="#f8efdf" stroke="#d8b784" stroke-width="1.1" d="M318.14,-124.46C318.14,-124.46 237.05,-124.46 237.05,-124.46 232.64,-124.46 228.23,-120.05 228.23,-115.64 228.23,-115.64 228.23,-106.82 228.23,-106.82 228.23,-102.41 232.64,-98 237.05,-98 237.05,-98 318.14,-98 318.14,-98 322.55,-98 326.96,-102.41 326.96,-106.82 326.96,-106.82 326.96,-115.64 326.96,-115.64 326.96,-120.05 322.55,-124.46 318.14,-124.46"/>
+<text xml:space="preserve" text-anchor="middle" x="277.6" y="-107.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">an index entry</text>
+</g>
+<!-- wt&#45;&gt;index -->
+<g id="edge1" class="edge">
+<title>wt&#45;&gt;index</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M116.45,-111.23C148.21,-111.23 187.56,-111.23 219.3,-111.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="219.25,-113.75 226.45,-111.23 219.25,-108.71 219.25,-113.75"/>
+<text xml:space="preserve" text-anchor="middle" x="172.11" y="-124.71" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is copied into</text>
+<text xml:space="preserve" text-anchor="middle" x="172.11" y="-113.46" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(add)</text>
+</g>
+<!-- index&#45;&gt;wt -->
+<g id="edge5" class="edge">
+<title>index&#45;&gt;wt</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M251.62,-97.5C237.8,-90.69 220.07,-83.19 203.23,-79.73 176.13,-74.16 168.18,-74.68 140.98,-79.73 125.44,-82.61 109.04,-88.33 95.03,-94.1"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="94.17,-91.73 88.54,-96.87 96.15,-96.36 94.17,-91.73"/>
+<text xml:space="preserve" text-anchor="middle" x="172.11" y="-93.2" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is copied into</text>
+<text xml:space="preserve" text-anchor="middle" x="172.11" y="-81.95" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(restore)</text>
+</g>
+<!-- blob -->
+<g id="node3" class="node">
+<title>blob</title>
+<path fill="#ffffff" stroke="#d6cfc4" stroke-width="1.1" d="M297.14,-26.46C297.14,-26.46 258.05,-26.46 258.05,-26.46 253.64,-26.46 249.23,-22.05 249.23,-17.64 249.23,-17.64 249.23,-8.82 249.23,-8.82 249.23,-4.41 253.64,0 258.05,0 258.05,0 297.14,0 297.14,0 301.55,0 305.96,-4.41 305.96,-8.82 305.96,-8.82 305.96,-17.64 305.96,-17.64 305.96,-22.05 301.55,-26.46 297.14,-26.46"/>
+<text xml:space="preserve" text-anchor="middle" x="277.6" y="-9.06" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">a blob</text>
+</g>
+<!-- index&#45;&gt;blob -->
+<g id="edge2" class="edge">
+<title>index&#45;&gt;blob</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M277.6,-97.72C277.6,-81.68 277.6,-54.7 277.6,-35.55"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="280.12,-35.65 277.6,-28.45 275.08,-35.65 280.12,-35.65"/>
+<text xml:space="preserve" text-anchor="middle" x="268.97" y="-58.83" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;points at</text>
+</g>
+<!-- commit -->
+<g id="node4" class="node">
+<title>commit</title>
+<path fill="#e7f0ec" stroke="#2f7a63" stroke-width="1.1" d="M551.44,-131.21C551.44,-131.21 480.46,-131.21 480.46,-131.21 474.46,-131.21 468.46,-125.21 468.46,-119.21 468.46,-119.21 468.46,-103.25 468.46,-103.25 468.46,-97.25 474.46,-91.25 480.46,-91.25 480.46,-91.25 551.44,-91.25 551.44,-91.25 557.44,-91.25 563.44,-97.25 563.44,-103.25 563.44,-103.25 563.44,-119.21 563.44,-119.21 563.44,-125.21 557.44,-131.21 551.44,-131.21"/>
+<text xml:space="preserve" text-anchor="middle" x="515.95" y="-113.81" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">the commit</text>
+<text xml:space="preserve" text-anchor="middle" x="515.95" y="-100.31" font-family="Helvetica,sans-Serif" font-size="11.50" fill="#23201c">HEAD names</text>
+</g>
+<!-- index&#45;&gt;commit -->
+<g id="edge3" class="edge">
+<title>index&#45;&gt;commit</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" d="M327.28,-111.23C365.68,-111.23 419.26,-111.23 459.34,-111.23"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="459.15,-113.75 466.35,-111.23 459.15,-108.71 459.15,-113.75"/>
+<text xml:space="preserve" text-anchor="middle" x="397.71" y="-124.71" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;becomes the tree of</text>
+<text xml:space="preserve" text-anchor="middle" x="397.71" y="-113.46" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(commit)</text>
+</g>
+<!-- commit&#45;&gt;index -->
+<g id="edge4" class="edge">
+<title>commit&#45;&gt;index</title>
+<path fill="none" stroke="#a09587" stroke-width="1.05" stroke-dasharray="5,2" d="M476.6,-90.86C466.14,-86.28 454.61,-82.08 443.46,-79.73 403.67,-71.35 391.79,-71.54 351.96,-79.73 338.15,-82.57 323.73,-88.13 311.37,-93.79"/>
+<polygon fill="#a09587" stroke="#a09587" stroke-width="1.05" points="310.42,-91.45 305,-96.82 312.59,-96 310.42,-91.45"/>
+<text xml:space="preserve" text-anchor="middle" x="397.71" y="-93.2" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;is copied into</text>
+<text xml:space="preserve" text-anchor="middle" x="397.71" y="-81.95" font-family="Helvetica,sans-Serif" font-size="9.50" fill="#6f675c"> &#160;(restore &#45;&#45;staged)</text>
+</g>
+</g>
+</svg>
